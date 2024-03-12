@@ -1,0 +1,48 @@
+ //*************************************
+// THIS FILE INCLUDES GENERAL VARIABLES
+// PLEASE DON'T ADD SPECIFIC THEME VARIABLES
+//*************************************
+
+//  =======================
+//  FONT ICON FAMILY
+//  =======================
+
+
+//  =======================
+//  GRID BREAKPOINT
+//  =======================
+$grid-breakpoints: (
+  xs: 0,
+  sm: 577px,
+  md: 769px,
+  lg: 993px,
+  xl: 1201px,
+  xxl: 1401px
+);
+
+
+// =====================
+// DEFAULT THEME COLORS //
+// =====================
+$primary:       #000000;
+$secondary:     #5BAAF2;
+
+$light-blue-1:        #BBD3F5;
+$light-blue-2:        #EFF5FF;
+$light-blue-3:        #F0F5FE;
+$light-blue-4:        #CCDDF5;
+$light-blue-5:        #4A82D2;
+$light-blue-6:        #CFDDF3;
+$dark:                #000000;
+$grey-1:              #555555;
+$grey-2:              #D6D6D6;
+$grey-3:              #D5D5D5;
+$grey-4:              #F7F7F7;
+$grey-5:              #D3D3D3;
+$grey-6:              #A5A5A5;
+$grey-7:              #707070;
+$grey-8:              #383838;
+$grey-9:              #666666;
+$body-bg:             #ffffff;
+$orange:              #E68B0F;
+$disabled:            #CBCBCB;
