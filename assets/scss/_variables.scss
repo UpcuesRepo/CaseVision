@@ -4,9 +4,10 @@
 //*************************************
 
 //  =======================
-//  FONT ICON FAMILY
+//  FONT FAMILY
 //  =======================
-
+// Override any bootstrap varibales
+$font-family-sans-serif: "Source Sans 3", sans-serif;
 
 //  =======================
 //  GRID BREAKPOINT
@@ -26,6 +27,7 @@ $grid-breakpoints: (
 // =====================
 $primary:       #000000;
 $secondary:     #5BAAF2;
+
 
 $light-blue-1:        #BBD3F5;
 $light-blue-2:        #EFF5FF;
