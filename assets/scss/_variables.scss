@@ -25,26 +25,95 @@ $grid-breakpoints: (
 // =====================
 // DEFAULT THEME COLORS //
 // =====================
-$primary:       #000000;
-$secondary:     #5BAAF2;
+$primary:            #080808;
+$secondary:          #5BAAF2;
+$white:              #ffffff;
+$Light-gray-1:       #F9F9F9;
+$light-gray-2:       #E1E1E1;
+
+// DARK BLUE COLOR //
+$dark-blue:          #005EA2;
+$dark-blue-60:       rgba(0,94,162,0.6);
+$dark-blue-30:       rgba(0,94,162,0.3);
+$dark-blue-10:       rgba(0,94,162,0.1);
+
+// BLACk COLOR //
+$black:              #080808;
+$black-60:           rgba(8,8,8,0.6);
+$black-30:           rgba(8,8,8,0.3);
+$black-10:           rgba(8,8,8,0.1);
+
+// LIGHT BLUE COLOR //
+$light-blue:         #5BAAF2;
+$light-blue-60:      rgba(91,170,242,0.6);
+$light-blue-30:      rgba(91,170,242,0.3);
+$light-blue-10:      rgba(91,170,242,0.1);
+
+// RED COLOR //
+$red:                #CE0E2D;
+$red-60:             rgba(206,14,45,0.6);
+$red-30:             rgba(206,14,45,0.3);
+$red-10:             rgba(206,14,45,0.1);
+
+// ORANGE COLOR //
+$orange:            #EE9207;
+$orange-60:         rgba(238,146,7,0.6);
+$orange-30:         rgba(238,146,7,0.3);
+$orange-10:         rgba(238,146,7,0.1);
+
+// GREEN COLOR //
+$green:            #5EAC2F;
+$green-60:         rgba(238,146,7,0.6);
+$green-30:         rgba(238,146,7,0.3);
+$green-10:         rgba(238,146,7,0.1);
+
+// PURPLE COLOR //
+$purple:            #2000A2;
+$purple-60:         rgba(32,0,162,0.6);
+$purple-30:         rgba(32,0,162,0.3);
+$purple-10:         rgba(32,0,162,0.1);
 
 
-$light-blue-1:        #BBD3F5;
-$light-blue-2:        #EFF5FF;
-$light-blue-3:        #F0F5FE;
-$light-blue-4:        #CCDDF5;
-$light-blue-5:        #4A82D2;
-$light-blue-6:        #CFDDF3;
-$dark:                #000000;
-$grey-1:              #555555;
-$grey-2:              #D6D6D6;
-$grey-3:              #D5D5D5;
-$grey-4:              #F7F7F7;
-$grey-5:              #D3D3D3;
-$grey-6:              #A5A5A5;
-$grey-7:              #707070;
-$grey-8:              #383838;
-$grey-9:              #666666;
-$body-bg:             #ffffff;
-$orange:              #E68B0F;
-$disabled:            #CBCBCB;
+
+// =====================
+// DEFAULT FORMS COLORS //
+// =====================
+
+$input-bg:                  #ffffff;
+$border-color:              #F9F9F9;
+$border-focus:              #5BAAF2;
+
+$primatry-button:           #080808;
+$primatry-button-hover:     #005EA2;
+
+
+
+// =====================
+// BORDER RADUIS //
+// =====================
+$radius-xs:       2px;
+$radius-sm:       5px; 
+$radius-md:       8px;
+$radius-lg:      10px;
+$radius-xl:      15px;
+$radius-xxl:     20px;
+$radius-half:     50%;
+$radius-full:    100%;
+
+// =====================
+// PADDING //
+// =====================
+$padding5:              05px;
+$padding10:             10px;
+$padding15:             15px;
+$padding20:             20px;
+$padding25:             25px;
+$padding30:             30px;
+
+$padding-y-5:           0px 5px;
+$padding-x-10:          0px 10px;
+$padding-x-15:          0px 15px;
+$padding-x-20:          0px 20px;
+$padding-x-25:          0px 25px;
+$padding-x-30:          0px 30px;
+
