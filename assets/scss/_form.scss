@@ -1,6 +1,9 @@
+
+// ======================= //
+// FORM GROUP WITH ICONS //
+// ======================= //
 .form-group {
     position: relative;
-
     a {
         &.eye-icon {
            position: absolute;
@@ -14,21 +17,31 @@
             top: 50%;
             margin-top: -12.5px;
         }
-    }
-   
-    
+    } 
 }
 
-
+// FORM INPUT STYLES //
 .form-control {
     border-radius: $radius-lg;
     border: $border-light-gray-2;
     font-weight: $font-400;
     font-size: $font-size-16;
-    line-height: $line-height-22;
-    padding: 15px;
+    line-height: $line-height-24;
+    padding: 12px 15px;
     color: $black-60;
     margin-bottom: 0;
+
+    &.form-control-md{
+        padding: 10px 15px;
+    }
+
+    &.form-control-sm{
+        padding: 8px 15px;
+    }
+
+    &.number-input{
+        width: 50px;
+    }
 
     &.password-form-control{
        
@@ -57,6 +70,15 @@
         padding-left: 60px;
     }
 
+}
 
-    
+
+.error-mesg{
+    background: $red-10;
+    color: $red;
+    border-radius: $radius-lg;
+    padding: $padding-error;
+    font-size: $font-size-md;
+    margin-top: $margin-top-5;
+    font-weight: $font-400;
 }
