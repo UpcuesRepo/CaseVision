@@ -29,27 +29,34 @@
   </head>
   <body>
     <div class="container">
-        <h1>FORMS</h1>
+        <h1 class="mb-3">Forms Elements</h1>
+
+
+        <h3 class="mb-3">Input Text</h3>
+
         <div class="row">
-            <div class="col-md-3 mb-5">
+            <div class="col-md-6 mb-3">
                 <div class="form-group">
                   <input class="form-control me-2 mail-icon" type="email" placeholder="Enter Email Address">
                 </div>
             </div>
-            <div class="col-md-3 mb-5">
-                <div class="form-group bg-white d-flex password-form-control">
-                    <input class="form-control lock-icon" type="password" id="myInput" placeholder="Password">
-                    <a href="#" class="arrow-up-icon"></a>
-                    <a href="#" class="eye-icon" onclick="showPassword();"></a>
-                </div>
+
+            <div class="col-md-6 mb-3">
+              <div class="form-group">
+                <input class="form-control me-2 lock-icon password-form-control" type="password" placeholder="Password">
+                <a href="#" class="arrow-up-icon"><img src="../../images/icons/caps-lock-on.svg"></a>
+                <a href="#" class="eye-icon"><img src="../../images/icons/eye.svg"></a>
+              </div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <div class="form-group">
+              <input class="form-control me-2" type="email" placeholder="Enter Email Address">
             </div>
-            <div class="col-md-3 mb-5">
-                <div class="form-group bg-white d-flex password-form-control">
-                    <input class="form-control lock-icon" type="password" id="myInput" placeholder="Temp Password">
-                    <a href="#" class="eye-icon" onclick="showPassword();"></a>
-                </div>
-            </div>
-            <div class="col-md-1 mb-5">
+        </div>
+            
+            
+            <div class="col-md-1 mb-3">
                 <div class="form-group">
                     <input class="form-control w-60 text-center" type="text" maxlength="1" id="" placeholder="">
                 </div>
