@@ -1,0 +1,21 @@
+// Plugins
+@import '../plugins/bootstrap-select/sass/bootstrap-select.scss';
+@import '../plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.scss';
+
+// Styles
+@import 'helpers';  
+@import 'typography';
+@import 'form';
+@import 'buttons';
+@import 'badge';
+@import 'cards';    
+@import 'common';
+@import 'filter';
+@import 'table';
+@import 'main-leftmenu';
+@import 'collapse';
+@import 'modals';
+@import 'navbar';
+@import 'page-structure';
+@import 'calender';
+@import 'tabbing';

@@ -21,6 +21,56 @@ $grid-breakpoints: (
   xxl: 1401px
 );
 
+//  =======================
+//  FONT SIZE
+//  =======================
+$font-size-xs:  0.625rem;  //10px
+$font-size-sm:  0.75rem;   //12px
+$font-size-md:  0.875rem;  //14px
+$font-size-16:  1rem;      //16px
+$font-size-lg:  1.125rem;  //18px
+$font-size-xl:  1.25rem;   //20px
+$font-size-22:  1.375rem;  //22px
+$font-size-24:  1.5rem;    //24px
+$font-size-26:  1.625rem;  //26px
+$font-size-28:  1.75rem;   //28px
+$font-size-30:  1.875rem;  //30px
+$font-size-32:  2rem;      //32px
+$font-size-34:  2.125rem;  //34px
+$font-size-36:  2.25rem;   //36px
+$font-size-40:  2.5rem;    //40px
+
+//  =======================
+//  TEXT STYLE
+//  =======================
+$text-uppercase:  uppercase; 
+
+// FONT WEIGHT
+$font-200: 200;
+$font-300: 300;
+$font-400: 400;
+$font-500: 500;
+$font-600: 600;
+$font-700: 700;
+$font-800: 800;
+$font-900: 900;
+
+//  =======================
+//  LINE HEIGHT
+//  =======================
+$line-height-18:  18px;
+$line-height-20:  20px;
+$line-height-22:  22px;
+$line-height-24:  24px;
+$line-height-26:  26px;
+$line-height-28:  28px;
+$line-height-30:  30px;
+$line-height-36:  36px;
+$line-height-40:  40px;
+$line-height-50:  50px;
+$line-height-56:  56px;
+$line-height-60:  60px;
+
 
 // =====================
 // DEFAULT THEME COLORS //
@@ -82,9 +132,8 @@ $purple-10:         rgba(32,0,162,0.1);
 $input-bg:                  #ffffff;
 $border-color:              #F9F9F9;
 $border-focus:              #5BAAF2;
-
-$primary-button:           #080808;
-$primary-button-hover:     #005EA2;
+$primary-button:            #080808;
+$primary-button-hover:      #005EA2;
 
 
 // =====================
@@ -98,6 +147,13 @@ $radius-xl:      15px;
 $radius-xxl:     20px;
 $radius-half:     50%;
 $radius-full:    100%;
+
+// =====================
+// BORDER //
+// =====================
+$border-light-gray-2 : 1px solid $light-gray-2;
+$border-light-blue :   2px solid $light-blue;
+
 
 // =====================
 // PADDING //
