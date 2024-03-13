@@ -1,0 +1,31 @@
+.btn {
+    border-radius: $radius-lg;
+    padding: 13px 20px;
+    border: none;
+    position: relative;
+    white-space: nowrap;
+    font-size: $font-size-lg;
+    line-height: $line-height-24;
+    width: 100%;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: $font-600;
+    font-style: normal;
+
+    &:hover, &:focus {
+       outline: none;
+    }
+
+    
+
+    &.btn-primary{
+        background-color: $black;
+        color: $white;
+
+        &:hover, &:focus {
+            background-color: $dark-blue;
+        }
+        
+    }
+
+}
