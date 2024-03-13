@@ -1,45 +1,25 @@
 .form-group {
     position: relative;
-    &.password-form-control{
-        border-radius: $radius-lg;
-        border: 1px solid $border-light-gray-2;
-        padding: 8px 15px;
-        position: relative;
-        &:focus,&:hover {
-            outline: none;
-            box-shadow: none;
-            border: $border-light-blue;
-            color: $black-60;
+
+    a {
+        &.eye-icon {
+           position: absolute;
+           right: 20px;
+           top: 50%;
+           margin-top: -12.5px;
         }
-        .form-control {
-            border: none;
-            padding: 10px;
-            font-weight: $font-400;
-            font-size: $font-size-16;
-            line-height: $line-height-22;
-            color: $black-60;
-            ::placeholder {
-                color: $black-60;
-            }
-        }
-        a {
-            &.eye-icon {
-                background-image: url(../../../images/icons/eye.svg);
-                background-position-x: 96%;
-                background-position-y: center;
-                background-repeat: no-repeat;
-                padding-right: 40px !important;
-            }
-            &.arrow-up-icon {
-                background-image: url(../../../images/icons/arrow-block-up.svg);
-                background-position-x: 96%;
-                background-position-y: center;
-                background-repeat: no-repeat;
-                padding-right: 40px !important;
-            }
+        &.arrow-up-icon {
+            position: absolute;
+            right: 50px;
+            top: 50%;
+            margin-top: -12.5px;
         }
     }
+   
+    
 }
+
+
 .form-control {
     border-radius: $radius-lg;
     border: $border-light-gray-2;
@@ -50,24 +30,32 @@
     color: $black-60;
     margin-bottom: 0;
 
+    &.password-form-control{
+       
+        
+    }
+
     &:focus,&:hover {
         outline: none;
         box-shadow: none;
-        border: $border-light-blue;
+        outline: $border-light-blue;
         color: $black-60;
     }
     &.mail-icon {
         background-image: url(../../../images/icons/mail-02.svg);
-        background-position-x: 5%;
+        background-position-x: 20px;
         background-position-y: center;
         background-repeat: no-repeat;
-        padding-left: 50px !important;
+        padding-left: 60px;
     }
     &.lock-icon {
         background-image: url(../../../images/icons/lock-01.svg);
-        background-position-x: 0;
+        background-position-x: 20px;
         background-position-y: center;
         background-repeat: no-repeat;
-        padding-left: 35px !important;
+        padding-left: 60px;
     }
+
+
+    
 }
