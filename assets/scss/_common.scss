@@ -14,3 +14,22 @@ html{
 #wrapper{
     height: 100%;
 }
+
+.blue-link{
+    font-size: $font-size-16;
+    font-weight: $font-600;
+    line-height: $line-height-22;
+    color: $secondary;
+    text-decoration: none;
+    svg{
+        margin-right: 2px;
+    }
+    &:hover{
+        color: $black;
+        svg{
+            path{
+                stroke: $black;
+            }
+        }
+    }
+}
