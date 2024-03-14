@@ -17,7 +17,7 @@ html{
 
 .blue-link{
     font-size: $font-size-16;
-    font-weight: $font-600;
+    font-weight: $font-500;
     line-height: $line-height-22;
     color: $secondary;
     text-decoration: none;
@@ -25,10 +25,11 @@ html{
         margin-right: 2px;
     }
     &:hover{
-        color: $black;
+        color: $dark-blue;
+        text-decoration: underline;
         svg{
             path{
-                stroke: $black;
+                stroke: $dark-blue;
             }
         }
     }
