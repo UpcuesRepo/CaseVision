@@ -13,7 +13,10 @@ html{
 
 #wrapper{
     height: 100%;
-    background: $light-gray-1;
+    @include media-breakpoint-down(md) {
+        background: $light-gray-1;
+    }
+    
 }
 a{
     text-decoration: none;
