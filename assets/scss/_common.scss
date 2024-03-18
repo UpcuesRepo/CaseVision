@@ -31,6 +31,10 @@ a{
     svg{
         margin-right: 2px;
     }
+
+    &.disable{
+        color: $black-30;
+    }
     &:hover{
         color: $dark-blue;
         text-decoration: underline;
