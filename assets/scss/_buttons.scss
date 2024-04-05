@@ -27,5 +27,13 @@
         }
         
     }
-
+    &.btn-toggle{
+        width: auto;
+    }
+    &.btn-notification{
+        width: 44px;
+        border: $border-light-gray-2;
+        height: 44px;
+        padding: 0;
+    }
 }

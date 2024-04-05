@@ -9,6 +9,7 @@
 }
 .fs-xl          {@include font-size($font-size-xl!important)}
 .fs-22          {@include font-size($font-size-22)}
+.fs-13          {@include font-size($font-size-13)}
 .fs-16          {@include font-size($font-size-16)}
 .fs-26          {@include font-size($font-size-26)}
 .fs-30          {@include font-size($font-size-30)}
@@ -90,3 +91,4 @@
 
 // WIDTH
 .w-60                  {width: 60px;}
+.w-185                  {width: 185px;}
