@@ -29,12 +29,20 @@
   </head>
   <body>
     <div class="" id="wrapper">
+
+    <div class="blazored-toast-container position-topcenter" role="alert" aria-live="assertive" aria-atomic="true">
+
+        <div class="blazored-toast blazored-toast-error " b-jnm4noxjw5=""><p class="blazored-toast-message" b-jnm4noxjw5="">Login issue, User/password not found.</p><button type="button" class="blazored-toast-close" b-jnm4noxjw5=""><i aria-label="icon: close" class="blazored-toast-close-icon" b-jnm4noxjw5=""><!--!--><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" height="1.5em" b-jnm4noxjw5=""><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" b-jnm4noxjw5=""></path></svg></i></button></div>
+
+    </div>
+    
+
         <div class="login-layout">
             <div class="left-col">
                 <div class="logo-box"><img src="../../../images/logo/login-logo.svg" alt="casevision logo" Title="CASE VISION"></div>
                 <div class="left-bottom">
                     <p>Powered By <a href="https://ap-in.com/" target="_blank"><img src="../../../images/logo/ai-logo-white.svg" alt="Applied Intellect Logo" Title="Applied Intellect"></a></p>
-                    <p class="version mt-2">Version:&nbsp;1.0.16.1&nbsp;&nbsp;&nbsp;</p>
+                    <p class="version mt-2">Version:&nbsp;1.0.16.1</p>
                 </div>
             </div>
             <div class="right-col">
@@ -42,6 +50,8 @@
                 <div class="right-data-box">
                     <h1>Welcome to Case Vision</h1>
                     <h5 class="normal">Please Login to Start</h5>
+
+                    <ul class="error-mesg mb-4"><li class="validation-message">The Email field is required.</li><li class="validation-message">The Password field is required.</li></ul>
 
                     <div class="error-mesg mb-4">Validation Error Message will goes here.</div>
                    

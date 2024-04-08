@@ -73,6 +73,7 @@
 }
 
 
+/* Validation Error Mesg Starts */
 .error-mesg{
     background: $red-10;
     color: $red;
@@ -86,3 +87,33 @@
         font-size: $font-size-sm;
     }
 }
+
+
+ul.error-mesg{
+    background: $red-10;
+    color: $red;
+    border-radius: $radius-lg;
+    padding: $padding-error;
+    font-size: $font-size-md;
+    margin-top: $margin-top-5;
+    font-weight: $font-400;
+    text-align: left;
+    @include media-breakpoint-down(sm) {
+        font-size: $font-size-sm;
+    }
+
+    li{
+        list-style: none;
+        display: inline-flex;
+    }
+}
+
+/* Validation Error Mesg Starts */
+
+
+
+
+
+
+
+
