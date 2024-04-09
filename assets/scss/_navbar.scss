@@ -55,11 +55,9 @@
             }
         }
     }
-    .collapse{
-        &.collapse-horizontal{
-            width: 260px;
-            .collapse-content{
+            .main-left-menu{
                 width: 260px;
+                height: calc(100vh - 76px);
                 background: $black;
                 padding: 30px 20px;
                 position: relative;
@@ -110,7 +108,4 @@
                     left: 25%;
                 }
             }
-            
-        }
-    }
 }
