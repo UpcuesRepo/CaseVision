@@ -52,60 +52,71 @@
                         }
                     }
                 }
+                &.dropdown-notification{
+                    .dropdown-toggle{
+                        &::after {
+                            border-bottom: 0;
+                            border-left: 0;
+                            border-right: 0;
+                            border-top: 0;
+                            content: "";
+                        }
+                    }
+                }
             }
         }
     }
-            .main-left-menu{
-                width: 260px;
-                height: calc(100vh - 76px);
-                background: $black;
-                padding: 30px 20px;
-                position: relative;
-                ul{
-                    padding-left: 0;
-                    li{
-                        list-style-type: none;
-                        margin-bottom: 10px;
-                        .menu-links{
-                            color: $white;
-                            font-size: $font-size-md;
-                            font-weight: $font-700;
-                            padding: 12px 10px;
-                            display: block;
-                            &:active, &:hover{
-                                background-color: $red;
-                                border-radius: $radius-lg;
-                            }
-                        }
-                        .collapse-inner{
-                            .card{
-                                &.card-body{
-                                    background: black;
-                                    padding: 12px 24px;
-                                    a{
-                                        color: $white-70;
-                                        font-size: $font-size-md;
-                                        font-weight: $font-600;
-                                        position: relative;
-                                        .red-dot{
-                                            height: 6px;
-                                            width: 6px;
-                                            background-color: $red;
-                                            border-radius: 50%;
-                                            position: absolute;
-                                            top: 8px;
-                                            left: -15px;
-                                        }
-                                    }
+    .main-left-menu{
+        width: 260px;
+        height: calc(100vh - 76px);
+        background: $black;
+        padding: 30px 20px;
+        position: relative;
+        ul{
+            padding-left: 0;
+            li{
+                list-style-type: none;
+                margin-bottom: 10px;
+                .menu-links{
+                    color: $white;
+                    font-size: $font-size-md;
+                    font-weight: $font-700;
+                    padding: 12px 10px;
+                    display: block;
+                    &:active, &:hover{
+                        background-color: $red;
+                        border-radius: $radius-lg;
+                    }
+                }
+                .collapse-inner{
+                    .card{
+                        &.card-body{
+                            background: black;
+                            padding: 12px 24px;
+                            a{
+                                color: $white-70;
+                                font-size: $font-size-md;
+                                font-weight: $font-600;
+                                position: relative;
+                                .red-dot{
+                                    height: 6px;
+                                    width: 6px;
+                                    background-color: $red;
+                                    border-radius: 50%;
+                                    position: absolute;
+                                    top: 8px;
+                                    left: -15px;
                                 }
                             }
                         }
                     }
                 }
-                .powered-by-logo{
-                    position: absolute;
-                    bottom: 30px;
-                    left: 25%;
-                }
             }
+        }
+        .powered-by-logo{
+            position: absolute;
+            bottom: 30px;
+            left: 25%;
+        }
+    }
 }

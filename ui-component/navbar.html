@@ -36,15 +36,23 @@
                         <img src="../images/icons/menu.svg"alt="">
                     </button>
                     <div class="navbar-logo w-185 d-flex align-items-center justify-content-center">
-                        <img src="../images/logo/logo-black.svg" alt="">
+                        <a href="#"><img src="../images/logo/logo-black.svg" alt=""></a>
                     </div>
                     <div class="fs-26 fw-bold ms-3">Case Management</div>
                 </div>
                 <div class="right-part d-flex align-items-center h-100">
-                    <button class="btn btn-notification me-3">
-                        <img src="../images/icons/bell-03.svg" alt="">
-                        <div class="red-dot"></div>
-                    </button>
+                    <div class="dropdown dropdown-notification d-flex align-items-center">
+                        <a class="btn btn-notification dropdown-toggle d-flex justify-content-center align-items-center me-3" href="#" role="button" id="dropdownMenuNotifc" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../images/icons/bell-03.svg" alt="">
+                            <span class="red-dot"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-account" aria-labelledby="dropdownMenuNotific" data-bs-popper="static">
+                            <li class="dropdown-item"><a href="#" class="active">Account Settings</a></li>
+                            <li class="dropdown-item"><a href="#"> Live Dashboard</a></li>
+                            <li class="dropdown-item"><a href="#"> Reports</a></li>
+                            <li class="dropdown-item"><a href="#">Logout</a></li>
+                          </ul>
+                    </div>
                     <div class="dropdown dropdown-nav d-flex align-items-center me-3">
                         <a class="dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                             <div class="fs-lg fw-semibold ms-3 me-2 name-icon">CM</div>
