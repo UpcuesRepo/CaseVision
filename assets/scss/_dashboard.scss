@@ -1,0 +1,115 @@
+.region-card{
+    height: 100px;
+    width: 220px;
+    border-radius: $radius-lg;
+    padding: $padding15;
+    box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.05);
+    .main-title{
+        font-size: $font-size-lg;
+        font-weight: $font-700;
+        color: $primary;
+    }
+    .bullet{
+        border-radius: 50%;
+        height: 10px;
+        width: 10px;
+    }
+    .sub-title{
+        font-size: $font-size-md;
+        color: $black-60;
+    }
+    .total{
+        font-size: $font-size-22;
+        font-weight: $font-700;
+    }
+    &.region-1{
+        background: linear-gradient(45deg,$light-blue-2-10,$white-10);
+        .bullet{
+            background-color: $light-blue-2;
+        }
+        .total{
+            color: $light-blue-2;
+        }
+    }
+    &.region-2{
+        background: linear-gradient(45deg,$orange-2-10,$white-10);
+        .bullet{
+            background-color: $orange-2;
+        }
+        .total{
+            color: $orange-2;
+        }
+    }
+    &.region-3{
+        background: linear-gradient(45deg,$yellow-10,$white-10);
+        .bullet{
+            background-color: $yellow;
+        }
+        .total{
+            color: $yellow;
+        }
+    }
+    &.region-4{
+        background: linear-gradient(45deg,$dark-red-10,$white-10);
+        .bullet{
+            background-color: $dark-red;
+        }
+        .total{
+            color: $dark-red;
+        }
+    }
+    &.region-5{
+        background: linear-gradient(45deg,$blue-10,$white-10);
+        .bullet{
+            background-color: $blue;
+        }
+        .total{
+            color: $blue;
+        }
+    }
+    &.region-6{
+        background: linear-gradient(45deg,$dark-blue-2-10,$white-10);
+        .bullet{
+            background-color: $dark-blue-2;
+        }
+        .total{
+            color: $dark-blue-2;
+        }
+    }
+    &.region-7{
+        background: linear-gradient(45deg,$grey-10,$white-10);
+        .bullet{
+            background-color: $grey;
+        }
+        .total{
+            color: $grey;
+        }
+    }
+    &.region-8{
+        background: linear-gradient(45deg,$dark-blue-3-10,$white-10);
+        .bullet{
+            background-color: $dark-blue-3;
+        }
+        .total{
+            color: $dark-blue-3;
+        }
+    }
+    &.region-9{
+        background: linear-gradient(45deg,$cream-10,$white-10);
+        .bullet{
+            background-color: $cream;
+        }
+        .total{
+            color: $cream;
+        }
+    }
+    &.region-10{
+        background: linear-gradient(45deg,$grey-2-10,$white-10);
+        .bullet{
+            background-color: $grey-2;
+        }
+        .total{
+            color: $grey-2;
+        }
+    }
+   }

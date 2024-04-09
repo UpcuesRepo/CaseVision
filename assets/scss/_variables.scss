@@ -80,14 +80,27 @@ $primary:            #080808;
 $secondary:          #5BAAF2;
 $white:              #FFFFFF;
 $white-70:           rgba(255, 255, 255, 0.7);
+$white-10:           rgba(255, 255, 255, 0.1);
 $light-gray-1:       #F9F9F9;
 $light-gray-2:       #E1E1E1;
+
+// BLUE //
+$blue:               #07A0C3;
+$blue-10:            rgba(7, 160, 195, 0.1);
 
 // DARK BLUE COLOR //
 $dark-blue:          #005EA2;
 $dark-blue-60:       rgba(0,94,162,0.6);
 $dark-blue-30:       rgba(0,94,162,0.3);
 $dark-blue-10:       rgba(0,94,162,0.1);
+
+// DARK BLUE -2 COLOR //
+$dark-blue-2:        #0B57C1;
+$dark-blue-2-10:       rgba(11, 87, 193, 0.1);
+
+// DARK-BLUE-3 COLOR //
+$dark-blue-3:              #04234D;
+$dark-blue-3-10:           rgba(4, 35, 77, 0.1);
 
 // BLACK COLOR //
 $black:              #080808;
@@ -101,17 +114,46 @@ $light-blue-60:      rgba(91,170,242,0.6);
 $light-blue-30:      rgba(91,170,242,0.3);
 $light-blue-10:      rgba(91,170,242,0.1);
 
+// LIGHT BLUE -2 COLOR //
+$light-blue-2:         #71A9F7;
+$light-blue-2-10:      rgba(113, 169, 247, 0.1);
+
+
 // RED COLOR //
 $red:                #CE0E2D;
 $red-60:             rgba(206,14,45,0.6);
 $red-30:             rgba(206,14,45,0.3);
 $red-10:             rgba(206,14,45,0.1);
 
+// DARK RED COLOR //
+$dark-red:            #9B2915;
+$dark-red-10:         rgba(155, 41, 21, 0.1);
+
 // ORANGE COLOR //
 $orange:            #EE9207;
 $orange-60:         rgba(238,146,7,0.6);
 $orange-30:         rgba(238,146,7,0.3);
 $orange-10:         rgba(238,146,7,0.1);
+
+// ORANGE-2 COLOR //
+$orange-2:            #FF7158;
+$orange-2-10:         rgba(255, 113, 88, 0.1);
+
+// YELLOW COLOR //
+$yellow:            #E9B44C;
+$yellow-10:         rgba(233, 180, 76, 0.1);
+
+// GREY COLOR //
+$grey:                #4D5858;
+$grey-10:             rgba(77, 88, 88, 0.1);
+
+// GREY COLOR //
+$grey-2:                #A8B3B3;
+$grey-2-10:             rgba(168, 179, 179, 0.1);
+
+// CREAM COLOR //
+$cream:               #E4D6A7;
+$cream-10:            rgba(228, 214, 167, 0.1);
 
 // GREEN COLOR //
 $green:             #5EAC2F;
