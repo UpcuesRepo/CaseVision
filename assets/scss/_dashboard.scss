@@ -3,7 +3,7 @@
     width: 220px;
     border-radius: $radius-lg;
     padding: $padding15;
-    box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: $shadow-sm;
     .main-title{
         font-size: $font-size-lg;
         font-weight: $font-700;
@@ -112,4 +112,22 @@
             color: $grey-2;
         }
     }
-   }
+}
+.help-card{
+    background-color: $white;
+    border-radius: $radius-lg;
+    box-shadow: $shadow-sm;
+    padding: $padding20;
+    .title{
+        font-size: $font-size-xl;
+        font-weight: $font-700;
+    }
+    .description{
+        font-size: $font-size-sm;
+    }
+    .help-link{
+        color: $blue;
+        font-size: $font-size-md;
+        font-weight: $font-600;
+    }
+}
