@@ -241,3 +241,81 @@
         }
     }
 }
+.notification-card{
+    border-radius: $radius-lg;
+    padding: 15px 20px;
+    box-shadow: $shadow-sm;
+    .title{
+        font-size: $font-size-xl;
+        font-weight: $font-700;
+    }
+    .date{
+        font-size: $font-size-16;
+        font-weight: $font-600;
+        color: $black-60;
+    }
+    .card-inner{
+        .timeline{
+            ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                li{
+                    position: relative;
+                    &.timeline-item{
+                        &:not(:last-child){
+                            padding-bottom: 15px;
+                            &::before{
+                                position: absolute;
+                                height: calc(100% - 16px);
+                                width: 1px;
+                                background: $light-gray-2;
+                                content: "";
+                                top: 16px;
+                                left: 7px;
+                            }
+                        }
+                        .timeline-status{
+                            position: relative;
+                            height: 16px;
+                            width: 16px;
+                            border-radius: 50%;
+                            flex-shrink: 0;
+                            border: 1px solid $red-10;
+                            background: $white;
+                            &.is-outline{
+                                &:after{
+                                    background: #ce0e2d;
+                                    border-radius: 50%;
+                                    content: "";
+                                    height: 10px;
+                                    left: 17%;
+                                    position: absolute;
+                                    top: 15%;
+                                    width: 10px;
+                                }
+                            }
+                        }
+                        .timeline-date{
+                            font-size:$font-size-md;
+                            font-weight: $font-600;
+                        }
+                        .timeline-data{
+                            .timeline-title{
+                                color: $dark-blue;
+                                font-size: $font-size-16;
+                                font-weight: $font-600;
+                                text-decoration: underline;
+                            }
+                            .timeline-des{
+                                color: $black-30;
+                                font-size: $font-size-md;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
