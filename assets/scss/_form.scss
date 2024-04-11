@@ -69,9 +69,57 @@
         background-repeat: no-repeat;
         padding-left: 60px;
     }
+    &.search-icon {
+        background-image: url(../../../images/icons/search-lg.svg);
+        background-position-x: 15px;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        padding-left: 55px;
+    }
 
 }
-
+// SELECT DROPDOWN
+.rows-select{
+    width: 62px;
+    .dropdown{
+        &.bootstrap-select{
+            width: 100%!important;
+            .btn-select{
+                border: 1px solid $border-color-2;
+                padding: 5px 15px;
+                border-radius: 4px;
+                color: $black-60;
+                font-size:$font-size-md;
+                font-weight: $font-400;
+                &:focus,&:hover {
+                    box-shadow: none;
+                    outline: $border-light-blue!important;
+                    color: $black-60;
+                }
+                &.show{
+                    &.dropdown-toggle{
+                        &::after{
+                            content: "";
+                            transform: rotate(180deg);                       
+                        }
+                    }
+                }
+            }
+            .dropdown-toggle{
+                &::after{
+                    border-bottom: 0;
+                    border-left: 0;
+                    border-right: 0;
+                    border-top: 0;
+                    content: "";
+                    background-image: url("../../../images/icons/select-arrow-down.svg");
+                    width: 100%;
+                    height: 16px;
+                }
+            }
+        }
+    }
+}
 
 /* Validation Error Mesg Starts */
 .error-mesg{

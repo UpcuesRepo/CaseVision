@@ -35,33 +35,60 @@
         <h3 class="mb-3">Input Text</h3>
 
         <div class="row">
+          <!-- INPUT MAIL WITH ICON -->
             <div class="col-md-6 mb-3">
                 <div class="form-group">
                   <input class="form-control mail-icon" type="email" placeholder="Enter Email Address">
                 </div>
             </div>
 
+            <!-- INPUT PASSWORD WITH ICON -->
             <div class="col-md-6 mb-3">
               <div class="form-group">
                 <input class="form-control lock-icon password-form-control" type="password" placeholder="Password">
                 <a href="#" class="arrow-up-icon"><img src="../../images/icons/caps-lock-on.svg"></a>
                 <a href="#" class="eye-icon"><img src="../../images/icons/eye.svg"></a>
               </div>
-          </div>
+            </div>
 
-          <div class="col-md-6 mb-3">
-            <div class="form-group">
-              <input class="form-control" type="email" placeholder="Enter Email Address">
+            <!-- INPUT MAIL -->
+            <div class="col-md-6 mb-3">
+              <div class="form-group">
+                <input class="form-control" type="email" placeholder="Enter Email Address">
             </div>
         </div>
             
             
-            
+            <!-- INPUT WITH ERROR MSG --> 
             <div class="col-md-6 mb-5">
                 <div class="form-group">
                   <input class="form-control mail-icon" type="email" placeholder="Enter Email Address">
                   <div class="error-mesg">Validation Error Message will goes here.</div>
                 </div>
+            </div>
+
+            <!-- INPUT WITH SEARCH ICON -->
+            <div class="col-md-6 mb-5">
+                <div class="form-group">
+                  <input class="form-control form-control-md search-icon" type="search" placeholder="Search Case By Name / A No.">
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-5">
+                <!-- ROWS PER PAGE SELECT -->
+                <!-- dropdown menu design is pending only button is completed -->
+                  <div class="d-flex align-items-center">
+                    <div class="fs-md me-2">Result per page</div>
+                    <div class="rows-select">
+                      <select class="selectpicker">
+                        <option data-tokens="1">1</option>
+                        <option data-tokens="2">2</option>
+                        <option data-tokens="3">3</option>
+                      </select>
+                    </div>
+                  </div>
+                    
+                <!-- END ROWS PER PAGE SELECT -->
             </div>
 
             <div class="col-md-4 mb-3">

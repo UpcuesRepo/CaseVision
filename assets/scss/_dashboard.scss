@@ -171,19 +171,6 @@
         color: $dark-blue;
     }
 }
-.view-btn{
-    background-color: $light-blue-2-10;
-    font-size: $font-size-16;
-    font-weight: $font-600;
-    color: $light-blue-2;
-    border: 1px solid $light-blue-2;
-    border-radius: $radius-lg;
-    padding: 5px 10px;
-    &:hover{
-        color: $white;
-        background-color: $light-blue-2;
-    }
-}
 .badge{
     font-size: $font-size-13;
     line-height: $line-height-18;
