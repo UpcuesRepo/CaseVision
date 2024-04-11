@@ -29,7 +29,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>Buttons</h1>
+      <h1>common</h1>
       <div class="row">
         <a href="#" class="blue-link d-flex align-items-center mb-3">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="#5BAAF2" xmlns="http://www.w3.org/2000/svg">
@@ -37,9 +37,41 @@
             </svg>
             Back to login
         </a>
-        <a href="#" class="blue-link">
+        <a href="#" class="blue-link mb-5">
             Need Help?
         </a>
+        <!-- NOTIFICATION DROPDOWN -->
+          <div class="dropdown dropdown-notification d-flex align-items-center mb-5">
+            <a class="btn btn-notification dropdown-toggle me-3" href="#" role="button" id="dropdownMenuNotifc" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="../images/icons/bell-03.svg" alt="">
+                <span class="red-dot"></span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-account" aria-labelledby="dropdownMenuNotific" data-bs-popper="static">
+                <li class="dropdown-item"><a href="#" class="active">Account Settings</a></li>
+                <li class="dropdown-item"><a href="#"> Live Dashboard</a></li>
+                <li class="dropdown-item"><a href="#"> Reports</a></li>
+                <li class="dropdown-item"><a href="#">Logout</a></li>
+              </ul>
+          </div>
+        <!-- END NOTIFICATION DROPDOWN -->
+
+        <!-- DROPDOWN PROFILE -->
+        <div class="dropdown dropdown-profile d-flex align-items-center me-3">
+          <a class="dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="fs-lg fw-semibold ms-3 me-2 name-icon bg-grey">CM</div>
+              <div class="name me-3">
+                  <div class="fs-lg fs-semibold">Chelsea Maxfield</div>
+                  <div class="fs-13 color-black-30">Admin</div>
+              </div>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-account" aria-labelledby="dropdownMenuLink" data-bs-popper="static">
+            <li class="dropdown-item"><a href="#" class="active">Account Settings</a></li>
+            <li class="dropdown-item"><a href="#"> Live Dashboard</a></li>
+            <li class="dropdown-item"><a href="#"> Reports</a></li>
+            <li class="dropdown-item"><a href="#">Logout</a></li>
+          </ul>
+        </div>
+        <!-- END DROPDOWN PROFILE -->
       </div>
     </div>
     <script src="../assets/dist/js/all.min.js"></script>

@@ -144,6 +144,15 @@
         font-size: $font-size-md;
         color: $black-60;
     }
+    a{
+        &:hover{
+            svg{
+                g{
+                    opacity: 1;
+                }
+            }
+        }
+    }
 }
 .status-card{
     border-radius: $radius-lg;
@@ -185,6 +194,10 @@
         background-color: $green-10;
     }
     &.badge-closed{
+        color: $black-60;
+        background-color: $black-10;
+    }
+    &.badge-not-started{
         color: $red;
         background-color: $red-10;
     }
@@ -195,6 +208,10 @@
     &.badge-approve{
         color: $orange;
         background-color: $orange-10;
+    }
+    &.badge-move-out{
+        color: $light-blue;
+        background-color: $light-blue-10;
     }
 }
 .card-case-table{

@@ -44,3 +44,58 @@ a{
         }
     }
 }
+
+.dropdown{
+    height: 100%;
+    &.dropdown-profile{
+        .dropdown-toggle{
+            height: 100%;
+            .name-icon{
+                height: 45px;
+                width: 45px;
+                border-radius: 50%;
+                padding: 10px 8px;
+                &.bg-grey{
+                    background-color: $black-10;
+                    color: $black;
+                }
+            }
+            &::after {
+                border-bottom: 0;
+                border-left: 0;
+                border-right: 0;
+                border-top: 0;
+                content: "";
+                background-image: url("../../../images/icons/chevron-down.svg");
+                height: 20px;
+                width: 20px;
+            }
+            &.show{
+                &::after {
+                    content: "";
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    &.dropdown-notification{
+        .dropdown-toggle{
+            .red-dot{
+                height: 6px;
+                width: 6px;
+                background-color: $red;
+                border-radius: 50%;
+                position: absolute;
+                top: 5px;
+                right: 5px;
+            }
+            &::after {
+                border-bottom: 0;
+                border-left: 0;
+                border-right: 0;
+                border-top: 0;
+                content: "";
+            }
+        }
+    }
+}
