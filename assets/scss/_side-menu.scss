@@ -1,54 +1,117 @@
-
-.main-left-menu{
+.sidebar {
     width: 260px;
-    height: calc(100vh - 76px);
-    background: $black;
-    padding: 30px 20px;
-    position: relative;
-    ul{
-        padding-left: 0;
-        li{
-            list-style-type: none;
-            margin-bottom: 10px;
-            .menu-links{
-                color: $white;
-                font-size: $font-size-md;
-                font-weight: $font-700;
-                padding: 12px 10px;
-                display: block;
-                &:active, &:hover{
-                    background-color: $red;
-                    border-radius: $radius-lg;
+    -webkit-transition: ease width 2s;
+    // safari
+    transition: ease all 250ms;
+    &.collapsed {
+        width: 0;
+        
+        .sidebar-section{
+            padding: 0;
+            .powered-by-logo{
+                opacity: 0;
+                height: 0;
+                width: 0;
+            }
+            ul{
+                li{
+                    .menu-links {
+                        width: 0;
+                        height: 0;
+                        opacity: 0;
+                        overflow: hidden;
+                        padding: 0;
+                        &[aria-expanded="true"]{
+                            padding: 0;
+                        }
+                    }
                 }
             }
-            .collapse-inner{
+        }
+        .collapse{
+            &.show{
                 .card{
                     &.card-body{
-                        background: black;
-                        padding: 12px 24px;
-                        a{
-                            color: $white-70;
-                            font-size: $font-size-md;
-                            font-weight: $font-600;
-                            position: relative;
-                            .red-dot{
-                                height: 6px;
-                                width: 6px;
-                                background-color: $red;
-                                border-radius: 50%;
-                                position: absolute;
-                                top: 8px;
-                                left: -15px;
+                        opacity: 0;
+                        height: 0;
+                        width: 0;
+                        padding: 0;
+                    }
+                }
+                
+            }
+        }
+    }
+    .sidebar-section {
+        background: #080808;
+        // height: calc(100vh - 76px);
+        height: 100%;
+        padding: 30px 20px;
+        position: relative;
+        ul{
+            padding-left: 0;
+            li{
+                list-style-type: none;
+                margin-bottom: 10px;
+                .menu-links{
+                    color: $white;
+                    font-size: $font-size-md;
+                    font-weight: $font-700;
+                    padding: 12px 10px;
+                    display: block;
+                    opacity: 1;
+                    transition: ease opacity 250ms;
+                    -moz-transition: ease opacity 250ms;
+                    -webkit-transition: ease opacity 250ms;
+                    &:active, &:hover{
+                        background-color: $red;
+                        border-radius: $radius-lg;
+                    }
+                    &[aria-expanded="true"]{
+                        background-color: $red;
+                        border-radius: $radius-lg;
+                    }
+                }
+                .collapse-inner{
+                    .card{
+                        &.card-body{
+                            background: black;
+                            padding: 12px 24px;
+                            a{
+                                color: $white-70;
+                                font-size: $font-size-md;
+                                font-weight: $font-600;
+                                position: relative;
+                                .red-dot{
+                                    height: 6px;
+                                    width: 6px;
+                                    background-color: $red;
+                                    border-radius: 50%;
+                                    position: absolute;
+                                    top: 8px;
+                                    left: -15px;
+                                }
                             }
                         }
                     }
                 }
             }
         }
-    }
-    .powered-by-logo{
-        position: absolute;
-        bottom: 30px;
-        left: 25%;
+        .powered-by-logo{
+            position: absolute;
+            bottom: 30px;
+            left: 25%;
+        }
     }
 }
+
+
+
+
+
+
+    
+
+
+
+

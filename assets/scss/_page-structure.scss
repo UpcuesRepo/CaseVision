@@ -138,5 +138,64 @@
         }
     }
 }
+.content-part{
+    width: calc(100% - 260px);
+    padding: 15px;
+    display: flex;
+    flex: 1;
+    &.dashboard{
+        background-color: $light-gray-1;
+        .shadow-sm-card{
+            border-radius: $radius-lg;
+            box-shadow: $shadow-sm;
+        }
+        .left-part{
+            width: 65%;
+            .map-card{
+                height: 565px;
+            }
+            .active-case,.closed-case{
+                height: 400px;
+                padding: 15px;
+            }
+        }
+        .right-part{
+            width: 35%;
+        }
+    }
+    &.case-management{
+        flex-direction: column;
+        background-color: $light-gray-1;
+        .shadow-sm-card{
+            border-radius: $radius-lg;
+            box-shadow: $shadow-sm;
+        }
+        .status-card{
+            width: 16%;
+        }
+        .case-compliance{
+            width: 65%;
+            padding: 15px;
+        }
+        .notification-card{
+            width: 35%;
+        }
+    }
+    &.my-case{
+        padding: 0;
+        flex-direction: column;
+        .top-part{
+            background-color: $white;
+            padding: 10px 15px;
+            .form-group{
+                width: 30%;
+            }
+        }
+        .table-part{
+            background-color: $light-gray-1;
+            padding: 20px 15px;
+        }
+    }
+}
 
 

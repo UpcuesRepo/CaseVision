@@ -91,6 +91,7 @@
                 color: $black-60;
                 font-size:$font-size-md;
                 font-weight: $font-400;
+                background-color: $white;
                 &:focus,&:hover {
                     box-shadow: none;
                     outline: $border-light-blue!important;
