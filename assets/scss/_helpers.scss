@@ -17,6 +17,7 @@
 
 // FONT WEIGHT
 .fw-regular     {font-weight: $font-400;}
+.fw-medium      {font-weight: $font-500;}
 .fw-semibold    {font-weight: $font-600;}
 .fw-bold        {font-weight: $font-700;}
 .fw-extrabold   {font-weight: $font-800;}
@@ -94,4 +95,6 @@
 
 // WIDTH
 .w-60                  {width: 60px;}
-.w-185                  {width: 185px;}
+.w-185                 {width: 185px;}
+
+.mb-20                 { margin-bottom: 1.25rem;}

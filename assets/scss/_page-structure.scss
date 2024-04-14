@@ -138,27 +138,43 @@
         }
     }
 }
+
 .content-part{
-    width: calc(100% - 260px);
-    padding: 15px;
+    width: 100%;
+    padding: 20px 10px;
     display: flex;
     flex: 1;
+    margin-top: 76px;
+    margin-left: 260px;
+    -webkit-transition: ease width 2s;
+    transition: ease all 250ms;
+
+    &.open{
+        margin-left: 0px;
+        -webkit-transition: ease width 2s;
+        transition: ease all 250ms;
+    }
+
     &.dashboard{
         background-color: $light-gray-1;
+        display: block;
+        flex: 1;
         .shadow-sm-card{
             border-radius: $radius-lg;
             box-shadow: $shadow-sm;
         }
-        .left-part{
-            width: 65%;
+            .content-box{
+                background: $white;
+            }
             .map-card{
-                height: 565px;
+                min-height: 565px;
+                
             }
             .active-case,.closed-case{
-                height: 400px;
+                min-height: 400px;
                 padding: 15px;
             }
-        }
+        
         .right-part{
             width: 35%;
         }

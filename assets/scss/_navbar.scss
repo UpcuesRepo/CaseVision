@@ -3,6 +3,13 @@
         height:76px;
         padding: 0;
         border-bottom: $border-light-gray-2;
+        position: fixed;
+        width: 100%;
+        background-color: $white;
+        .rotate{
+            transform: rotate(180deg);
+            transform-origin: 84% 50%;
+        }
         .navbar-logo{
             border-left: $border-light-gray-2;
             border-right: $border-light-gray-2;

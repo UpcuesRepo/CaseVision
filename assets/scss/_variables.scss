@@ -3,6 +3,10 @@
 // PLEASE DON'T ADD SPECIFIC THEME VARIABLES
 //*************************************
 
+
+$grid-gutter-width:           1.25rem !default; //1.5rem !default;
+
+
 //  =======================
 //  FONT FAMILY
 //  =======================
@@ -128,7 +132,7 @@ $light-blue-10:      rgba(91,170,242,0.1);
 
 // LIGHT BLUE -2 COLOR //
 $light-blue-2:         #71A9F7;
-$light-blue-2-10:      rgba(113, 169, 247, 0.1);
+$light-blue-2-10:      rgba(113, 169, 247, 0.15);
 
 // LIGHT BLUE -3 COLOR //
 $light-blue-3:         #0094FF;
@@ -143,7 +147,7 @@ $red-10:             rgba(206,14,45,0.1);
 
 // DARK RED COLOR //
 $dark-red:            #9B2915;
-$dark-red-10:         rgba(155, 41, 21, 0.1);
+$dark-red-10:         rgba(155, 41, 21, 0.15);
 
 // ORANGE COLOR //
 $orange:            #EE9207;
@@ -153,23 +157,23 @@ $orange-10:         rgba(238,146,7,0.1);
 
 // ORANGE-2 COLOR //
 $orange-2:            #FF7158;
-$orange-2-10:         rgba(255, 113, 88, 0.1);
+$orange-2-10:         rgba(255, 113, 88, 0.15);
 
 // YELLOW COLOR //
 $yellow:            #E9B44C;
-$yellow-10:         rgba(233, 180, 76, 0.1);
+$yellow-10:         rgba(233, 180, 76, 0.15);
 
 // GREY COLOR //
 $grey:                #4D5858;
-$grey-10:             rgba(77, 88, 88, 0.1);
+$grey-10:             rgba(77, 88, 88, 0.15);
 
 // GREY COLOR //
 $grey-2:                #A8B3B3;
-$grey-2-10:             rgba(168, 179, 179, 0.1);
+$grey-2-10:             rgba(168, 179, 179, 0.25);
 
 // CREAM COLOR //
 $cream:               #E4D6A7;
-$cream-10:            rgba(228, 214, 167, 0.1);
+$cream-10:            rgba(228, 214, 167, 0.25);
 
 // GREEN COLOR //
 $green:             #5EAC2F;
@@ -265,3 +269,4 @@ $large-mobile:'only screen and (max-width: 767px)';
 $small-mobile2: 'only screen and (max-width: 575px)';
 $small-mobile: 'only screen and (max-width: 479px)';
 $xsmall-mobile: 'only screen and (max-width: 360px)';
+

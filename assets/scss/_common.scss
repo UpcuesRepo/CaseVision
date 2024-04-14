@@ -1,8 +1,12 @@
 body{
-    font-family: "Source Sans 3", sans-serif;
+   
     height: 100%;
     font-size: 16px;
     color: $black;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 html{

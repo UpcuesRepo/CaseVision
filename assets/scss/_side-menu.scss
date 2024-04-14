@@ -3,6 +3,10 @@
     -webkit-transition: ease width 2s;
     // safari
     transition: ease all 250ms;
+    position: fixed;
+    height: calc(100vh - 76px);
+    left: 0px;
+    top: 76px;
     &.collapsed {
         width: 0;
         
