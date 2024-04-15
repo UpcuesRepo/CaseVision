@@ -6,6 +6,7 @@
         position: fixed;
         width: 100%;
         background-color: $white;
+        z-index: 1;
         .rotate{
             transform: rotate(180deg);
             transform-origin: 84% 50%;
