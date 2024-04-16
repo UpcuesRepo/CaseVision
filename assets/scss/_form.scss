@@ -44,9 +44,7 @@
     }
 
     &.password-form-control{
-       
-        padding-right: 80px ;
-        
+       padding-right: 80px ;
     }
 
     &:focus,&:hover {
@@ -76,7 +74,27 @@
         background-repeat: no-repeat;
         padding-left: 55px;
     }
+}
+input[type="date"] {
+    position: relative;
 
+    &::-webkit-calendar-picker-indicator {
+        color: transparent;
+        background: none;
+        z-index: 1;
+    }
+
+    &:before {
+        color: transparent;
+        background: none;
+        display: block;
+        content: '';
+        background-image: url("../../../images/icons/calendar.svg");
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 15px;
+    }
 }
 // SELECT DROPDOWN
 .rows-select{
@@ -159,7 +177,73 @@ ul.error-mesg{
 
 /* Validation Error Mesg Starts */
 
+//CHECK BOX
+.form-check {
+    position: relative;
+    padding-left: 30px;
+    min-height: 20px;
+    &.form-inline{
+        display: inline-flex;
+    }
 
+    .form-check-input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        border-radius: $radius-sm;
+        box-shadow: none;
+        border: 1px solid $dark-blue-10;
+        background-color: $white;
+        margin-bottom: 0px;
+       
+        &:checked {
+            background-color: $dark-blue;
+            border-color: $dark-blue;
+            background-image: none;
+        }
+        &:focus {
+            box-shadow: none;
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: $dark-blue;
+        }
+        &.add-after {
+            z-index: 1;
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 0;
+            min-height: 20px;
+            & + svg {
+                display: none;
+                pointer-events: none;
+                -webkit-pointer-events: none;
+                -moz-pointer-events: none;
+                & + .form-check-label {
+                    margin-top: 0px;
+                    font-weight: $font-400;
+                    &.style-1 {
+                       font-size: $font-size-md;
+                       color: $black;
+                    }
+                }
+            }
+            &:checked {
+                & + svg {
+                    z-index: 2;
+                    display: block;
+                    position: absolute;
+                    left: 5px;
+                    top: 5px;
+                    color: #fff;
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+    }
+}
+// END CHECKBOX
 
 
 

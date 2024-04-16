@@ -1,0 +1,20 @@
+.offcanvas{
+    &.my-case-offcanvas{
+        width: 450px;
+        .offcanvas-header{
+            justify-content: space-between;
+            background-color: $light-blue-10;
+            .offcanvas-title{
+                text-transform: uppercase;
+                font-size: $font-size-24;
+                font-weight: $font-600;
+                color: $black;
+            }
+        }
+        .offcanvas-body{
+            .border-bottom-lightblue{
+                border-bottom: 1px solid $light-blue-10;
+            }
+        }
+    }
+}

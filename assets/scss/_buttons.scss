@@ -53,6 +53,22 @@
             padding: 5px 10px;
         }
     }
+    &.btn-grey{
+        background-color: $black-10;
+        color: $black;
+        &:hover{
+            background-color: $black;
+            color: $white;
+        }
+    }
+    &.btn-darkblue{
+        background-color: $dark-blue;
+        color: $white;
+        &:hover{
+            background-color: $black;
+            color: $white;
+        }
+    }
     &.btn-pagination{
         border-radius: 4px;
         outline: 1px solid $border-color-2;
@@ -82,6 +98,11 @@
         padding: 10px 13px;
         width: auto;
     }
+    &.btn-md{
+        font-size: $font-size-lg;
+        font-weight: $font-700;
+        padding: 18px;
+    }
     &.btn-toggle{
         width: auto;
     }
@@ -90,5 +111,8 @@
         border: $border-light-gray-2;
         height: 44px;
         padding: 6px;
+    }
+    &.btn-radius-none{
+        border-radius: 0;
     }
 }
