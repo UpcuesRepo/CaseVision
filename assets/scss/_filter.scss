@@ -1,6 +1,11 @@
 .offcanvas{
-    &.my-case-offcanvas{
+    &.w-800{
+        width: 800px;
+    }
+    &.w-450{
         width: 450px;
+    }
+    &.my-case-offcanvas{
         .offcanvas-header{
             justify-content: space-between;
             background-color: $light-blue-10;

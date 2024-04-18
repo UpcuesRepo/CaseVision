@@ -21,6 +21,32 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <!-- Include base CSS (optional) -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/base.min.css"
+/>
+<!-- Or versioned -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/base.min.css"
+/>
+
+<!-- Include Choices CSS -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+<!-- Or versioned -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"
+/>
+
+<!-- Include Choices JavaScript (latest) -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+<!-- Or versioned -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
     
    
     <!-- CSS -->
@@ -86,7 +112,7 @@
               <!-- dropdown menu design is pending only button is completed -->
                   <div class="d-flex align-items-center">
                     <div class="fs-md me-2">Result per page</div>
-                    <div class="rows-select">
+                    <div class="rows-select w-62">
                       <select class="selectpicker">
                         <option data-tokens="1">1</option>
                         <option data-tokens="2">2</option>
@@ -97,6 +123,19 @@
               <!-- END ROWS PER PAGE SELECT -->
             </div>
 
+            <!-- FORM SELECT -->
+            <div class="col-md-6 mb-5">
+              <!-- dropdown menu design is pending only button is completed -->
+                    <div class="rows-select grey-toggle">
+                      <select class="selectpicker">
+                        <option data-tokens="1">1</option>
+                        <option data-tokens="2">2</option>
+                        <option data-tokens="3">3</option>
+                      </select>
+                    </div>
+              <!-- END FORM SELECT -->
+            </div>
+
             <div class="col-md-4 mb-3">
               <div class="form-group d-flex">
                   <input class="form-control text-center number-input me-2" type="text" maxlength="1" id="" placeholder="">
@@ -105,6 +144,29 @@
                   <input class="form-control text-center number-input me-2" type="text" maxlength="1" id="" placeholder="">
                   <input class="form-control text-center number-input me-2" type="text" maxlength="1" id="" placeholder="">
                   <input class="form-control text-center number-input" type="text" maxlength="1" id="" placeholder="">
+              </div>
+            </div>
+
+            <!-- BROWSE FILES -->
+            <div class="col-md-4 mb-5">
+              <form method="post" class="browse-file" enctype="multipart/form-data" action="">
+                <span id="filename" class="filename"></span>
+                <div class="button-part d-flex justify-content-end">
+                  <label for="file-upload">Choose File<input type="file" id="file-upload" class="file-upload"></label>
+                </div>
+              </form>
+            </div>
+
+            <!-- FILE UPLOAD -->
+            <div class="col-md-3 mb-5">
+              <div class="drop-zone">
+                <span class="drop-zone__prompt d-flex flex-column justify-content-center align-items-center">
+                  <a href="#" class="drop-zone__prompt mb-2">Default Photo</a>
+                  <div class="img-part">
+                    <img src="../images/backgrounds/avatar.png" alt="">
+                  </div>
+                </span>
+                <input type="file" name="myFile" class="drop-zone__input">
               </div>
             </div>
           <br>
@@ -141,6 +203,21 @@
             </div>
           </div>
           <!-- END CHECKBOX -->
+
+          <!-- MULTIPLE SELECT -->
+          <p class="color-purple p-2 bg-purple-10 fs-sm">MULTISELECT</p>
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <select id="choices-multiple-remove-button" placeholder="Select up to 3 tags" multiple>
+                <option value="number" onclick="filterSelection('number')">7854691230</option>
+                <option value="number2">English</option>
+                <option value="number3">Spanish</option>
+                <option value="number4">German</option>
+                <option value="number5">French</option>
+              </select>
+            </div>
+          </div>
+          <!-- END MULTISELECT -->
         </div>
     </div>
     <script src="../assets/dist/js/all.min.js"></script>
