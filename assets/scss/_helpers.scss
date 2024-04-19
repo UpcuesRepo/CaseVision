@@ -13,6 +13,7 @@
 .fs-16          {@include font-size($font-size-16)}
 .fs-26          {@include font-size($font-size-26)}
 .fs-30          {@include font-size($font-size-30)}
+.fs-36          {@include font-size($font-size-36)}
 .fs-40          {@include font-size($font-size-40)}
 
 // FONT WEIGHT
@@ -102,6 +103,13 @@
 // WIDTH
 .w-60                  {width: 60px;}
 .w-185                 {width: 185px;}
+.w-265                 {width: 265px;}
+
+// HEIGHT
+.h-100vh                {height: 100vh;}
+.h-60                  {height: 60px;}
+.h-90                  {height: 90px;}
+.h-300                  {height: 300px;}
 
 // MARGIN
 .mb-20                 { margin-bottom: 1.25rem;}

@@ -22,6 +22,10 @@ html{
 }
 a{
     text-decoration: none;
+    &:visited{
+        color: transparent;
+        font-weight: inherit;
+    }
 }
 
 

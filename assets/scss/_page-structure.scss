@@ -250,7 +250,9 @@
             background-color: $white;
             padding: 10px 15px;
             .form-group{
-                width: 30%;
+                &.w-30{
+                    width: 30%;
+                }
             }
         }
         .table-part{

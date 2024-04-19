@@ -72,6 +72,14 @@ href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices
                     Add New User
                 </button>
             </div>
+            <div class="col-md-2">
+                <button class="btn btn-skyblue btn-sm with-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#UserRecordsFilter" aria-controls="UserRecordsFilter">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.75 7.33337L13.75 7.33337M13.75 7.33337C13.75 8.85216 14.9812 10.0834 16.5 10.0834C18.0188 10.0834 19.25 8.85216 19.25 7.33337C19.25 5.81459 18.0188 4.58337 16.5 4.58337C14.9812 4.58337 13.75 5.81459 13.75 7.33337ZM8.25 14.6667L19.25 14.6667M8.25 14.6667C8.25 16.1855 7.01878 17.4167 5.5 17.4167C3.98122 17.4167 2.75 16.1855 2.75 14.6667C2.75 13.1479 3.98122 11.9167 5.5 11.9167C7.01878 11.9167 8.25 13.1479 8.25 14.6667Z" stroke="#5BAAF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Filter
+                </button>
+            </div>
         </div>
 
         <div class="offcanvas my-case-offcanvas w-450 offcanvas-end" tabindex="-1" id="MyCaseFilter" aria-labelledby="MyCaseFilterLabel">
@@ -290,13 +298,14 @@ href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices
                                 <input class="form-control form-control-md" type="email" placeholder="Enter Mobile Number">
                             </div>
                             <div class="color-black fs-md fw-semibold mb-1">Language</div>
-                            <div class="rows-select grey-toggle">
-                                <select class="selectpicker">
-                                <option data-tokens="1">Select Language</option>
-                                <option data-tokens="2">2</option>
-                                <option data-tokens="3">3</option>
-                                </select>
-                            </div>
+                            <!-- ADD CDN LINKS FROM HEAD PART TO USE THIS MULTI SELECT -->
+                            <select id="choices-multiple-remove-button" placeholder="Select up to 3 tags" multiple>
+                                <option value="number" onclick="filterSelection('number')">7854691230</option>
+                                <option value="number2">English</option>
+                                <option value="number3">Spanish</option>
+                                <option value="number4">German</option>
+                                <option value="number5">French</option>
+                            </select>
                         </div>
                         <div class="w-50 ms-3">
                             <div class="color-black fs-md fw-semibold mb-1">User Profile Image</div>
@@ -377,6 +386,77 @@ href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices
                         </label>
                     </div>
                  </div>
+            </div>
+            <div class="offcanvas-footer d-flex">
+                <button class="btn btn-md btn-grey btn-radius-none w-50">Reset</button>
+                <button class="btn btn-md btn-darkblue btn-radius-none w-50">Apply</button>
+            </div>
+        </div>
+        <div class="offcanvas my-case-offcanvas w-450 offcanvas-end" tabindex="-1" id="UserRecordsFilter" aria-labelledby="UserRecordsFilterLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="MyCaseFilterLabel">Filter By</h5>
+              <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#MyCaseFilterLabel" role="button" aria-controls="MyCaseFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
+            </div>
+            <div class="offcanvas-body">
+              <div class="border-bottom-lightblue">
+                <div class="fs-16 fw-semibold color-black-60 text-uppercase mb-3">User type</div>
+                <div class="d-flex mb-3">
+                  <div class="form-check form-inline me-5">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                      <label class="form-check-label style-1" for="check1">Users</label>
+                  </div>
+                  <div class="form-check form-inline me-5">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check7">
+                      <label class="form-check-label style-1" for="check1">Super Admin</label>
+                  </div>
+                  <div class="form-check form-inline me-5">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check8">
+                      <label class="form-check-label style-1" for="check1">Admin</label>
+                  </div>
+                </div>
+              </div>
+              <div class="border-bottom-lightblue">
+                <div class="fs-16 fw-semibold color-black-60 text-uppercase my-3">Case Status</div>
+                <div class="d-flex mb-3">
+                    <div class="d-flex align-items-center me-4">
+                        <div class="form-check form-inline">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check11">
+                        </div>
+                        <div class="badge badge-active">Active</div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="form-check form-inline">
+                          <input class="form-check-input add-after" type="checkbox" value="" id="check12">
+                        </div>
+                        <div class="badge badge-not-started">In Active</div>
+                    </div>
+                </div>
+              </div>
+              <div class="border-bottom-lightblue">
+                <div class="fs-16 fw-semibold color-black-60 text-uppercase my-3">Position</div>
+                <div class="d-flex mb-3">
+                    <div class="left-part">
+                        <div class="form-check form-inline me-5 mb-2">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check67">
+                            <label class="form-check-label style-1" for="">Regional Supervisors</label>
+                        </div>
+                        <div class="form-check form-inline me-5">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check68">
+                            <label class="form-check-label style-1" for="">Case Managers</label>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div class="form-check form-inline me-5 mb-2">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check69">
+                            <label class="form-check-label style-1" for="">PRS Supervisors</label>
+                        </div>
+                        <div class="form-check form-inline me-5">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                            <label class="form-check-label style-1" for="">QC Team</label>
+                        </div>
+                    </div>
+                </div>
+              </div>
             </div>
             <div class="offcanvas-footer d-flex">
                 <button class="btn btn-md btn-grey btn-radius-none w-50">Reset</button>
