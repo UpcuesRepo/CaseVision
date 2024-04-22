@@ -1,0 +1,21 @@
+.nav{
+    &.my-case-tabs{
+        height: 100%;
+        .nav-item{
+            .nav-link{
+                color: $black-30;
+                font-size: $font-size-lg;
+                font-weight: $font-700;
+                border-radius: 0;
+                height: 100%;
+                padding: 20px 20px 10px;
+                border-bottom: 4px solid transparent;
+                &.active{
+                    background-color: transparent;
+                    color: $black;
+                    border-bottom: 4px solid $light-blue;
+                }
+            }
+        }
+    }
+}

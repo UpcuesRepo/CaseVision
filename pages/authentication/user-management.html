@@ -68,7 +68,7 @@ href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices
                     <div class="navbar-logo w-185 d-flex align-items-center justify-content-center">
                         <a href="#"><img src="../../../../images/logo/logo-black.svg" alt=""></a>
                     </div>
-                    <div class="fs-26 fw-bold color-black-2 ms-3">Case Management</div>
+                    <div class="fs-26 fw-bold color-dark-blue ms-3">User Management</div>
                 </div>
                 <div class="right-part d-flex align-items-center h-100">
                     <div class="dropdown dropdown-notification d-flex align-items-center">
@@ -138,10 +138,10 @@ href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices
                 </div>
                 <div class="my-case content-part h-100 w-100">
                    <div class="top-part d-flex justify-content-between align-items-center w-100">
-                        <div class="form-group w-30">
+                        <div class="form-group w-30 ms-3">
                             <input class="form-control form-control-md search-icon" type="search" placeholder="Search Case By Name / A No.">
                         </div>
-                        <div class="d-flex">
+                        <div class="d-flex me-3">
                             <button class="btn btn-primary with-icon btn-sm me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#NewUser" aria-controls="NewUser">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 15.5H7.5C6.10444 15.5 5.40665 15.5 4.83886 15.6722C3.56045 16.06 2.56004 17.0605 2.17224 18.3389C2 18.9067 2 19.6044 2 21M19 21V15M16 18H22M14.5 7.5C14.5 9.98528 12.4853 12 10 12C7.51472 12 5.5 9.98528 5.5 7.5C5.5 5.01472 7.51472 3 10 3C12.4853 3 14.5 5.01472 14.5 7.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -167,15 +167,15 @@ href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices
                                             <div class="w-50 me-3 mb-3">
                                                 <div class="color-black fs-md fw-semibold mb-1">Name</div>
                                                 <div class="form-group mb-3">
-                                                    <input class="form-control form-control-md" type="email" placeholder="Enter Full Name">
+                                                    <input class="form-control form-control-lg" type="email" placeholder="Enter Full Name">
                                                 </div>
                                                 <div class="color-black fs-md fw-semibold mb-1">Email Address</div>
                                                 <div class="form-group mb-3">
-                                                    <input class="form-control form-control-md" type="email" placeholder="Enter Email">
+                                                    <input class="form-control form-control-lg" type="email" placeholder="Enter Email">
                                                 </div>
                                                 <div class="color-black fs-md fw-semibold mb-1">Mobile Number</div>
                                                 <div class="form-group mb-3">
-                                                    <input class="form-control form-control-md" type="email" placeholder="Enter Mobile Number">
+                                                    <input class="form-control form-control-lg" type="email" placeholder="Enter Mobile Number">
                                                 </div>
                                                 <div class="color-black fs-md fw-semibold mb-1">Language</div>
                                                 <!-- ADD CDN LINKS FROM HEAD PART TO USE THIS MULTI SELECT -->
@@ -248,13 +248,19 @@ href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices
                                                     </select>
                                                 </div>
                                                 <div class="color-black fs-md fw-semibold mb-1">Assign Regions</div>
-                                                <div class="rows-select grey-toggle mb-3">
-                                                    <select class="selectpicker">
-                                                    <option data-tokens="1">Select Regions</option>
-                                                    <option data-tokens="2">2</option>
-                                                    <option data-tokens="3">3</option>
-                                                    </select>
-                                                </div>
+                                                <!-- ADD CDN LINKS FROM HEAD PART TO USE THIS MULTI SELECT -->
+                                                <select id="choices-multiple-remove-button-2" placeholder="Select up to 3 tags" multiple>
+                                                    <option value="region1" onclick="filterSelection('region1')">Region 1</option>
+                                                    <option value="region2">Region 2</option>
+                                                    <option value="region3">Region 3</option>
+                                                    <option value="region4">Region 4</option>
+                                                    <option value="region5">Region 5</option>
+                                                    <option value="region6">Region 6</option>
+                                                    <option value="region7">Region 7</option>
+                                                    <option value="region8">Region 8</option>
+                                                    <option value="region9">Region 9</option>
+                                                    <option value="region10">Region 10</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
