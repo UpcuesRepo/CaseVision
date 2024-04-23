@@ -232,15 +232,8 @@
             border-radius: $radius-lg;
             box-shadow: $shadow-sm;
         }
-        .status-card{
-            width: 16%;
-        }
         .case-compliance{
-            width: 65%;
             padding: 15px;
-        }
-        .notification-card{
-            width: 35%;
         }
     }
     &.my-case{
