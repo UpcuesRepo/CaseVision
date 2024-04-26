@@ -1,22 +1,4 @@
-$(document).ready(function() {
-  // MULTI SELECT 1
-  var $multipleCancelButton1 = $('#choices-multiple-remove-button');
-  $multipleCancelButton1.choices({
-    removeItemButton: true,
-    maxItemCount: 5,
-    searchResultLimit: 5,
-    renderChoiceLimit: 5
-  });
 
-  // MULTI SELECT 2
-  var $multipleCancelButton2 = $('#choices-multiple-remove-button-2');
-  $multipleCancelButton2.choices({
-    removeItemButton: true,
-    maxItemCount: 10,
-    searchResultLimit: 5,
-    renderChoiceLimit: 5
-  });
-});
 
 
 $(document).ready(function () {
