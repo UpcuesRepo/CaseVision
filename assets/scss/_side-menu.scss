@@ -103,8 +103,19 @@
         }
         .powered-by-logo{
             position: absolute;
-            bottom: 30px;
+            bottom: 20px;
             left: 25%;
+
+            .version{
+                font-size: 9px;
+                color: $white;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                font-size: $font-size-md;
+            }
         }
     }
 }

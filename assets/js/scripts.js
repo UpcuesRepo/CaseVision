@@ -1,3 +1,24 @@
+$(document).ready(function() {
+  // MULTI SELECT 1
+  var $multipleCancelButton1 = $('#choices-multiple-remove-button');
+  $multipleCancelButton1.choices({
+    removeItemButton: true,
+    maxItemCount: 5,
+    searchResultLimit: 5,
+    renderChoiceLimit: 5
+  });
+
+  // MULTI SELECT 2
+  var $multipleCancelButton2 = $('#choices-multiple-remove-button-2');
+  $multipleCancelButton2.choices({
+    removeItemButton: true,
+    maxItemCount: 10,
+    searchResultLimit: 5,
+    renderChoiceLimit: 5
+  });
+});
+
+
 $(document).ready(function () {
   ("use strict");
   //CHECKBOX
@@ -5,121 +26,134 @@ $(document).ready(function () {
   $(".add-after").after('<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.33366 2.5L3.75033 7.08333L1.66699 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
   // END CHECKBOX
 
-// BROWSE FILES
-$('#file-upload').change(function() {
-  var filepath = this.value;
-  var m = filepath.match(/([^\/\\]+)$/);
-  var filename = m[1];
-  $('#filename').text(filename);
-});
-// END BROWSE FILES
+  
 
-
-// FILE UPLOAD
- document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
-  const dropZoneElement = inputElement.closest(".drop-zone");
-
-  dropZoneElement.addEventListener("click", (e) => {
-    inputElement.click();
+  // BROWSE FILES
+  $('#file-upload').change(function () {
+    var filepath = this.value;
+    var m = filepath.match(/([^\/\\]+)$/);
+    var filename = m[1];
+    $('#filename').text(filename);
   });
+  // END BROWSE FILES
 
-  inputElement.addEventListener("change", (e) => {
-    if (inputElement.files.length) {
-      updateThumbnail(dropZoneElement, inputElement.files[0]);
-    }
+
+  
+
+  // MULTI SELECT 1
+  /*var multipleCancelButton1 = new Choices('#choices-multiple-remove-button',
+  {
+    removeItemButton: true,
+    maxItemCount: 5,
+    searchResultLimit: 5,
+    renderChoiceLimit: 5
   });
+  
+  
+  
+  // MULTI SELECT 2
+  var multipleCancelButton2 = new Choices('#choices-multiple-remove-button-2', {
+    removeItemButton: true,
+    maxItemCount: 10,
+    searchResultLimit: 5,
+    renderChoiceLimit: 5
+  });*/
+  // END MULTI SELECT
 
-  dropZoneElement.addEventListener("dragover", (e) => {
-    e.preventDefault();
-    dropZoneElement.classList.add("drop-zone--over");
-  });
+  // FILE UPLOAD
+  document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
+    const dropZoneElement = inputElement.closest(".drop-zone");
 
-  ["dragleave", "dragend"].forEach((type) => {
-    dropZoneElement.addEventListener(type, (e) => {
+    dropZoneElement.addEventListener("click", (e) => {
+      inputElement.click();
+    });
+
+    inputElement.addEventListener("change", (e) => {
+      if (inputElement.files.length) {
+        updateThumbnail(dropZoneElement, inputElement.files[0]);
+      }
+    });
+
+    dropZoneElement.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      dropZoneElement.classList.add("drop-zone--over");
+    });
+
+    ["dragleave", "dragend"].forEach((type) => {
+      dropZoneElement.addEventListener(type, (e) => {
+        dropZoneElement.classList.remove("drop-zone--over");
+      });
+    });
+
+    dropZoneElement.addEventListener("drop", (e) => {
+      e.preventDefault();
+
+      if (e.dataTransfer.files.length) {
+        inputElement.files = e.dataTransfer.files;
+        updateThumbnail(dropZoneElement, e.dataTransfer.files[0]);
+      }
+
       dropZoneElement.classList.remove("drop-zone--over");
     });
   });
 
-  dropZoneElement.addEventListener("drop", (e) => {
-    e.preventDefault();
+  /**
+   * Updates the thumbnail on a drop zone element.
+   *
+   * @param {HTMLElement} dropZoneElement
+   * @param {File} file
+   */
+  function updateThumbnail(dropZoneElement, file) {
+    let thumbnailElement = dropZoneElement.querySelector(".drop-zone__thumb");
 
-    if (e.dataTransfer.files.length) {
-      inputElement.files = e.dataTransfer.files;
-      updateThumbnail(dropZoneElement, e.dataTransfer.files[0]);
+    // First time - remove the prompt
+    if (dropZoneElement.querySelector(".drop-zone__prompt")) {
+      dropZoneElement.querySelector(".drop-zone__prompt").remove();
     }
 
-    dropZoneElement.classList.remove("drop-zone--over");
-  });
+    // First time - there is no thumbnail element, so lets create it
+    if (!thumbnailElement) {
+      thumbnailElement = document.createElement("div");
+      thumbnailElement.classList.add("drop-zone__thumb");
+      dropZoneElement.appendChild(thumbnailElement);
+    }
+
+    thumbnailElement.dataset.label = file.name;
+
+    // Show thumbnail for image files
+    if (file.type.startsWith("image/")) {
+      const reader = new FileReader();
+
+      reader.readAsDataURL(file);
+      reader.onload = () => {
+        thumbnailElement.style.backgroundImage = `url('${reader.result}')`;
+      };
+    } else {
+      thumbnailElement.style.backgroundImage = null;
+    }
+  }
+  // FILE UPLOAD END
+
+
+
+
+
+  // START TOOLTIP
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  // END TOOLTIP
+
+
+
+
 });
 
-/**
- * Updates the thumbnail on a drop zone element.
- *
- * @param {HTMLElement} dropZoneElement
- * @param {File} file
- */
-function updateThumbnail(dropZoneElement, file) {
-  let thumbnailElement = dropZoneElement.querySelector(".drop-zone__thumb");
 
-  // First time - remove the prompt
-  if (dropZoneElement.querySelector(".drop-zone__prompt")) {
-    dropZoneElement.querySelector(".drop-zone__prompt").remove();
-  }
-
-  // First time - there is no thumbnail element, so lets create it
-  if (!thumbnailElement) {
-    thumbnailElement = document.createElement("div");
-    thumbnailElement.classList.add("drop-zone__thumb");
-    dropZoneElement.appendChild(thumbnailElement);
-  }
-
-  thumbnailElement.dataset.label = file.name;
-
-  // Show thumbnail for image files
-  if (file.type.startsWith("image/")) {
-    const reader = new FileReader();
-
-    reader.readAsDataURL(file);
-    reader.onload = () => {
-      thumbnailElement.style.backgroundImage = `url('${reader.result}')`;
-    };
-  } else {
-    thumbnailElement.style.backgroundImage = null;
-  }
-}
-// FILE UPLOAD END
-
-
-
-
-
-// START TOOLTIP
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-// END TOOLTIP
-
-
-// MULTI SELECT
-var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
-  removeItemButton: true,
-  maxItemCount:5,
-  searchResultLimit:5,
-  renderChoiceLimit:5
-  });
-var multipleCancelButton = new Choices('#choices-multiple-remove-button-2', {
-  removeItemButton: true,
-  maxItemCount:10,
-  searchResultLimit:5,
-  renderChoiceLimit:5
-  });
-// END MULTI SELECT  
-
-});
 
 
 
 // COLLAPSIBLE SIDEBAR
-const menuBtn = document.getElementById('menu-btn');
+/* const menuBtn = document.getElementById('menu-btn');
 const sidebar = document.getElementById('sidebar');
 
 menuBtn.onclick = function() {
@@ -133,6 +167,31 @@ menuBtn.onclick = function() {
     $('.arrow').removeClass('rotate');
   }
   return;
-};
+}; */
+
+const menuBtn = document.getElementById("menu-btn");
+const sidebar = document.getElementById("sidebar");
+
+menuBtn.addEventListener("click", function () {
+  if (!sidebar.classList.contains("collapsed")) {
+    sidebar.classList.add("collapsed");
+    document.querySelectorAll(".content-part").forEach(function (element) {
+      element.classList.add("open");
+    });
+    document.querySelectorAll(".arrow").forEach(function (element) {
+      element.classList.add("rotate");
+    });
+  } else {
+    sidebar.classList.remove("collapsed");
+    document.querySelectorAll(".content-part").forEach(function (element) {
+      element.classList.remove("open");
+    });
+    document.querySelectorAll(".arrow").forEach(function (element) {
+      element.classList.remove("rotate");
+    });
+  }
+});
 // END COLLAPSIBLE SIDEBAR
+
+
 
