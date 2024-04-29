@@ -23,7 +23,7 @@ $(document).ready(function () {
   
 
   // MULTI SELECT 1
-  /*var multipleCancelButton1 = new Choices('#choices-multiple-remove-button',
+  /* var multipleCancelButton1 = new Choices('#choices-multiple-remove-button',
   {
     removeItemButton: true,
     maxItemCount: 5,
