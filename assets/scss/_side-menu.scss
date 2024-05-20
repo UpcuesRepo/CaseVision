@@ -67,7 +67,7 @@
                     transition: ease opacity 250ms;
                     -moz-transition: ease opacity 250ms;
                     -webkit-transition: ease opacity 250ms;
-                    &:active, &:hover{
+                    &:active, &:hover, &.active{
                         background-color: $red;
                         border-radius: $radius-lg;
                     }

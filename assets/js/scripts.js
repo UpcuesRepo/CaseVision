@@ -20,6 +20,31 @@ $(document).ready(function () {
   // END BROWSE FILES
 
 
+
+// COLLAPSIBLE SIDEBAR
+const menuBtn = document.getElementById("menu-btn");
+const sidebar = document.getElementById("sidebar");
+
+menuBtn.addEventListener("click", function () {
+  if (!sidebar.classList.contains("collapsed")) {
+    sidebar.classList.add("collapsed");
+    document.querySelectorAll(".content-part").forEach(function (element) {
+      element.classList.add("open");
+    });
+    document.querySelectorAll(".arrow").forEach(function (element) {
+      element.classList.add("rotate");
+    });
+  } else {
+    sidebar.classList.remove("collapsed");
+    document.querySelectorAll(".content-part").forEach(function (element) {
+      element.classList.remove("open");
+    });
+    document.querySelectorAll(".arrow").forEach(function (element) {
+      element.classList.remove("rotate");
+    });
+  }
+});
+// END COLLAPSIBLE SIDEBAR
   
 
   // MULTI SELECT 1
@@ -151,28 +176,6 @@ menuBtn.onclick = function() {
   return;
 }; */
 
-const menuBtn = document.getElementById("menu-btn");
-const sidebar = document.getElementById("sidebar");
-
-menuBtn.addEventListener("click", function () {
-  if (!sidebar.classList.contains("collapsed")) {
-    sidebar.classList.add("collapsed");
-    document.querySelectorAll(".content-part").forEach(function (element) {
-      element.classList.add("open");
-    });
-    document.querySelectorAll(".arrow").forEach(function (element) {
-      element.classList.add("rotate");
-    });
-  } else {
-    sidebar.classList.remove("collapsed");
-    document.querySelectorAll(".content-part").forEach(function (element) {
-      element.classList.remove("open");
-    });
-    document.querySelectorAll(".arrow").forEach(function (element) {
-      element.classList.remove("rotate");
-    });
-  }
-});
 // END COLLAPSIBLE SIDEBAR
 
 
