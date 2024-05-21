@@ -60,7 +60,7 @@
                     </div>
                     <div class="dropdown dropdown-profile d-flex align-items-center me-3">
                         <a class="dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                            <div class="fs-lg fw-semibold ms-3 me-2 name-icon bg-grey">CM</div>
+                            <div class="fs-lg fw-semibold ms-3 me-2 name-icon bg-lightblue-30">CM</div>
                             <div class="name me-3">
                                 <div class="fs-lg fs-semibold">Chelsea Maxfield</div>
                                 <div class="fs-13 color-black-30">Admin</div>
@@ -84,7 +84,7 @@
                         </li>
                         <li>
                             <a class="menu-links" data-bs-toggle="collapse" href="#collapse-inner" role="button" aria-expanded="false" aria-controls="collapse-inner">
-                                Case Management Dashboard
+                                Case Management
                             </a>
                             <div class="collapse collapse-inner" id="collapse-inner">
                                 <div class="card card-body">
@@ -116,8 +116,8 @@
                 </div>
                 <div class="my-case content-part h-100 w-100">
                    <div class="top-part d-flex justify-content-between align-items-center w-100">
-                        <div class="form-group w-30 ms-3">
-                            <input class="form-control form-control-md search-icon" type="search" placeholder="Search Case By Name / A No.">
+                        <div class="form-group w-40 ms-3">
+                            <input class="form-control form-control-md search-icon" type="search" placeholder="Search Name / Phone Number / Email Address">
                         </div>
                         <div class="d-flex me-3">
                             <button class="btn btn-primary with-icon btn-sm me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#NewUser" aria-controls="NewUser">
@@ -152,9 +152,9 @@
                                                     <div class="form-group mb-3">
                                                         <input class="form-control form-control-lg" type="email" placeholder="Enter Email">
                                                     </div>
-                                                    <div class="color-black fs-md fw-semibold mb-1">Mobile Number</div>
+                                                    <div class="color-black fs-md fw-semibold mb-1">Phone Number</div>
                                                     <div class="form-group mb-3">
-                                                        <input class="form-control form-control-lg" type="email" placeholder="Enter Mobile Number">
+                                                        <input class="form-control form-control-lg" type="email" placeholder="Enter Phone Number">
                                                     </div>
                                                     <div class="color-black fs-md fw-semibold mb-1">Language</div>
                                                     <!-- ADD CDN LINKS FROM HEAD PART TO USE THIS MULTI SELECT -->
@@ -227,10 +227,10 @@
                                                             <option data-tokens="3">3</option>
                                                         </select>
                                                     </div>
-                                                    <div class="color-black fs-md fw-semibold mb-1">Assign Regions</div>
+                                                    <div class="color-black fs-md fw-semibold mb-1">Regions Assigned</div>
                                                     <!-- ADD CDN LINKS FROM HEAD PART TO USE THIS MULTI SELECT -->
                                                     <select class="selectpicker" multiple placeholder="Select up to 3 tags">
-                                                        <option value="region1" onclick="filterSelection('region1')">Region 1</option>
+                                                        <option value="region1" onclick="filterSelection('region1')">Select Regions</option>
                                                         <option value="region2">Region 2</option>
                                                         <option value="region3">Region 3</option>
                                                         <option value="region4">Region 4</option>
@@ -241,6 +241,14 @@
                                                         <option value="region9">Region 9</option>
                                                         <option value="region10">Region 10</option>
                                                     </select>
+                                                    <div class="color-black fs-md fw-semibold mb-1">Profile Status</div>
+                                                    <div class="rows-select grey-toggle mb-3">
+                                                        <select class="selectpicker">
+                                                        <option data-tokens="1">Active</option>
+                                                        <option data-tokens="2">2</option>
+                                                        <option data-tokens="3">3</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -270,17 +278,37 @@
                                   <div class="border-bottom-lightblue">
                                     <div class="fs-16 fw-semibold color-black-60 text-uppercase mb-3">User type</div>
                                     <div class="d-flex mb-3">
-                                      <div class="form-check form-inline me-5">
+                                      <div class="form-check form-inline me-2">
                                           <input class="form-check-input add-after" type="checkbox" value="" id="check6">
-                                          <label class="form-check-label style-1" for="check1">Users</label>
+                                          <label class="form-check-label style-1" for="check1">Program Admin</label>
                                       </div>
-                                      <div class="form-check form-inline me-5">
+                                      <div class="form-check form-inline me-2">
                                           <input class="form-check-input add-after" type="checkbox" value="" id="check7">
-                                          <label class="form-check-label style-1" for="check1">Super Admin</label>
+                                          <label class="form-check-label style-1" for="check1">System Admin</label>
                                       </div>
-                                      <div class="form-check form-inline me-5">
+                                      <div class="form-check form-inline me-2">
                                           <input class="form-check-input add-after" type="checkbox" value="" id="check8">
-                                          <label class="form-check-label style-1" for="check1">Admin</label>
+                                          <label class="form-check-label style-1" for="check1">Account Admin</label>
+                                      </div>
+                                    </div>
+                                    <div class="d-flex mb-3">
+                                      <div class="form-check form-inline me-2">
+                                          <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                                          <label class="form-check-label style-1" for="check1">Tier1 Supervisor</label>
+                                      </div>
+                                      <div class="form-check form-inline me-2">
+                                          <input class="form-check-input add-after" type="checkbox" value="" id="check7">
+                                          <label class="form-check-label style-1" for="check1">Tier2 Supervisor</label>
+                                      </div>
+                                      <div class="form-check form-inline me-2">
+                                          <input class="form-check-input add-after" type="checkbox" value="" id="check8">
+                                          <label class="form-check-label style-1" for="check1">Program User</label>
+                                      </div>
+                                    </div>
+                                    <div class="mb-3">
+                                      <div class="form-check form-inline me-2">
+                                          <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                                          <label class="form-check-label style-1" for="check1">Data & Analytics User</label>
                                       </div>
                                     </div>
                                   </div>
@@ -304,27 +332,39 @@
                                   <div class="border-bottom-lightblue">
                                     <div class="fs-16 fw-semibold color-black-60 text-uppercase my-3">Position</div>
                                     <div class="d-flex mb-3">
-                                        <div class="left-part">
-                                            <div class="form-check form-inline me-5 mb-2">
+                                            <div class="form-check form-inline me-2 mb-2">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check67">
+                                                <label class="form-check-label style-1" for="">Director</label>
+                                            </div>
+                                            <div class="form-check form-inline me-2 mb-2">
                                                 <input class="form-check-input add-after" type="checkbox" value="" id="check67">
                                                 <label class="form-check-label style-1" for="">Regional Supervisors</label>
                                             </div>
-                                            <div class="form-check form-inline me-5">
+                                            <div class="form-check form-inline me-2">
                                                 <input class="form-check-input add-after" type="checkbox" value="" id="check68">
+                                                <label class="form-check-label style-1" for="">Clinical Supervisor</label>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mb-3">
+                                            <div class="form-check form-inline me-2 mb-2">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check69">
                                                 <label class="form-check-label style-1" for="">Case Managers</label>
                                             </div>
-                                        </div>
-                                        <div class="right-part">
-                                            <div class="form-check form-inline me-5 mb-2">
-                                                <input class="form-check-input add-after" type="checkbox" value="" id="check69">
-                                                <label class="form-check-label style-1" for="">PRS Supervisors</label>
-                                            </div>
-                                            <div class="form-check form-inline me-5">
+                                            <div class="form-check form-inline me-2">
                                                 <input class="form-check-input add-after" type="checkbox" value="" id="check6">
-                                                <label class="form-check-label style-1" for="">QC Team</label>
+                                                <label class="form-check-label style-1" for="">PRS Supervisor</label>
+                                            </div>
+                                            <div class="form-check form-inline me-2">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                                                <label class="form-check-label style-1" for="">Case Worker</label>
                                             </div>
                                         </div>
-                                    </div>
+                                        <div class="mb-3">
+                                            <div class="form-check form-inline me-2">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                                                <label class="form-check-label style-1" for="">Specialist</label>
+                                            </div>
+                                        </div>
                                   </div>
                                 </div>
                                 <div class="offcanvas-footer d-flex">
@@ -405,9 +445,9 @@
                                                     </td>
                                                     <td>maria.garcia@gmail.com</td>
                                                     <td>892-880-7799</td>
-                                                    <td>User</td>
+                                                    <td>Program Admin</td>
                                                     <td><span class="badge badge-active">Active</span></td>
-                                                    <td>Regional Supervisor</td>
+                                                    <td>Director</td>
                                                     <td>
                                                         <a href="#" class="me-2">
                                                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -437,7 +477,7 @@
                                                     <td>234-880-7799</td>
                                                     <td>Super Admin</td>
                                                     <td><span class="badge badge-not-started">Inactive</span></td>
-                                                    <td>PRS Supervisor</td>
+                                                    <td>Regional Supervisor</td>
                                                     <td>
                                                         <a href="#" class="me-2">
                                                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -465,9 +505,9 @@
                                                     </td>
                                                     <td>chloe@gmail.com</td>
                                                     <td>892-880-7799</td>
-                                                    <td>Admin</td>
+                                                    <td>System Admin</td>
                                                     <td><span class="badge badge-active">Active</span></td>
-                                                    <td>Case Manager</td>
+                                                    <td>Clinical Supervisor</td>
                                                     <td>
                                                         <a href="#" class="me-2">
                                                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -495,67 +535,7 @@
                                                     </td>
                                                     <td>jude.luis@gmail.com</td>
                                                     <td>800-766-2668</td>
-                                                    <td>User</td>
-                                                    <td><span class="badge badge-not-started">Inactive</span></td>
-                                                    <td>QC Team</td>
-                                                    <td>
-                                                        <a href="#" class="me-2">
-                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <g clip-path="url(#clip0_896_1343)">
-                                                                <path d="M13.5 7.49998L10.5 4.49998M1.875 16.125L4.41328 15.843C4.72339 15.8085 4.87845 15.7913 5.02338 15.7443C5.15197 15.7027 5.27434 15.6439 5.38717 15.5695C5.51434 15.4856 5.62466 15.3753 5.8453 15.1547L15.75 5.24998C16.5784 4.42156 16.5784 3.07841 15.75 2.24998C14.9216 1.42156 13.5784 1.42156 12.75 2.24998L2.8453 12.1547C2.62466 12.3753 2.51434 12.4856 2.43048 12.6128C2.35607 12.7256 2.29726 12.848 2.25564 12.9766C2.20872 13.1215 2.19149 13.2766 2.15703 13.5867L1.875 16.125Z" stroke="#080808" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                </g>
-                                                                <defs>
-                                                                <clipPath id="clip0_896_1343">
-                                                                <rect width="18" height="18" fill="white"/>
-                                                                </clipPath>
-                                                                </defs>
-                                                            </svg>
-                                                        </a>
-                                                        <a href="#">
-                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M12 4.5V3.9C12 3.05992 12 2.63988 11.8365 2.31901C11.6927 2.03677 11.4632 1.8073 11.181 1.66349C10.8601 1.5 10.4401 1.5 9.6 1.5H8.4C7.55992 1.5 7.13988 1.5 6.81901 1.66349C6.53677 1.8073 6.3073 2.03677 6.16349 2.31901C6 2.63988 6 3.05992 6 3.9V4.5M7.5 8.625V12.375M10.5 8.625V12.375M2.25 4.5H15.75M14.25 4.5V12.9C14.25 14.1601 14.25 14.7902 14.0048 15.2715C13.789 15.6948 13.4448 16.039 13.0215 16.2548C12.5402 16.5 11.9101 16.5 10.65 16.5H7.35C6.08988 16.5 5.45982 16.5 4.97852 16.2548C4.55516 16.039 4.21095 15.6948 3.99524 15.2715C3.75 14.7902 3.75 14.1601 3.75 12.9V4.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            </svg>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <img src="../../images/icons/avatar-user.svg" class="me-2" alt="">
-                                                        Maria Garcia Lopez
-                                                    </td>
-                                                    <td>maria.garcia@gmail.com</td>
-                                                    <td>892-880-7799</td>
-                                                    <td>User</td>
-                                                    <td><span class="badge badge-active">Active</span></td>
-                                                    <td>Regional Supervisor</td>
-                                                    <td>
-                                                        <a href="#" class="me-2">
-                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <g clip-path="url(#clip0_896_1343)">
-                                                                <path d="M13.5 7.49998L10.5 4.49998M1.875 16.125L4.41328 15.843C4.72339 15.8085 4.87845 15.7913 5.02338 15.7443C5.15197 15.7027 5.27434 15.6439 5.38717 15.5695C5.51434 15.4856 5.62466 15.3753 5.8453 15.1547L15.75 5.24998C16.5784 4.42156 16.5784 3.07841 15.75 2.24998C14.9216 1.42156 13.5784 1.42156 12.75 2.24998L2.8453 12.1547C2.62466 12.3753 2.51434 12.4856 2.43048 12.6128C2.35607 12.7256 2.29726 12.848 2.25564 12.9766C2.20872 13.1215 2.19149 13.2766 2.15703 13.5867L1.875 16.125Z" stroke="#080808" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                </g>
-                                                                <defs>
-                                                                <clipPath id="clip0_896_1343">
-                                                                <rect width="18" height="18" fill="white"/>
-                                                                </clipPath>
-                                                                </defs>
-                                                            </svg>
-                                                        </a>
-                                                        <a href="#">
-                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M12 4.5V3.9C12 3.05992 12 2.63988 11.8365 2.31901C11.6927 2.03677 11.4632 1.8073 11.181 1.66349C10.8601 1.5 10.4401 1.5 9.6 1.5H8.4C7.55992 1.5 7.13988 1.5 6.81901 1.66349C6.53677 1.8073 6.3073 2.03677 6.16349 2.31901C6 2.63988 6 3.05992 6 3.9V4.5M7.5 8.625V12.375M10.5 8.625V12.375M2.25 4.5H15.75M14.25 4.5V12.9C14.25 14.1601 14.25 14.7902 14.0048 15.2715C13.789 15.6948 13.4448 16.039 13.0215 16.2548C12.5402 16.5 11.9101 16.5 10.65 16.5H7.35C6.08988 16.5 5.45982 16.5 4.97852 16.2548C4.55516 16.039 4.21095 15.6948 3.99524 15.2715C3.75 14.7902 3.75 14.1601 3.75 12.9V4.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            </svg>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <img src="../../images/icons/avatar-user.svg" class="me-2" alt="">
-                                                        Samuel Ortiz Tino
-                                                    </td>
-                                                    <td>samuel.o@gmail.com</td>
-                                                    <td>234-880-7799</td>
-                                                    <td>Super Admin</td>
+                                                    <td>Account Admin</td>
                                                     <td><span class="badge badge-not-started">Inactive</span></td>
                                                     <td>PRS Supervisor</td>
                                                     <td>
@@ -585,9 +565,9 @@
                                                     </td>
                                                     <td>maria.garcia@gmail.com</td>
                                                     <td>892-880-7799</td>
-                                                    <td>User</td>
+                                                    <td>Tier1 Supervisor</td>
                                                     <td><span class="badge badge-active">Active</span></td>
-                                                    <td>Regional Supervisor</td>
+                                                    <td>Case Manager</td>
                                                     <td>
                                                         <a href="#" class="me-2">
                                                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -615,38 +595,8 @@
                                                     </td>
                                                     <td>samuel.o@gmail.com</td>
                                                     <td>234-880-7799</td>
-                                                    <td>Super Admin</td>
+                                                    <td>Tier2 Supervisor</td>
                                                     <td><span class="badge badge-not-started">Inactive</span></td>
-                                                    <td>PRS Supervisor</td>
-                                                    <td>
-                                                        <a href="#" class="me-2">
-                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <g clip-path="url(#clip0_896_1343)">
-                                                                <path d="M13.5 7.49998L10.5 4.49998M1.875 16.125L4.41328 15.843C4.72339 15.8085 4.87845 15.7913 5.02338 15.7443C5.15197 15.7027 5.27434 15.6439 5.38717 15.5695C5.51434 15.4856 5.62466 15.3753 5.8453 15.1547L15.75 5.24998C16.5784 4.42156 16.5784 3.07841 15.75 2.24998C14.9216 1.42156 13.5784 1.42156 12.75 2.24998L2.8453 12.1547C2.62466 12.3753 2.51434 12.4856 2.43048 12.6128C2.35607 12.7256 2.29726 12.848 2.25564 12.9766C2.20872 13.1215 2.19149 13.2766 2.15703 13.5867L1.875 16.125Z" stroke="#080808" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                </g>
-                                                                <defs>
-                                                                <clipPath id="clip0_896_1343">
-                                                                <rect width="18" height="18" fill="white"/>
-                                                                </clipPath>
-                                                                </defs>
-                                                            </svg>
-                                                        </a>
-                                                        <a href="#">
-                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M12 4.5V3.9C12 3.05992 12 2.63988 11.8365 2.31901C11.6927 2.03677 11.4632 1.8073 11.181 1.66349C10.8601 1.5 10.4401 1.5 9.6 1.5H8.4C7.55992 1.5 7.13988 1.5 6.81901 1.66349C6.53677 1.8073 6.3073 2.03677 6.16349 2.31901C6 2.63988 6 3.05992 6 3.9V4.5M7.5 8.625V12.375M10.5 8.625V12.375M2.25 4.5H15.75M14.25 4.5V12.9C14.25 14.1601 14.25 14.7902 14.0048 15.2715C13.789 15.6948 13.4448 16.039 13.0215 16.2548C12.5402 16.5 11.9101 16.5 10.65 16.5H7.35C6.08988 16.5 5.45982 16.5 4.97852 16.2548C4.55516 16.039 4.21095 15.6948 3.99524 15.2715C3.75 14.7902 3.75 14.1601 3.75 12.9V4.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            </svg>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <img src="../../images/icons/avatar-user.svg" class="me-2" alt="">
-                                                        Chloe Kay Esmerelda
-                                                    </td>
-                                                    <td>chloe@gmail.com</td>
-                                                    <td>892-880-7799</td>
-                                                    <td>Admin</td>
-                                                    <td><span class="badge badge-active">Active</span></td>
                                                     <td>Case Manager</td>
                                                     <td>
                                                         <a href="#" class="me-2">
@@ -673,11 +623,11 @@
                                                         <img src="../../images/icons/avatar-user.svg" class="me-2" alt="">
                                                         Maria Garcia Lopez
                                                     </td>
-                                                    <td>maria.garcia@gmail.com</td>
+                                                    <td>chloe@gmail.com</td>
                                                     <td>892-880-7799</td>
-                                                    <td>User</td>
+                                                    <td>System Admin</td>
                                                     <td><span class="badge badge-active">Active</span></td>
-                                                    <td>Regional Supervisor</td>
+                                                    <td>Case Manager</td>
                                                     <td>
                                                         <a href="#" class="me-2">
                                                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -703,70 +653,10 @@
                                                         <img src="../../images/icons/avatar-user.svg" class="me-2" alt="">
                                                         Samuel Ortiz Tino
                                                     </td>
-                                                    <td>samuel.o@gmail.com</td>
+                                                    <td>jude.luis@gmail.com</td>
                                                     <td>234-880-7799</td>
-                                                    <td>Super Admin</td>
-                                                    <td><span class="badge badge-not-started">Inactive</span></td>
-                                                    <td>PRS Supervisor</td>
-                                                    <td>
-                                                        <a href="#" class="me-2">
-                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <g clip-path="url(#clip0_896_1343)">
-                                                                <path d="M13.5 7.49998L10.5 4.49998M1.875 16.125L4.41328 15.843C4.72339 15.8085 4.87845 15.7913 5.02338 15.7443C5.15197 15.7027 5.27434 15.6439 5.38717 15.5695C5.51434 15.4856 5.62466 15.3753 5.8453 15.1547L15.75 5.24998C16.5784 4.42156 16.5784 3.07841 15.75 2.24998C14.9216 1.42156 13.5784 1.42156 12.75 2.24998L2.8453 12.1547C2.62466 12.3753 2.51434 12.4856 2.43048 12.6128C2.35607 12.7256 2.29726 12.848 2.25564 12.9766C2.20872 13.1215 2.19149 13.2766 2.15703 13.5867L1.875 16.125Z" stroke="#080808" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                </g>
-                                                                <defs>
-                                                                <clipPath id="clip0_896_1343">
-                                                                <rect width="18" height="18" fill="white"/>
-                                                                </clipPath>
-                                                                </defs>
-                                                            </svg>
-                                                        </a>
-                                                        <a href="#">
-                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M12 4.5V3.9C12 3.05992 12 2.63988 11.8365 2.31901C11.6927 2.03677 11.4632 1.8073 11.181 1.66349C10.8601 1.5 10.4401 1.5 9.6 1.5H8.4C7.55992 1.5 7.13988 1.5 6.81901 1.66349C6.53677 1.8073 6.3073 2.03677 6.16349 2.31901C6 2.63988 6 3.05992 6 3.9V4.5M7.5 8.625V12.375M10.5 8.625V12.375M2.25 4.5H15.75M14.25 4.5V12.9C14.25 14.1601 14.25 14.7902 14.0048 15.2715C13.789 15.6948 13.4448 16.039 13.0215 16.2548C12.5402 16.5 11.9101 16.5 10.65 16.5H7.35C6.08988 16.5 5.45982 16.5 4.97852 16.2548C4.55516 16.039 4.21095 15.6948 3.99524 15.2715C3.75 14.7902 3.75 14.1601 3.75 12.9V4.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            </svg>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <img src="../../images/icons/avatar-user.svg" class="me-2" alt="">
-                                                        Maria Garcia Lopez
-                                                    </td>
-                                                    <td>maria.garcia@gmail.com</td>
-                                                    <td>892-880-7799</td>
-                                                    <td>User</td>
+                                                    <td>Program User</td>
                                                     <td><span class="badge badge-active">Active</span></td>
-                                                    <td>Regional Supervisor</td>
-                                                    <td>
-                                                        <a href="#" class="me-2">
-                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <g clip-path="url(#clip0_896_1343)">
-                                                                <path d="M13.5 7.49998L10.5 4.49998M1.875 16.125L4.41328 15.843C4.72339 15.8085 4.87845 15.7913 5.02338 15.7443C5.15197 15.7027 5.27434 15.6439 5.38717 15.5695C5.51434 15.4856 5.62466 15.3753 5.8453 15.1547L15.75 5.24998C16.5784 4.42156 16.5784 3.07841 15.75 2.24998C14.9216 1.42156 13.5784 1.42156 12.75 2.24998L2.8453 12.1547C2.62466 12.3753 2.51434 12.4856 2.43048 12.6128C2.35607 12.7256 2.29726 12.848 2.25564 12.9766C2.20872 13.1215 2.19149 13.2766 2.15703 13.5867L1.875 16.125Z" stroke="#080808" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                </g>
-                                                                <defs>
-                                                                <clipPath id="clip0_896_1343">
-                                                                <rect width="18" height="18" fill="white"/>
-                                                                </clipPath>
-                                                                </defs>
-                                                            </svg>
-                                                        </a>
-                                                        <a href="#">
-                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M12 4.5V3.9C12 3.05992 12 2.63988 11.8365 2.31901C11.6927 2.03677 11.4632 1.8073 11.181 1.66349C10.8601 1.5 10.4401 1.5 9.6 1.5H8.4C7.55992 1.5 7.13988 1.5 6.81901 1.66349C6.53677 1.8073 6.3073 2.03677 6.16349 2.31901C6 2.63988 6 3.05992 6 3.9V4.5M7.5 8.625V12.375M10.5 8.625V12.375M2.25 4.5H15.75M14.25 4.5V12.9C14.25 14.1601 14.25 14.7902 14.0048 15.2715C13.789 15.6948 13.4448 16.039 13.0215 16.2548C12.5402 16.5 11.9101 16.5 10.65 16.5H7.35C6.08988 16.5 5.45982 16.5 4.97852 16.2548C4.55516 16.039 4.21095 15.6948 3.99524 15.2715C3.75 14.7902 3.75 14.1601 3.75 12.9V4.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            </svg>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <img src="../../images/icons/avatar-user.svg" class="me-2" alt="">
-                                                        Samuel Ortiz Tino
-                                                    </td>
-                                                    <td>samuel.o@gmail.com</td>
-                                                    <td>234-880-7799</td>
-                                                    <td>Super Admin</td>
-                                                    <td><span class="badge badge-not-started">Inactive</span></td>
                                                     <td>PRS Supervisor</td>
                                                     <td>
                                                         <a href="#" class="me-2">
@@ -793,11 +683,191 @@
                                                         <img src="../../images/icons/avatar-user.svg" class="me-2" alt="">
                                                         Chloe Kay Esmerelda
                                                     </td>
-                                                    <td>chloe@gmail.com</td>
-                                                    <td>892-880-7799</td>
-                                                    <td>Admin</td>
+                                                    <td>maria.garcia@gmail.com</td>
+                                                    <td>234-880-7799</td>
+                                                    <td>Program User</td>
                                                     <td><span class="badge badge-active">Active</span></td>
-                                                    <td>Case Manager</td>
+                                                    <td>Regional Supervisor</td>
+                                                    <td>
+                                                        <a href="#" class="me-2">
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g clip-path="url(#clip0_896_1343)">
+                                                                <path d="M13.5 7.49998L10.5 4.49998M1.875 16.125L4.41328 15.843C4.72339 15.8085 4.87845 15.7913 5.02338 15.7443C5.15197 15.7027 5.27434 15.6439 5.38717 15.5695C5.51434 15.4856 5.62466 15.3753 5.8453 15.1547L15.75 5.24998C16.5784 4.42156 16.5784 3.07841 15.75 2.24998C14.9216 1.42156 13.5784 1.42156 12.75 2.24998L2.8453 12.1547C2.62466 12.3753 2.51434 12.4856 2.43048 12.6128C2.35607 12.7256 2.29726 12.848 2.25564 12.9766C2.20872 13.1215 2.19149 13.2766 2.15703 13.5867L1.875 16.125Z" stroke="#080808" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </g>
+                                                                <defs>
+                                                                <clipPath id="clip0_896_1343">
+                                                                <rect width="18" height="18" fill="white"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="#">
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12 4.5V3.9C12 3.05992 12 2.63988 11.8365 2.31901C11.6927 2.03677 11.4632 1.8073 11.181 1.66349C10.8601 1.5 10.4401 1.5 9.6 1.5H8.4C7.55992 1.5 7.13988 1.5 6.81901 1.66349C6.53677 1.8073 6.3073 2.03677 6.16349 2.31901C6 2.63988 6 3.05992 6 3.9V4.5M7.5 8.625V12.375M10.5 8.625V12.375M2.25 4.5H15.75M14.25 4.5V12.9C14.25 14.1601 14.25 14.7902 14.0048 15.2715C13.789 15.6948 13.4448 16.039 13.0215 16.2548C12.5402 16.5 11.9101 16.5 10.65 16.5H7.35C6.08988 16.5 5.45982 16.5 4.97852 16.2548C4.55516 16.039 4.21095 15.6948 3.99524 15.2715C3.75 14.7902 3.75 14.1601 3.75 12.9V4.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../images/icons/avatar-user.svg" class="me-2" alt="">
+                                                        Jude Luis
+                                                    </td>
+                                                    <td>chloe@gmail.com</td>
+                                                    <td>800-766-2668</td>
+                                                    <td>Program User</td>
+                                                    <td><span class="badge badge-active">Active</span></td>
+                                                    <td>Case Worker</td>
+                                                    <td>
+                                                        <a href="#" class="me-2">
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g clip-path="url(#clip0_896_1343)">
+                                                                <path d="M13.5 7.49998L10.5 4.49998M1.875 16.125L4.41328 15.843C4.72339 15.8085 4.87845 15.7913 5.02338 15.7443C5.15197 15.7027 5.27434 15.6439 5.38717 15.5695C5.51434 15.4856 5.62466 15.3753 5.8453 15.1547L15.75 5.24998C16.5784 4.42156 16.5784 3.07841 15.75 2.24998C14.9216 1.42156 13.5784 1.42156 12.75 2.24998L2.8453 12.1547C2.62466 12.3753 2.51434 12.4856 2.43048 12.6128C2.35607 12.7256 2.29726 12.848 2.25564 12.9766C2.20872 13.1215 2.19149 13.2766 2.15703 13.5867L1.875 16.125Z" stroke="#080808" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </g>
+                                                                <defs>
+                                                                <clipPath id="clip0_896_1343">
+                                                                <rect width="18" height="18" fill="white"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="#">
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12 4.5V3.9C12 3.05992 12 2.63988 11.8365 2.31901C11.6927 2.03677 11.4632 1.8073 11.181 1.66349C10.8601 1.5 10.4401 1.5 9.6 1.5H8.4C7.55992 1.5 7.13988 1.5 6.81901 1.66349C6.53677 1.8073 6.3073 2.03677 6.16349 2.31901C6 2.63988 6 3.05992 6 3.9V4.5M7.5 8.625V12.375M10.5 8.625V12.375M2.25 4.5H15.75M14.25 4.5V12.9C14.25 14.1601 14.25 14.7902 14.0048 15.2715C13.789 15.6948 13.4448 16.039 13.0215 16.2548C12.5402 16.5 11.9101 16.5 10.65 16.5H7.35C6.08988 16.5 5.45982 16.5 4.97852 16.2548C4.55516 16.039 4.21095 15.6948 3.99524 15.2715C3.75 14.7902 3.75 14.1601 3.75 12.9V4.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../images/icons/avatar-user.svg" class="me-2" alt="">
+                                                        Maria Garcia Lopez
+                                                    </td>
+                                                    <td>maria.garcia@gmail.com</td>
+                                                    <td>800-766-2668</td>
+                                                    <td>Program User</td>
+                                                    <td><span class="badge badge-active">Active</span></td>
+                                                    <td>Specialist</td>
+                                                    <td>
+                                                        <a href="#" class="me-2">
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g clip-path="url(#clip0_896_1343)">
+                                                                <path d="M13.5 7.49998L10.5 4.49998M1.875 16.125L4.41328 15.843C4.72339 15.8085 4.87845 15.7913 5.02338 15.7443C5.15197 15.7027 5.27434 15.6439 5.38717 15.5695C5.51434 15.4856 5.62466 15.3753 5.8453 15.1547L15.75 5.24998C16.5784 4.42156 16.5784 3.07841 15.75 2.24998C14.9216 1.42156 13.5784 1.42156 12.75 2.24998L2.8453 12.1547C2.62466 12.3753 2.51434 12.4856 2.43048 12.6128C2.35607 12.7256 2.29726 12.848 2.25564 12.9766C2.20872 13.1215 2.19149 13.2766 2.15703 13.5867L1.875 16.125Z" stroke="#080808" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </g>
+                                                                <defs>
+                                                                <clipPath id="clip0_896_1343">
+                                                                <rect width="18" height="18" fill="white"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="#">
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12 4.5V3.9C12 3.05992 12 2.63988 11.8365 2.31901C11.6927 2.03677 11.4632 1.8073 11.181 1.66349C10.8601 1.5 10.4401 1.5 9.6 1.5H8.4C7.55992 1.5 7.13988 1.5 6.81901 1.66349C6.53677 1.8073 6.3073 2.03677 6.16349 2.31901C6 2.63988 6 3.05992 6 3.9V4.5M7.5 8.625V12.375M10.5 8.625V12.375M2.25 4.5H15.75M14.25 4.5V12.9C14.25 14.1601 14.25 14.7902 14.0048 15.2715C13.789 15.6948 13.4448 16.039 13.0215 16.2548C12.5402 16.5 11.9101 16.5 10.65 16.5H7.35C6.08988 16.5 5.45982 16.5 4.97852 16.2548C4.55516 16.039 4.21095 15.6948 3.99524 15.2715C3.75 14.7902 3.75 14.1601 3.75 12.9V4.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../images/icons/avatar-user.svg" class="me-2" alt="">
+                                                        Samuel Ortiz Tino
+                                                    </td>
+                                                    <td>samuel.o@gmail.com</td>
+                                                    <td>892-880-7799</td>
+                                                    <td>Program User</td>
+                                                    <td><span class="badge badge-active">Active</span></td>
+                                                    <td>Specialist</td>
+                                                    <td>
+                                                        <a href="#" class="me-2">
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g clip-path="url(#clip0_896_1343)">
+                                                                <path d="M13.5 7.49998L10.5 4.49998M1.875 16.125L4.41328 15.843C4.72339 15.8085 4.87845 15.7913 5.02338 15.7443C5.15197 15.7027 5.27434 15.6439 5.38717 15.5695C5.51434 15.4856 5.62466 15.3753 5.8453 15.1547L15.75 5.24998C16.5784 4.42156 16.5784 3.07841 15.75 2.24998C14.9216 1.42156 13.5784 1.42156 12.75 2.24998L2.8453 12.1547C2.62466 12.3753 2.51434 12.4856 2.43048 12.6128C2.35607 12.7256 2.29726 12.848 2.25564 12.9766C2.20872 13.1215 2.19149 13.2766 2.15703 13.5867L1.875 16.125Z" stroke="#080808" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </g>
+                                                                <defs>
+                                                                <clipPath id="clip0_896_1343">
+                                                                <rect width="18" height="18" fill="white"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="#">
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12 4.5V3.9C12 3.05992 12 2.63988 11.8365 2.31901C11.6927 2.03677 11.4632 1.8073 11.181 1.66349C10.8601 1.5 10.4401 1.5 9.6 1.5H8.4C7.55992 1.5 7.13988 1.5 6.81901 1.66349C6.53677 1.8073 6.3073 2.03677 6.16349 2.31901C6 2.63988 6 3.05992 6 3.9V4.5M7.5 8.625V12.375M10.5 8.625V12.375M2.25 4.5H15.75M14.25 4.5V12.9C14.25 14.1601 14.25 14.7902 14.0048 15.2715C13.789 15.6948 13.4448 16.039 13.0215 16.2548C12.5402 16.5 11.9101 16.5 10.65 16.5H7.35C6.08988 16.5 5.45982 16.5 4.97852 16.2548C4.55516 16.039 4.21095 15.6948 3.99524 15.2715C3.75 14.7902 3.75 14.1601 3.75 12.9V4.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../images/icons/avatar-user.svg" class="me-2" alt="">
+                                                        Samuel Ortiz Tino
+                                                    </td>
+                                                    <td>samuel.o@gmail.com</td>
+                                                    <td>892-880-7799</td>
+                                                    <td>Data & Analytics User</td>
+                                                    <td><span class="badge badge-active">Active</span></td>
+                                                    <td>Specialist</td>
+                                                    <td>
+                                                        <a href="#" class="me-2">
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g clip-path="url(#clip0_896_1343)">
+                                                                <path d="M13.5 7.49998L10.5 4.49998M1.875 16.125L4.41328 15.843C4.72339 15.8085 4.87845 15.7913 5.02338 15.7443C5.15197 15.7027 5.27434 15.6439 5.38717 15.5695C5.51434 15.4856 5.62466 15.3753 5.8453 15.1547L15.75 5.24998C16.5784 4.42156 16.5784 3.07841 15.75 2.24998C14.9216 1.42156 13.5784 1.42156 12.75 2.24998L2.8453 12.1547C2.62466 12.3753 2.51434 12.4856 2.43048 12.6128C2.35607 12.7256 2.29726 12.848 2.25564 12.9766C2.20872 13.1215 2.19149 13.2766 2.15703 13.5867L1.875 16.125Z" stroke="#080808" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </g>
+                                                                <defs>
+                                                                <clipPath id="clip0_896_1343">
+                                                                <rect width="18" height="18" fill="white"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="#">
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12 4.5V3.9C12 3.05992 12 2.63988 11.8365 2.31901C11.6927 2.03677 11.4632 1.8073 11.181 1.66349C10.8601 1.5 10.4401 1.5 9.6 1.5H8.4C7.55992 1.5 7.13988 1.5 6.81901 1.66349C6.53677 1.8073 6.3073 2.03677 6.16349 2.31901C6 2.63988 6 3.05992 6 3.9V4.5M7.5 8.625V12.375M10.5 8.625V12.375M2.25 4.5H15.75M14.25 4.5V12.9C14.25 14.1601 14.25 14.7902 14.0048 15.2715C13.789 15.6948 13.4448 16.039 13.0215 16.2548C12.5402 16.5 11.9101 16.5 10.65 16.5H7.35C6.08988 16.5 5.45982 16.5 4.97852 16.2548C4.55516 16.039 4.21095 15.6948 3.99524 15.2715C3.75 14.7902 3.75 14.1601 3.75 12.9V4.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../images/icons/avatar-user.svg" class="me-2" alt="">
+                                                        Maria Garcia Lopez
+                                                    </td>
+                                                    <td>maria.garcia@gmail.com</td>
+                                                    <td>234-880-7799</td>
+                                                    <td>System Admin</td>
+                                                    <td><span class="badge badge-active">Active</span></td>
+                                                    <td>Specialist</td>
+                                                    <td>
+                                                        <a href="#" class="me-2">
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g clip-path="url(#clip0_896_1343)">
+                                                                <path d="M13.5 7.49998L10.5 4.49998M1.875 16.125L4.41328 15.843C4.72339 15.8085 4.87845 15.7913 5.02338 15.7443C5.15197 15.7027 5.27434 15.6439 5.38717 15.5695C5.51434 15.4856 5.62466 15.3753 5.8453 15.1547L15.75 5.24998C16.5784 4.42156 16.5784 3.07841 15.75 2.24998C14.9216 1.42156 13.5784 1.42156 12.75 2.24998L2.8453 12.1547C2.62466 12.3753 2.51434 12.4856 2.43048 12.6128C2.35607 12.7256 2.29726 12.848 2.25564 12.9766C2.20872 13.1215 2.19149 13.2766 2.15703 13.5867L1.875 16.125Z" stroke="#080808" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </g>
+                                                                <defs>
+                                                                <clipPath id="clip0_896_1343">
+                                                                <rect width="18" height="18" fill="white"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="#">
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12 4.5V3.9C12 3.05992 12 2.63988 11.8365 2.31901C11.6927 2.03677 11.4632 1.8073 11.181 1.66349C10.8601 1.5 10.4401 1.5 9.6 1.5H8.4C7.55992 1.5 7.13988 1.5 6.81901 1.66349C6.53677 1.8073 6.3073 2.03677 6.16349 2.31901C6 2.63988 6 3.05992 6 3.9V4.5M7.5 8.625V12.375M10.5 8.625V12.375M2.25 4.5H15.75M14.25 4.5V12.9C14.25 14.1601 14.25 14.7902 14.0048 15.2715C13.789 15.6948 13.4448 16.039 13.0215 16.2548C12.5402 16.5 11.9101 16.5 10.65 16.5H7.35C6.08988 16.5 5.45982 16.5 4.97852 16.2548C4.55516 16.039 4.21095 15.6948 3.99524 15.2715C3.75 14.7902 3.75 14.1601 3.75 12.9V4.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../images/icons/avatar-user.svg" class="me-2" alt="">
+                                                        Jude Luis
+                                                    </td>
+                                                    <td>jude.luis@gmail.com</td>
+                                                    <td>800-766-2668</td>
+                                                    <td>System Admin</td>
+                                                    <td><span class="badge badge-active">Active</span></td>
+                                                    <td>Specialist</td>
                                                     <td>
                                                         <a href="#" class="me-2">
                                                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">

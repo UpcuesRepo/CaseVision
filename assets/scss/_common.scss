@@ -67,6 +67,10 @@ a{
                     background-color: $black-10;
                     color: $black;
                 }
+                &.bg-lightblue-30{
+                    background-color: $light-blue-30;
+                    color: $dark-blue;
+                }
             }
             &::after {
                 border-bottom: 0;
