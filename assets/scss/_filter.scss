@@ -21,5 +21,18 @@
                 border-bottom: 1px solid $light-blue-10;
             }
         }
+        &.staff-info{
+            .title{
+                font-size: $font-size-md;    
+                line-height: $line-height-20;  
+                color: $black-60;  
+            }
+            .info{
+                font-size: $font-size-16;  
+                font-weight: $font-700;  
+                line-height: $line-height-22;  
+                color: $black;
+            }
+        }
     }
 }
