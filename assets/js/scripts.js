@@ -5,7 +5,7 @@ $(document).ready(function () {
   $(".add-after").after('<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.33366 2.5L3.75033 7.08333L1.66699 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
   // END CHECKBOX
  
-  
+  $('.selectpicker').selectpicker();
  
   // BROWSE FILES
   $('#file-upload').change(function () {
@@ -159,7 +159,7 @@ menuBtn.addEventListener("click", function () {
  
  
 // COLLAPSIBLE SIDEBAR
-const menuBtn = document.getElementById('menu-btn');
+/*const menuBtn = document.getElementById('menu-btn');
 const sidebar = document.getElementById('sidebar');
  
 menuBtn.onclick = function() {
@@ -173,6 +173,6 @@ menuBtn.onclick = function() {
     $('.arrow').removeClass('rotate');
   }
   return;
-};
+};*/
  
 // END COLLAPSIBLE SIDEBAR
