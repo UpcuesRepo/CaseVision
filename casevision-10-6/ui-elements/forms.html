@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+     <!-- Include base CSS (optional) -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/base.min.css"
+/>
+<!-- Or versioned -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/base.min.css"
+/>
+
+<!-- Include Choices CSS -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+<!-- Or versioned -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"
+/>
+
+<!-- Include Choices JavaScript (latest) -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+<!-- Or versioned -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+    
+   
+    <!-- CSS -->
+    <link href="../assets/dist/css/default.css" rel="stylesheet" />
+    <title>CASE VISION</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="mb-3">Forms Elements</h1>
+
+
+        <h3 class="mb-3">Input Text</h3>
+
+        <div class="row">
+          <!-- INPUT MAIL WITH ICON -->
+            <div class="col-md-6 mb-3">
+                <div class="form-group">
+                  <input class="form-control mail-icon" type="email" placeholder="Enter Email Address">
+                </div>
+            </div>
+
+            <!-- INPUT PASSWORD WITH ICON -->
+            <div class="col-md-6 mb-3">
+              <div class="form-group">
+                <input class="form-control lock-icon password-form-control" type="password" placeholder="Password">
+                <a href="#" class="arrow-up-icon"><img src="../../images/icons/caps-lock-on.svg"></a>
+                <a href="#" class="eye-icon"><img src="../../images/icons/eye.svg"></a>
+              </div>
+            </div>
+
+            <!-- INPUT MAIL -->
+            <div class="col-md-6 mb-3">
+              <div class="form-group">
+                <input class="form-control" type="email" placeholder="Enter Email Address">
+              </div>
+            </div>
+            
+            
+            <!-- INPUT WITH ERROR MSG --> 
+            <div class="col-md-6 mb-5">
+                <div class="form-group">
+                  <input class="form-control mail-icon" type="email" placeholder="Enter Email Address">
+                  <div class="error-mesg">Validation Error Message will goes here.</div>
+                </div>
+            </div>
+
+            <!-- INPUT WITH SEARCH ICON -->
+            <div class="col-md-6 mb-5">
+                <div class="form-group">
+                  <input class="form-control form-control-md search-icon" type="search" placeholder="Search Case By Name / A No.">
+                </div>
+            </div>
+
+            <!-- INPUT DATE-->
+            <div class="col-md-6 mb-5">
+                <div class="form-group">
+                  <input class="form-control form-control-md" type="date">
+                </div>
+            </div>
+
+            <!-- ROWS PER PAGE SELECT -->
+            <div class="col-md-6 mb-5">
+              <!-- dropdown menu design is pending only button is completed -->
+                  <div class="d-flex align-items-center">
+                    <div class="fs-md me-2">Result per page</div>
+                    <div class="rows-select w-62">
+                      <select class="selectpicker">
+                        <option data-tokens="1">1</option>
+                        <option data-tokens="2">2</option>
+                        <option data-tokens="3">3</option>
+                      </select>
+                    </div>
+                  </div>
+              <!-- END ROWS PER PAGE SELECT -->
+            </div>
+
+            <!-- FORM SELECT -->
+            <div class="col-md-6 mb-5">
+              <!-- dropdown menu design is pending only button is completed -->
+                    <div class="rows-select grey-toggle">
+                      <select class="selectpicker">
+                        <option data-tokens="1">1</option>
+                        <option data-tokens="2">2</option>
+                        <option data-tokens="3">3</option>
+                      </select>
+                    </div>
+              <!-- END FORM SELECT -->
+            </div>
+
+            <div class="col-md-4 mb-3">
+              <div class="form-group d-flex">
+                  <input class="form-control text-center number-input me-2" type="text" maxlength="1" id="" placeholder="">
+                  <input class="form-control text-center number-input me-2" type="text" maxlength="1" id="" placeholder="">
+                  <input class="form-control text-center number-input me-2" type="text" maxlength="1" id="" placeholder="">
+                  <input class="form-control text-center number-input me-2" type="text" maxlength="1" id="" placeholder="">
+                  <input class="form-control text-center number-input me-2" type="text" maxlength="1" id="" placeholder="">
+                  <input class="form-control text-center number-input" type="text" maxlength="1" id="" placeholder="">
+              </div>
+            </div>
+
+            <!-- BROWSE FILES -->
+            <div class="col-md-4 mb-5">
+              <form method="post" class="browse-file" enctype="multipart/form-data" action="">
+                <span id="filename" class="filename"></span>
+                <div class="button-part d-flex justify-content-end">
+                  <label for="file-upload">Choose File<input type="file" id="file-upload" class="file-upload"></label>
+                </div>
+              </form>
+            </div>
+
+            <!-- FILE UPLOAD -->
+            <div class="col-md-3 mb-5">
+              <div class="drop-zone">
+                <span class="drop-zone__prompt d-flex flex-column justify-content-center align-items-center">
+                  <a href="#" class="drop-zone__prompt mb-2">Default Photo</a>
+                  <div class="img-part">
+                    <img src="../images/backgrounds/avatar.png" alt="">
+                  </div>
+                </span>
+                <input type="file" name="myFile" class="drop-zone__input">
+              </div>
+            </div>
+          <br>
+          
+            <p class="mt-5 color-purple p-2 bg-purple-10 fs-sm"> Input Normal Size</p>
+            <div class="col-md-6 mb-3">
+              <div class="form-group">
+                <input class="form-control" type="email" placeholder="Enter Email Address">
+              </div>
+            </div>
+
+            <p class="color-purple p-2 bg-purple-10 fs-sm"> Input large Size</p>
+              <div class="col-md-6 mb-3">
+                <div class="form-group">
+                  <input class="form-control form-control-lg" type="email" placeholder="Enter Email Address">
+                </div>
+              </div>
+            <p class="color-purple p-2 bg-purple-10 fs-sm"> Input Medium Size</p>
+              <div class="col-md-6 mb-3">
+                <div class="form-group">
+                  <input class="form-control form-control-md" type="email" placeholder="Enter Email Address">
+                </div>
+              </div>
+            <p class="color-purple p-2 bg-purple-10 fs-sm">Input Small Size</p>
+              <div class="col-md-6 mb-5">
+                <div class="form-group">
+                  <input class="form-control form-control-sm" type="email" placeholder="Enter Email Address">
+                </div>
+              </div>
+        </div>
+        <div class="row">
+          <!-- CHECKBOX -->
+          <p class="color-purple p-2 bg-purple-10 fs-sm">Checkbox</p>
+          <div class="col-md-3 mb-3">
+            <div class="form-check form-inline">
+              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+              <label class="form-check-label style-1" for="check1">
+                Default checkbox
+              </label>
+            </div>
+          </div>
+          <!-- END CHECKBOX -->
+
+          <!-- MULTIPLE SELECT -->
+          <p class="color-purple p-2 bg-purple-10 fs-sm">MULTISELECT</p>
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <select id="choices-multiple-remove-button" placeholder="Select up to 3 tags" multiple>
+                <option value="number">7854691230</option>
+                <option value="number2">English</option>
+                <option value="number3">Spanish</option>
+                <option value="number4">German</option>
+                <option value="number5">French</option>
+            </select>
+            </div>
+            <div class="col-md-3">
+              <!-- ADD CDN LINKS FROM HEAD PART TO USE THIS MULTI SELECT -->
+              <select id="choices-multiple-remove-button-2" placeholder="Select up to 3 tags" multiple>
+                <option value="region1" onclick="filterSelection('region1')">Region 1</option>
+                <option value="region2">Region 2</option>
+                <option value="region3">Region 3</option>
+                <option value="region4">Region 4</option>
+                <option value="region5">Region 5</option>
+                <option value="region6">Region 6</option>
+                <option value="region7">Region 7</option>
+                <option value="region8">Region 8</option>
+                <option value="region9">Region 9</option>
+                <option value="region10">Region 10</option>
+              </select>
+            </div>
+          </div>
+          <!-- END MULTISELECT -->
+        </div>
+    </div>
+    <script src="../assets/dist/js/all.min.js"></script>
+  </body>
+</html>

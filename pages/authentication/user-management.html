@@ -21,7 +21,33 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="../../../../images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-       
+     <!-- Include base CSS (optional) -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/base.min.css"
+/>
+<!-- Or versioned -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/base.min.css"
+/>
+
+<!-- Include Choices CSS -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+<!-- Or versioned -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"
+/>
+
+<!-- Include Choices JavaScript (latest) -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+<!-- Or versioned -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+    
     
     
    
@@ -152,22 +178,21 @@
                                                     <div class="form-group mb-3">
                                                         <input class="form-control form-control-lg" type="email" placeholder="Enter Email">
                                                     </div>
-                                                    <div class="color-black fs-md fw-semibold mb-1">Phone Number</div>
+                                                    <div class="color-black fs-md fw-semibold mb-1">Mobile Number</div>
                                                     <div class="form-group mb-3">
-                                                        <input class="form-control form-control-lg" type="email" placeholder="Enter Phone Number">
+                                                        <input class="form-control form-control-lg" type="email" placeholder="Enter Mobile Number">
                                                     </div>
                                                     <div class="color-black fs-md fw-semibold mb-1">Language</div>
                                                     <!-- ADD CDN LINKS FROM HEAD PART TO USE THIS MULTI SELECT -->
-                                                    <div class="rows-select grey-toggle">
-                                                    <select class="selectpicker" multiple placeholder="Select up to 3 tags">
+                                                    <select id="choices-multiple-remove-button" placeholder="Select up to 3 tags" multiple>
+                                                        <option value="number" onclick="filterSelection('number')">7854691230</option>
                                                         <option value="number2">English</option>
                                                         <option value="number3">Spanish</option>
                                                         <option value="number4">German</option>
                                                         <option value="number5">French</option>
                                                     </select>
                                                 </div>
-                                                </div>
-                                                <div class="col-md-6 d-flex flex-column">
+                                                <div class="col-md-6 justify-content-between d-flex flex-column">
                                                     <div class="color-black fs-md fw-semibold mb-1">User Profile Image</div>
                                                     <form method="post" class="browse-file w-100 mb-2" enctype="multipart/form-data" action="">
                                                         <span id="filename" class="filename"></span>
@@ -191,6 +216,39 @@
                                         </div>
                                     </div>
                                     <div class="border-bottom-lightblue">
+                                        <div class="fs-16 fw-semibold color-black-60 text-uppercase mb-3 my-4">Address information </div>
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="color-black fs-md fw-semibold mb-1">State</div>
+                                                    <div class="rows-select grey-toggle mb-3">
+                                                        <select class="selectpicker">
+                                                        <option data-tokens="1">Select State</option>
+                                                        <option data-tokens="2">2</option>
+                                                        <option data-tokens="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="color-black fs-md fw-semibold mb-1">City</div>
+                                                    <div class="rows-select grey-toggle mb-3">
+                                                        <select class="selectpicker">
+                                                        <option data-tokens="1">Select City</option>
+                                                        <option data-tokens="2">2</option>
+                                                        <option data-tokens="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="color-black fs-md fw-semibold mb-1">Zip Code</div>
+                                                    <div class="form-group">
+                                                        <input class="form-control form-control-lg" type="email" placeholder="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border-bottom-lightblue">
                                         <div class="fs-16 fw-semibold color-black-60 text-uppercase mb-3 my-4">Organization information </div>
                                         <div class="container-fluid">
                                             <div class="row">
@@ -203,14 +261,6 @@
                                                         <option data-tokens="3">3</option>
                                                         </select>
                                                     </div>
-                                                    <div class="color-black fs-md fw-semibold mb-1">TimeZone</div>
-                                                    <div class="rows-select grey-toggle mb-3">
-                                                        <select class="selectpicker">
-                                                            <option data-tokens="1">Central Daylight Time (GMT-5)</option>
-                                                            <option data-tokens="2">2</option>
-                                                            <option data-tokens="3">3</option>
-                                                        </select>
-                                                    </div>
                                                     <div class="color-black fs-md fw-semibold mb-1">Profile Status</div>
                                                     <div class="rows-select grey-toggle mb-3">
                                                         <select class="selectpicker">
@@ -219,8 +269,24 @@
                                                         <option data-tokens="3">3</option>
                                                         </select>
                                                     </div>
+                                                    <div class="color-black fs-md fw-semibold mb-1">TimeZone</div>
+                                                    <div class="rows-select grey-toggle mb-3">
+                                                        <select class="selectpicker">
+                                                            <option data-tokens="1">Central Daylight Time (GMT-5)</option>
+                                                            <option data-tokens="2">2</option>
+                                                            <option data-tokens="3">3</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                                 <div class="col-lg-6">
+                                                    <div class="color-black fs-md fw-semibold mb-1">Sub Position</div>
+                                                    <div class="rows-select grey-toggle mb-3">
+                                                        <select class="selectpicker">
+                                                            <option data-tokens="1">Select Sub Position</option>
+                                                            <option data-tokens="2">2</option>
+                                                            <option data-tokens="3">3</option>
+                                                        </select>
+                                                    </div>
                                                     <div class="color-black fs-md fw-semibold mb-1">User Role</div>
                                                     <div class="rows-select grey-toggle mb-3">
                                                         <select class="selectpicker">
@@ -231,10 +297,8 @@
                                                     </div>
                                                     <div class="color-black fs-md fw-semibold mb-1">Regions Assigned</div>
                                                     <!-- ADD CDN LINKS FROM HEAD PART TO USE THIS MULTI SELECT -->
-                                                    <div class="rows-select grey-toggle mb-3">
-                                                    <select class="selectpicker" multiple placeholder="Select up to 3 tags">
-                                                        <option value="region1" onclick="filterSelection('region1')">Select Regions</option>
-                                                        <option value="region2">Region 1</option>
+                                                    <select id="choices-multiple-remove-button-2" placeholder="Select up to 3 tags" multiple>
+                                                        <option value="region1" onclick="filterSelection('region1')">Region 1</option>
                                                         <option value="region2">Region 2</option>
                                                         <option value="region3">Region 3</option>
                                                         <option value="region4">Region 4</option>
@@ -245,15 +309,6 @@
                                                         <option value="region9">Region 9</option>
                                                         <option value="region10">Region 10</option>
                                                     </select>
-                                                    </div>
-                                                    <div class="color-black fs-md fw-semibold mb-1">Service Level</div>
-                                                    <div class="rows-select grey-toggle mb-3">
-                                                        <select class="selectpicker">
-                                                        <option data-tokens="1">Active</option>
-                                                        <option data-tokens="2">2</option>
-                                                        <option data-tokens="3">3</option>
-                                                        </select>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

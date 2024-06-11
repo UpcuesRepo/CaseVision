@@ -1,0 +1,39 @@
+.collapsible-navbar{
+    .main-navbar{
+        height:76px;
+        padding: 0;
+        border-bottom: $border-light-gray-2;
+        position: fixed;
+        width: 100%;
+        background-color: $white;
+        z-index: 1;
+        .rotate{
+            transform: rotate(180deg);
+            transform-origin: 84% 50%;
+        }
+        .navbar-logo{
+            border-left: $border-light-gray-2;
+            border-right: $border-light-gray-2;
+            height: 100%;
+        }
+        .right-part{
+            .btn-notification{
+                position: relative;
+                .red-dot{
+                    height: 6px;
+                    width: 6px;
+                    background-color: $red;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                }
+            }
+            .dropdown{
+                &.dropdown-profile{
+                    border-left: $border-light-gray-2;
+                }
+            }
+        }
+    }
+}

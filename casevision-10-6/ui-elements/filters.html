@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Include base CSS (optional) -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/base.min.css"
+/>
+<!-- Or versioned -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/base.min.css"
+/>
+
+<!-- Include Choices CSS -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+<!-- Or versioned -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"
+/>
+
+<!-- Include Choices JavaScript (latest) -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+<!-- Or versioned -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+    
+   
+    <!-- CSS -->
+    <link href="../../assets/dist/css/default.css" rel="stylesheet" />
+    <title>CASE VISION</title>
+  </head>
+  <body>
+    <div class="container" id="wrapper">
+        <h1>filters</h1>
+        <div class="row">
+            <div class="col-md-2">
+                <button class="btn btn-skyblue btn-sm with-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#MyCaseFilter" aria-controls="MyCaseFilter">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.75 7.33337L13.75 7.33337M13.75 7.33337C13.75 8.85216 14.9812 10.0834 16.5 10.0834C18.0188 10.0834 19.25 8.85216 19.25 7.33337C19.25 5.81459 18.0188 4.58337 16.5 4.58337C14.9812 4.58337 13.75 5.81459 13.75 7.33337ZM8.25 14.6667L19.25 14.6667M8.25 14.6667C8.25 16.1855 7.01878 17.4167 5.5 17.4167C3.98122 17.4167 2.75 16.1855 2.75 14.6667C2.75 13.1479 3.98122 11.9167 5.5 11.9167C7.01878 11.9167 8.25 13.1479 8.25 14.6667Z" stroke="#5BAAF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Filter
+                </button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-primary with-icon btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#NewUser" aria-controls="NewUser">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 15.5H7.5C6.10444 15.5 5.40665 15.5 4.83886 15.6722C3.56045 16.06 2.56004 17.0605 2.17224 18.3389C2 18.9067 2 19.6044 2 21M19 21V15M16 18H22M14.5 7.5C14.5 9.98528 12.4853 12 10 12C7.51472 12 5.5 9.98528 5.5 7.5C5.5 5.01472 7.51472 3 10 3C12.4853 3 14.5 5.01472 14.5 7.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Add New User
+                </button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-skyblue btn-sm with-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#UserRecordsFilter" aria-controls="UserRecordsFilter">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.75 7.33337L13.75 7.33337M13.75 7.33337C13.75 8.85216 14.9812 10.0834 16.5 10.0834C18.0188 10.0834 19.25 8.85216 19.25 7.33337C19.25 5.81459 18.0188 4.58337 16.5 4.58337C14.9812 4.58337 13.75 5.81459 13.75 7.33337ZM8.25 14.6667L19.25 14.6667M8.25 14.6667C8.25 16.1855 7.01878 17.4167 5.5 17.4167C3.98122 17.4167 2.75 16.1855 2.75 14.6667C2.75 13.1479 3.98122 11.9167 5.5 11.9167C7.01878 11.9167 8.25 13.1479 8.25 14.6667Z" stroke="#5BAAF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Filter
+                </button>
+            </div>
+            <div class="col-md-2">
+                <h6>Staff Directory</h6>
+                <button class="btn btn-skyblue btn-sm with-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#StaffDirectoryFilter" aria-controls="StaffDirectoryFilter">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.75 7.33337L13.75 7.33337M13.75 7.33337C13.75 8.85216 14.9812 10.0834 16.5 10.0834C18.0188 10.0834 19.25 8.85216 19.25 7.33337C19.25 5.81459 18.0188 4.58337 16.5 4.58337C14.9812 4.58337 13.75 5.81459 13.75 7.33337ZM8.25 14.6667L19.25 14.6667M8.25 14.6667C8.25 16.1855 7.01878 17.4167 5.5 17.4167C3.98122 17.4167 2.75 16.1855 2.75 14.6667C2.75 13.1479 3.98122 11.9167 5.5 11.9167C7.01878 11.9167 8.25 13.1479 8.25 14.6667Z" stroke="#5BAAF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Filter
+                </button>
+            </div>
+            <div class="col-md-2">
+                <h6>Staff Info</h6>
+                <button class="btn btn-skyblue btn-sm with-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#StaffInfoFilter" aria-controls="StaffInfoFilter">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.75 7.33337L13.75 7.33337M13.75 7.33337C13.75 8.85216 14.9812 10.0834 16.5 10.0834C18.0188 10.0834 19.25 8.85216 19.25 7.33337C19.25 5.81459 18.0188 4.58337 16.5 4.58337C14.9812 4.58337 13.75 5.81459 13.75 7.33337ZM8.25 14.6667L19.25 14.6667M8.25 14.6667C8.25 16.1855 7.01878 17.4167 5.5 17.4167C3.98122 17.4167 2.75 16.1855 2.75 14.6667C2.75 13.1479 3.98122 11.9167 5.5 11.9167C7.01878 11.9167 8.25 13.1479 8.25 14.6667Z" stroke="#5BAAF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Filter
+                </button>
+            </div>
+        </div>
+
+        <div class="offcanvas my-case-offcanvas w-450 offcanvas-end" tabindex="-1" id="MyCaseFilter" aria-labelledby="MyCaseFilterLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="MyCaseFilterLabel">Filter By</h5>
+              <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#MyCaseFilterLabel" role="button" aria-controls="MyCaseFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
+            </div>
+            <div class="offcanvas-body">
+              <div class="border-bottom-lightblue">
+                <div class="fs-16 fw-semibold color-black-60 text-uppercase mb-3">Service Level</div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                      <label class="form-check-label style-1" for="check1">
+                          Home Study
+                      </label>
+                  </div>
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check7">
+                      <label class="form-check-label style-1" for="check1">
+                          Level 3
+                      </label>
+                  </div>
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check8">
+                      <label class="form-check-label style-1" for="check1">
+                          Level 2
+                      </label>
+                  </div>
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check9">
+                      <label class="form-check-label style-1" for="check1">
+                          Level 1
+                      </label>
+                  </div>
+                </div>
+              </div>
+              <div class="border-bottom-lightblue">
+                <div class="fs-16 fw-semibold color-black-60 text-uppercase my-3">Case Status</div>
+                <div class="d-flex mb-3">
+                    <div class="d-flex align-items-center me-4">
+                        <div class="form-check form-inline">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check11">
+                        </div>
+                        <div class="badge badge-active">Active</div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="form-check form-inline">
+                          <input class="form-check-input add-after" type="checkbox" value="" id="check12">
+                        </div>
+                        <div class="badge badge-not-started">Cases Not Started</div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                    <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check13">
+                    </div>
+                    <div class="badge badge-approve">Extension Approved</div>
+                </div>
+              </div>
+              <div class="border-bottom-lightblue">
+                <div class="fs-16 fw-semibold color-black-60 text-uppercase my-3">Acceptance Date</div>
+                <div class="d-flex">
+                    <div class="color-black fs-md fw-semibold mb-1 w-50 me-2">From</div>
+                    <div class="color-black fs-md fw-semibold mb-1 w-50 ms-2">To</div>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                    <div class="form-group w-50 me-2">
+                        <input class="form-control form-control-md" type="date">
+                    </div>
+                    <div>-</div>
+                    <div class="form-group w-50 ms-2">
+                        <input class="form-control form-control-md" type="date">
+                    </div>
+                </div>
+              </div>
+              <div class="border-bottom-lightblue">
+                <div class="fs-16 fw-semibold color-black-60 text-uppercase my-3">Expected Closure date</div>
+                <div class="d-flex">
+                    <div class="color-black fs-md fw-semibold mb-1 w-50 me-2">From</div>
+                    <div class="color-black fs-md fw-semibold mb-1 w-50 ms-2">To</div>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                    <div class="form-group w-50 me-2">
+                        <input class="form-control form-control-md" type="date">
+                    </div>
+                    <div>-</div>
+                    <div class="form-group w-50 ms-2">
+                        <input class="form-control form-control-md" type="date">
+                    </div>
+                </div>
+              </div>
+              <div class="fs-16 fw-semibold color-black-60 text-uppercase my-3">Expected Closure date</div>
+              <table class="w-100">
+                <tr>
+                    <td>
+                        <div class="form-check form-inline mb-2">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check2">
+                            <label class="form-check-label style-1" for="check1">
+                                All
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check form-inline mb-2">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check3">
+                            <label class="form-check-label style-1" for="check1">
+                                Region 1
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check form-inline mb-2">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check4">
+                            <label class="form-check-label style-1" for="check1">
+                                Region 2
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check form-inline mb-2">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check5">
+                            <label class="form-check-label style-1" for="check1">
+                                Region 3
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-check form-inline mb-2">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check21">
+                            <label class="form-check-label style-1" for="check1">
+                                Region 4
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check form-inline mb-2">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check31">
+                            <label class="form-check-label style-1" for="check1">
+                                Region 5
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check form-inline mb-2">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check41">
+                            <label class="form-check-label style-1" for="check1">
+                                Region 6
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check form-inline mb-2">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check51">
+                            <label class="form-check-label style-1" for="check1">
+                                Region 7
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-check form-inline mb-2">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check20">
+                            <label class="form-check-label style-1" for="check1">
+                                Region 8
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check form-inline mb-2">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check30">
+                            <label class="form-check-label style-1" for="check1">
+                                Region 9
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check form-inline mb-2">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check40">
+                            <label class="form-check-label style-1" for="check1">
+                                Region 10
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+              </table>
+            </div>
+            <div class="offcanvas-footer d-flex">
+                <button class="btn btn-md btn-grey btn-radius-none w-50">Reset</button>
+                <button class="btn btn-md btn-darkblue btn-radius-none w-50">Apply</button>
+            </div>
+        </div>
+        <div class="offcanvas my-case-offcanvas w-800 offcanvas-end" tabindex="-1" id="NewUser" aria-labelledby="NewUserLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="MyCaseFilterLabel">ADD NEW USER</h5>
+              <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#MyCaseFilterLabel" role="button" aria-controls="MyCaseFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
+            </div>
+            <div class="offcanvas-body">
+                <div class="border-bottom-lightblue">
+                    <div class="fs-16 fw-semibold color-black-60 text-uppercase mb-3">personal information</div>
+                    <div class="container-fluid">
+                        <div class="row align-items-stretch h-100 mb-3">
+                            <div class="col-md-6">
+                                <div class="color-black fs-md fw-semibold mb-1">Name</div>
+                                <div class="form-group mb-3">
+                                    <input class="form-control form-control-lg" type="email" placeholder="Enter Full Name">
+                                </div>
+                                <div class="color-black fs-md fw-semibold mb-1">Email Address</div>
+                                <div class="form-group mb-3">
+                                    <input class="form-control form-control-lg" type="email" placeholder="Enter Email">
+                                </div>
+                                <div class="color-black fs-md fw-semibold mb-1">Mobile Number</div>
+                                <div class="form-group mb-3">
+                                    <input class="form-control form-control-lg" type="email" placeholder="Enter Mobile Number">
+                                </div>
+                                <div class="color-black fs-md fw-semibold mb-1">Language</div>
+                                <!-- ADD CDN LINKS FROM HEAD PART TO USE THIS MULTI SELECT -->
+                                <select id="choices-multiple-remove-button" placeholder="Select up to 3 tags" multiple>
+                                    <option value="number" onclick="filterSelection('number')">7854691230</option>
+                                    <option value="number2">English</option>
+                                    <option value="number3">Spanish</option>
+                                    <option value="number4">German</option>
+                                    <option value="number5">French</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 justify-content-between d-flex flex-column">
+                                <div class="color-black fs-md fw-semibold mb-1">User Profile Image</div>
+                                <form method="post" class="browse-file w-100 mb-2" enctype="multipart/form-data" action="">
+                                    <span id="filename" class="filename"></span>
+                                    <div class="button-part d-flex justify-content-end">
+                                        <label for="file-upload">Choose File<input type="file" id="file-upload" class="file-upload"></label>
+                                    </div>
+                                </form>
+                                <div class="fs-sm color-black-30">Photo dimension must be at least 100 x 100 and size must be below 2 MB.</div>
+                                <div class="fs-sm color-black-60 mb-2">Allowed Formats: png, jpg, jpeg</div>
+                                <div class="drop-zone">
+                                    <span class="drop-zone__prompt d-flex flex-column justify-content-center align-items-center">
+                                    <a href="#" class="drop-zone__prompt mb-2">Default Photo</a>
+                                    <div class="img-part">
+                                        <img src="../images/backgrounds/avatar.png" alt="">
+                                    </div>
+                                    </span>
+                                    <input type="file" name="myFile" class="drop-zone__input">
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-bottom-lightblue">
+                    <div class="fs-16 fw-semibold color-black-60 text-uppercase mb-3 my-4">Address information </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="color-black fs-md fw-semibold mb-1">State</div>
+                                <div class="rows-select grey-toggle mb-3">
+                                    <select class="selectpicker">
+                                    <option data-tokens="1">Select State</option>
+                                    <option data-tokens="2">2</option>
+                                    <option data-tokens="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="color-black fs-md fw-semibold mb-1">City</div>
+                                <div class="rows-select grey-toggle mb-3">
+                                    <select class="selectpicker">
+                                    <option data-tokens="1">Select City</option>
+                                    <option data-tokens="2">2</option>
+                                    <option data-tokens="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="color-black fs-md fw-semibold mb-1">Zip Code</div>
+                                <div class="form-group">
+                                    <input class="form-control form-control-lg" type="email" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-bottom-lightblue">
+                    <div class="fs-16 fw-semibold color-black-60 text-uppercase mb-3 my-4">Organization information </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="color-black fs-md fw-semibold mb-1">User Position</div>
+                                <div class="rows-select grey-toggle mb-3">
+                                    <select class="selectpicker">
+                                    <option data-tokens="1">Select Position</option>
+                                    <option data-tokens="2">2</option>
+                                    <option data-tokens="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="color-black fs-md fw-semibold mb-1">Profile Status</div>
+                                <div class="rows-select grey-toggle mb-3">
+                                    <select class="selectpicker">
+                                    <option data-tokens="1">Active</option>
+                                    <option data-tokens="2">2</option>
+                                    <option data-tokens="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="color-black fs-md fw-semibold mb-1">TimeZone</div>
+                                <div class="rows-select grey-toggle mb-3">
+                                    <select class="selectpicker">
+                                        <option data-tokens="1">Central Daylight Time (GMT-5)</option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="color-black fs-md fw-semibold mb-1">Sub Position</div>
+                                <div class="rows-select grey-toggle mb-3">
+                                    <select class="selectpicker">
+                                        <option data-tokens="1">Select Sub Position</option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="color-black fs-md fw-semibold mb-1">User Role</div>
+                                <div class="rows-select grey-toggle mb-3">
+                                    <select class="selectpicker">
+                                        <option data-tokens="1">Select Role</option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="color-black fs-md fw-semibold mb-1">Regions Assigned</div>
+                                <!-- ADD CDN LINKS FROM HEAD PART TO USE THIS MULTI SELECT -->
+                                <select id="choices-multiple-remove-button-2" placeholder="Select up to 3 tags" multiple>
+                                    <option value="region1" onclick="filterSelection('region1')">Region 1</option>
+                                    <option value="region2">Region 2</option>
+                                    <option value="region3">Region 3</option>
+                                    <option value="region4">Region 4</option>
+                                    <option value="region5">Region 5</option>
+                                    <option value="region6">Region 6</option>
+                                    <option value="region7">Region 7</option>
+                                    <option value="region8">Region 8</option>
+                                    <option value="region9">Region 9</option>
+                                    <option value="region10">Region 10</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-light-blue-10 radius-lg p-3 my-4">
+                    <div class="form-check form-inline">
+                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                        <label class="form-check-label style-2" for="">
+                            This user is System Admin
+                        </label>
+                    </div>
+                 </div>
+            </div>
+            <div class="offcanvas-footer d-flex">
+                <button class="btn btn-md btn-grey btn-radius-none w-50">Close</button>
+                <button class="btn btn-md btn-darkblue btn-radius-none w-50">Add</button>
+            </div>
+        </div>
+        <div class="offcanvas my-case-offcanvas w-450 offcanvas-end" tabindex="-1" id="UserRecordsFilter" aria-labelledby="UserRecordsFilterLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="MyCaseFilterLabel">Filter By</h5>
+              <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#MyCaseFilterLabel" role="button" aria-controls="MyCaseFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
+            </div>
+            <div class="offcanvas-body">
+              <div class="border-bottom-lightblue">
+                <div class="fs-16 fw-semibold color-black-60 text-uppercase mb-3">User type</div>
+                <div class="d-flex mb-3">
+                  <div class="form-check form-inline me-5">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                      <label class="form-check-label style-1" for="check1">Users</label>
+                  </div>
+                  <div class="form-check form-inline me-5">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check7">
+                      <label class="form-check-label style-1" for="check1">Super Admin</label>
+                  </div>
+                  <div class="form-check form-inline me-5">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check8">
+                      <label class="form-check-label style-1" for="check1">Admin</label>
+                  </div>
+                </div>
+              </div>
+              <div class="border-bottom-lightblue">
+                <div class="fs-16 fw-semibold color-black-60 text-uppercase my-3">Case Status</div>
+                <div class="d-flex mb-3">
+                    <div class="d-flex align-items-center me-4">
+                        <div class="form-check form-inline">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check11">
+                        </div>
+                        <div class="badge badge-active">Active</div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="form-check form-inline">
+                          <input class="form-check-input add-after" type="checkbox" value="" id="check12">
+                        </div>
+                        <div class="badge badge-not-started">In Active</div>
+                    </div>
+                </div>
+              </div>
+              <div class="border-bottom-lightblue">
+                <div class="fs-16 fw-semibold color-black-60 text-uppercase my-3">Position</div>
+                <div class="d-flex mb-3">
+                    <div class="left-part">
+                        <div class="form-check form-inline me-5 mb-2">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check67">
+                            <label class="form-check-label style-1" for="">Regional Supervisors</label>
+                        </div>
+                        <div class="form-check form-inline me-5">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check68">
+                            <label class="form-check-label style-1" for="">Case Managers</label>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div class="form-check form-inline me-5 mb-2">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check69">
+                            <label class="form-check-label style-1" for="">PRS Supervisors</label>
+                        </div>
+                        <div class="form-check form-inline me-5">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                            <label class="form-check-label style-1" for="">QC Team</label>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="offcanvas-footer d-flex">
+                <button class="btn btn-md btn-grey btn-radius-none w-50">Reset</button>
+                <button class="btn btn-md btn-darkblue btn-radius-none w-50">Apply</button>
+            </div>
+        </div>
+        <div class="offcanvas my-case-offcanvas w-450 offcanvas-end" tabindex="-1" id="StaffDirectoryFilter" aria-labelledby="StaffDirectoryFilterLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="MyCaseFilterLabel">Filter By</h5>
+              <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#MyCaseFilterLabel" role="button" aria-controls="MyCaseFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
+            </div>
+            <div class="offcanvas-body">
+              <div class="border-bottom-lightblue">
+                <div class="fs-16 fw-semibold color-black-60 text-uppercase mb-3">Position</div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                      <label class="form-check-label style-2 fw-normal" for="check1">Director</label>
+                  </div>
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check7">
+                      <label class="form-check-label style-2 fw-normal" for="check1">Regional Supervisor</label>
+                  </div>
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check8">
+                      <label class="form-check-label style-2 fw-normal" for="check1">Clinical Supervisor</label>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                      <label class="form-check-label style-2 fw-normal" for="check1">Case Managers</label>
+                  </div>
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check7">
+                      <label class="form-check-label style-2 fw-normal" for="check1">PRS Supervisor</label>
+                  </div>
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check8">
+                      <label class="form-check-label style-2 fw-normal" for="check1">Case Worker</label>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                      <label class="form-check-label style-2 fw-normal" for="check1">Specialist</label>
+                  </div>
+                </div>
+              </div>
+              <div class="border-bottom-lightblue">
+                <div class="fs-16 fw-semibold color-black-60 text-uppercase my-3">SUB Position</div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                      <label class="form-check-label style-2 fw-normal" for="check1">Director</label>
+                  </div>
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check7">
+                      <label class="form-check-label style-2 fw-normal" for="check1">Regional Supervisor</label>
+                  </div>
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check8">
+                      <label class="form-check-label style-2 fw-normal" for="check1">Clinical Supervisor</label>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                      <label class="form-check-label style-2 fw-normal" for="check1">Case Managers</label>
+                  </div>
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check7">
+                      <label class="form-check-label style-2 fw-normal" for="check1">PRS Supervisor</label>
+                  </div>
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check8">
+                      <label class="form-check-label style-2 fw-normal" for="check1">Case Worker</label>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                      <label class="form-check-label style-2 fw-normal" for="check1">Specialist</label>
+                  </div>
+                </div>
+              </div>
+              <div class="border-bottom-lightblue">
+                <div class="fs-16 fw-semibold color-black-60 text-uppercase my-3">Region</div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                      <label class="form-check-label style-2 fw-normal" for="check1">All</label>
+                  </div>
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check7">
+                      <label class="form-check-label style-2 fw-normal" for="check1">Region 1</label>
+                  </div>
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check8">
+                      <label class="form-check-label style-2 fw-normal" for="check1">Region 2</label>
+                  </div>
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check8">
+                      <label class="form-check-label style-2 fw-normal" for="check1">Region 3</label>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                      <label class="form-check-label style-2 fw-normal" for="check1">Region 4</label>
+                  </div>
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check7">
+                      <label class="form-check-label style-2 fw-normal" for="check1">Region 5</label>
+                  </div>
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check8">
+                      <label class="form-check-label style-2 fw-normal" for="check1">Region 6</label>
+                  </div>
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check8">
+                      <label class="form-check-label style-2 fw-normal" for="check1">Region 7</label>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                      <label class="form-check-label style-2 fw-normal" for="check1">Region 8</label>
+                  </div>
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check7">
+                      <label class="form-check-label style-2 fw-normal" for="check1">Region 9</label>
+                  </div>
+                  <div class="form-check form-inline">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check8">
+                      <label class="form-check-label style-2 fw-normal" for="check1">Region 10</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="offcanvas-footer d-flex">
+                <button class="btn btn-md btn-grey btn-radius-none w-50">Reset</button>
+                <button class="btn btn-md btn-darkblue btn-radius-none w-50">Apply</button>
+            </div>
+        </div>
+        <div class="offcanvas my-case-offcanvas staff-info w-450 offcanvas-end" tabindex="-1" id="StaffInfoFilter" aria-labelledby="StaffInfoFilterLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="MyCaseFilterLabel">Mirian Martinez</h5>
+              <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#MyCaseFilterLabel" role="button" aria-controls="MyCaseFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
+            </div>
+            <div class="offcanvas-body">
+                <table class="w-80p">
+                    <tr>
+                        <td class="title p-2">Position</td>
+                        <td class="info p-2">Case Manager</td>
+                    </tr>
+                    <tr>
+                        <td class="title p-2">Sub Position</td>
+                        <td class="info p-2">Level 2</td>
+                    </tr>
+                    <tr>
+                        <td class="title p-2">Phone</td>
+                        <td class="info p-2">882-880-2779</td>
+                    </tr>
+                    <tr>
+                        <td class="title p-2">Email address</td>
+                        <td class="info p-2">maria.garcia@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="title p-2">State</td>
+                        <td class="info p-2">New Jersey</td>
+                    </tr>
+                    <tr>
+                        <td class="title p-2">City</td>
+                        <td class="info p-2">Edison</td>
+                    </tr>
+                    <tr>
+                        <td class="title p-2">Zip Code</td>
+                        <td class="info p-2">800051</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/dist/js/all.min.js"></script>
+  </body>
+  
+</html>
