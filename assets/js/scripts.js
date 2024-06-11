@@ -46,7 +46,7 @@ menuBtn.addEventListener("click", function () {
   
  
   // MULTI SELECT 1
-  var multipleCancelButton1 = new Choices('#choices-multiple-remove-button',
+  /*var multipleCancelButton1 = new Choices('#choices-multiple-remove-button',
   {
     removeItemButton: true,
     maxItemCount: 5,
@@ -62,7 +62,7 @@ menuBtn.addEventListener("click", function () {
     maxItemCount: 10,
     searchResultLimit: 5,
     renderChoiceLimit: 5
-  });
+  });*/
   // END MULTI SELECT
  
   // FILE UPLOAD
@@ -148,6 +148,7 @@ menuBtn.addEventListener("click", function () {
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
   // END TOOLTIP
  
+  
  
  
  

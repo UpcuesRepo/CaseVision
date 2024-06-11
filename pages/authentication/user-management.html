@@ -21,36 +21,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="../../../../images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-     <!-- Include base CSS (optional) -->
-<link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/base.min.css"
-/>
-<!-- Or versioned -->
-<link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/base.min.css"
-/>
-
-<!-- Include Choices CSS -->
-<link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
-/>
-<!-- Or versioned -->
-<link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"
-/>
-
-<!-- Include Choices JavaScript (latest) -->
-<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
-<!-- Or versioned -->
-<script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
-    
-    
-    
-   
+  
     <!-- CSS -->
     <link href="../../assets/dist/css/default.css" rel="stylesheet" />
     <title>CASE VISION</title>
@@ -183,14 +154,14 @@ href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices
                                                         <input class="form-control form-control-lg" type="email" placeholder="Enter Mobile Number">
                                                     </div>
                                                     <div class="color-black fs-md fw-semibold mb-1">Language</div>
-                                                    <!-- ADD CDN LINKS FROM HEAD PART TO USE THIS MULTI SELECT -->
-                                                    <select id="choices-multiple-remove-button" placeholder="Select up to 3 tags" multiple>
-                                                        <option value="number" onclick="filterSelection('number')">7854691230</option>
-                                                        <option value="number2">English</option>
-                                                        <option value="number3">Spanish</option>
-                                                        <option value="number4">German</option>
-                                                        <option value="number5">French</option>
-                                                    </select>
+                                                    <div class="rows-select grey-toggle">
+                                                        <select class="selectpicker" multiple placeholder="Select up to 3 tags">
+                                                            <option value="number2">English</option>
+                                                            <option value="number3">Spanish</option>
+                                                            <option value="number4">German</option>
+                                                            <option value="number5">French</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                                 <div class="col-md-6 justify-content-between d-flex flex-column">
                                                     <div class="color-black fs-md fw-semibold mb-1">User Profile Image</div>
@@ -296,19 +267,14 @@ href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices
                                                         </select>
                                                     </div>
                                                     <div class="color-black fs-md fw-semibold mb-1">Regions Assigned</div>
-                                                    <!-- ADD CDN LINKS FROM HEAD PART TO USE THIS MULTI SELECT -->
-                                                    <select id="choices-multiple-remove-button-2" placeholder="Select up to 3 tags" multiple>
-                                                        <option value="region1" onclick="filterSelection('region1')">Region 1</option>
-                                                        <option value="region2">Region 2</option>
-                                                        <option value="region3">Region 3</option>
-                                                        <option value="region4">Region 4</option>
-                                                        <option value="region5">Region 5</option>
-                                                        <option value="region6">Region 6</option>
-                                                        <option value="region7">Region 7</option>
-                                                        <option value="region8">Region 8</option>
-                                                        <option value="region9">Region 9</option>
-                                                        <option value="region10">Region 10</option>
-                                                    </select>
+                                                    <div class="rows-select grey-toggle">
+                                                        <select class="selectpicker" multiple placeholder="Select up to 3 tags">
+                                                            <option value="number2">Region 1</option>
+                                                            <option value="number3">Region 2</option>
+                                                            <option value="number4">Region 3</option>
+                                                            <option value="number5">Region 4</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

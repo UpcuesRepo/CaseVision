@@ -168,31 +168,6 @@ input[type="date"] {
         }
     }
 }
-// MULTISELECT DROPDOWN
-.choices{
-    font-size: $font-size-md;
-    .choices__inner{
-        background-color: $white;
-        border: $border-light-gray-2;
-        border-radius: $radius-lg;
-        .choices__input{
-            background-color: $white;
-            padding: 3px 0 3px 2px;
-        }
-        .choices__list--multiple{
-            .choices__item{
-                margin-bottom: 0;
-                background-color: $secondary;
-                border: 1px solid $secondary;
-            }
-        } 
-    }
-    &.is-open{
-        .choices__inner{
-            border-radius: $radius-lg;
-        }
-    }
-}
 
 
 
