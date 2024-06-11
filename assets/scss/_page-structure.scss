@@ -260,7 +260,20 @@
         .table-part{
             background-color: $light-gray-1;
             padding: 20px 15px;
+            .blank-card{
+                position: relative;
+                button{
+                    &.map-pin{
+                        border: 0;
+                        background-color: transparent;
+                        position: absolute;
+                        left:300px;
+                        bottom: 250px;
+                    }
+                }
+            }
         }
+
     }
 }
 
