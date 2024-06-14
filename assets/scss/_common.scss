@@ -72,6 +72,12 @@ a{
                     color: $dark-blue;
                 }
             }
+            .name{
+                display: block;
+                @include media-breakpoint-down(md){
+                    display: none;
+                }
+            }
             &::after {
                 border-bottom: 0;
                 border-left: 0;
@@ -86,6 +92,14 @@ a{
                 &::after {
                     content: "";
                     transform: rotate(180deg);
+                }
+            }
+        }
+        .dropdown-menu{
+            .name{
+                display: none;
+                @include media-breakpoint-down(md){
+                    display: block;
                 }
             }
         }

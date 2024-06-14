@@ -58,13 +58,19 @@
                     </div>
                     <div class="dropdown dropdown-profile d-flex align-items-center me-3">
                         <a class="dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                            <div class="fs-lg fw-semibold ms-3 me-2 name-icon bg-grey">CM</div>
+                            <div class="fs-lg fw-semibold ms-3 me-2 name-icon bg-lightblue-30">CM</div>
                             <div class="name me-3">
-                                <div class="fs-lg fs-semibold">Chelsea Maxfield</div>
+                                <div class="fs-lg fw-semibold">Chelsea Maxfield</div>
                                 <div class="fs-13 color-black-30">Admin</div>
                             </div>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-account" aria-labelledby="dropdownMenuLink" data-bs-popper="static">
+                          <li class="ms-3">
+                            <div class="name">
+                                <div class="fs-lg fw-semibold">Chelsea Maxfield</div>
+                                <div class="fs-13 color-black-30">Admin</div>
+                            </div>
+                          </li>
                           <li class="dropdown-item"><a href="#" class="active">Account Settings</a></li>
                           <li class="dropdown-item"><a href="#"> Live Dashboard</a></li>
                           <li class="dropdown-item"><a href="#"> Reports</a></li>
@@ -74,15 +80,18 @@
                 </div>
             </nav>
             <div class="d-flex">
-                <div id="sidebar" class="sidebar">
+                <div id="sidebar" class="sidebar collapsed">
                     <div class="sidebar-section">
                       <ul class="side-menu">
+                        <li>
+                            <div class="fs-26 fw-bold color-white ms-2">My Cases</div>
+                        </li>
                         <li>
                           <a href="#" class="menu-links">Dashboard</a>
                         </li>
                         <li>
                             <a class="menu-links" data-bs-toggle="collapse" href="#collapse-inner" role="button" aria-expanded="false" aria-controls="collapse-inner">
-                                Case Management Dashboard
+                                Case Management
                             </a>
                             <div class="collapse collapse-inner" id="collapse-inner">
                                 <div class="card card-body">
@@ -122,220 +131,222 @@
                             <button class="nav-link" id="closed-tab" data-bs-toggle="tab" data-bs-target="#closed-tab-pane" type="button" role="tab" aria-controls="closed-tab-pane" aria-selected="false">Closed Cases</button>
                             </li>
                         </ul>
-                        <div class="form-group w-40">
-                            <input class="form-control form-control-lg search-icon" type="search" placeholder="Search Case By Name / A No.">
-                        </div>
-                        <div class="d-flex">
-                            <button class="btn btn-primary btn-sm me-2">Add New Cases</button>
-                            <button class="btn btn-skyblue btn-sm with-icon me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#MyCaseFilter" aria-controls="MyCaseFilter">
-                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M2.75 7.33337L13.75 7.33337M13.75 7.33337C13.75 8.85216 14.9812 10.0834 16.5 10.0834C18.0188 10.0834 19.25 8.85216 19.25 7.33337C19.25 5.81459 18.0188 4.58337 16.5 4.58337C14.9812 4.58337 13.75 5.81459 13.75 7.33337ZM8.25 14.6667L19.25 14.6667M8.25 14.6667C8.25 16.1855 7.01878 17.4167 5.5 17.4167C3.98122 17.4167 2.75 16.1855 2.75 14.6667C2.75 13.1479 3.98122 11.9167 5.5 11.9167C7.01878 11.9167 8.25 13.1479 8.25 14.6667Z" stroke="#5BAAF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                Filter
-                            </button>
-                            <!--FILTER BTN OFF CANVAS -->
-                            <div class="offcanvas my-case-offcanvas w-450 offcanvas-end" tabindex="-1" id="MyCaseFilter" aria-labelledby="MyCaseFilterLabel">
-                              <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="MyCaseFilterLabel">Filter By</h5>
-                                <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#MyCaseFilterLabel" role="button" aria-controls="MyCaseFilterLabel"><img src="../../images/icons/x-square.svg" alt=""></a>
-                              </div>
-                              <div class="offcanvas-body">
-                                <div class="border-bottom-lightblue">
-                                  <div class="fs-16 fw-semibold color-black-60 text-uppercase mb-3">Service Level</div>
-                                  <div class="d-flex justify-content-between mb-3">
-                                    <div class="form-check form-inline">
-                                        <input class="form-check-input add-after" type="checkbox" value="" id="check6">
-                                        <label class="form-check-label style-1" for="check1">
-                                            Home Study
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-inline">
-                                        <input class="form-check-input add-after" type="checkbox" value="" id="check7">
-                                        <label class="form-check-label style-1" for="check1">
-                                            Level 3
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-inline">
-                                        <input class="form-check-input add-after" type="checkbox" value="" id="check8">
-                                        <label class="form-check-label style-1" for="check1">
-                                            Level 2
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-inline">
-                                        <input class="form-check-input add-after" type="checkbox" value="" id="check9">
-                                        <label class="form-check-label style-1" for="check1">
-                                            Level 1
-                                        </label>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="border-bottom-lightblue">
-                                  <div class="fs-16 fw-semibold color-black-60 text-uppercase my-3">Case Status</div>
-                                  <div class="d-flex mb-3">
-                                      <div class="d-flex align-items-center me-4">
-                                          <div class="form-check form-inline">
-                                              <input class="form-check-input add-after" type="checkbox" value="" id="check11">
-                                          </div>
-                                          <div class="badge badge-active">Active</div>
-                                      </div>
-                                      <div class="d-flex align-items-center">
-                                          <div class="form-check form-inline">
-                                            <input class="form-check-input add-after" type="checkbox" value="" id="check12">
-                                          </div>
-                                          <div class="badge badge-not-started">Cases Not Started</div>
-                                      </div>
-                                  </div>
-                                  <div class="d-flex align-items-center mb-3">
-                                      <div class="form-check form-inline">
-                                        <input class="form-check-input add-after" type="checkbox" value="" id="check13">
-                                      </div>
-                                      <div class="badge badge-approve">Extension Approved</div>
-                                  </div>
-                                </div>
-                                <div class="border-bottom-lightblue">
-                                  <div class="fs-16 fw-semibold color-black-60 text-uppercase my-3">Acceptance Date</div>
-                                  <div class="d-flex">
-                                      <div class="color-black fs-md fw-semibold mb-1 w-50 me-2">From</div>
-                                      <div class="color-black fs-md fw-semibold mb-1 w-50 ms-2">To</div>
-                                  </div>
-                                  <div class="d-flex align-items-center mb-3">
-                                      <div class="form-group w-50 me-2">
-                                          <input class="form-control form-control-md" type="date">
-                                      </div>
-                                      <div>-</div>
-                                      <div class="form-group w-50 ms-2">
-                                          <input class="form-control form-control-md" type="date">
-                                      </div>
-                                  </div>
-                                </div>
-                                <div class="border-bottom-lightblue">
-                                  <div class="fs-16 fw-semibold color-black-60 text-uppercase my-3">Expected Closure date</div>
-                                  <div class="d-flex">
-                                      <div class="color-black fs-md fw-semibold mb-1 w-50 me-2">From</div>
-                                      <div class="color-black fs-md fw-semibold mb-1 w-50 ms-2">To</div>
-                                  </div>
-                                  <div class="d-flex align-items-center mb-3">
-                                      <div class="form-group w-50 me-2">
-                                          <input class="form-control form-control-md" type="date">
-                                      </div>
-                                      <div>-</div>
-                                      <div class="form-group w-50 ms-2">
-                                          <input class="form-control form-control-md" type="date">
-                                      </div>
-                                  </div>
-                                </div>
-                                <div class="fs-16 fw-semibold color-black-60 text-uppercase my-3">Expected Closure date</div>
-                                <table class="w-100">
-                                  <tr>
-                                      <td>
-                                          <div class="form-check form-inline mb-2">
-                                              <input class="form-check-input add-after" type="checkbox" value="" id="check2">
-                                              <label class="form-check-label style-1" for="check1">
-                                                  All
-                                              </label>
-                                          </div>
-                                      </td>
-                                      <td>
-                                          <div class="form-check form-inline mb-2">
-                                              <input class="form-check-input add-after" type="checkbox" value="" id="check3">
-                                              <label class="form-check-label style-1" for="check1">
-                                                  Region 1
-                                              </label>
-                                          </div>
-                                      </td>
-                                      <td>
-                                          <div class="form-check form-inline mb-2">
-                                              <input class="form-check-input add-after" type="checkbox" value="" id="check4">
-                                              <label class="form-check-label style-1" for="check1">
-                                                  Region 2
-                                              </label>
-                                          </div>
-                                      </td>
-                                      <td>
-                                          <div class="form-check form-inline mb-2">
-                                              <input class="form-check-input add-after" type="checkbox" value="" id="check5">
-                                              <label class="form-check-label style-1" for="check1">
-                                                  Region 3
-                                              </label>
-                                          </div>
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          <div class="form-check form-inline mb-2">
-                                              <input class="form-check-input add-after" type="checkbox" value="" id="check21">
-                                              <label class="form-check-label style-1" for="check1">
-                                                  Region 4
-                                              </label>
-                                          </div>
-                                      </td>
-                                      <td>
-                                          <div class="form-check form-inline mb-2">
-                                              <input class="form-check-input add-after" type="checkbox" value="" id="check31">
-                                              <label class="form-check-label style-1" for="check1">
-                                                  Region 5
-                                              </label>
-                                          </div>
-                                      </td>
-                                      <td>
-                                          <div class="form-check form-inline mb-2">
-                                              <input class="form-check-input add-after" type="checkbox" value="" id="check41">
-                                              <label class="form-check-label style-1" for="check1">
-                                                  Region 6
-                                              </label>
-                                          </div>
-                                      </td>
-                                      <td>
-                                          <div class="form-check form-inline mb-2">
-                                              <input class="form-check-input add-after" type="checkbox" value="" id="check51">
-                                              <label class="form-check-label style-1" for="check1">
-                                                  Region 7
-                                              </label>
-                                          </div>
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          <div class="form-check form-inline mb-2">
-                                              <input class="form-check-input add-after" type="checkbox" value="" id="check20">
-                                              <label class="form-check-label style-1" for="check1">
-                                                  Region 8
-                                              </label>
-                                          </div>
-                                      </td>
-                                      <td>
-                                          <div class="form-check form-inline mb-2">
-                                              <input class="form-check-input add-after" type="checkbox" value="" id="check30">
-                                              <label class="form-check-label style-1" for="check1">
-                                                  Region 9
-                                              </label>
-                                          </div>
-                                      </td>
-                                      <td>
-                                          <div class="form-check form-inline mb-2">
-                                              <input class="form-check-input add-after" type="checkbox" value="" id="check40">
-                                              <label class="form-check-label style-1" for="check1">
-                                                  Region 10
-                                              </label>
-                                          </div>
-                                      </td>
-                                  </tr>
-                                </table>
-                              </div>
-                              <div class="offcanvas-footer d-flex">
-                                  <button class="btn btn-md btn-grey btn-radius-none w-50">Reset</button>
-                                  <button class="btn btn-md btn-darkblue btn-radius-none w-50">Apply</button>
-                              </div>
+                        <div class="d-flex w-50 justify-content-end align-items-center sm-flex-column">
+                            <div class="form-group w-60 me-2">
+                                <input class="form-control form-control-lg search-icon" type="search" placeholder="Search Case By Name / A No.">
                             </div>
-                            <!--END FILTER BTN OFF CANVAS -->
+                            <div class="d-flex add-buttons">
+                                <button class="btn btn-primary btn-sm me-2">Add New Cases</button>
+                                <button class="btn btn-skyblue btn-sm with-icon me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#MyCaseFilter" aria-controls="MyCaseFilter">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.75 7.33337L13.75 7.33337M13.75 7.33337C13.75 8.85216 14.9812 10.0834 16.5 10.0834C18.0188 10.0834 19.25 8.85216 19.25 7.33337C19.25 5.81459 18.0188 4.58337 16.5 4.58337C14.9812 4.58337 13.75 5.81459 13.75 7.33337ZM8.25 14.6667L19.25 14.6667M8.25 14.6667C8.25 16.1855 7.01878 17.4167 5.5 17.4167C3.98122 17.4167 2.75 16.1855 2.75 14.6667C2.75 13.1479 3.98122 11.9167 5.5 11.9167C7.01878 11.9167 8.25 13.1479 8.25 14.6667Z" stroke="#5BAAF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Filter
+                                </button>
+                                <!--FILTER BTN OFF CANVAS -->
+                                <div class="offcanvas my-case-offcanvas w-450 offcanvas-end" tabindex="-1" id="MyCaseFilter" aria-labelledby="MyCaseFilterLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="MyCaseFilterLabel">Filter By</h5>
+                                    <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#MyCaseFilterLabel" role="button" aria-controls="MyCaseFilterLabel"><img src="../../images/icons/x-square.svg" alt=""></a>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="border-bottom-lightblue">
+                                    <div class="fs-16 fw-semibold color-black-60 text-uppercase mb-3">Service Level</div>
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <div class="form-check form-inline">
+                                            <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                                            <label class="form-check-label style-1" for="check1">
+                                                Home Study
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-inline">
+                                            <input class="form-check-input add-after" type="checkbox" value="" id="check7">
+                                            <label class="form-check-label style-1" for="check1">
+                                                Level 3
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-inline">
+                                            <input class="form-check-input add-after" type="checkbox" value="" id="check8">
+                                            <label class="form-check-label style-1" for="check1">
+                                                Level 2
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-inline">
+                                            <input class="form-check-input add-after" type="checkbox" value="" id="check9">
+                                            <label class="form-check-label style-1" for="check1">
+                                                Level 1
+                                            </label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="border-bottom-lightblue">
+                                    <div class="fs-16 fw-semibold color-black-60 text-uppercase my-3">Case Status</div>
+                                    <div class="d-flex mb-3">
+                                        <div class="d-flex align-items-center me-4">
+                                            <div class="form-check form-inline">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check11">
+                                            </div>
+                                            <div class="badge badge-active">Active</div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="form-check form-inline">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check12">
+                                            </div>
+                                            <div class="badge badge-not-started">Cases Not Started</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="form-check form-inline">
+                                            <input class="form-check-input add-after" type="checkbox" value="" id="check13">
+                                        </div>
+                                        <div class="badge badge-approve">Extension Approved</div>
+                                    </div>
+                                    </div>
+                                    <div class="border-bottom-lightblue">
+                                    <div class="fs-16 fw-semibold color-black-60 text-uppercase my-3">Acceptance Date</div>
+                                    <div class="d-flex">
+                                        <div class="color-black fs-md fw-semibold mb-1 w-50 me-2">From</div>
+                                        <div class="color-black fs-md fw-semibold mb-1 w-50 ms-2">To</div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="form-group w-50 me-2">
+                                            <input class="form-control form-control-md" type="date">
+                                        </div>
+                                        <div>-</div>
+                                        <div class="form-group w-50 ms-2">
+                                            <input class="form-control form-control-md" type="date">
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="border-bottom-lightblue">
+                                    <div class="fs-16 fw-semibold color-black-60 text-uppercase my-3">Expected Closure date</div>
+                                    <div class="d-flex">
+                                        <div class="color-black fs-md fw-semibold mb-1 w-50 me-2">From</div>
+                                        <div class="color-black fs-md fw-semibold mb-1 w-50 ms-2">To</div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="form-group w-50 me-2">
+                                            <input class="form-control form-control-md" type="date">
+                                        </div>
+                                        <div>-</div>
+                                        <div class="form-group w-50 ms-2">
+                                            <input class="form-control form-control-md" type="date">
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="fs-16 fw-semibold color-black-60 text-uppercase my-3">Expected Closure date</div>
+                                    <table class="w-100">
+                                    <tr>
+                                        <td>
+                                            <div class="form-check form-inline mb-2">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check2">
+                                                <label class="form-check-label style-1" for="check1">
+                                                    All
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-inline mb-2">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check3">
+                                                <label class="form-check-label style-1" for="check1">
+                                                    Region 1
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-inline mb-2">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check4">
+                                                <label class="form-check-label style-1" for="check1">
+                                                    Region 2
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-inline mb-2">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check5">
+                                                <label class="form-check-label style-1" for="check1">
+                                                    Region 3
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check form-inline mb-2">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check21">
+                                                <label class="form-check-label style-1" for="check1">
+                                                    Region 4
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-inline mb-2">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check31">
+                                                <label class="form-check-label style-1" for="check1">
+                                                    Region 5
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-inline mb-2">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check41">
+                                                <label class="form-check-label style-1" for="check1">
+                                                    Region 6
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-inline mb-2">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check51">
+                                                <label class="form-check-label style-1" for="check1">
+                                                    Region 7
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check form-inline mb-2">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check20">
+                                                <label class="form-check-label style-1" for="check1">
+                                                    Region 8
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-inline mb-2">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check30">
+                                                <label class="form-check-label style-1" for="check1">
+                                                    Region 9
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-inline mb-2">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check40">
+                                                <label class="form-check-label style-1" for="check1">
+                                                    Region 10
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </table>
+                                </div>
+                                <div class="offcanvas-footer d-flex">
+                                    <button class="btn btn-md btn-grey btn-radius-none w-50">Reset</button>
+                                    <button class="btn btn-md btn-darkblue btn-radius-none w-50">Apply</button>
+                                </div>
+                                </div>
+                                <!--END FILTER BTN OFF CANVAS -->
+                            </div>
                         </div>
                    </div>
                    <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
                             
                                     <div class="table-part">
-                                        <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <div class="d-flex align-items-center">
+                                        <div class="d-flex justify-content-between align-items-center mb-2 md-row-seperate">
+                                            <div class="d-flex align-items-center md-start">
                                                 <div class="fs-md me-2">Result per page</div>
                                                 <div class="rows-select w-62">
                                                 <select class="selectpicker">
@@ -345,7 +356,7 @@
                                                 </select>
                                                 </div>
                                             </div>
-                                            <div class="d-flex">
+                                            <div class="d-flex md-end">
                                                 <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
                                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6323 11.8159C12.4026 12.0547 12.0228 12.0622 11.7839 11.8325L8.18394 8.4325C8.06629 8.31938 7.9998 8.16321 7.9998 8C7.9998 7.83679 8.06629 7.68062 8.18394 7.5675L11.7839 4.1675C12.0228 3.93782 12.4026 3.94527 12.6323 4.18413C12.862 4.423 12.8545 4.80282 12.6157 5.0325L9.46547 8L12.6157 10.9675C12.8545 11.1972 12.862 11.577 12.6323 11.8159ZM7.8323 11.8159C7.60263 12.0547 7.2228 12.0622 6.98394 11.8325L3.38394 8.4325C3.26629 8.31938 3.1998 8.16321 3.1998 8C3.1998 7.83679 3.26629 7.68062 3.38394 7.5675L6.98394 4.1675C7.2228 3.93782 7.60263 3.94527 7.8323 4.18413C8.06198 4.423 8.05453 4.80282 7.81567 5.0325L4.66547 8L7.81567 10.9675C8.05453 11.1972 8.06198 11.577 7.8323 11.8159Z" fill="#626262"/>
@@ -601,8 +612,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="d-flex align-items-center">
+                                        <div class="d-flex justify-content-between align-items-center md-row-seperate">
+                                            <div class="d-flex align-items-center md-start">
                                                 <div class="fs-md me-2">Result per page</div>
                                                 <div class="rows-select w-62">
                                                 <select class="selectpicker">
@@ -612,7 +623,7 @@
                                                 </select>
                                                 </div>
                                             </div>
-                                            <div class="d-flex">
+                                            <div class="d-flex md-end">
                                                 <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
                                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6323 11.8159C12.4026 12.0547 12.0228 12.0622 11.7839 11.8325L8.18394 8.4325C8.06629 8.31938 7.9998 8.16321 7.9998 8C7.9998 7.83679 8.06629 7.68062 8.18394 7.5675L11.7839 4.1675C12.0228 3.93782 12.4026 3.94527 12.6323 4.18413C12.862 4.423 12.8545 4.80282 12.6157 5.0325L9.46547 8L12.6157 10.9675C12.8545 11.1972 12.862 11.577 12.6323 11.8159ZM7.8323 11.8159C7.60263 12.0547 7.2228 12.0622 6.98394 11.8325L3.38394 8.4325C3.26629 8.31938 3.1998 8.16321 3.1998 8C3.1998 7.83679 3.26629 7.68062 3.38394 7.5675L6.98394 4.1675C7.2228 3.93782 7.60263 3.94527 7.8323 4.18413C8.06198 4.423 8.05453 4.80282 7.81567 5.0325L4.66547 8L7.81567 10.9675C8.05453 11.1972 8.06198 11.577 7.8323 11.8159Z" fill="#626262"/>
@@ -650,8 +661,8 @@
                         </div>
                         <div class="tab-pane fade" id="closed-tab-pane" role="tabpanel" aria-labelledby="closed-tab" tabindex="0">
                             <div class="table-part">
-                                <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <div class="d-flex align-items-center">
+                                <div class="d-flex justify-content-between align-items-center mb-2 md-row-seperate">
+                                    <div class="d-flex align-items-center md-start">
                                         <div class="fs-md me-2">Result per page</div>
                                         <div class="rows-select w-62">
                                         <select class="selectpicker">
@@ -661,7 +672,7 @@
                                         </select>
                                         </div>
                                     </div>
-                                    <div class="d-flex">
+                                    <div class="d-flex md-end">
                                         <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6323 11.8159C12.4026 12.0547 12.0228 12.0622 11.7839 11.8325L8.18394 8.4325C8.06629 8.31938 7.9998 8.16321 7.9998 8C7.9998 7.83679 8.06629 7.68062 8.18394 7.5675L11.7839 4.1675C12.0228 3.93782 12.4026 3.94527 12.6323 4.18413C12.862 4.423 12.8545 4.80282 12.6157 5.0325L9.46547 8L12.6157 10.9675C12.8545 11.1972 12.862 11.577 12.6323 11.8159ZM7.8323 11.8159C7.60263 12.0547 7.2228 12.0622 6.98394 11.8325L3.38394 8.4325C3.26629 8.31938 3.1998 8.16321 3.1998 8C3.1998 7.83679 3.26629 7.68062 3.38394 7.5675L6.98394 4.1675C7.2228 3.93782 7.60263 3.94527 7.8323 4.18413C8.06198 4.423 8.05453 4.80282 7.81567 5.0325L4.66547 8L7.81567 10.9675C8.05453 11.1972 8.06198 11.577 7.8323 11.8159Z" fill="#626262"/>
@@ -917,8 +928,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center">
+                                <div class="d-flex justify-content-between align-items-center md-row-seperate">
+                                    <div class="d-flex align-items-center md-start">
                                         <div class="fs-md me-2">Result per page</div>
                                         <div class="rows-select w-62">
                                         <select class="selectpicker">
@@ -928,7 +939,7 @@
                                         </select>
                                         </div>
                                     </div>
-                                    <div class="d-flex">
+                                    <div class="d-flex md-end">
                                         <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6323 11.8159C12.4026 12.0547 12.0228 12.0622 11.7839 11.8325L8.18394 8.4325C8.06629 8.31938 7.9998 8.16321 7.9998 8C7.9998 7.83679 8.06629 7.68062 8.18394 7.5675L11.7839 4.1675C12.0228 3.93782 12.4026 3.94527 12.6323 4.18413C12.862 4.423 12.8545 4.80282 12.6157 5.0325L9.46547 8L12.6157 10.9675C12.8545 11.1972 12.862 11.577 12.6323 11.8159ZM7.8323 11.8159C7.60263 12.0547 7.2228 12.0622 6.98394 11.8325L3.38394 8.4325C3.26629 8.31938 3.1998 8.16321 3.1998 8C3.1998 7.83679 3.26629 7.68062 3.38394 7.5675L6.98394 4.1675C7.2228 3.93782 7.60263 3.94527 7.8323 4.18413C8.06198 4.423 8.05453 4.80282 7.81567 5.0325L4.66547 8L7.81567 10.9675C8.05453 11.1972 8.06198 11.577 7.8323 11.8159Z" fill="#626262"/>

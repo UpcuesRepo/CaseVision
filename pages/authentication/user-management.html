@@ -38,14 +38,14 @@
                         </svg>
                     </button>
                     <div class="navbar-logo w-185 d-flex align-items-center justify-content-center">
-                        <a href="#"><img src="../../../../images/logo/logo-black.svg" alt=""></a>
+                        <a href="#"><img src="../../images/logo/logo-black.svg" alt=""></a>
                     </div>
                     <div class="fs-26 fw-bold color-dark-blue ms-3">User Management</div>
                 </div>
                 <div class="right-part d-flex align-items-center h-100">
                     <div class="dropdown dropdown-notification d-flex align-items-center">
                         <a class="btn btn-notification dropdown-toggle me-3" href="#" role="button" id="dropdownMenuNotifc" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="../../../../images/icons/bell-03.svg" alt="">
+                            <img src="../../images/icons/bell-03.svg" alt="">
                             <span class="red-dot"></span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-account" aria-labelledby="dropdownMenuNotific" data-bs-popper="static">
@@ -59,11 +59,17 @@
                         <a class="dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                             <div class="fs-lg fw-semibold ms-3 me-2 name-icon bg-lightblue-30">CM</div>
                             <div class="name me-3">
-                                <div class="fs-lg fs-semibold">Chelsea Maxfield</div>
+                                <div class="fs-lg fw-semibold">Chelsea Maxfield</div>
                                 <div class="fs-13 color-black-30">Admin</div>
                             </div>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-account" aria-labelledby="dropdownMenuLink" data-bs-popper="static">
+                          <li class="ms-3">
+                            <div class="name">
+                                <div class="fs-lg fw-semibold">Chelsea Maxfield</div>
+                                <div class="fs-13 color-black-30">Admin</div>
+                            </div>
+                          </li>
                           <li class="dropdown-item"><a href="#" class="active">Account Settings</a></li>
                           <li class="dropdown-item"><a href="#"> Live Dashboard</a></li>
                           <li class="dropdown-item"><a href="#"> Reports</a></li>
@@ -73,9 +79,12 @@
                 </div>
             </nav>
             <div class="d-flex">
-                <div id="sidebar" class="sidebar">
+                <div id="sidebar" class="sidebar collapsed">
                     <div class="sidebar-section">
                       <ul class="side-menu">
+                        <li>
+                            <div class="fs-26 fw-bold color-white ms-2">User Management</div>
+                        </li>
                         <li>
                           <a href="#" class="menu-links">Dashboard</a>
                         </li>
@@ -102,7 +111,7 @@
                             <a href="#" class="menu-links">Staff Directory</a>
                         </li>
                         <li>
-                            <a href="#" class="menu-links active">User Management</a>
+                            <a href="#" class="menu-links">User Management</a>
                         </li>
                       </ul>
                       <a href="https://ap-in.com/" target="_blank" title="Applied Intellect" class="powered-by-logo">
@@ -133,14 +142,14 @@
                             <div class="offcanvas my-case-offcanvas w-800 offcanvas-end" tabindex="-1" id="NewUser" aria-labelledby="NewUserLabel">
                                 <div class="offcanvas-header">
                                   <h5 class="offcanvas-title" id="MyCaseFilterLabel">ADD NEW USER</h5>
-                                  <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#MyCaseFilterLabel" role="button" aria-controls="MyCaseFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
+                                  <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#MyCaseFilterLabel" role="button" aria-controls="MyCaseFilterLabel"><img src="../../images/icons/x-square.svg" alt=""></a>
                                 </div>
                                 <div class="offcanvas-body">
                                     <div class="border-bottom-lightblue">
                                         <div class="fs-16 fw-semibold color-black-60 text-uppercase mb-3">personal information</div>
                                         <div class="container-fluid">
                                             <div class="row align-items-stretch h-100 mb-3">
-                                                <div class="col-md-6">
+                                                <div class="col-md-6 col-sm-6">
                                                     <div class="color-black fs-md fw-semibold mb-1">Name</div>
                                                     <div class="form-group mb-3">
                                                         <input class="form-control form-control-lg" type="email" placeholder="Enter Full Name">
@@ -149,9 +158,9 @@
                                                     <div class="form-group mb-3">
                                                         <input class="form-control form-control-lg" type="email" placeholder="Enter Email">
                                                     </div>
-                                                    <div class="color-black fs-md fw-semibold mb-1">Mobile Number</div>
+                                                    <div class="color-black fs-md fw-semibold mb-1">Phone Number</div>
                                                     <div class="form-group mb-3">
-                                                        <input class="form-control form-control-lg" type="email" placeholder="Enter Mobile Number">
+                                                        <input class="form-control form-control-lg" type="email" placeholder="Enter Phone Number">
                                                     </div>
                                                     <div class="color-black fs-md fw-semibold mb-1">Language</div>
                                                     <div class="rows-select grey-toggle">
@@ -163,7 +172,7 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-6 justify-content-between d-flex flex-column">
+                                                <div class="col-md-6 col-sm-6 justify-content-between d-flex flex-column">
                                                     <div class="color-black fs-md fw-semibold mb-1">User Profile Image</div>
                                                     <form method="post" class="browse-file w-100 mb-2" enctype="multipart/form-data" action="">
                                                         <span id="filename" class="filename"></span>
@@ -190,7 +199,7 @@
                                         <div class="fs-16 fw-semibold color-black-60 text-uppercase mb-3 my-4">Address information </div>
                                         <div class="container-fluid">
                                             <div class="row">
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-4 col-sm-4">
                                                     <div class="color-black fs-md fw-semibold mb-1">State</div>
                                                     <div class="rows-select grey-toggle mb-3">
                                                         <select class="selectpicker">
@@ -200,7 +209,7 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-4 col-sm-4">
                                                     <div class="color-black fs-md fw-semibold mb-1">City</div>
                                                     <div class="rows-select grey-toggle mb-3">
                                                         <select class="selectpicker">
@@ -210,7 +219,7 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-4">
+                                                <div class="col-lg-4 col-sm-4">
                                                     <div class="color-black fs-md fw-semibold mb-1">Zip Code</div>
                                                     <div class="form-group">
                                                         <input class="form-control form-control-lg" type="email" placeholder="">
@@ -223,7 +232,7 @@
                                         <div class="fs-16 fw-semibold color-black-60 text-uppercase mb-3 my-4">Organization information </div>
                                         <div class="container-fluid">
                                             <div class="row">
-                                                <div class="col-lg-6">
+                                                <div class="col-lg-6 col-sm-6">
                                                     <div class="color-black fs-md fw-semibold mb-1">User Position</div>
                                                     <div class="rows-select grey-toggle mb-3">
                                                         <select class="selectpicker">
@@ -249,7 +258,7 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-6">
+                                                <div class="col-lg-6 col-sm-6">
                                                     <div class="color-black fs-md fw-semibold mb-1">Sub Position</div>
                                                     <div class="rows-select grey-toggle mb-3">
                                                         <select class="selectpicker">
@@ -300,7 +309,7 @@
                             <div class="offcanvas my-case-offcanvas w-800 offcanvas-end" tabindex="-1" id="EditUser" aria-labelledby="NewUserLabel">
                                 <div class="offcanvas-header">
                                   <h5 class="offcanvas-title" id="MyCaseFilterLabel">EDIT USER</h5>
-                                  <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#MyCaseFilterLabel" role="button" aria-controls="MyCaseFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
+                                  <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#MyCaseFilterLabel" role="button" aria-controls="MyCaseFilterLabel"><img src="../../images/icons/x-square.svg" alt=""></a>
                                 </div>
                                 <div class="offcanvas-body">
                                     <div class="border-bottom-lightblue">
@@ -546,8 +555,8 @@
                         </div>
                    </div>
                    <div class="table-part">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                            <div class="d-flex align-items-center">
+                        <div class="d-flex justify-content-between align-items-center mb-2 md-row-seperate">
+                            <div class="d-flex align-items-center md-start">
                                 <div class="fs-md me-2">Result per page</div>
                                 <div class="rows-select w-62">
                                   <select class="selectpicker">
@@ -557,7 +566,7 @@
                                   </select>
                                 </div>
                             </div>
-                            <div class="d-flex">
+                            <div class="d-flex md-end">
                                 <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
                                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6323 11.8159C12.4026 12.0547 12.0228 12.0622 11.7839 11.8325L8.18394 8.4325C8.06629 8.31938 7.9998 8.16321 7.9998 8C7.9998 7.83679 8.06629 7.68062 8.18394 7.5675L11.7839 4.1675C12.0228 3.93782 12.4026 3.94527 12.6323 4.18413C12.862 4.423 12.8545 4.80282 12.6157 5.0325L9.46547 8L12.6157 10.9675C12.8545 11.1972 12.862 11.577 12.6323 11.8159ZM7.8323 11.8159C7.60263 12.0547 7.2228 12.0622 6.98394 11.8325L3.38394 8.4325C3.26629 8.31938 3.1998 8.16321 3.1998 8C3.1998 7.83679 3.26629 7.68062 3.38394 7.5675L6.98394 4.1675C7.2228 3.93782 7.60263 3.94527 7.8323 4.18413C8.06198 4.423 8.05453 4.80282 7.81567 5.0325L4.66547 8L7.81567 10.9675C8.05453 11.1972 8.06198 11.577 7.8323 11.8159Z" fill="#626262"/>
@@ -600,7 +609,7 @@
                                                 <tr>
                                                     <th scope="col">Name</th>
                                                     <th scope="col">Email Address</th>
-                                                    <th scope="col">Mobile Number</th>
+                                                    <th scope="col">Phone Number</th>
                                                     <th scope="col">User Type</th>
                                                     <th scope="col">Status</th>
                                                     <th scope="col">Position</th>
@@ -1064,8 +1073,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="d-flex align-items-center">
+                        <div class="d-flex justify-content-between align-items-center md-row-seperate">
+                            <div class="d-flex align-items-center md-start">
                                 <div class="fs-md me-2">Result per page</div>
                                 <div class="rows-select w-62">
                                   <select class="selectpicker">
@@ -1075,7 +1084,7 @@
                                   </select>
                                 </div>
                             </div>
-                            <div class="d-flex">
+                            <div class="d-flex md-end">
                                 <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
                                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6323 11.8159C12.4026 12.0547 12.0228 12.0622 11.7839 11.8325L8.18394 8.4325C8.06629 8.31938 7.9998 8.16321 7.9998 8C7.9998 7.83679 8.06629 7.68062 8.18394 7.5675L11.7839 4.1675C12.0228 3.93782 12.4026 3.94527 12.6323 4.18413C12.862 4.423 12.8545 4.80282 12.6157 5.0325L9.46547 8L12.6157 10.9675C12.8545 11.1972 12.862 11.577 12.6323 11.8159ZM7.8323 11.8159C7.60263 12.0547 7.2228 12.0622 6.98394 11.8325L3.38394 8.4325C3.26629 8.31938 3.1998 8.16321 3.1998 8C3.1998 7.83679 3.26629 7.68062 3.38394 7.5675L6.98394 4.1675C7.2228 3.93782 7.60263 3.94527 7.8323 4.18413C8.06198 4.423 8.05453 4.80282 7.81567 5.0325L4.66547 8L7.81567 10.9675C8.05453 11.1972 8.06198 11.577 7.8323 11.8159Z" fill="#626262"/>

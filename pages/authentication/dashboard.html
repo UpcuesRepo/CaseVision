@@ -31,7 +31,6 @@
     <div class="" id="wrapper">
         <div class="collapsible-navbar h-100">
             <nav class="main-navbar navbar-expand-xl w-100 d-flex justify-content-between align-items-center">
-                
                 <div class="left-part d-flex align-items-center h-100">
                     <button type="button" class="btn btn-toggle h-100" id="menu-btn">
                         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,16 +39,14 @@
                         </svg>
                     </button>
                     <div class="navbar-logo w-185 d-flex align-items-center justify-content-center">
-                        <a href="#"><img src="../../images/logo/logo-black.svg"  alt="" title="Case Vision"></a>
+                        <a href="#"><img src="../../images/logo/logo-black.svg" alt=""></a>
                     </div>
-                    
-                    <h1 class="fs-26  fw-bold color-dark-blue m-0 ms-3">Dashboard</h1>
-
+                    <div class="fs-26 fw-bold color-dark-blue ms-3">Dashboard</div>
                 </div>
                 <div class="right-part d-flex align-items-center h-100">
                     <div class="dropdown dropdown-notification d-flex align-items-center">
                         <a class="btn btn-notification dropdown-toggle me-3" href="#" role="button" id="dropdownMenuNotifc" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="../../images/icons/bell-03.svg"  title="Notification" alt="">
+                            <img src="../../images/icons/bell-03.svg" alt="">
                             <span class="red-dot"></span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-account" aria-labelledby="dropdownMenuNotific" data-bs-popper="static">
@@ -61,13 +58,19 @@
                     </div>
                     <div class="dropdown dropdown-profile d-flex align-items-center me-3">
                         <a class="dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                            <div class="fs-lg fw-semibold ms-3 me-2 name-icon bg-grey">CM</div>
+                            <div class="fs-lg fw-semibold ms-3 me-2 name-icon bg-lightblue-30">CM</div>
                             <div class="name me-3">
-                                <div class="fs-lg fs-semibold">Chelsea Maxfield</div>
+                                <div class="fs-lg fw-semibold">Chelsea Maxfield</div>
                                 <div class="fs-13 color-black-30">Admin</div>
                             </div>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-account" aria-labelledby="dropdownMenuLink" data-bs-popper="static">
+                          <li class="ms-3">
+                            <div class="name">
+                                <div class="fs-lg fw-semibold">Chelsea Maxfield</div>
+                                <div class="fs-13 color-black-30">Admin</div>
+                            </div>
+                          </li>
                           <li class="dropdown-item"><a href="#" class="active">Account Settings</a></li>
                           <li class="dropdown-item"><a href="#"> Live Dashboard</a></li>
                           <li class="dropdown-item"><a href="#"> Reports</a></li>
@@ -77,15 +80,18 @@
                 </div>
             </nav>
             <div class="d-flex">
-                <div id="sidebar" class="sidebar">
+                <div id="sidebar" class="sidebar collapsed">
                     <div class="sidebar-section">
                       <ul class="side-menu">
+                        <li>
+                            <div class="fs-26 fw-bold color-white ms-2">Dashboard</div>
+                        </li>
                         <li>
                           <a href="#" class="menu-links">Dashboard</a>
                         </li>
                         <li>
                             <a class="menu-links" data-bs-toggle="collapse" href="#collapse-inner" role="button" aria-expanded="false" aria-controls="collapse-inner">
-                                Case Management Dashboard
+                                Case Management
                             </a>
                             <div class="collapse collapse-inner" id="collapse-inner">
                                 <div class="card card-body">
@@ -114,7 +120,7 @@
                         <p class="version mt-2">Version:&nbsp;1.0.16.1</p>
                         </a>
                     </div>
-                  </div>
+                </div>
                 <div class="dashboard content-part">
                     <div class="container-fluid">
                     <div class="row align-items-stretch h-100">

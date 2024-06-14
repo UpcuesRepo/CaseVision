@@ -3,6 +3,12 @@
     background-color: $light-blue-4;
     border-radius: $radius-lg;
     padding: 20px;
+    @include media-breakpoint-down(md){
+        margin-top: 10px;
+    }
+    @include media-breakpoint-down(lg){
+        margin-top: 10px;
+    }
     .title{
         color: $black-60;
         font-size: $font-size-16;

@@ -58,13 +58,19 @@
                     </div>
                     <div class="dropdown dropdown-profile d-flex align-items-center me-3">
                         <a class="dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                            <div class="fs-lg fw-semibold ms-3 me-2 name-icon bg-grey">CM</div>
+                            <div class="fs-lg fw-semibold ms-3 me-2 name-icon bg-lightblue-30">CM</div>
                             <div class="name me-3">
-                                <div class="fs-lg fs-semibold">Chelsea Maxfield</div>
+                                <div class="fs-lg fw-semibold">Chelsea Maxfield</div>
                                 <div class="fs-13 color-black-30">Admin</div>
                             </div>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-account" aria-labelledby="dropdownMenuLink" data-bs-popper="static">
+                          <li class="ms-3">
+                            <div class="name">
+                                <div class="fs-lg fw-semibold">Chelsea Maxfield</div>
+                                <div class="fs-13 color-black-30">Admin</div>
+                            </div>
+                          </li>
                           <li class="dropdown-item"><a href="#" class="active">Account Settings</a></li>
                           <li class="dropdown-item"><a href="#"> Live Dashboard</a></li>
                           <li class="dropdown-item"><a href="#"> Reports</a></li>
@@ -74,15 +80,18 @@
                 </div>
             </nav>
             <div class="d-flex">
-                <div id="sidebar" class="sidebar">
+                <div id="sidebar" class="sidebar collapsed">
                     <div class="sidebar-section">
                       <ul class="side-menu">
+                        <li>
+                            <div class="fs-26 fw-bold color-white ms-2">Staff Directory</div>
+                        </li>
                         <li>
                           <a href="#" class="menu-links">Dashboard</a>
                         </li>
                         <li>
                             <a class="menu-links" data-bs-toggle="collapse" href="#collapse-inner" role="button" aria-expanded="false" aria-controls="collapse-inner">
-                                Case Management Dashboard
+                                Case Management
                             </a>
                             <div class="collapse collapse-inner" id="collapse-inner">
                                 <div class="card card-body">
@@ -113,8 +122,8 @@
                     </div>
                 </div>
                 <div class="my-case content-part h-100 w-100">
-                   <div class="top-part d-flex justify-content-between align-items-center w-100 row ms-0">
-                        <ul class="col-md-6 nav nav-pills my-case-tabs" id="myTab" role="tablist">
+                   <div class="top-part d-flex justify-content-between align-items-center w-100 row md-p-0 ms-0">
+                        <ul class="col-md-6 col-sm-6 nav nav-pills my-case-tabs" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane" type="button" role="tab" aria-controls="all-tab-pane" aria-selected="true">Map View</button>
                             </li>
@@ -122,8 +131,8 @@
                             <button class="nav-link" id="closed-tab" data-bs-toggle="tab" data-bs-target="#closed-tab-pane" type="button" role="tab" aria-controls="closed-tab-pane" aria-selected="false">List View</button>
                             </li>
                         </ul>
-                        <div class="col-md-6 d-flex justify-content-end">
-                            <div class="col-md-9">
+                        <div class="col-md-6 col-sm-6 d-flex justify-content-end">
+                            <div class="col-md-9 me-3">
                                 <div class="form-group">
                                     <input class="form-control form-control-lg search-icon" type="search" placeholder="Search Name / Zip Code">
                                 </div>
@@ -140,7 +149,7 @@
                                 <div class="offcanvas my-case-offcanvas w-450 offcanvas-end" tabindex="-1" id="StaffDirectoryFilter" aria-labelledby="StaffDirectoryFilterLabel">
                                     <div class="offcanvas-header">
                                     <h5 class="offcanvas-title" id="MyCaseFilterLabel">Filter By</h5>
-                                    <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#MyCaseFilterLabel" role="button" aria-controls="MyCaseFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
+                                    <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#MyCaseFilterLabel" role="button" aria-controls="MyCaseFilterLabel"><img src="../../images/icons/x-square.svg" alt=""></a>
                                     </div>
                                     <div class="offcanvas-body">
                                     <div class="border-bottom-lightblue">
@@ -286,7 +295,7 @@
                                     <div class="row">
                                         <div class="col-lg-9">
                                             <div class="blank-card">
-                                                <img src="../../images/backgrounds/map.png" alt="">
+                                                <img src="../../images/backgrounds/map.png" class="w-100" alt="">
                                                 <button class="map-pin" type="button" data-bs-toggle="offcanvas" data-bs-target="#StaffInfoFilter" aria-controls="StaffInfoFilter">
                                                     <svg width="24" height="30" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <g filter="url(#filter0_f_1618_1122)">
@@ -345,7 +354,7 @@
                                                 <!-- END FILTER FOR STAFF INFO -->
                                             </div>
                                         </div>
-                                        <div class="col-lg-3">
+                                        <div class="col-lg-3 col-sm-6">
                                             <div class="position-card">
                                                 <div class="title mb-3">Positions</div>
                                                 <div class="d-flex mb-2">
@@ -392,8 +401,8 @@
                         </div>
                         <div class="tab-pane fade" id="closed-tab-pane" role="tabpanel" aria-labelledby="closed-tab" tabindex="0">
                             <div class="table-part">
-                                <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <div class="d-flex align-items-center">
+                                <div class="d-flex justify-content-between align-items-center md-row-seperate mb-2">
+                                    <div class="d-flex align-items-center md-start">
                                         <div class="fs-md me-2">Result per page</div>
                                         <div class="rows-select w-62">
                                         <select class="selectpicker">
@@ -403,7 +412,7 @@
                                         </select>
                                         </div>
                                     </div>
-                                    <div class="d-flex">
+                                    <div class="d-flex md-end">
                                         <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6323 11.8159C12.4026 12.0547 12.0228 12.0622 11.7839 11.8325L8.18394 8.4325C8.06629 8.31938 7.9998 8.16321 7.9998 8C7.9998 7.83679 8.06629 7.68062 8.18394 7.5675L11.7839 4.1675C12.0228 3.93782 12.4026 3.94527 12.6323 4.18413C12.862 4.423 12.8545 4.80282 12.6157 5.0325L9.46547 8L12.6157 10.9675C12.8545 11.1972 12.862 11.577 12.6323 11.8159ZM7.8323 11.8159C7.60263 12.0547 7.2228 12.0622 6.98394 11.8325L3.38394 8.4325C3.26629 8.31938 3.1998 8.16321 3.1998 8C3.1998 7.83679 3.26629 7.68062 3.38394 7.5675L6.98394 4.1675C7.2228 3.93782 7.60263 3.94527 7.8323 4.18413C8.06198 4.423 8.05453 4.80282 7.81567 5.0325L4.66547 8L7.81567 10.9675C8.05453 11.1972 8.06198 11.577 7.8323 11.8159Z" fill="#626262"/>
@@ -568,8 +577,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center">
+                                <div class="d-flex justify-content-between align-items-center md-row-seperate">
+                                    <div class="d-flex align-items-center md-start">
                                         <div class="fs-md me-2">Result per page</div>
                                         <div class="rows-select w-62">
                                         <select class="selectpicker">
@@ -579,7 +588,7 @@
                                         </select>
                                         </div>
                                     </div>
-                                    <div class="d-flex">
+                                    <div class="d-flex md-end">
                                         <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6323 11.8159C12.4026 12.0547 12.0228 12.0622 11.7839 11.8325L8.18394 8.4325C8.06629 8.31938 7.9998 8.16321 7.9998 8C7.9998 7.83679 8.06629 7.68062 8.18394 7.5675L11.7839 4.1675C12.0228 3.93782 12.4026 3.94527 12.6323 4.18413C12.862 4.423 12.8545 4.80282 12.6157 5.0325L9.46547 8L12.6157 10.9675C12.8545 11.1972 12.862 11.577 12.6323 11.8159ZM7.8323 11.8159C7.60263 12.0547 7.2228 12.0622 6.98394 11.8325L3.38394 8.4325C3.26629 8.31938 3.1998 8.16321 3.1998 8C3.1998 7.83679 3.26629 7.68062 3.38394 7.5675L6.98394 4.1675C7.2228 3.93782 7.60263 3.94527 7.8323 4.18413C8.06198 4.423 8.05453 4.80282 7.81567 5.0325L4.66547 8L7.81567 10.9675C8.05453 11.1972 8.06198 11.577 7.8323 11.8159Z" fill="#626262"/>

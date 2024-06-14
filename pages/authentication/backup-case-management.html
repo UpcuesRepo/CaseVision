@@ -123,56 +123,115 @@
                 </div>
                 <div class="case-management content-part">
                     <div class="container-fluid">
+                        <div class="fs-xl fw-bold mb-2">Status of All Cases</div>
+                        <div class="row mb-3">
+                            <div class="col-xl-2 col-md-3 col-sm-4">
+                                <div class="status-card d-flex align-items-center flex-column">
+                                    <div class="count">200</div>
+                                    <div class="status text-center">Cases Not Started</div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-md-3 col-sm-4">
+                                <div class="status-card d-flex align-items-center flex-column">
+                                    <div class="count">100</div>
+                                    <div class="status text-center">Active Cases</div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-md-3 col-sm-4">
+                                <div class="status-card d-flex align-items-center flex-column">
+                                    <div class="count">400</div>
+                                    <div class="status text-center">Closed Cases</div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-md-3 col-sm-4">
+                                <div class="status-card d-flex align-items-center flex-column">
+                                    <div class="count">120</div>
+                                    <div class="status text-center">Extension Approved</div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-md-3 col-sm-4">
+                                <div class="status-card d-flex align-items-center flex-column">
+                                    <div class="count">300</div>
+                                    <div class="status text-center">Transferred Service Level</div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-md-3 col-sm-4">
+                                <div class="status-card d-flex align-items-center flex-column">
+                                    <div class="count">50</div>
+                                    <div class="status text-center">Moved Out of Area</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="container-fluid">
                         <div class="row align-items-stretch h-100">
-                            <div class="col-xl-5 col-lg-12 d-inline-flex">
-                                <div class="case-compliance shadow-sm-card w-100 mb-20 me-3 d-flex justify-content-between">
-                                    <div class="left-part">
-                                        <div class="fs-xl fw-bold mb-2">Alerts</div>
-                                        <div class="fs-16 fw-semibold color-dark-blue mb-2">New Case Acceptance (within last 3 days)</div>
-                                        <div class="fs-16 fw-semibold color-dark-blue mb-2">Upcoming Visit or Check-In (within next 5 days)</div>
-                                        <div class="fs-16 fw-semibold color-dark-blue mb-2">Upcoming Case Closure (within next 5 days)</div>
-                                        <div class="fs-16 fw-semibold color-dark-blue mb-2">Upcoming Age-Out (within next 3 months)</div>
-                                        <div class="fs-16 fw-semibold color-dark-blue mb-2">Case Milestone Past Due</div>
-                                        <div class="fs-16 fw-semibold color-dark-blue mb-2">Case File Missing Notes</div>
-                                        <div class="fs-16 fw-semibold color-dark-blue mb-2">Case Form Missing Signature</div>
-                                        <div class="fs-16 fw-semibold color-dark-blue mb-2">Pending Case Transfer Request</div>
-                                        <div class="fs-xl fw-semibold color-red">Total Cases</div>
-                                    </div>
-                                    <div class="left-part">
-                                        <div class="fs-xl fw-bold mb-2"># of Cases</div>
-                                        <div class="fs-lg fw-semibold mb-2">02</div>
-                                        <div class="fs-lg fw-semibold mb-2">03</div>
-                                        <div class="fs-lg fw-semibold mb-2">12</div>
-                                        <div class="fs-lg fw-semibold mb-2">11</div>
-                                        <div class="fs-lg fw-semibold mb-2">93</div>
-                                        <div class="fs-lg fw-semibold mb-2">02</div>
-                                        <div class="fs-lg fw-semibold mb-2">02</div>
-                                        <div class="fs-lg fw-semibold mb-2">02</div>
-                                        <div class="fs-xl fw-semibold color-red">Total Cases</div>
-                                    </div>
+                            <div class="col-xl-8 col-lg-12 d-inline-flex">
+                                <div class="case-compliance shadow-sm-card w-100 mb-20 me-3">
+                                   <div class="fs-xl fw-bold">Cases in Compliance</div>
                                 </div>
                             </div>
-                            <div class="col-xl-7 col-lg-12 col-sm-12 mb-20">
-                                <div class="case-compliance shadow-sm-card w-100 me-3 h-100">
-                                    <div class="fs-xl fw-bold">Case Status</div>
-                                 </div>
+                            <div class="col-xl-4 col-lg-6 col-sm-6">
+                                <div class="notification-card mb-20">
+                                   <div class="title mb-2">Notifications</div>
+                                   <div class="date mb-3">April, 2024</div>
+                                   <div class="card-inner">
+                                       <div class="timeline">
+                                           <ul class="timeline-list">
+                                               <li class="timeline-item d-flex">
+                                                   <div class="timeline-status is-outline me-2"></div>
+                                                   <div class="timeline-date me-5">12 Apr</div>
+                                                   <div class="timeline-data">
+                                                       <a href="#" class="timeline-title">Case Number #2212378</a>
+                                                       <div class="timeline-des">Re-submitted Application form.</div>
+                                                       <div class="timeline-des">09:30am</div>    
+                                                   </div>
+                                               </li>
+                                               <li class="timeline-item d-flex">
+                                                   <div class="timeline-status me-2"></div>
+                                                   <div class="timeline-date me-5">11 Apr</div>
+                                                   <div class="timeline-data">
+                                                       <a href="#" class="timeline-title">Case Number #2212378</a>
+                                                       <div class="timeline-des">Re-submitted KYC Application form.</div>
+                                                       <div class="timeline-des">09:30am</div>
+                                                   </div>
+                                               </li>
+                                               <li class="timeline-item d-flex">
+                                                   <div class="timeline-status me-2"></div>
+                                                   <div class="timeline-date me-5">11 Apr</div>
+                                                   <div class="timeline-data">
+                                                       <a href="#" class="timeline-title">Case Number #2212378</a>
+                                                       <div class="timeline-des">Re-submitted KYC Application form.</div>
+                                                       <div class="timeline-des">09:30am</div>
+                                                   </div>
+                                               </li>
+                                               <li class="timeline-item d-flex">
+                                                   <div class="timeline-status me-2"></div>
+                                                   <div class="timeline-date me-5">11 Apr</div>
+                                                   <div class="timeline-data">
+                                                       <a href="#" class="timeline-title">Case Number #2212378</a>
+                                                       <div class="timeline-des">Re-submitted KYC Application form.</div>
+                                                       <div class="timeline-des">09:30am</div>
+                                                   </div>
+                                               </li>
+                                           </ul>
+                                       </div>
+                                   </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="container-fluid">
                         <div class="d-flex justify-content-between align-items-center mb-3">
                              <div class="d-flex align-items-center">
-                                 <div class="fs-xl fw-bold me-2">Total Cases (123)</div>
+                                 <div class="fs-xl fw-bold me-2">Most Recent Cases</div>
                                  <a href="#"
                                          data-bs-toggle="tooltip" data-bs-placement="top"
                                          data-bs-custom-class="custom-tooltip"
-                                         data-bs-title="The Total Cases of Alerts.">
+                                         data-bs-title="The 10 most recently updated cases are shown.">
                                          <img src="../../images/icons/info-circle.svg" alt="">
                                  </a>
                              </div>
-                             <button class="btn btn-skyblue btn-sm h-34" type="button">View My Cases</button>
+                             <button class="btn btn-skyblue btn-sm h-34" type="button">View All</button>
                         </div>
                         <div class="row">
                             <div class="col-lg-12 col-md-12">

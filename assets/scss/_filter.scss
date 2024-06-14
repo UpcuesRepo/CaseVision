@@ -2,6 +2,12 @@
     &.w-800{
         width: 800px;
     }
+    &.w-260{
+        width: 260px;
+        @include media-breakpoint-down(md){
+            width: 100%;
+        }
+    }
     &.w-450{
         width: 450px;
     }
@@ -33,6 +39,41 @@
                 line-height: $line-height-22;  
                 color: $black;
             }
+        }
+    }
+    &.side-filter{
+        background-color: $black;
+        display: none;
+        .offcanvas-header{
+            justify-content: end;
+        }
+        .offcanvas-body{
+            .sidebar{
+                @include media-breakpoint-down(md){
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                }
+                .side-menu{
+                    li{
+                        a{
+                            @include media-breakpoint-down(md){
+                                text-align: center;
+                            }   
+                        }
+                    }
+                }
+            }
+            .nav-title{
+                display: none;
+                @include media-breakpoint-down(lg){
+                    display: block;
+                }
+            }
+        }
+        @include media-breakpoint-down(lg){
+            display: block;
         }
     }
 }

@@ -7,10 +7,30 @@
         width: 100%;
         background-color: $white;
         z-index: 1;
+        display: block;
+        // &.desk-nav{
+        //     &.d-flex{
+        //         @include media-breakpoint-down(lg){
+        //             display: none!important;
+        //         }
+        //     }
+        // }
         .rotate{
             transform: rotate(180deg);
             transform-origin: 84% 50%;
         }
+        // .btn-filter{
+        //     display: none;
+        //     @include media-breakpoint-down(lg){
+        //         display: block;
+        //     }
+        // }
+        // #menu-btn{
+        //     display: block;
+        //     @include media-breakpoint-down(lg){
+        //         display: none;
+        //     }
+        // }
         .navbar-logo{
             border-left: $border-light-gray-2;
             border-right: $border-light-gray-2;
@@ -35,5 +55,43 @@
                 }
             }
         }
+        .color-dark-blue{
+            display: block;
+            @include media-breakpoint-down(lg){
+                display: none;
+            }
+        }
+        // &.mobile-nav{
+        //     &.d-flex{
+        //         display: none!important;
+        //         @include media-breakpoint-down(md){
+        //             display: block!important;
+        //         }
+        //         @include media-breakpoint-down(lg){
+        //             display: flex!important;
+        //         }
+        //     }
+        //     .w-185{
+        //         width: 130px;
+        //         img{
+        //             width: 100px;
+        //         }
+        //     }
+        //     .btn-toggle{
+        //         padding: 13px 15px;
+        //         svg{
+        //             height: 30px;
+        //             width: 30px;
+        //         }
+        //     }
+        // }
     }
+    // #sidebar{
+    //     @include media-breakpoint-down(lg){
+    //         display: none;
+    //     }
+    //     @include media-breakpoint-down(md){
+    //         display: none;
+    //     }
+    // }
 }
