@@ -277,17 +277,18 @@
                 <button class="btn btn-md btn-darkblue btn-radius-none w-50">Apply</button>
             </div>
         </div>
+        <!-- ADD NEW USER OFF CANVAS -->
         <div class="offcanvas my-case-offcanvas w-800 offcanvas-end" tabindex="-1" id="NewUser" aria-labelledby="NewUserLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="MyCaseFilterLabel">ADD NEW USER</h5>
-              <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#MyCaseFilterLabel" role="button" aria-controls="MyCaseFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
+              <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#MyCaseFilterLabel" role="button" aria-controls="MyCaseFilterLabel"><img src="../../images/icons/x-square.svg" alt=""></a>
             </div>
             <div class="offcanvas-body">
                 <div class="border-bottom-lightblue">
                     <div class="fs-16 fw-semibold color-black-60 text-uppercase mb-3">personal information</div>
                     <div class="container-fluid">
                         <div class="row align-items-stretch h-100 mb-3">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6">
                                 <div class="color-black fs-md fw-semibold mb-1">Name</div>
                                 <div class="form-group mb-3">
                                     <input class="form-control form-control-lg" type="email" placeholder="Enter Full Name">
@@ -296,13 +297,13 @@
                                 <div class="form-group mb-3">
                                     <input class="form-control form-control-lg" type="email" placeholder="Enter Email">
                                 </div>
-                                <div class="color-black fs-md fw-semibold mb-1">Mobile Number</div>
+                                <div class="color-black fs-md fw-semibold mb-1">Phone Number</div>
                                 <div class="form-group mb-3">
-                                    <input class="form-control form-control-lg" type="email" placeholder="Enter Mobile Number">
+                                    <input class="form-control form-control-lg" type="email" placeholder="Enter Phone Number">
                                 </div>
                                 <div class="color-black fs-md fw-semibold mb-1">Language</div>
                                 <div class="rows-select grey-toggle">
-                                    <select class="selectpicker" multiple placeholder="Select up to 3 tags">
+                                    <select class="form-select" multiple placeholder="Select up to 3 tags">
                                         <option value="number2">English</option>
                                         <option value="number3">Spanish</option>
                                         <option value="number4">German</option>
@@ -310,7 +311,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-6 justify-content-between d-flex flex-column">
+                            <div class="col-md-6 col-sm-6 justify-content-between d-flex flex-column">
                                 <div class="color-black fs-md fw-semibold mb-1">User Profile Image</div>
                                 <form method="post" class="browse-file w-100 mb-2" enctype="multipart/form-data" action="">
                                     <span id="filename" class="filename"></span>
@@ -324,7 +325,7 @@
                                     <span class="drop-zone__prompt d-flex flex-column justify-content-center align-items-center">
                                     <a href="#" class="drop-zone__prompt mb-2">Default Photo</a>
                                     <div class="img-part">
-                                        <img src="../images/backgrounds/avatar.png" alt="">
+                                        <img src="../../images/backgrounds/avatar.png" alt="">
                                     </div>
                                     </span>
                                     <input type="file" name="myFile" class="drop-zone__input">
@@ -337,27 +338,27 @@
                     <div class="fs-16 fw-semibold color-black-60 text-uppercase mb-3 my-4">Address information </div>
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-sm-4">
                                 <div class="color-black fs-md fw-semibold mb-1">State</div>
                                 <div class="rows-select grey-toggle mb-3">
-                                    <select class="selectpicker">
+                                    <select class="form-select">
                                     <option data-tokens="1">Select State</option>
                                     <option data-tokens="2">2</option>
                                     <option data-tokens="3">3</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-sm-4">
                                 <div class="color-black fs-md fw-semibold mb-1">City</div>
                                 <div class="rows-select grey-toggle mb-3">
-                                    <select class="selectpicker">
+                                    <select class="form-select">
                                     <option data-tokens="1">Select City</option>
                                     <option data-tokens="2">2</option>
                                     <option data-tokens="3">3</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-sm-4">
                                 <div class="color-black fs-md fw-semibold mb-1">Zip Code</div>
                                 <div class="form-group">
                                     <input class="form-control form-control-lg" type="email" placeholder="">
@@ -370,10 +371,10 @@
                     <div class="fs-16 fw-semibold color-black-60 text-uppercase mb-3 my-4">Organization information </div>
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-sm-6">
                                 <div class="color-black fs-md fw-semibold mb-1">User Position</div>
                                 <div class="rows-select grey-toggle mb-3">
-                                    <select class="selectpicker">
+                                    <select class="form-select">
                                     <option data-tokens="1">Select Position</option>
                                     <option data-tokens="2">2</option>
                                     <option data-tokens="3">3</option>
@@ -381,7 +382,7 @@
                                 </div>
                                 <div class="color-black fs-md fw-semibold mb-1">Profile Status</div>
                                 <div class="rows-select grey-toggle mb-3">
-                                    <select class="selectpicker">
+                                    <select class="form-select">
                                     <option data-tokens="1">Active</option>
                                     <option data-tokens="2">2</option>
                                     <option data-tokens="3">3</option>
@@ -389,17 +390,17 @@
                                 </div>
                                 <div class="color-black fs-md fw-semibold mb-1">TimeZone</div>
                                 <div class="rows-select grey-toggle mb-3">
-                                    <select class="selectpicker">
+                                    <select class="form-select">
                                         <option data-tokens="1">Central Daylight Time (GMT-5)</option>
                                         <option data-tokens="2">2</option>
                                         <option data-tokens="3">3</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-sm-6">
                                 <div class="color-black fs-md fw-semibold mb-1">Sub Position</div>
                                 <div class="rows-select grey-toggle mb-3">
-                                    <select class="selectpicker">
+                                    <select class="form-select">
                                         <option data-tokens="1">Select Sub Position</option>
                                         <option data-tokens="2">2</option>
                                         <option data-tokens="3">3</option>
@@ -407,7 +408,7 @@
                                 </div>
                                 <div class="color-black fs-md fw-semibold mb-1">User Role</div>
                                 <div class="rows-select grey-toggle mb-3">
-                                    <select class="selectpicker">
+                                    <select class="form-select">
                                         <option data-tokens="1">Select Role</option>
                                         <option data-tokens="2">2</option>
                                         <option data-tokens="3">3</option>
@@ -415,7 +416,7 @@
                                 </div>
                                 <div class="color-black fs-md fw-semibold mb-1">Regions Assigned</div>
                                 <div class="rows-select grey-toggle">
-                                    <select class="selectpicker" multiple placeholder="Select up to 3 tags">
+                                    <select class="form-select" multiple placeholder="Select up to 3 tags">
                                         <option value="number2">Region 1</option>
                                         <option value="number3">Region 2</option>
                                         <option value="number4">Region 3</option>
@@ -440,6 +441,7 @@
                 <button class="btn btn-md btn-darkblue btn-radius-none w-50">Add</button>
             </div>
         </div>
+        <!-- END ADD NEW USER OFF CANVAS -->
         <div class="offcanvas my-case-offcanvas w-450 offcanvas-end" tabindex="-1" id="UserRecordsFilter" aria-labelledby="UserRecordsFilterLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="MyCaseFilterLabel">Filter By</h5>

@@ -173,7 +173,25 @@ input[type="date"] {
             }
         }
     }
+    .form-select{
+                border: 1px solid $border-color-2;
+                padding: 10px 15px;
+                border-radius: $radius-lg;
+                color: $black-60;
+                font-size:$font-size-md;
+                font-weight: $font-400;
+                background-color: $white;
+                background-image: url("../../../images/icons/chevron-down.svg");
+                background-size: 20px;
+                &:focus,&:hover {
+                    box-shadow: none;
+                    outline: $border-light-blue!important;
+                    color: $black-60;
+                }   
+    }
 }
+
+
 
 
 
