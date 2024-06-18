@@ -50,6 +50,13 @@
         padding: 8px 15px;
     }
 
+    &.form-control-h-38{
+        padding: 6px 15px;
+        &.form-control{
+            font-size: $font-size-md;
+        }
+    }
+
     &.number-input{
         width: 50px;
     }
