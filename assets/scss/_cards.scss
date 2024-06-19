@@ -32,3 +32,34 @@
         width: -webkit-fill-available;
     }
 }
+
+.report-strip{
+    box-shadow: 0px 4px 10px 4px #0000000D;
+    border: 1px solid $light-blue;
+    border-radius: $radius-lg;
+    padding: 12px 15px;
+    .title-txt{
+        font-size: $font-size-16;
+        font-weight: $font-600;
+        line-height: $line-height-22;
+        color: $dark-blue;
+    }
+    .date-part{
+        .date-title{
+            font-size: $font-size-md;
+            line-height: $line-height-20;
+            color: $black-60;
+        }
+        .date{
+            font-size: $font-size-16;
+            font-weight: $font-700;
+            line-height: $line-height-22;
+            color: $black;
+        }
+    }
+    &.grey-strip{
+        background-color: $grey-3;
+        box-shadow: 0px 4px 10px 4px #0000000D;
+        border: 1px solid $black-30;
+    }
+}
