@@ -153,8 +153,22 @@ href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices
                         <option data-tokens="3">3</option>
                       </select>
                     </div>
-              <!-- END DEFAULT FORM SELECT -->
-            </div>
+                  </div>
+            <!-- END DEFAULT FORM SELECT -->
+
+            <!-- DEFAULT FORM SELECT -->
+            <div class="col-md-6 mb-5">
+              <p class="mt-5 color-purple p-2 bg-purple-10 fs-sm">DEFAULT SELECT H 34</p>
+              <!-- dropdown menu design is pending only button is completed -->
+                    <div class="rows-select grey-toggle h-34">
+                      <select class="form-select">
+                        <option data-tokens="1">1</option>
+                        <option data-tokens="2">2</option>
+                        <option data-tokens="3">3</option>
+                      </select>
+                    </div>
+                  </div>
+            <!-- END DEFAULT FORM SELECT -->
 
             <div class="col-md-4 mb-3">
               <div class="form-group d-flex">
@@ -176,7 +190,6 @@ href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices
                 </div>
               </form>
             </div>
-
             <!-- FILE UPLOAD -->
             <div class="col-md-3 mb-5">
               <div class="drop-zone">
@@ -185,6 +198,21 @@ href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices
                   <div class="img-part">
                     <img src="../images/backgrounds/avatar.png" alt="">
                   </div>
+                </span>
+                <input type="file" name="myFile" class="drop-zone__input">
+              </div>
+            </div>
+            <div class="col-md-3 mb-5">
+              <div class="drop-zone border-dashed">
+                <span class="drop-zone__prompt d-flex flex-column justify-content-center align-items-center">
+                    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9 36.545C6.28653 34.7287 4.5 31.6355 4.5 28.125C4.5 22.852 8.53089 18.5204 13.6794 18.0436C14.7326 11.6373 20.2955 6.75 27 6.75C33.7045 6.75 39.2674 11.6373 40.3206 18.0436C45.4691 18.5204 49.5 22.852 49.5 28.125C49.5 31.6355 47.7135 34.7287 45 36.545M18 36L27 27M27 27L36 36M27 27V47.25" stroke="#005EA2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="fs-lg color-dark-blue my-3">Please Drag or Drop file here </div>
+                    <div class="fs-lg color-dark-blue border-left-right mb-3">or</div>
+                    <button class="btn btn-skyblue btn-sm">
+                      Browse
+                    </button>
                 </span>
                 <input type="file" name="myFile" class="drop-zone__input">
               </div>

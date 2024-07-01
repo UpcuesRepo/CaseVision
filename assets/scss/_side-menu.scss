@@ -82,47 +82,63 @@
                     transition: ease opacity 250ms;
                     -moz-transition: ease opacity 250ms;
                     -webkit-transition: ease opacity 250ms;
+                    position: relative;
                     &:active, &:hover, &.active{
                         background-color: $red;
                         border-radius: $radius-lg;
+                        .red-dot{
+                            background-color: $white;
+                        }
                     }
                     &[aria-expanded="true"]{
                         background-color: $red;
                         border-radius: $radius-lg;
                     }
-                }
-                .collapse-inner{
-                    .card{
-                        &.card-body{
-                            background: black;
-                            padding: 0;
-                            a{
-                                color: $white-70;
-                                font-size: $font-size-md;
-                                font-weight: $font-600;
-                                position: relative;
-                                padding: 12px 24px;
-                                .red-dot{
-                                    height: 6px;
-                                    width: 6px;
-                                    background-color: $red;
-                                    border-radius: 50%;
-                                    position: absolute;
-                                    top: 18px;
-                                    left: 10px;
-                                }
-                                &:hover, &:active{
-                                    background-color: $red;
-                                    border-radius: 10px;
-                                    color: $white;
-                                    .red-dot{
-                                        background-color: $white;
-                                    }
-                                }
-                            }
-                        }
+                    .red-dot{
+                        height: 6px;
+                        width: 6px;
+                        background-color: $red;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 18px;
+                        left: 10px;
+                    }
+                    &.submenu{
+                        padding: 12px 24px;
                     }
                 }
+                // .collapse-inner{
+                //     .card{
+                //         &.card-body{
+                //             background: black;
+                //             padding: 0;
+                //             a{
+                //                 color: $white-70;
+                //                 font-size: $font-size-md;
+                //                 font-weight: $font-600;
+                //                 position: relative;
+                //                 padding: 12px 24px;
+                //                 .red-dot{
+                //                     height: 6px;
+                //                     width: 6px;
+                //                     background-color: $red;
+                //                     border-radius: 50%;
+                //                     position: absolute;
+                //                     top: 18px;
+                //                     left: 10px;
+                //                 }
+                //                 &:hover, &:active{
+                //                     background-color: $red;
+                //                     border-radius: 10px;
+                //                     color: $white;
+                //                     .red-dot{
+                //                         background-color: $white;
+                //                     }
+                //                 }
+                //             }
+                //         }
+                //     }
+                // }
             }
         }
         .powered-by-logo{

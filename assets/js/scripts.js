@@ -15,55 +15,7 @@ $(document).ready(function () {
     $('#filename').text(filename);
   });
   // END BROWSE FILES
- 
- 
- 
-// COLLAPSIBLE SIDEBAR
- const menuBtn = document.getElementById("menu-btn");
-const sidebar = document.getElementById("sidebar");
- 
-menuBtn.addEventListener("click", function () {
-  if (!sidebar.classList.contains("collapsed")) {
-    sidebar.classList.add("collapsed");
-    document.querySelectorAll(".content-part").forEach(function (element) {
-      element.classList.add("open");
-    });
-    document.querySelectorAll(".arrow").forEach(function (element) {
-      element.classList.add("rotate");
-    });
-  } else {
-    sidebar.classList.remove("collapsed");
-    document.querySelectorAll(".content-part").forEach(function (element) {
-      element.classList.remove("open");
-    });
-    document.querySelectorAll(".arrow").forEach(function (element) {
-      element.classList.remove("rotate");
-    });
-  }
-});
-// END COLLAPSIBLE SIDEBAR
-  
- 
-  // MULTI SELECT 1
-  /*var multipleCancelButton1 = new Choices('#choices-multiple-remove-button',
-  {
-    removeItemButton: true,
-    maxItemCount: 5,
-    searchResultLimit: 5,
-    renderChoiceLimit: 5
-  });
-  
-  
-  
-  // MULTI SELECT 2
-  var multipleCancelButton2 = new Choices('#choices-multiple-remove-button-2', {
-    removeItemButton: true,
-    maxItemCount: 10,
-    searchResultLimit: 5,
-    renderChoiceLimit: 5
-  });*/
-  // END MULTI SELECT
- 
+
   // FILE UPLOAD
   document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
     const dropZoneElement = inputElement.closest(".drop-zone");
@@ -137,6 +89,56 @@ menuBtn.addEventListener("click", function () {
     }
   }
   // FILE UPLOAD END
+ 
+ 
+ 
+// COLLAPSIBLE SIDEBAR
+ const menuBtn = document.getElementById("menu-btn");
+const sidebar = document.getElementById("sidebar");
+ 
+menuBtn.addEventListener("click", function () {
+  if (!sidebar.classList.contains("collapsed")) {
+    sidebar.classList.add("collapsed");
+    document.querySelectorAll(".content-part").forEach(function (element) {
+      element.classList.add("open");
+    });
+    document.querySelectorAll(".arrow").forEach(function (element) {
+      element.classList.add("rotate");
+    });
+  } else {
+    sidebar.classList.remove("collapsed");
+    document.querySelectorAll(".content-part").forEach(function (element) {
+      element.classList.remove("open");
+    });
+    document.querySelectorAll(".arrow").forEach(function (element) {
+      element.classList.remove("rotate");
+    });
+  }
+});
+// END COLLAPSIBLE SIDEBAR
+  
+ 
+  // MULTI SELECT 1
+  /*var multipleCancelButton1 = new Choices('#choices-multiple-remove-button',
+  {
+    removeItemButton: true,
+    maxItemCount: 5,
+    searchResultLimit: 5,
+    renderChoiceLimit: 5
+  });
+  
+  
+  
+  // MULTI SELECT 2
+  var multipleCancelButton2 = new Choices('#choices-multiple-remove-button-2', {
+    removeItemButton: true,
+    maxItemCount: 10,
+    searchResultLimit: 5,
+    renderChoiceLimit: 5
+  });*/
+  // END MULTI SELECT
+ 
+  
  
  
  

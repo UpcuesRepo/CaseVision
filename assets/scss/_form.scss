@@ -120,6 +120,11 @@ input[type="date"] {
     &.w-62{
         width: 62px;
     }
+    &.h-34{
+        .form-select{
+            padding: 6px 15px;
+        }
+    }
     .dropdown{
         &.bootstrap-select{
             width: 100%!important;
@@ -297,6 +302,30 @@ input[type="date"] {
             background: $black-30;
             font-size: $font-size-md;
             text-align: center;
+        }
+    }
+    &.border-dashed{
+        border: 1px dashed $dark-blue;
+        .border-left-right{
+            position: relative;
+            &::after{
+                content: "";
+                background: url("../../../images/icons/grey-border.svg");
+                width: 120px;
+                height: 1px;
+                position: absolute;
+                left: 25px;
+                bottom: 50%;
+            }
+            &::before{
+                content: "";
+                background: url("../../../images/icons/grey-border.svg");
+                width: 120px;
+                height: 1px;
+                position: absolute;
+                right: 25px;
+                bottom: 50%;
+            }
         }
     }
 }

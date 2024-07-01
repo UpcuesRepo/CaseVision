@@ -252,6 +252,9 @@
                             padding: 7px 10px;
                             font-size: $font-size-sm;    
                         }
+                        &.color-red60{
+                            color: $red-60;
+                        }
                         a{
                             &:hover{
                                 svg{
@@ -260,6 +263,9 @@
                                     }
                                 }
                             }
+                        }
+                        &.bg-red10{
+                            background-color: $red-10;
                         }
                         // &.d-flex{
                         //     @include media-breakpoint-down(md){
