@@ -277,6 +277,10 @@
                     padding: 0;
                 }    
             }
+            .resource-title{
+                font-size: $font-size-xl;
+                font-weight: $font-700;
+            }
             .form-group{
                 &.w-60{
                     width: 60%;
@@ -328,6 +332,10 @@
         .table-part{
             background-color: $light-gray-1;
             padding: 20px 15px;
+            .resource-title{
+                font-size: $font-size-xl;
+                font-weight: $font-700;
+            }
             .md-row-seperate{
                 @include media-breakpoint-down(md){
                     flex-direction: column;

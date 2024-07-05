@@ -263,6 +263,16 @@
                                     }
                                 }
                             }
+                            &.color-dark-blue{
+                                &:visited{
+                                    color: $dark-blue;
+                                }
+                            }
+                            &.color-red-60{
+                                &:visited{
+                                    color: $red-60;
+                                }
+                            }
                         }
                         &.bg-red10{
                             background-color: $red-10;
@@ -285,6 +295,15 @@
                     &:not(:last-child){
                         td{
                             border-bottom: $border-light-gray-2;
+                        }
+                    }
+                }
+            }
+            &.td-p-10{
+                tbody{
+                    tr{
+                        td{
+                            padding: 11px 15px;
                         }
                     }
                 }

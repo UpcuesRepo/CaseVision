@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../../images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../../images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../../images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+   
+    <!-- CSS -->
+    <link href="../../assets/dist/css/default.css" rel="stylesheet" />
+    <title>CASE VISION</title>
+  </head>
+  <body>
+    <div class="" id="wrapper">
+        <div class="collapsible-navbar h-100">
+            <nav class="main-navbar navbar-expand-xl w-100 d-flex justify-content-between align-items-center">
+                <div class="left-part d-flex align-items-center h-100">
+                    <button type="button" class="btn btn-toggle h-100" id="menu-btn">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 18H22.5M4.5 9H31.5M4.5 27H31.5" stroke="#CE0E2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="arrow" d="M31 21L28 18L31 15" stroke="#CE0E2D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="navbar-logo w-185 d-flex align-items-center justify-content-center">
+                        <a href="#"><img src="../../images/logo/logo-black.svg" alt=""></a>
+                    </div>
+                    <div class="fs-26 fw-bold color-dark-blue ms-3">Community Resources</div>
+                </div>
+                <div class="right-part d-flex align-items-center h-100">
+                    <div class="dropdown dropdown-notification d-flex align-items-center">
+                        <a class="btn btn-notification dropdown-toggle me-3" href="#" role="button" id="dropdownMenuNotifc" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../../images/icons/bell-03.svg" alt="">
+                            <span class="red-dot"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-account" aria-labelledby="dropdownMenuNotific" data-bs-popper="static">
+                            <li class="dropdown-item"><a href="#" class="active">Account Settings</a></li>
+                            <li class="dropdown-item"><a href="#"> Live Dashboard</a></li>
+                            <li class="dropdown-item"><a href="#"> Reports</a></li>
+                            <li class="dropdown-item"><a href="#">Logout</a></li>
+                          </ul>
+                    </div>
+                    <div class="dropdown dropdown-profile d-flex align-items-center me-3">
+                        <a class="dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="fs-lg fw-semibold ms-3 me-2 name-icon bg-lightblue-30">CM</div>
+                            <div class="name me-3">
+                                <div class="fs-lg fw-semibold">Chelsea Maxfield</div>
+                                <div class="fs-13 color-black-30">Admin</div>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-account" aria-labelledby="dropdownMenuLink" data-bs-popper="static">
+                          <li class="ms-3">
+                            <div class="name">
+                                <div class="fs-lg fw-semibold">Chelsea Maxfield</div>
+                                <div class="fs-13 color-black-30">Admin</div>
+                            </div>
+                          </li>
+                          <li class="dropdown-item"><a href="#" class="active">Account Settings</a></li>
+                          <li class="dropdown-item"><a href="#"> Live Dashboard</a></li>
+                          <li class="dropdown-item"><a href="#"> Reports</a></li>
+                          <li class="dropdown-item"><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="d-flex">
+                <div id="sidebar" class="sidebar collapsed">
+                    <div class="sidebar-section">
+                      <ul class="side-menu">
+                        <li>
+                            <div class="fs-26 fw-bold color-white ms-2">My Cases</div>
+                        </li>
+                        <li>
+                          <a href="#" class="menu-links">Dashboard</a>
+                        </li>
+                        <li>
+                            <!-- <a class="menu-links" data-bs-toggle="collapse" href="#collapse-inner" role="button" aria-expanded="false" aria-controls="collapse-inner">
+                                Case Management
+                            </a>
+                            <div class="collapse collapse-inner" id="collapse-inner">
+                                <div class="card card-body">
+                                  <a href="#" class="collapse-opt">
+                                    <span class="red-dot"></span>
+                                    My Cases
+                                  </a>
+                                </div>
+                            </div> -->
+                            <a href="#" class="menu-links">Case Management</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links submenu">
+                                <span class="red-dot"></span>
+                                    My Cases
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links">Community Resources</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links">Reporting & Analytics</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links">Staff Directory</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links">User Management</a>
+                        </li>
+                      </ul>
+                      <a href="https://ap-in.com/" target="_blank" title="Applied Intellect" class="powered-by-logo">
+                        <img src="../../images/logo/powered-by-logo.svg"  title="Applied Intellect"  alt="">
+                        <p class="version mt-2">Version:&nbsp;1.0.16.1</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="my-case content-part h-100 w-100">
+                   <div class="top-part d-flex align-items-center">
+                    <div class="resource-title">
+                        <a href="#">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.2">
+                                <path d="M22.5 9L13.5 18L22.5 27" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                            </svg>
+                        </a>
+                        Resource Details
+                    </div>
+                   </div>
+                   <div class="table-part">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-between mb-3">
+                                <div class="resource-title">
+                                    Case Details
+                                </div>
+                                <button class="btn btn-skyblue btn-sm h-34" type="button">View All</button>
+                            </div>
+                            <div class="case-details-card mb-3">
+                                <table class="case-details-table border-right-none">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="title">Case Acceptance Date</div>
+                                                    <div class="description">4/16/2024</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="title">Case Manager</div>
+                                                    <div class="description">Maria Omar</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="title">Reason for Closure</div>
+                                                    <div class="description">**</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="title">Case Closure Date</div>
+                                                    <div class="description">**</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="title">Referral ID</div>
+                                                    <div class="description">1332322</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="title">Level of Service</div>
+                                                    <div class="description">Level 1</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="title">PRS Type</div>
+                                                    <div class="description">1332322</div>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="resource-title mb-3">
+                                Add New Notes
+                            </div>
+                            <div class="grey-border-card h-300 ">
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="resource-title mb-3">CASE NOTES</div>
+                            <div class="case-notes-card">
+                                <!-- CASE NOTE PROGRESSBAR -->
+                                <div class="grey-progressbar col-md-12">
+                                    <div class="step">
+                                        <div class="bullet"></div>
+                                        <div class="description">
+                                        <div class="title">Date: 26/06/2024</div>
+                                        <div class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum eget odio ac lobortis.  Duis ligula risus, dictum et dui quis, gravida ullamcorper enim. Donec pretium lectus elit, at eleifend neque suscipit eu.</div>
+                                        <div class="d-flex">
+                                            <div class="note me-2">Note By</div>
+                                            <div class="name">Maria Omar</div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="step">
+                                        <div class="bullet"></div>
+                                        <div class="description">
+                                        <div class="title">Date: 25/06/2024</div>
+                                        <div class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum eget odio ac lobortis.  Duis ligula risus, dictum et dui quis, gravida ullamcorper enim. Donec pretium lectus elit, at eleifend neque suscipit eu.</div>
+                                        <div class="d-flex">
+                                            <div class="note me-2">Note By</div>
+                                            <div class="name">Maria Omar</div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="step">
+                                        <div class="bullet"></div>
+                                        <div class="description">
+                                        <div class="title">Date: 25/06/2024</div>
+                                        <div class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum eget odio ac lobortis.  Duis ligula risus, dictum et dui quis, gravida ullamcorper enim. Donec pretium lectus elit, at eleifend neque suscipit eu.</div>
+                                        <div class="d-flex">
+                                            <div class="note me-2">Note By</div>
+                                            <div class="name">Maria Omar</div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="step">
+                                        <div class="bullet"></div>
+                                        <div class="description">
+                                        <div class="title">Date: 25/06/2024</div>
+                                        <div class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum eget odio ac lobortis.  Duis ligula risus, dictum et dui quis, gravida ullamcorper enim. Donec pretium lectus elit, at eleifend neque suscipit eu.</div>
+                                        <div class="d-flex">
+                                            <div class="note me-2">Note By</div>
+                                            <div class="name">Maria Omar</div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="step">
+                                        <div class="bullet"></div>
+                                        <div class="description">
+                                        <div class="title">Date: 25/06/2024</div>
+                                        <div class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum eget odio ac lobortis.  Duis ligula risus, dictum et dui quis, gravida ullamcorper enim. Donec pretium lectus elit, at eleifend neque suscipit eu.</div>
+                                        <div class="d-flex">
+                                            <div class="note me-2">Note By</div>
+                                            <div class="name">Maria Omar</div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END CASE NOTE PROGRESSBAR -->
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="../../assets/dist/js/all.min.js"></script>
+  </body>
+  
+</html>

@@ -220,6 +220,65 @@ a{
         }
     }
 }
+.grey-progressbar{
+    margin: 40px 0;
+    user-select: none;
+    .step{
+        display: flex;
+        height: 100%;
+        position: relative;
+        .description{
+            margin-bottom: 25px;
+            .title{
+                font-size: $font-size-16;
+                font-weight: $font-700;
+                line-height: $line-height-22;
+                margin-bottom: 10px;
+            }
+            .details{
+                font-size: $font-size-md;
+                line-height: $line-height-26;
+                margin-bottom: 10px;
+            }
+            .note{
+                font-size: $font-size-md;
+                font-weight: $font-700;
+                line-height: $line-height-20;
+                color: $black-60;
+            }
+            .name{
+                font-size: $font-size-md;
+                font-weight: $font-700;
+                line-height: $line-height-20;
+                color: $black;
+            }
+        }
+        .bullet{
+            height: 24px;
+            max-width: 24px;
+            width: 100%;
+            border-radius: 50%;
+            position: relative;
+            background-color: $grey-4;
+            margin-right: 15px;
+        }
+        &:last-child{
+            &::before{
+                height: 0;
+            }
+        }
+        &::before{
+            background: $black-10;
+            content: "";
+            width: 4px;
+            left: 10px;
+            position: absolute;
+            top: 24px;
+            height: 100%;
+            z-index: 0;
+        }
+    }
+}
 
 // SUNIL CUSTOM CSS
 
