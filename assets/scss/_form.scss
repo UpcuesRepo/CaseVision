@@ -449,6 +449,58 @@ ul.error-mesg{
 //END CHECKBOX
 
 
+//CUSTOM MULTI SELECT 
+.multiselect{
+    #checkboxes{
+        padding: 10px;
+        border-radius: $radius-lg;
+        border: $border-light-gray-2;
 
+        .search-icon{
+            border-radius: $radius-lg;
+            border: $border-light-gray-2;
+            font-weight: $font-400;
+            font-size: $font-size-16;
+            line-height: $line-height-24;
+            padding: 12px 10px;
+            color: $black-60;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.table-part{
+    .paginator[b-3qssc0bm46] {
+        display: flex;
+        border-top: 0px solid #ccc;
+        margin-top: 0.5rem;
+        padding: 0.25rem 0;
+        align-items: center;
+    }
+
+    .summary{
+        border-radius: 4px;
+        outline: 1px solid $border-color-2;
+        color: $black-3;
+        background-color: $white;
+        padding: 6px 13px;
+        height: 32px;
+        line-height: 20px;
+        margin-right: 10px;
+        
+            @include media-breakpoint-down(md){
+                padding: 6px 8px;
+            }
+
+    }
+
+    nav button[b-3qssc0bm46]{
+        border-radius: 4px;
+        outline: 1px solid $border-color-2;
+        color: $black-3;
+        background-color: $white;
+        padding: 6px 13px;
+    }
+}
 
 
