@@ -91,11 +91,12 @@ $(document).ready(function () {
   // FILE UPLOAD END
  
  
- 
+
 // COLLAPSIBLE SIDEBAR
- const menuBtn = document.getElementById("menu-btn");
+
+const menuBtn = document.getElementById("menu-btn");
 const sidebar = document.getElementById("sidebar");
- 
+
 menuBtn.addEventListener("click", function () {
   if (!sidebar.classList.contains("collapsed")) {
     sidebar.classList.add("collapsed");
@@ -115,6 +116,7 @@ menuBtn.addEventListener("click", function () {
     });
   }
 });
+
 // END COLLAPSIBLE SIDEBAR
   
  
