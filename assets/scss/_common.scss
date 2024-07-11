@@ -254,8 +254,8 @@ a{
             }
         }
         .bullet{
-            height: 24px;
-            max-width: 24px;
+            height: 16px;
+            max-width: 16px;
             width: 100%;
             border-radius: 50%;
             position: relative;
@@ -271,9 +271,9 @@ a{
             background: $black-10;
             content: "";
             width: 4px;
-            left: 10px;
+            left: 0.9%;
             position: absolute;
-            top: 24px;
+            top: 16px;
             height: 100%;
             z-index: 0;
         }
