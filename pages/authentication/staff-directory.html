@@ -84,13 +84,13 @@
                     <div class="sidebar-section">
                       <ul class="side-menu">
                         <li>
-                            <div class="fs-26 fw-bold color-white ms-2">Staff Directory</div>
+                            <div class="fs-26 fw-bold color-white ms-2">My Cases</div>
                         </li>
                         <li>
                           <a href="#" class="menu-links">Dashboard</a>
                         </li>
                         <li>
-                            <a class="menu-links" data-bs-toggle="collapse" href="#collapse-inner" role="button" aria-expanded="false" aria-controls="collapse-inner">
+                            <!-- <a class="menu-links" data-bs-toggle="collapse" href="#collapse-inner" role="button" aria-expanded="false" aria-controls="collapse-inner">
                                 Case Management
                             </a>
                             <div class="collapse collapse-inner" id="collapse-inner">
@@ -100,7 +100,14 @@
                                     My Cases
                                   </a>
                                 </div>
-                            </div>
+                            </div> -->
+                            <a href="#" class="menu-links">Case Management</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links submenu">
+                                <span class="red-dot"></span>
+                                    My Cases
+                            </a>
                         </li>
                         <li>
                             <a href="#" class="menu-links">Community Resources</a>
@@ -132,19 +139,15 @@
                             </li>
                         </ul>
                         <div class="col-md-6 col-sm-6 d-flex justify-content-end">
-                            <div class="col-md-9 me-3">
-                                <div class="form-group">
-                                    <input class="form-control form-control-lg search-icon" type="search" placeholder="Search Name / Zip Code">
-                                </div>
+                            <div class="form-group w-55p me-3">
+                                <input class="form-control form-control-lg search-icon" type="search" placeholder="Search Name / Zip Code">
                             </div>
-                            <div class="col-md-2 d-flex justify-content-end">
-                                <button class="btn btn-skyblue btn-sm with-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#StaffDirectoryFilter" aria-controls="StaffDirectoryFilter">
-                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M2.75 7.33337L13.75 7.33337M13.75 7.33337C13.75 8.85216 14.9812 10.0834 16.5 10.0834C18.0188 10.0834 19.25 8.85216 19.25 7.33337C19.25 5.81459 18.0188 4.58337 16.5 4.58337C14.9812 4.58337 13.75 5.81459 13.75 7.33337ZM8.25 14.6667L19.25 14.6667M8.25 14.6667C8.25 16.1855 7.01878 17.4167 5.5 17.4167C3.98122 17.4167 2.75 16.1855 2.75 14.6667C2.75 13.1479 3.98122 11.9167 5.5 11.9167C7.01878 11.9167 8.25 13.1479 8.25 14.6667Z" stroke="#5BAAF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    Filter
-                                </button>
-                            </div>
+                            <button class="btn btn-skyblue btn-sm with-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#StaffDirectoryFilter" aria-controls="StaffDirectoryFilter">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.75 7.33337L13.75 7.33337M13.75 7.33337C13.75 8.85216 14.9812 10.0834 16.5 10.0834C18.0188 10.0834 19.25 8.85216 19.25 7.33337C19.25 5.81459 18.0188 4.58337 16.5 4.58337C14.9812 4.58337 13.75 5.81459 13.75 7.33337ZM8.25 14.6667L19.25 14.6667M8.25 14.6667C8.25 16.1855 7.01878 17.4167 5.5 17.4167C3.98122 17.4167 2.75 16.1855 2.75 14.6667C2.75 13.1479 3.98122 11.9167 5.5 11.9167C7.01878 11.9167 8.25 13.1479 8.25 14.6667Z" stroke="#5BAAF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Filter
+                            </button>
                             <!--FILTER BTN OFF CANVAS -->
                                 <div class="offcanvas my-case-offcanvas w-450 offcanvas-end" tabindex="-1" id="StaffDirectoryFilter" aria-labelledby="StaffDirectoryFilterLabel">
                                     <div class="offcanvas-header">
