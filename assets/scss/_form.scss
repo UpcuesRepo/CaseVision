@@ -376,6 +376,15 @@ ul.error-mesg{
         display: inline-flex;
     }
 
+    .form-check-label {
+        margin-top: 0px;
+        font-weight: $font-400;
+        &.style-1 {
+           font-size: $font-size-md;
+           color: $black;
+        }
+    }
+
     .form-check-input[type="checkbox"] {
         width: 20px;
         height: 20px;
@@ -448,7 +457,6 @@ ul.error-mesg{
 }
 //END CHECKBOX
 
-
 //CUSTOM MULTI SELECT 
 .multiselect{
     #checkboxes{
@@ -469,6 +477,8 @@ ul.error-mesg{
     }
 }
 
+
+//CUSTOM TABLE PAGINATION STYLE SELECT
 .table-part{
     .paginator[b-3qssc0bm46] {
         display: flex;

@@ -16,6 +16,15 @@ $(document).ready(function () {
   });
   // END BROWSE FILES
 
+    // BROWSE FILES
+    $('.file-upload').change(function () {
+      var filepath = this.value;
+      var m = filepath.match(/([^\/\\]+)$/);
+      var filename = m[1];
+      $('.filename').text(filename);
+    });
+    // END BROWSE FILES
+
   // FILE UPLOAD
   document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
     const dropZoneElement = inputElement.closest(".drop-zone");
@@ -93,7 +102,6 @@ $(document).ready(function () {
  
 
 // COLLAPSIBLE SIDEBAR
-
 const menuBtn = document.getElementById("menu-btn");
 const sidebar = document.getElementById("sidebar");
 
@@ -116,7 +124,6 @@ menuBtn.addEventListener("click", function () {
     });
   }
 });
-
 // END COLLAPSIBLE SIDEBAR
   
  
