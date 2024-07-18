@@ -38,6 +38,12 @@
     border: 1px solid $light-blue;
     border-radius: $radius-lg;
     padding: 12px 15px;
+    position: relative;
+    .btn-top{
+        position: absolute;
+        top: -20px;
+        left: 0;
+    }
     .title-txt{
         font-size: $font-size-16;
         font-weight: $font-600;
