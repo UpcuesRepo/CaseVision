@@ -20,6 +20,10 @@
                 font-size: $font-size-24;
                 font-weight: $font-600;
                 color: $black;
+                &.font-xl{
+                    font-size: $font-size-xl;
+                    font-weight: $font-700;   
+                }
             }
         }
         .offcanvas-body{

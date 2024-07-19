@@ -33,6 +33,23 @@
     @include media-breakpoint-down(md){
         font-size: $font-size-md;
     }
+    &.style-2{
+        font-weight: $font-700; 
+        line-height: $line-height-22;   
+        color: $black;
+        padding: 7px 15px;
+        &::placeholder{
+            font-weight: $font-400;
+        }
+        &:focus{
+            outline: none;
+            border: $border-light-gray-2;
+            color: $black;
+        }
+        &:hover{
+            outline: none;
+        }
+    }
 
     &.form-control-lg{
         font-size: $font-size-md;
@@ -66,7 +83,6 @@
     }
 
     &:focus,&:hover {
-        outline: none;
         box-shadow: none;
         outline: $border-light-blue;
         color: $black-60;
@@ -186,20 +202,33 @@ input[type="date"] {
         }
     }
     .form-select{
-                border: 1px solid $border-color-2;
-                padding: 10px 15px;
-                border-radius: $radius-lg;
-                color: $black-60;
-                font-size:$font-size-md;
-                font-weight: $font-400;
-                background-color: $white;
-                background-image: url("../../../images/icons/chevron-down.svg");
-                background-size: 20px;
-                &:focus,&:hover {
-                    box-shadow: none;
-                    outline: $border-light-blue!important;
-                    color: $black-60;
-                }   
+        border: 1px solid $border-color-2;
+        padding: 10px 15px;
+        border-radius: $radius-lg;
+        color: $black-60;
+        font-size:$font-size-md;
+        font-weight: $font-400;
+        background-color: $white;
+        background-image: url("../../../images/icons/chevron-down.svg");
+        background-size: 20px;
+        &:focus,&:hover {
+            box-shadow: none;
+            outline: $border-light-blue!important;
+            color: $black-60;
+        }   
+    }
+    &.style-2{
+        .form-select{
+            padding: 6px 15px;
+            color: $black;
+            font-size:$font-size-16;
+            font-weight: $font-700;
+            background-image: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 7.5L10 12.5L15 7.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+            &:focus,&:hover {
+                outline: none!important;
+                color: $black;
+            }
+        }
     }
 }
 
