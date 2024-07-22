@@ -104,6 +104,28 @@
                     Edit
                 </button>
             </div>
+            <div class="col-md-2">
+                <h6>Edit sponser</h6>
+                <button class="btn btn-skyblue btn-sm h-34 with-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#EditSponserFilter" aria-controls="EditSponserFilter">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1186_820)">
+                        <path d="M9.16699 3.33344H5.66699C4.26686 3.33344 3.5668 3.33344 3.03202 3.60593C2.56161 3.84561 2.17916 4.22806 1.93948 4.69847C1.66699 5.23324 1.66699 5.93331 1.66699 7.33344V14.3334C1.66699 15.7336 1.66699 16.4336 1.93948 16.9684C2.17916 17.4388 2.56161 17.8213 3.03202 18.061C3.5668 18.3334 4.26686 18.3334 5.66699 18.3334H12.667C14.0671 18.3334 14.7672 18.3334 15.302 18.061C15.7724 17.8213 16.1548 17.4388 16.3945 16.9684C16.667 16.4336 16.667 15.7336 16.667 14.3334V10.8334M6.66697 13.3334H8.06242C8.47007 13.3334 8.6739 13.3334 8.86571 13.2874C9.03577 13.2466 9.19835 13.1792 9.34747 13.0878C9.51566 12.9848 9.65979 12.8406 9.94804 12.5524L17.917 4.58344C18.6073 3.89309 18.6073 2.7738 17.917 2.08344C17.2266 1.39309 16.1073 1.39308 15.417 2.08344L7.44802 10.0524C7.15977 10.3406 7.01564 10.4848 6.91257 10.653C6.82119 10.8021 6.75385 10.9647 6.71302 11.1347C6.66697 11.3265 6.66697 11.5304 6.66697 11.938V13.3334Z" stroke="#5BAAF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_1186_820">
+                        <rect width="20" height="20" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                    Edit
+                </button>
+            </div>
+            <div class="col-md-3">
+                <h6>PSR 1 form</h6>
+                <button class="btn btn-primary with-icon btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#psr1form" aria-controls="psr1form">
+                    PSR 1 form
+                </button>
+            </div>
             <div class="col-md-4">
                 <!-- <h6>992PX AND BELOW SCREEN FILTER</h6> -->
                 <h6>992PX AND BELOW SCREEN FILTER</h6>
@@ -768,9 +790,9 @@
                 </div>
             </div>
         </div>
-        <div class="offcanvas my-case-offcanvas staff-info w-450 offcanvas-end" tabindex="-1" id="EditUcFilter" aria-labelledby="EditUcFilterLabel">
+        <div class="offcanvas my-case-offcanvas w-450 offcanvas-end" tabindex="-1" id="EditUcFilter" aria-labelledby="EditUcFilterLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="EditUcFilterLabel">Edit UC Basic Information</h5>
+              <h5 class="offcanvas-title font-xl" id="EditUcFilterLabel">Edit UC Basic Information</h5>
               <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#EditUcFilterLabel" role="button" aria-controls="EditUcFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
             </div>
             <div class="offcanvas-body">
@@ -928,9 +950,9 @@
                 <button class="btn btn-md btn-darkblue btn-radius-none w-50">Save</button>
             </div>
         </div>
-        <div class="offcanvas my-case-offcanvas staff-info w-450 offcanvas-end" tabindex="-1" id="EditCaseDetailFilter" aria-labelledby="EditCaseDetailFilterLabel">
+        <div class="offcanvas my-case-offcanvas w-450 offcanvas-end" tabindex="-1" id="EditCaseDetailFilter" aria-labelledby="EditCaseDetailFilterLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="EditCaseDetailFilterLabel">Edit Case Details</h5>
+              <h5 class="offcanvas-title font-xl" id="EditCaseDetailFilterLabel">Edit Case Details</h5>
               <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#EditCaseDetailFilterLabel" role="button" aria-controls="EditCaseDetailFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
             </div>
             <div class="offcanvas-body">
@@ -1016,6 +1038,948 @@
             <div class="offcanvas-footer d-flex">
                 <button class="btn btn-md btn-grey btn-radius-none w-50">Cancel</button>
                 <button class="btn btn-md btn-darkblue btn-radius-none w-50">Save</button>
+            </div>
+        </div>
+        <div class="offcanvas my-case-offcanvas w-450 offcanvas-end" tabindex="-1" id="EditSponserFilter" aria-labelledby="EditSponserFilterLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title font-xl" id="EditSponserFilterLabel">EDIT SPONSOR</h5>
+              <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#EditSponserFilterLabel" role="button" aria-controls="EditCaseDetailFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
+            </div>
+            <div class="offcanvas-body">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">First Name</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="email" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Last Name</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="email" placeholder="">
+                        </div>
+                    </div>
+                </div> 
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">DOB</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="date">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Gender</div>
+                        <div class="rows-select grey-toggle style-2">
+                            <select class="form-select">
+                              <option data-tokens="1">Female</option>
+                              <option data-tokens="2">Male</option>
+                              <option data-tokens="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div> 
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <div class="fs-md color-black-60 mb-1">Address</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="email" placeholder="">
+                        </div>
+                    </div>
+                </div>  
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">City</div>
+                        <div class="rows-select grey-toggle style-2">
+                            <select class="form-select">
+                              <option data-tokens="1">Edison</option>
+                              <option data-tokens="2">Level 2</option>
+                              <option data-tokens="3">Level 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">State</div>
+                        <div class="rows-select grey-toggle style-2">
+                            <select class="form-select">
+                              <option data-tokens="1">New Jersey</option>
+                              <option data-tokens="2">Level 2</option>
+                              <option data-tokens="3">Level 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div> 
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Zip Code</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="email" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Phone Number</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="email" placeholder="">
+                        </div>
+                    </div>
+                </div> 
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Category</div>
+                        <div class="rows-select grey-toggle style-2">
+                            <select class="form-select">
+                              <option data-tokens="1">2A</option>
+                              <option data-tokens="2">3A</option>
+                              <option data-tokens="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Relationship to UC</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="email" placeholder="">
+                        </div>
+                    </div>
+                </div>    
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Language</div>
+                        <div class="rows-select grey-toggle style-2">
+                            <select class="form-select">
+                              <option data-tokens="1">Spanish</option>
+                              <option data-tokens="2">3A</option>
+                              <option data-tokens="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Race</div>
+                        <div class="rows-select grey-toggle style-2">
+                            <select class="form-select">
+                              <option data-tokens="1">Hispanic or Latino</option>
+                              <option data-tokens="2">3A</option>
+                              <option data-tokens="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>  
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">COO</div>
+                        <div class="rows-select grey-toggle style-2">
+                            <select class="form-select">
+                              <option data-tokens="1">Ecuador</option>
+                              <option data-tokens="2">3A</option>
+                              <option data-tokens="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Email</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="email" placeholder="">
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div class="offcanvas-footer d-flex">
+                <button class="btn btn-md btn-grey btn-radius-none w-50">Cancel</button>
+                <button class="btn btn-md btn-darkblue btn-radius-none w-50">Save</button>
+            </div>
+        </div>
+        <div class="offcanvas my-case-offcanvas w-100 offcanvas-end" tabindex="-1" id="psr1form" aria-labelledby="psr1formLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title font-xl" id="psr1formLabel">PRS Level 1 Check-in Form</h5>
+              <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#psr1formLabel" role="button" aria-controls="EditCaseDetailFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
+            </div>
+            <div class="offcanvas-body p-0">
+                <div class="p-3">
+                    <div class="border-bottom-grey mb-3">
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                <div class="fs-md color-black-60 mb-1">Case Manager</div>
+                                <div class="form-group">
+                                    <input class="form-control style-2" type="email" placeholder="">
+                                </div>   
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md color-black-60 mb-1">Sponsor Name</div>
+                                <div class="form-group">
+                                    <input class="form-control style-2" type="email" placeholder="">
+                                </div>   
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md color-black-60 mb-1">Minor Name</div>
+                                <div class="form-group">
+                                    <input class="form-control style-2" type="email" placeholder="">
+                                </div>   
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md color-black-60 mb-1">Date of Release from ORR Custody</div>
+                                <div class="form-group">
+                                    <input class="form-control style-2" type="date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                <div class="fs-md fw-semibold color-dark-blue mb-2">Reviewed Referral Documents</div>
+                                <div class="d-flex">
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">No</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">NA</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md color-black-60 mb-1">Comments</div>
+                                <textarea class="form-control form-textarea h-60"></textarea>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md fw-semibold color-dark-blue mb-2">Reason for Referral areas assessed</div>
+                                <div class="d-flex">
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">No</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">NA</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md color-black-60 mb-1">Comments</div>
+                                <textarea class="form-control form-textarea h-60"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-grey mb-3">
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                <div class="fs-md fw-semibold color-dark-blue mb-2">Primary language of sponsor and minor has been assessed</div>
+                                <div class="d-flex">
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">No</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">NA</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md color-black-60 mb-1">Comments</div>
+                                <textarea class="form-control form-textarea h-60"></textarea>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md fw-semibold color-dark-blue mb-2">If the above language requires an interpreter, an interpreter has been coordinated</div>
+                                <div class="d-flex">
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">No</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">NA</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md color-black-60 mb-1">Comments</div>
+                                <textarea class="form-control form-textarea h-60"></textarea>
+                            </div>
+                        </div>
+                        <div class="grey-strip mb-3">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col-md-6 fs-16 fw-bold">Initial Call</div>
+                                <div class="col-md-2 d-flex align-items-center">
+                                    <div class="fs-md color-black-60 mb-1 me-2">Date</div>
+                                    <div class="form-group w-100">
+                                        <input class="form-control style-2" type="date">
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                <div class="fs-md fw-semibold color-dark-blue mb-2">Initial Call is conducted within 48 hours of case acceptance</div>
+                                <div class="d-flex">
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">No</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">NA</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md color-black-60 mb-1">Comments</div>
+                                <textarea class="form-control form-textarea h-60"></textarea>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md fw-semibold color-dark-blue mb-2">Sponsor and minor both consent to PRS services</div>
+                                <div class="d-flex">
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">No</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">NA</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md color-black-60 mb-1">Comments</div>
+                                <textarea class="form-control form-textarea h-60"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-grey mb-3">
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                <div class="fs-md fw-semibold color-dark-blue mb-2">Minor is residing with original sponsor at address listed on UC Portal (if not, provide comment)</div>
+                                <div class="d-flex">
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">No</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">NA</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md color-black-60 mb-1">Comments</div>
+                                <textarea class="form-control form-textarea h-60"></textarea>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md fw-semibold color-dark-blue mb-2">CW has spoken with both sponsor and minor in initial call to assess wellness</div>
+                                <div class="d-flex">
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">No</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">NA</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md color-black-60 mb-1">Comments</div>
+                                <textarea class="form-control form-textarea h-60"></textarea>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="border-bottom-grey mb-3">
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                <div class="fs-md fw-semibold color-dark-blue mb-2">7-Day Check-In scheduled with minor and sponsor</div>
+                                <div class="d-flex">
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">No</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">NA</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md color-black-60 mb-1">Comments</div>
+                                <textarea class="form-control form-textarea h-60"></textarea>
+                            </div>
+                        </div>
+                        <div class="grey-strip mb-3">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col-md-6 fs-16 fw-bold">7-Day Check-In</div>
+                                <div class="col-md-2 d-flex align-items-center">
+                                    <div class="fs-md color-black-60 mb-1 me-2">Date</div>
+                                    <div class="form-group w-100">
+                                        <input class="form-control style-2" type="date">
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                <div class="fs-md fw-semibold color-dark-blue mb-2">Minor present for virtual check-in</div>
+                                <div class="d-flex">
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">No</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">NA</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md color-black-60 mb-1">Comments</div>
+                                <textarea class="form-control form-textarea h-60"></textarea>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md fw-semibold color-dark-blue mb-2">Sponsor present for virtual check-in</div>
+                                <div class="d-flex">
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">No</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">NA</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md color-black-60 mb-1">Comments</div>
+                                <textarea class="form-control form-textarea h-60"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-grey mb-3">
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                <div class="fs-md fw-semibold color-dark-blue mb-2">Explained confidentiality and mandated reporting</div>
+                                <div class="d-flex">
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">No</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">NA</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md color-black-60 mb-1">Comments</div>
+                                <textarea class="form-control form-textarea h-60"></textarea>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md fw-semibold color-dark-blue mb-2">Consent Form Signed</div>
+                                <div class="d-flex">
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">No</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">NA</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md color-black-60 mb-1">Comments</div>
+                                <textarea class="form-control form-textarea h-60"></textarea>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="border-bottom-grey mb-3">
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                <div class="fs-md fw-semibold color-dark-blue mb-2">Confidentiality Form Signed</div>
+                                <div class="d-flex">
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">No</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">NA</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md color-black-60 mb-1">Comments</div>
+                                <textarea class="form-control form-textarea h-60"></textarea>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md fw-semibold color-dark-blue mb-2">Grievance Form Acknowledgement Signed</div>
+                                <div class="d-flex">
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">No</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">NA</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md color-black-60 mb-1">Comments</div>
+                                <textarea class="form-control form-textarea h-60"></textarea>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-3">
+                            <div class="fs-md fw-semibold color-dark-blue mb-2">Service Areas Discussed</div>
+                            <div class="d-flex">
+                                <div class="form-check form-inline me-3">
+                                    <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                    <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                </div>
+                                <div class="form-check form-inline me-3">
+                                    <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                    <label class="form-check-label font-400 mb-0" for="">No</label>
+                                </div>
+                                <div class="form-check form-inline me-3">
+                                    <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                    <label class="form-check-label font-400 mb-0" for="">NA</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="fs-md color-black-60 mb-1">Comments</div>
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="grey-strip mb-3">
+                                <div class="fs-16 fw-bold">Placement Stability and Safety</div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">7-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">14-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">30-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                            </div>
+                            <div class="grey-strip mb-3">
+                                <div class="fs-16 fw-bold">Guardianship</div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">7-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">14-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">30-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                            </div>
+                            <div class="grey-strip mb-3">
+                                <div class="fs-16 fw-bold">Education</div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">7-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">14-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">30-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                            </div>
+                            <div class="grey-strip mb-3">
+                                <div class="fs-16 fw-bold">Individual Mental Health Services</div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">7-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">14-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">30-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                            </div>
+                            <div class="grey-strip mb-3">
+                                <div class="fs-16 fw-bold">Substance Abuse</div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">7-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">14-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">30-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                            </div>
+                            <div class="grey-strip mb-3">
+                                <div class="fs-16 fw-bold">Other</div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">7-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">14-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">30-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="grey-strip mb-3">
+                                <div class="fs-16 fw-bold">Immigration Proceedings</div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">7-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">14-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">30-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                            </div>
+                            <div class="grey-strip mb-3">
+                                <div class="fs-16 fw-bold">Legal Services</div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">7-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">14-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">30-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                            </div>
+                            <div class="grey-strip mb-3">
+                                <div class="fs-16 fw-bold">Medical Services</div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">7-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">14-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">30-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                            </div>
+                            <div class="grey-strip mb-3">
+                                <div class="fs-16 fw-bold">Family Stabilization/Counseling</div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">7-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">14-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">30-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                            </div>
+                            <div class="grey-strip mb-3">
+                                <div class="fs-16 fw-bold">TVAP</div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">7-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">14-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="fs-md fw-semibold color-dark-blue mb-2">30-Day</div>
+                                    <div class="fs-md color-black-60 mb-1">Comments</div>
+                                    <textarea class="form-control form-textarea h-60"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-12">
+                            <div class="grey-strip">
+                                <div class="fs-16 fw-bold">Case Closure</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-grey mb-3">
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                <div class="fs-md fw-semibold color-dark-blue mb-2">Review of Case Plan Goals</div>
+                                <div class="d-flex">
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">No</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">NA</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md color-black-60 mb-1">Comments</div>
+                                <textarea class="form-control form-textarea h-60"></textarea>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md fw-semibold color-dark-blue mb-2">Case Closure Form Completed</div>
+                                <div class="d-flex">
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">No</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">NA</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md color-black-60 mb-1">Comments</div>
+                                <textarea class="form-control form-textarea h-60"></textarea>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="border-bottom-grey mb-3">
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                <div class="fs-md fw-semibold color-dark-blue mb-2">Case Closure Form Reviewed by Supervisor</div>
+                                <div class="d-flex">
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">No</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">NA</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md color-black-60 mb-1">Comments</div>
+                                <textarea class="form-control form-textarea h-60"></textarea>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md fw-semibold color-dark-blue mb-2">Uploaded to UC Portal</div>
+                                <div class="d-flex">
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">No</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">NA</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="fs-md color-black-60 mb-1">Comments</div>
+                                <textarea class="form-control form-textarea h-60"></textarea>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-3">
+                            <div class="fs-md fw-semibold color-dark-blue mb-2">Extension Requested</div>
+                            <div class="d-flex">
+                                <div class="form-check form-inline me-3">
+                                    <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                    <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                </div>
+                                <div class="form-check form-inline me-3">
+                                    <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                    <label class="form-check-label font-400 mb-0" for="">No</label>
+                                </div>
+                                <div class="form-check form-inline me-3">
+                                    <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                    <label class="form-check-label font-400 mb-0" for="">NA</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="fs-md color-black-60 mb-1">Comments</div>
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>
+                    </div>   
+                </div>
+                <div class="grey-strip p-4">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="row align-items-center">
+                                <div class="col-md-4">
+                                    <div class="fs-md color-black-60 me-3">Employee’s Signature</div>
+                                </div>
+                                <div class="col-md-8">
+                                    <textarea class="form-control form-textarea h-70"></textarea>   
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="col-md-2">
+                            <div class="fs-md color-black-60 mb-1">Date</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="date">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-footer d-flex justify-content-between">
+                <button class="btn btn-md btn-grey btn-radius-none w-200">Cancel</button>
+                <button class="btn btn-md btn-darkblue btn-radius-none w-200">Save</button>
             </div>
         </div>
     </div>

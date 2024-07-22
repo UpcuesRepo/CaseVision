@@ -6,8 +6,8 @@
         box-shadow: 0px 4px 10px 4px #0000000D;
     }
     .btn-skyblue-collapse{
-        background-color: $orange-10;
-        color: $black;
+        background-color: $light-blue-10;
+        color: $dark-blue;
         width: 100%;
         text-align: left;
         font-size: $font-size-lg;
@@ -16,18 +16,20 @@
         padding: 7px 20px;
         &::after{
             content: "";
-            background-image: url('data:image/svg+xml,<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.41699 11.9167L11.0003 16.5L15.5837 11.9167M6.41699 5.5L11.0003 10.0833L15.5837 5.5" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+            background-image: url('data:image/svg+xml,<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.41699 11.9167L11.0003 16.5L15.5837 11.9167M6.41699 5.5L11.0003 10.0833L15.5837 5.5" stroke="#005EA2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
             width: 22px;
             height: 22px;
         }
         &[aria-expanded="true"]{
             &::after{
-                background-image: url('data:image/svg+xml,<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.41699 11.9167L11.0003 16.5L15.5837 11.9167M6.41699 5.5L11.0003 10.0833L15.5837 5.5" stroke="#005EA2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
                 transform: rotate(180deg);  
             }
-            &.btn-skyblue-collapse{
-                background-color: $light-blue-10;
-                color: $dark-blue;
+        }
+        &.orange-collapse{
+            background-color: $orange-10;
+            color: $black;
+            &::after{
+                background-image: url('data:image/svg+xml,<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.41699 11.9167L11.0003 16.5L15.5837 11.9167M6.41699 5.5L11.0003 10.0833L15.5837 5.5" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
             }
         }
     }

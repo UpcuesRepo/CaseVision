@@ -55,6 +55,9 @@
                 }
             }
         }
+        &:focus, &:active{
+            outline: 1px solid $light-blue-2;
+        }
         &.h-34{
             padding: 5px 10px;
         }
@@ -129,5 +132,8 @@
     }
     &.h-36{
         padding: 6px 15px;
+    }
+    &.w-200{
+        width: 220px;
     }
 }

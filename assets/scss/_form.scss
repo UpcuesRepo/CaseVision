@@ -87,6 +87,9 @@
         outline: $border-light-blue;
         color: $black-60;
     }
+    &:disabled{
+        background-color: $grey-3;
+    }
     &.mail-icon {
         background-image: url(../../../images/icons/mail-02.svg);
         background-position-x: 20px;
@@ -108,6 +111,18 @@
         background-repeat: no-repeat;
         padding-left: 55px;
     }
+    &.form-textarea{
+        resize: none;
+        line-height: $line-height-22;
+        height: 115px;
+        color: $black;
+        &.h-60{
+            height: 60px;
+        }
+        &.h-70{
+            height: 70px;
+        }
+    }
 }
 input[type="date"] {
     position: relative;
@@ -124,6 +139,27 @@ input[type="date"] {
         display: block;
         content: '';
         background-image: url("../../../images/icons/calendar.svg");
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 15px;
+    }
+}
+input[type="time"] {
+    position: relative;
+
+    &::-webkit-calendar-picker-indicator {
+        color: transparent;
+        background: none;
+        z-index: 1;
+    }
+
+    &:before {
+        color: transparent;
+        background: none;
+        display: block;
+        content: '';
+        background-image: url("../../../images/icons/clock.svg");
         width: 20px;
         height: 20px;
         position: absolute;
@@ -216,6 +252,9 @@ input[type="date"] {
             outline: $border-light-blue!important;
             color: $black-60;
         }   
+        &:disabled{
+            background-color: $grey-3;
+        }
     }
     &.style-2{
         .form-select{
@@ -399,8 +438,8 @@ ul.error-mesg{
 //CHECKBOX
 .form-check {
     position: relative;
-    padding-left: 30px;
     min-height: 20px;
+    padding-left: 30px;
     &.form-inline{
         display: inline-flex;
     }
@@ -478,13 +517,73 @@ ul.error-mesg{
             }
         }
     }
-    &.round-check{
-        .form-check-input[type="checkbox"] {
-            border-radius: 50%;
-        }    
-    }
+    // &.round-check{
+    //     .form-check-input[type="checkbox"] {
+    //         border-radius: 50%;
+    //     }    
+    // }
 }
 //END CHECKBOX
+
+// RADIO BUTTON
+.form-check-input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid $dark-blue-10;
+    background-color: $white;
+    margin-bottom: 0px;
+
+    &:checked {
+        background-color: $dark-blue;
+        border: 1px solid $dark-blue;
+        background-image: none;
+    }
+    &:focus{
+        box-shadow: none;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: $dark-blue;
+    }
+
+    &.add-after2 {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        margin: 0;
+        min-height: 20px;
+
+        &+svg {
+            display: none;
+            &+.form-check-label {
+                font-size: $font-size-md;
+                color: $black;
+                font-weight: $font-600;
+                line-height: $line-height-20;
+                &.font-400{
+                    font-weight: $font-400;
+                }
+            }
+        }
+
+        &:checked {
+            &+svg {
+                z-index: 2;
+                display: block;
+                position: absolute;
+                left: 5px;
+                top: 5px;
+                color: #fff;
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+}
+
+// END RADIO BUTTON
 
 //CUSTOM MULTI SELECT 
 .multiselect{

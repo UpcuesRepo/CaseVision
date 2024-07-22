@@ -35,6 +35,15 @@
     <button type="button" class="btn btn-primary w-auto m-5" data-bs-toggle="modal" data-bs-target="#addNewCaseModal">
         Add NEW CASE
     </button>
+    <button type="button" class="btn btn-primary w-auto m-5" data-bs-toggle="modal" data-bs-target="#assignManagerModal">
+        assign manager
+    </button>
+    <button type="button" class="btn btn-primary w-auto m-5" data-bs-toggle="modal" data-bs-target="#addNotesModal">
+        add notes
+    </button>
+    <button type="button" class="btn btn-primary w-auto m-5" data-bs-toggle="modal" data-bs-target="#deleteDocModal">
+        delete document
+    </button>
   
     <!-- Modal -->
     <div class="modal fade" id="editCaseModal" tabindex="-1" aria-labelledby="editCaseModalLabel" aria-hidden="true">
@@ -407,7 +416,161 @@
         </div>
         </div>
     </div>
+    <!-- ADD NOTES -->
+    <div class="modal fade" id="addNotesModal" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-add-notes modal-750">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="assignManagerModalLabel">ADD NOTE</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <div class="fs-md color-black-60 mb-1">Type of Contact</div>
+                        <div class="rows-select grey-toggle style-2">
+                            <select class="form-select">
+                              <option data-tokens="1">Evelyn</option>
+                              <option data-tokens="2">Level 2</option>
+                              <option data-tokens="3">Level 3</option>
+                            </select>
+                        </div>    
+                    </div>
+                    <div class="col-md-4">
+                        <div class="fs-md color-black-60 mb-1">Date of Associated Visit / Check-in</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="date">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="fs-md color-black-60 mb-1">Method of Contact</div>
+                        <div class="rows-select grey-toggle style-2">
+                            <select class="form-select">
+                              <option data-tokens="1">-</option>
+                              <option data-tokens="2">Level 2</option>
+                              <option data-tokens="3">Level 3</option>
+                            </select>
+                        </div>    
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <div class="fs-md color-black-60 mb-1">Location</div>
+                        <div class="rows-select grey-toggle style-2">
+                            <select class="form-select">
+                              <option data-tokens="1">-</option>
+                              <option data-tokens="2">Level 2</option>
+                              <option data-tokens="3">Level 3</option>
+                            </select>
+                        </div>    
+                    </div>   
+                </div> 
+                <div class="row align-items-center mb-3">
+                    <div class="col-md-4">
+                        <div class="grey-title">Individuals present</div>   
+                    </div>
+                    <div class="col-md-5 d-flex justify-content-between">
+                        <div class="form-check form-inline">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                            <label class="form-check-label style-1" for="check1">
+                                Sponsor
+                            </label>
+                        </div>
+                        <div class="form-check form-inline">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                            <label class="form-check-label style-1" for="check1">
+                                Minor
+                            </label>
+                        </div>
+                        <div class="form-check form-inline">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                            <label class="form-check-label style-1" for="check1">
+                                Other
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input class="form-control style-2" type="email" placeholder="">
+                        </div>
+                    </div>
+                </div> 
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <div class="fs-md color-black-60 mb-1">Start Time</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="time">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="fs-md color-black-60 mb-1">End Time</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="time">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="fs-md color-black-60 mb-1">Contact Successful</div>
+                        <div class="d-flex mt-2">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Description</div>
+                        <textarea class="form-control form-textarea"></textarea>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Follow Up Actions</div>
+                        <textarea class="form-control form-textarea"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="fs-md color-black-60 mb-1">Case Worker Initials</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="email" placeholder="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-md btn-grey btn-radius-none w-50">Cancel</button>
+                <button type="button" class="btn btn-darkblue btn-md btn-radius-none w-50">Save</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- END ADD NOTES -->
 
+    <!-- DELETE DOCUMENT -->
+    <div class="modal fade" id="deleteDocModal" tabindex="-1" aria-labelledby="deleteDocModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-add-notes modal-300">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="assignManagerModalLabel">Confirmation</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center p-3">
+                    Are you sure you want to delete this document?
+                </div>   
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-md btn-grey btn-radius-none w-50">No</button>
+                <button type="button" class="btn btn-darkblue btn-md btn-radius-none w-50">Yes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- END DELETE DOCUMENT -->
     
     <script src="../../assets/dist/js/all.min.js"></script>
   </body>

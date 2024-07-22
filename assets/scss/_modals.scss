@@ -21,6 +21,19 @@
                 }
             }
         }
+        &.modal-add-notes{
+            .modal-body{
+                .grey-title{
+                    font-size: $font-size-16;
+                    font-weight: $font-600;
+                    color: $black-60;
+                    text-transform: $text-uppercase;
+                }
+            }
+        }
+        &.modal-300{
+            width: 300px;
+        }
         &.modal-350{
             width: 350px;
         }
@@ -29,6 +42,9 @@
         }
         &.modal-1200{
             max-width: 1200px;
+        }
+        &.modal-750{
+            max-width: 750px;
         }
     }
 }
