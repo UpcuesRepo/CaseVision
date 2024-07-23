@@ -50,10 +50,30 @@
                             <span class="red-dot"></span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-account" aria-labelledby="dropdownMenuNotific" data-bs-popper="static">
-                            <li class="dropdown-item"><a href="#" class="active">Account Settings</a></li>
-                            <li class="dropdown-item"><a href="#"> Live Dashboard</a></li>
-                            <li class="dropdown-item"><a href="#"> Reports</a></li>
-                            <li class="dropdown-item"><a href="#">Logout</a></li>
+                            <li class="dropdown-item">
+                                <div class="d-flex">
+                                    <img src="../../images/icons/file-02.svg" class="me-2" alt="">
+                                    <div class="note">    
+                                        Maria Omar added new note on 26/06/2024 at 14:02 <br> for <span class="fw-bold">24/7 Domestic Violence Hotline (GCADV)</span>      
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="d-flex">
+                                    <img src="../../images/icons/user-square.svg" class="me-2" alt="">
+                                    <div class="note">    
+                                        Maria Omar added new resource on 26/06/2024 at <br> 14:02 for <span class="fw-bold">24/7 Domestic Violence Hotline (GCADV)</span>      
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="d-flex">
+                                    <img src="../../images/icons/user-square-red.svg" class="me-2" alt="">
+                                    <div class="note color-red">     
+                                        <span class="fw-bold">Chelsea Maxfield</span> Rejected your request of added <br> new resource on 25/06/2024 at 14:02.
+                                    </div>
+                                </div>
+                            </li>
                           </ul>
                     </div>
                     <div class="dropdown dropdown-profile d-flex align-items-center me-3">
@@ -144,11 +164,8 @@
                    <div class="table-part">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="d-flex justify-content-between mb-3">
-                                <div class="resource-title">
-                                    Case Details
-                                </div>
-                                <button class="btn btn-skyblue btn-sm h-34 with-icon" type="button">
+                            <div class="case-details-card p-3 mb-3">
+                                <button class="btn btn-skyblue btn-sm h-34 with-icon btn-top" type="button">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_1186_820)">
                                         <path d="M9.16699 3.33344H5.66699C4.26686 3.33344 3.5668 3.33344 3.03202 3.60593C2.56161 3.84561 2.17916 4.22806 1.93948 4.69847C1.66699 5.23324 1.66699 5.93331 1.66699 7.33344V14.3334C1.66699 15.7336 1.66699 16.4336 1.93948 16.9684C2.17916 17.4388 2.56161 17.8213 3.03202 18.061C3.5668 18.3334 4.26686 18.3334 5.66699 18.3334H12.667C14.0671 18.3334 14.7672 18.3334 15.302 18.061C15.7724 17.8213 16.1548 17.4388 16.3945 16.9684C16.667 16.4336 16.667 15.7336 16.667 14.3334V10.8334M6.66697 13.3334H8.06242C8.47007 13.3334 8.6739 13.3334 8.86571 13.2874C9.03577 13.2466 9.19835 13.1792 9.34747 13.0878C9.51566 12.9848 9.65979 12.8406 9.94804 12.5524L17.917 4.58344C18.6073 3.89309 18.6073 2.7738 17.917 2.08344C17.2266 1.39309 16.1073 1.39308 15.417 2.08344L7.44802 10.0524C7.15977 10.3406 7.01564 10.4848 6.91257 10.653C6.82119 10.8021 6.75385 10.9647 6.71302 11.1347C6.66697 11.3265 6.66697 11.5304 6.66697 11.938V13.3334Z" stroke="#5BAAF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -161,76 +178,62 @@
                                     </svg>
                                     Edit
                                 </button>
+                                    <div class="d-flex mb-3">
+                                        <div class="res-title w-20p">Agency Name</div>
+                                        <div class="res-desc w-80p">24/7 Domestic Violence Hotline (GCADV)</div>
+                                    </div>
+                                    <div class="d-flex mb-3">
+                                        <div class="res-title w-20p">Domain</div>
+                                        <div class="res-desc w-80p">9. State Services</div>
+                                    </div>
+                                    <div class="d-flex mb-3">
+                                        <div class="res-title w-20p">Category</div>
+                                        <div class="res-desc w-80p">County Hotline</div>
+                                    </div>
+                                    <div class="d-flex mb-3">
+                                        <div class="res-title w-20p">Cost</div>
+                                        <div class="res-desc w-80p">No Cost</div>
+                                    </div>
+                                    <div class="d-flex mb-3">
+                                        <div class="res-title w-20p">Regions</div>
+                                        <div class="res-desc w-80p">Region 1</div>
+                                    </div>
+                                    <div class="d-flex mb-3">
+                                        <div class="res-title w-20p">Description</div>
+                                        <div class="res-desc w-80p">Planned Parenthood is the nation's leading provider and advocate of high-quality, affordable health care for women, men and young people.</div>
+                                    </div>
+                                    <div class="d-flex mb-3">
+                                        <div class="res-title w-20p">Address</div>
+                                        <div class="res-desc w-80p">2295 Parklane Dr. Suite 130</div>
+                                    </div>
+                                    <div class="d-flex mb-3">
+                                        <div class="res-title w-20p">City</div>
+                                        <div class="d-flex justify-content-between w-80p">
+                                            <div class="res-desc">Atlanta</div>
+                                            <div class="res-title">State</div>
+                                            <div class="res-desc">Georgia</div>
+                                            <div class="res-title">Zip Code</div>
+                                            <div class="res-desc">30345</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-3">
+                                        <div class="res-title w-20p">Phone Number</div>
+                                        <div class="d-flex justify-content-between w-80p">
+                                            <div class="res-desc">1-800-334-2836</div>
+                                            <div class="d-flex w-50 justify-content-between">
+                                                <div class="res-title">Website</div>
+                                                <div class="res-desc">northgeorgiacottage.org</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-3">
+                                        <div class="res-title w-20p">Languages</div>
+                                        <div class="res-desc w-80p">English, Spanish</div>
+                                    </div>
                             </div>
-                            <div class="case-details-card mb-3">
-                                <table class="case-details-table w-80p border-right-none">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="title">Case Acceptance Date</div>
-                                            </td>
-                                            <td>
-                                                <div class="description">24/7 Domestic Violence Hotline (GCADV)</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="title">Domain</div>
-                                            </td>
-                                            <td>
-                                                <div class="description">9. State Services</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="title">Phone Number</div>
-                                            </td>
-                                            <td>
-                                                <div class="description">892-880-7799</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="title">Website</div>
-                                            </td>
-                                            <td>
-                                                <div class="description">www.hotline.rainn.org/online</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="title">Regions</div>
-                                            </td>
-                                            <td>
-                                                <div class="description">Region 1</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="title">City</div>
-                                            </td>
-                                            <td>
-                                                <div class="description">New York</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="title">State</div>
-                                            </td>
-                                            <td>
-                                                <div class="description">New York</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="title">Zip Code</div>
-                                            </td>
-                                            <td>
-                                                <div class="description">809978</div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="d-flex justify-content-end mb-3">
+                                <button class="btn btn-primary btn-sm h-34 me-2" type="button">Approve</button>
+                                <button class="btn btn-primary btn-sm h-34" type="button">Reject</button>
                             </div>
                             <div class="resource-title mb-3">
                                 Add New Notes

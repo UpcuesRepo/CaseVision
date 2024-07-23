@@ -123,6 +123,24 @@ a{
                 content: "";
             }
         }
+        .dropdown-menu{
+            margin-top: 15px!important;
+            width: 320px;
+            border: 1px solid $black-10;
+            box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.05);
+            border-radius: $radius-lg;
+            padding: 0 15px;
+            .dropdown-item{
+                padding: 15px 0;
+                font-size: $font-size-sm;
+                &:not(:last-child){
+                    border-bottom: 1px solid $black-10;
+                }
+                &:hover, &:active{
+                    background-color: transparent;
+                }
+            }
+        }
     }
 }
 
