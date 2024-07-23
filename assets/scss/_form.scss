@@ -116,6 +116,9 @@
         line-height: $line-height-22;
         height: 115px;
         color: $black;
+        &.h-48{
+            height: 48px;
+        }
         &.h-60{
             height: 60px;
         }

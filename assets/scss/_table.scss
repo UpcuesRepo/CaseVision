@@ -96,3 +96,54 @@
         }    
     }
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    border-radius: $radius-lg;
+    overflow: hidden;
+    border: 1px solid $black-10;
+    .grid-item {
+        background-color:$light-gray-3-1;
+        padding: 10px;
+        border: 1px solid $black-10;
+        &.bg-blue{
+            background-color: $light-blue-10;
+        }
+        .grid-title{
+            font-size: $font-size-md;
+            font-weight: $font-600;
+        }
+    }
+    .grid-head {
+        background-color: $dark-blue;
+        padding: 10px;
+        grid-column: 1 / 4;
+        .grid-title{
+            color: $white;
+            font-size: $font-size-16;
+            font-weight: $font-700;
+        }
+    }
+    &.head-border{
+        border-top: 1px solid $light-blue;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        .grid-item{
+            border-bottom: 0;
+            border-top: 0;
+        }
+        .grid-head{
+            background-color: $light-blue-10;
+            border: 1px solid $light-blue;
+            border-top: 0;
+            .grid-title{
+                color: $dark-blue;
+                font-size: $font-size-md;
+                font-weight: $font-600;
+            }
+            &.head-2{
+                border-top: 1px solid $light-blue;
+            }
+        } 
+    }
+}
+  
