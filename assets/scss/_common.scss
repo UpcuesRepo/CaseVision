@@ -9,6 +9,18 @@ body{
     font-style: normal;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+background-color: $dark-blue;
+border-radius: 25px;
+border: 7px solid $white;
+}
+
 html{
     height: 100%;
 }
