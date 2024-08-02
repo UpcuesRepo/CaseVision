@@ -130,6 +130,12 @@
             font-size: $font-size-md;
             font-weight: $font-600;
         }
+        .light-blue-title{
+            background-color: $light-blue-10;
+            font-size: $font-size-md;
+            font-weight: $font-600;
+            color: $dark-blue;
+        }
     }
     .grid-head {
         background-color: $dark-blue;
@@ -161,6 +167,31 @@
                 border-top: 1px solid $light-blue;
             }
         } 
+    }
+    .border-x-none{
+        border-right: none;
+        border-left: none;
+    }
+    &.grid-safety-plan{
+        grid-template-columns: 40% 30% 30%;    
+    }
+    &.four-grid{
+        grid-template-columns: 25% 25% 25% 25%;    
+    }
+    &.border-none{
+        border: none;
+        grid-template-columns: 30% 40% 30%;
+        .grid-item{
+            background-color: transparent;
+            border: none;
+        }
+    }
+    .grid-item-span-3{
+        grid-column: 1 / 4;  
+        .inner-grid-container{
+            grid-template-columns: 30% 70%;    
+            display: grid;
+        }  
     }
 }
   

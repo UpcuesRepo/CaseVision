@@ -94,6 +94,12 @@
 .bg-light-blue-30     {background-color:$light-blue-30;}         
 .bg-light-blue-10     {background-color:$light-blue-10;}
 
+// BACKGROUND LIGHT BLUE COLOR //
+.bg-dark-blue        {background-color:$dark-blue;}      
+.bg-dark-blue-60     {background-color:$dark-blue-60;}           
+.bg-dark-blue-30     {background-color:$dark-blue-30;}         
+.bg-dark-blue-10     {background-color:$dark-blue-10;}
+
 // MARGIN
 .margin-y-5            {margin:5px 0;}
 
@@ -123,5 +129,5 @@
 
 // TEXT TRANSFORM
 .text-uppercase         {text-transform: uppercase;}
-
+.text-underline         {text-decoration: $text-underline;}
 

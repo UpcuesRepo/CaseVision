@@ -39,6 +39,9 @@
             .grey-strip{
                 background-color: $light-gray-1;
                 padding: 10px 15px;
+                .border-bottom-black10{
+                    border-bottom: 1px solid $black-10;
+                }
             }
         }
     }
