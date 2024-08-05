@@ -144,6 +144,10 @@
                     case closure
                 </button>
             </div>
+            <div class="col-md-2">
+                <h6>Add Referral</h6>
+                <button class="btn btn-primary with-icon btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#addReferralFilter" aria-controls="addReferralFilter">add referral</button>
+            </div>
             <div class="col-md-4">
                 <!-- <h6>992PX AND BELOW SCREEN FILTER</h6> -->
                 <h6>992PX AND BELOW SCREEN FILTER</h6>
@@ -1060,7 +1064,7 @@
         </div>
         <div class="offcanvas my-case-offcanvas w-450 offcanvas-end" tabindex="-1" id="EditSponserFilter" aria-labelledby="EditSponserFilterLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title font-xl" id="EditSponserFilterLabel">EDIT SPONSOR</h5>
+              <h5 class="offcanvas-title font-xl" id="EditSponserFilterLabel">EDIT NEW SPONSOR</h5>
               <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#EditSponserFilterLabel" role="button" aria-controls="EditCaseDetailFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
             </div>
             <div class="offcanvas-body">
@@ -3026,6 +3030,88 @@
             <div class="offcanvas-footer d-flex justify-content-between">
                 <button class="btn btn-md btn-grey btn-radius-none w-200">Cancel</button>
                 <button class="btn btn-md btn-darkblue btn-radius-none w-200">Save</button>
+            </div>
+        </div>
+        <div class="offcanvas my-case-offcanvas w-450 offcanvas-end" tabindex="-1" id="addReferralFilter" aria-labelledby="addReferralFilterLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title font-xl" id="addReferralFilterLabel">ADD referral</h5>
+              <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#addReferralFilterLabel" role="button" aria-controls="EditCaseDetailFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
+            </div>
+            <div class="offcanvas-body">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Referral / Service Type</div>
+                        <div class="rows-select grey-toggle style-2">
+                            <select class="form-select">
+                              <option data-tokens="1"></option>
+                              <option data-tokens="2">Male</option>
+                              <option data-tokens="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Date of Referral</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="date">
+                        </div>
+                    </div>
+                </div> 
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <div class="fs-md color-black-60 mb-1">Provider Information (Agency)</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="email" placeholder="">
+                        </div>
+                    </div>
+                </div> 
+                <div class="fs-md color-black-60 mb-1">Referral Successful?</div>
+                <div class="d-flex mb-3">
+                    <div class="form-check form-inline me-3">
+                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                    </div>
+                    <div class="form-check form-inline me-3">
+                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                        <label class="form-check-label font-400 mb-0" for="">No</label>
+                    </div>
+                    <div class="form-check form-inline me-3">
+                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                        <label class="form-check-label font-400 mb-0" for="">NA</label>
+                    </div>
+                </div> 
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Referral Date</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="date">
+                        </div>
+                    </div>   
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <textarea class="form-control form-textarea h-70"></textarea>
+                    </div>
+                </div>    
+                <div class="row mb-3">
+                    <div class="col-md-12 d-flex justify-content-between align-items-center mb-1">
+                        <div class="fs-md color-black-60">Follow Up Date</div>
+                        <a href="#" class="fs-md fw-semibold color-dark-blue">Add</a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control style-2" type="date">
+                        </div>
+                    </div>   
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <textarea class="form-control form-textarea h-70"></textarea>
+                    </div>
+                </div>    
+            </div>
+            <div class="offcanvas-footer d-flex">
+                <button class="btn btn-md btn-grey btn-radius-none w-50">Cancel</button>
+                <button class="btn btn-md btn-darkblue btn-radius-none w-50">Save</button>
             </div>
         </div>
     </div>
