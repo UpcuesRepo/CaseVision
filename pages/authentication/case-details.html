@@ -309,7 +309,7 @@
                             <!-- END EDIT UC BASIC INFO FILTER -->
                         </div>
                         <div class="case-details-card mb-4">
-                            <table class="case-details-table">
+                            <table class="case-details-table uc-case-details">
                                 <tbody>
                                     <tr>
                                         <td>
@@ -748,7 +748,7 @@
                             </a>
                             <div class="collapse show" id="collapseSponser">
                                 <div class="case-details-card">
-                                    <table class="case-details-table">
+                                    <table class="case-details-table uc-case-details">
                                         <tbody>
                                             <tr>
                                                 <td>
@@ -860,7 +860,7 @@
                             </a>
                             <div class="collapse" id="collapsehSponser">
                                 <div class="case-details-card">
-                                    <table class="case-details-table">
+                                    <table class="case-details-table uc-case-details">
                                         <tbody>
                                             <tr>
                                                 <td>
@@ -1077,8 +1077,8 @@
                                 <!-- END EDIT CASE DETAILS FILTER -->
                             </div>
                         </div>
-                        <div class="case-details-card d-flex mb-4">
-                            <table class="case-details-table border-right-none table-shadow w-90p">
+                        <div class="case-details-card d-flex md-flex-column mb-4">
+                            <table class="case-details-table uc-case-details border-right-none table-shadow w-90p">
                                 <tbody>
                                     <tr>
                                         <td>
@@ -1161,6 +1161,173 @@
                                 <div class="fs-md color-black-60">Case Staus</div>
                                 <div class="fs-16 fw-bold color-green">Active</div>
                             </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <div class="resource-title">Referrals</div>
+                            <button class="btn btn-skyblue btn-sm h-34 with-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#addReferralFilter" aria-controls="addReferralFilter">Add Referral</button>
+                            <!-- add referral filter -->
+                            <div class="offcanvas my-case-offcanvas w-450 offcanvas-end" tabindex="-1" id="addReferralFilter" aria-labelledby="addReferralFilterLabel">
+                                <div class="offcanvas-header">
+                                  <h5 class="offcanvas-title font-xl" id="addReferralFilterLabel">ADD referral</h5>
+                                  <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#addReferralFilterLabel" role="button" aria-controls="EditCaseDetailFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="fs-md color-black-60 mb-1">Referral / Service Type</div>
+                                            <div class="rows-select grey-toggle style-2">
+                                                <select class="form-select">
+                                                  <option data-tokens="1"></option>
+                                                  <option data-tokens="2">Male</option>
+                                                  <option data-tokens="3">3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="fs-md color-black-60 mb-1">Date of Referral</div>
+                                            <div class="form-group">
+                                                <input class="form-control style-2" type="date">
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="row mb-3">
+                                        <div class="col-md-12">
+                                            <div class="fs-md color-black-60 mb-1">Provider Information (Agency)</div>
+                                            <div class="form-group">
+                                                <input class="form-control style-2" type="email" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="fs-md color-black-60 mb-1">Referral Successful?</div>
+                                    <div class="d-flex mb-3">
+                                        <div class="form-check form-inline me-3">
+                                            <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                            <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                        </div>
+                                        <div class="form-check form-inline me-3">
+                                            <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                            <label class="form-check-label font-400 mb-0" for="">No</label>
+                                        </div>
+                                        <div class="form-check form-inline me-3">
+                                            <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                            <label class="form-check-label font-400 mb-0" for="">NA</label>
+                                        </div>
+                                    </div> 
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="fs-md color-black-60 mb-1">Referral Date</div>
+                                            <div class="form-group">
+                                                <input class="form-control style-2" type="date">
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-12">
+                                            <textarea class="form-control form-textarea h-70"></textarea>
+                                        </div>
+                                    </div>    
+                                    <div class="row mb-3">
+                                        <div class="col-md-12 d-flex justify-content-between align-items-center mb-1">
+                                            <div class="fs-md color-black-60">Follow Up Date</div>
+                                            <a href="#" class="fs-md fw-semibold color-dark-blue">Add</a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input class="form-control style-2" type="date">
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-12">
+                                            <textarea class="form-control form-textarea h-70"></textarea>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="offcanvas-footer d-flex">
+                                    <button class="btn btn-md btn-grey btn-radius-none w-50">Cancel</button>
+                                    <button class="btn btn-md btn-darkblue btn-radius-none w-50">Save</button>
+                                </div>
+                            </div>
+                            <!-- end add referral filter -->
+                        </div>
+                        <div class="case-details-card mb-4">
+                            <table class="case-details-heading-table border-right-none table-shadow w-90p">
+                                <thead>
+                                    <tr>
+                                        <th>Referral Type</th>
+                                        <th>Provider Information (Agency)</th>
+                                        <th>Referral Date</th>
+                                        <th>Last Updated On</th>
+                                        <th>Referral Succesful</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Education Service, Legal Service</td>
+                                        <td>Agency Name goes here</td>
+                                        <td>4/23/2024</td>
+                                        <td>4/23/2024</td>
+                                        <td class="color-red">Not Provided</td>
+                                        <td>
+                                            <a href="#">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_1186_820)">
+                                                    <path d="M9.16699 3.33344H5.66699C4.26686 3.33344 3.5668 3.33344 3.03202 3.60593C2.56161 3.84561 2.17916 4.22806 1.93948 4.69847C1.66699 5.23324 1.66699 5.93331 1.66699 7.33344V14.3334C1.66699 15.7336 1.66699 16.4336 1.93948 16.9684C2.17916 17.4388 2.56161 17.8213 3.03202 18.061C3.5668 18.3334 4.26686 18.3334 5.66699 18.3334H12.667C14.0671 18.3334 14.7672 18.3334 15.302 18.061C15.7724 17.8213 16.1548 17.4388 16.3945 16.9684C16.667 16.4336 16.667 15.7336 16.667 14.3334V10.8334M6.66697 13.3334H8.06242C8.47007 13.3334 8.6739 13.3334 8.86571 13.2874C9.03577 13.2466 9.19835 13.1792 9.34747 13.0878C9.51566 12.9848 9.65979 12.8406 9.94804 12.5524L17.917 4.58344C18.6073 3.89309 18.6073 2.7738 17.917 2.08344C17.2266 1.39309 16.1073 1.39308 15.417 2.08344L7.44802 10.0524C7.15977 10.3406 7.01564 10.4848 6.91257 10.653C6.82119 10.8021 6.75385 10.9647 6.71302 11.1347C6.66697 11.3265 6.66697 11.5304 6.66697 11.938V13.3334Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                    <defs>
+                                                    <clipPath id="clip0_1186_820">
+                                                    <rect width="20" height="20" fill="white"/>
+                                                    </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Education Service, Legal Service</td>
+                                        <td>Agency Name goes here</td>
+                                        <td>4/23/2024</td>
+                                        <td>4/23/2024</td>
+                                        <td>Yes</td>
+                                        <td>
+                                            <a href="#">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_1186_820)">
+                                                    <path d="M9.16699 3.33344H5.66699C4.26686 3.33344 3.5668 3.33344 3.03202 3.60593C2.56161 3.84561 2.17916 4.22806 1.93948 4.69847C1.66699 5.23324 1.66699 5.93331 1.66699 7.33344V14.3334C1.66699 15.7336 1.66699 16.4336 1.93948 16.9684C2.17916 17.4388 2.56161 17.8213 3.03202 18.061C3.5668 18.3334 4.26686 18.3334 5.66699 18.3334H12.667C14.0671 18.3334 14.7672 18.3334 15.302 18.061C15.7724 17.8213 16.1548 17.4388 16.3945 16.9684C16.667 16.4336 16.667 15.7336 16.667 14.3334V10.8334M6.66697 13.3334H8.06242C8.47007 13.3334 8.6739 13.3334 8.86571 13.2874C9.03577 13.2466 9.19835 13.1792 9.34747 13.0878C9.51566 12.9848 9.65979 12.8406 9.94804 12.5524L17.917 4.58344C18.6073 3.89309 18.6073 2.7738 17.917 2.08344C17.2266 1.39309 16.1073 1.39308 15.417 2.08344L7.44802 10.0524C7.15977 10.3406 7.01564 10.4848 6.91257 10.653C6.82119 10.8021 6.75385 10.9647 6.71302 11.1347C6.66697 11.3265 6.66697 11.5304 6.66697 11.938V13.3334Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                    <defs>
+                                                    <clipPath id="clip0_1186_820">
+                                                    <rect width="20" height="20" fill="white"/>
+                                                    </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Education Service, Legal Service</td>
+                                        <td>Agency Name goes here</td>
+                                        <td>4/23/2024</td>
+                                        <td>4/23/2024</td>
+                                        <td>No</td>
+                                        <td>
+                                            <a href="#">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_1186_820)">
+                                                    <path d="M9.16699 3.33344H5.66699C4.26686 3.33344 3.5668 3.33344 3.03202 3.60593C2.56161 3.84561 2.17916 4.22806 1.93948 4.69847C1.66699 5.23324 1.66699 5.93331 1.66699 7.33344V14.3334C1.66699 15.7336 1.66699 16.4336 1.93948 16.9684C2.17916 17.4388 2.56161 17.8213 3.03202 18.061C3.5668 18.3334 4.26686 18.3334 5.66699 18.3334H12.667C14.0671 18.3334 14.7672 18.3334 15.302 18.061C15.7724 17.8213 16.1548 17.4388 16.3945 16.9684C16.667 16.4336 16.667 15.7336 16.667 14.3334V10.8334M6.66697 13.3334H8.06242C8.47007 13.3334 8.6739 13.3334 8.86571 13.2874C9.03577 13.2466 9.19835 13.1792 9.34747 13.0878C9.51566 12.9848 9.65979 12.8406 9.94804 12.5524L17.917 4.58344C18.6073 3.89309 18.6073 2.7738 17.917 2.08344C17.2266 1.39309 16.1073 1.39308 15.417 2.08344L7.44802 10.0524C7.15977 10.3406 7.01564 10.4848 6.91257 10.653C6.82119 10.8021 6.75385 10.9647 6.71302 11.1347C6.66697 11.3265 6.66697 11.5304 6.66697 11.938V13.3334Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                    <defs>
+                                                    <clipPath id="clip0_1186_820">
+                                                    <rect width="20" height="20" fill="white"/>
+                                                    </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>

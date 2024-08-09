@@ -367,6 +367,21 @@
                     }
                 }
             }
+            .md-flex-column{
+                @include media-breakpoint-down(md){
+                    flex-direction: column;
+                }
+            }
+            .md-margin-b-3{
+                @include media-breakpoint-down(md){
+                    margin-bottom: 15px;
+                }
+            }
+            .md-margin-b-2{
+                @include media-breakpoint-down(md){
+                    margin-bottom: 10px;
+                }
+            }
         }
 
     }

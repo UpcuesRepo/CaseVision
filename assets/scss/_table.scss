@@ -17,12 +17,18 @@
                         color: $black-60;
                         font-size: $font-size-md;
                         line-height: $line-height-20;
+                        @include media-breakpoint-down(md){
+                            font-size: $font-size-sm;
+                        }
                     }
                     .description{
                         color: $black;
                         font-size: $font-size-16;
                         font-weight: $font-700;
                         line-height: $line-height-22;
+                        @include media-breakpoint-down(md){
+                            font-size: $font-size-md;
+                        }
                     }
                     &[colspan="4"]{
                         background-color: $light-blue-10;
@@ -55,10 +61,24 @@
         }
         &.w-90p{
             width: 90%;
+            @include media-breakpoint-down(md){
+                width: 100%;
+            }
+        }
+        &.uc-case-details{
+            .d-flex{
+                @include media-breakpoint-down(md){
+                    flex-direction: column;
+                }
+            }
         }
     }
     .w-10p{
         width: 10%;
+        @include media-breakpoint-down(md){
+            width: 100%;
+            padding: 15px;
+        }
     }
     .case-details-heading-table{
         width: 100%;
@@ -94,7 +114,7 @@
                     }
                 }
             }
-        }    
+        } 
     }
     .btn-top{
         position: absolute;
@@ -111,6 +131,9 @@
         font-size: $font-size-16;
         font-weight: $font-700;
         line-height: $line-height-22;  
+    }
+    @include media-breakpoint-down(md){
+        overflow: scroll;
     }
 }
 .grid-container {
