@@ -152,6 +152,10 @@
                 <h6>notification of concern</h6>
                 <button class="btn btn-primary with-icon btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#noticeConcern" aria-controls="noticeConcern">notification of Concern</button>
             </div>
+            <div class="col-md-2">
+                <h6>prs home visit</h6>
+                <button class="btn btn-primary with-icon btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#prsHomeVisit" aria-controls="prsHomeVisit">prs home visit</button>
+            </div>
             <div class="col-md-4">
                 <!-- <h6>992PX AND BELOW SCREEN FILTER</h6> -->
                 <h6>992PX AND BELOW SCREEN FILTER</h6>
@@ -3819,7 +3823,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="fs-md fw-bold mb-2">Persons/Agencies Contacted</div>
+                <div class="fs-md fw-bold mb-2">Addendums</div>
                 <div class="fs-md  mb-2">Use the +/- buttons to add or delete rows. Do not delete previous entries unless entered in error.</div>
                 <div class="grid-container grid-agency mb-3">
                     <div class="grid-item p-0">
@@ -3901,23 +3905,867 @@
                         </div>
                     </div>
                     <div class="grid-item p-0">
+                        <div class="light-blue-title p-2">Addendums Description.</div>
                         <div class="form-group p-2">
                             <input class="form-control style-2" type="email" placeholder="">
                         </div>   
                     </div>
                     <div class="grid-item p-0">
+                        <div class="light-blue-title color-transp p-2">a</div>
+                        <div class="d-flex p-2">
+                            <button class="btn btn-skyblue btn-sm h-w-34 with-icon me-2" type="button">+</button>
+                            <button class="btn btn-skyblue btn-sm h-w-34 with-icon" type="button">-</button>
+                        </div>        
+                    </div>   
+                    <div class="grid-item p-0">
                         <div class="form-group p-2">
-                            <input class="form-control style-2" type="date">
-                        </div>         
+                            <input class="form-control style-2" type="email" placeholder="">
+                        </div>
+                    </div>
+                    <div class="grid-item p-0">
+                        <div class="form-group p-2">
+                            <input class="form-control style-2" type="email" placeholder="">
+                        </div>   
+                    </div>
+                    <div class="grid-item p-0">
+                        <div class="d-flex p-2">
+                            <button class="btn btn-skyblue btn-sm h-w-34 with-icon me-2" type="button">+</button>
+                            <button class="btn btn-skyblue btn-sm h-w-34 with-icon" type="button">-</button>
+                        </div>        
                     </div>   
                 </div>
             </div>
             <div class="offcanvas-footer d-flex justify-content-between">
                 <button class="btn btn-md btn-grey btn-radius-none w-200">Cancel</button>
-                <div class="d-flex">
-                    <button class="btn btn-md btn-dark btn-radius-none w-200">SAVE</button>
-                    <button class="btn btn-md btn-darkblue btn-radius-none w-200">SUBMIT</button>
+                <button class="btn btn-md btn-darkblue btn-radius-none w-200">SAVE</button>
+            </div>
+        </div>
+        <div class="offcanvas my-case-offcanvas w-60p offcanvas-end" tabindex="-1" id="prsHomeVisit" aria-labelledby="prsHomeVisit">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title font-xl" id="prsHomeVisit">PRS HOME VISIT REPORT</h5>
+              <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#prsHomeVisit" role="button" aria-controls="EditCaseDetailFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
+            </div>
+            <div class="offcanvas-body p-0">
+                <div class="p-4">
+                    <div class="grid-container grid-released-child mb-3">
+                        <div class="grid-head d-flex justify-content-between align-items-center border-x-none p-3">
+                            <div class="grid-title">UC Basic Information</div>    
+                        </div>
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">UC Name</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="email" placeholder="">
+                            </div> 
+                        </div>
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">A# [no spaces]</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="email" placeholder="">
+                            </div>
+                        </div>   
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Also Known As</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="email" placeholder="">
+                            </div>
+                        </div>   
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Date of Birth</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="date" placeholder="">
+                            </div>
+                        </div>   
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">age</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="email" placeholder="">
+                            </div>
+                        </div>   
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Country of Birth</div>
+                            <div class="rows-select grey-toggle style-2">
+                                <select class="form-select">
+                                <option data-tokens="1"></option>
+                                <option data-tokens="2">2</option>
+                                <option data-tokens="3">3</option>
+                                </select>
+                            </div>
+                        </div>   
+                        <div class="grid-item-span-3">
+                            <div class="spons-info">
+                                <div class="grid-item border-x-none">
+                                    <div class="fs-md color-black-60 mb-1">Discharge Date</div>
+                                    <div class="form-group">
+                                        <input class="form-control style-2" type="date" placeholder="">
+                                    </div>
+                                </div>    
+                                <div class="grid-item border-x-none">
+                                    <div class="fs-md color-black-60 mb-1">Gender</div>
+                                    <div class="rows-select grey-toggle style-2">
+                                        <select class="form-select">
+                                        <option data-tokens="1"></option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                        </select>
+                                    </div>
+                                </div>    
+                                <div class="grid-item border-x-none">
+                                    <div class="fs-md color-black-60 mb-1">Program</div>
+                                    <div class="form-group">
+                                        <input class="form-control style-2" type="email" placeholder="">
+                                    </div>
+                                </div>    
+                                <div class="grid-item border-x-none">
+                                    <div class="fs-md color-black-60 mb-1">Phone Number</div>
+                                    <div class="form-group">
+                                        <input class="form-control style-2" type="email" placeholder="">
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-container grid-released-child mb-3">
+                        <div class="grid-head d-flex justify-content-between align-items-center border-x-none p-3">
+                            <div class="grid-title">Sponsor Identifying Information</div>    
+                        </div>
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Sponsor</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="email" placeholder="">
+                            </div> 
+                        </div>
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Sponsor Category</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="email" placeholder="">
+                            </div>
+                        </div>   
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Date of Birth</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="date" placeholder="">
+                            </div>
+                        </div>   
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Gender</div>
+                            <div class="rows-select grey-toggle style-2">
+                                <select class="form-select">
+                                <option data-tokens="1"></option>
+                                <option data-tokens="2">2</option>
+                                <option data-tokens="3">3</option>
+                                </select>
+                            </div>
+                        </div>   
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Country of Birth</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="email" placeholder="">
+                            </div>
+                        </div>   
+                        <div class="grid-item border-x-none"></div>  
+                        <div class="grid-item-span-3">
+                            <div class="spons-info">
+                                <div class="grid-item border-x-none">
+                                    <div class="fs-md color-black-60 mb-1">Address</div>
+                                    <div class="form-group">
+                                        <input class="form-control style-2" type="text" placeholder="">
+                                    </div>   
+                                </div>      
+                                <div class="grid-item border-x-none">
+                                    <div class="fs-md color-black-60 mb-1">City</div>
+                                    <div class="form-group">
+                                        <input class="form-control style-2" type="text" placeholder="">
+                                    </div>
+                                </div>    
+                                <div class="grid-item border-x-none">
+                                    <div class="fs-md color-black-60 mb-1">State</div>
+                                    <div class="form-group">
+                                        <input class="form-control style-2" type="email" placeholder="">
+                                    </div>
+                                </div>    
+                                <div class="grid-item border-x-none">
+                                    <div class="fs-md color-black-60 mb-1">Zip Code</div>
+                                    <div class="form-group">
+                                        <input class="form-control style-2" type="email" placeholder="">
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-container grid-released-child mb-3">
+                        <div class="grid-head d-flex justify-content-between align-items-center border-x-none p-3">
+                            <div class="grid-title">Case Information</div>    
+                        </div>
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Assigned Provider Agency</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="email" placeholder="">
+                            </div> 
+                        </div>
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Assigned Subcontractor Agency</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="email" placeholder="">
+                            </div>
+                        </div>   
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Assigned Supervisor</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="text" placeholder="">
+                            </div>
+                        </div>   
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Assigned Provider</div>
+                            <div class="rows-select grey-toggle style-2">
+                                <select class="form-select">
+                                <option data-tokens="1"></option>
+                                <option data-tokens="2">2</option>
+                                <option data-tokens="3">3</option>
+                                </select>
+                            </div>
+                        </div>   
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Assigned Case Worker</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="email" placeholder="">
+                            </div>
+                        </div>   
+                        <div class="grid-item border-x-none"></div>  
+                    </div>
+                    <div class="grid-container grid-released-child mb-3">
+                        <div class="grid-head d-flex justify-content-between align-items-center border-x-none p-3">
+                            <div class="grid-title">Reason for Referral</div>    
+                        </div>
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Report Type</div>
+                            <div class="rows-select grey-toggle style-2">
+                                <select class="form-select">
+                                <option data-tokens="1"></option>
+                                <option data-tokens="2">2</option>
+                                <option data-tokens="3">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Referral Type</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="email" placeholder="">
+                            </div>
+                        </div>   
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Date Opened</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="date" placeholder="">
+                            </div>
+                        </div>   
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Reason for Referral</div>
+                            <div class="rows-select grey-toggle style-2">
+                                <select class="form-select">
+                                <option data-tokens="1"></option>
+                                <option data-tokens="2">2</option>
+                                <option data-tokens="3">3</option>
+                                </select>
+                            </div>
+                        </div>   
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Date of Contact</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="date" placeholder="">
+                            </div>
+                        </div>   
+                        <div class="grid-item border-x-none"></div>  
+                        <div class="grid-item-span-3">
+                            <div class="grid-item border-x-none">
+                                <div class="fs-md color-black-60 me-2">Referral Description</div>
+                                <textarea class="form-control form-textarea h-70"></textarea>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="grid-container grid-released-child mb-3">
+                        <div class="grid-head d-flex justify-content-between align-items-center border-x-none p-3">
+                            <div class="grid-title">Placement</div>    
+                        </div>
+                        <div class="grid-item-span-3">
+                            <div class="grid-event">
+                                <div class="grid-item border-x-none d-flex align-items-center">
+                                    <div class="fs-md color-black-60 line-break">
+                                        Are there significant changes in the household composition or sponsor's life expected in  the  near future?
+                                    </div>
+                                </div>
+                                <div class="grid-item border-x-none">
+                                    <div class="form-group">
+                                        <input class="form-control style-2" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Caregiver Name</div>
+                            <div class="rows-select grey-toggle style-2">
+                                <select class="form-select">
+                                <option data-tokens="1"></option>
+                                <option data-tokens="2">2</option>
+                                <option data-tokens="3">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Caregiver Address</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="email" placeholder="">
+                            </div>
+                        </div>   
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Caregiver State</div>
+                            <div class="rows-select grey-toggle style-2">
+                                <select class="form-select">
+                                <option data-tokens="1"></option>
+                                <option data-tokens="2">2</option>
+                                <option data-tokens="3">3</option>
+                                </select>
+                            </div>
+                        </div>  
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Caregiver City</div>
+                            <div class="rows-select grey-toggle style-2">
+                                <select class="form-select">
+                                <option data-tokens="1"></option>
+                                <option data-tokens="2">2</option>
+                                <option data-tokens="3">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Caregiver Zip Code</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="email" placeholder="">
+                            </div>
+                        </div>     
+                        <div class="grid-item border-x-none"></div>     
+                    </div>
+                    <div class="grid-container grid-released-child mb-3">
+                        <div class="grid-head d-flex justify-content-between align-items-center border-x-none p-3">
+                            <div class="grid-title">Safety Status</div>    
+                        </div>  
+                        <div class="grid-item-span-3">
+                            <div class="grid-46">
+                                <div class="grid-item border-x-none d-flex align-items-center">
+                                    <div class="fs-md color-black-60">
+                                        Is there an indication of child abuse or neglect?
+                                    </div>
+                                </div> 
+                                <div class="grid-item border-x-none">
+                                    <div class="form-group">
+                                        <input class="form-control style-2" type="email" placeholder="">
+                                    </div>
+                                </div> 
+                            </div>   
+                            <div class="grid-50">
+                                <div class="grid-item border-x-none d-flex align-items-center">
+                                    <div class="fs-md color-black-60">
+                                        Are there indicators of trafficking, exploitation, or other safety concerns??
+                                    </div>
+                                </div> 
+                                <div class="grid-item border-x-none">
+                                    <div class="form-group">
+                                        <input class="form-control style-2" type="email" placeholder="">
+                                    </div>
+                                </div> 
+                            </div>  
+                        </div>
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Date Report Created</div>
+                            <div class="rows-select grey-toggle style-2">
+                                <select class="form-select">
+                                <option data-tokens="1"></option>
+                                <option data-tokens="2">2</option>
+                                <option data-tokens="3">3</option>
+                                </select>
+                            </div>    
+                        </div>  
+                        <div class="grid-item border-x-none">
+                            <div class="fs-md color-black-60 mb-1">Type of Report Made</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="email" placeholder="">
+                            </div>    
+                        </div> 
+                        <div class="grid-item border-x-none"></div> 
+                        <div class="grid-item-span-3">
+                            <div class="grid-item border-x-none">
+                                <div class="fs-md color-black-60 me-2">Status/Outcome of Investigation</div>
+                                <textarea class="form-control form-textarea h-70"></textarea>
+                            </div>     
+                        </div>
+                    </div>
+                    <div class="grid-container four-grid mb-3">
+                        <div class="grid-head d-flex justify-content-between align-items-center border-x-none p-3">
+                            <div class="grid-title">Service Area</div>    
+                        </div>  
+                        <div class="span-1">
+                            <div class="grid-item border-x-none h-100">
+                                <div class="fs-md color-black-60 mb-1">Placement Stability and Safety</div>
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Discussed
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Educated
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Referred
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Monitored
+                                        </label>
+                                    </div>      
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span-2">
+                            <div class="grid-item border-x-none">
+                                <div class="fs-md color-black-60 me-2">Placement Stability and Safety Summary</div>
+                                <textarea class="form-control form-textarea h-70"></textarea>
+                            </div> 
+                        </div>
+                        <div class="span-1">
+                            <div class="grid-item border-x-none h-100">
+                                <div class="fs-md color-black-60 mb-1">Immigration Proceedings</div>
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Discussed
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Educated
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Referred
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Monitored
+                                        </label>
+                                    </div>      
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span-2">
+                            <div class="grid-item border-x-none">
+                                <div class="fs-md color-black-60 me-2">Immigration Proceedings Summary</div>
+                                <textarea class="form-control form-textarea h-70"></textarea>
+                            </div> 
+                        </div>
+                        <div class="span-1">
+                            <div class="grid-item border-x-none h-100">
+                                <div class="fs-md color-black-60 mb-1">Guardianship</div>
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Discussed
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Educated
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Referred
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Monitored
+                                        </label>
+                                    </div>      
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span-2">
+                            <div class="grid-item border-x-none">
+                                <div class="fs-md color-black-60 me-2">Guardianship Summary</div>
+                                <textarea class="form-control form-textarea h-70"></textarea>
+                            </div> 
+                        </div>
+                        <div class="span-1">
+                            <div class="grid-item border-x-none h-100">
+                                <div class="fs-md color-black-60 mb-1">Legal Services</div>
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Discussed
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Educated
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Referred
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Monitored
+                                        </label>
+                                    </div>      
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span-2">
+                            <div class="grid-item border-x-none">
+                                <div class="fs-md color-black-60 me-2">Legal Services Summary</div>
+                                <textarea class="form-control form-textarea h-70"></textarea>
+                            </div> 
+                        </div>
+                        <div class="span-1">
+                            <div class="grid-item border-x-none h-100">
+                                <div class="fs-md color-black-60 mb-1">Education</div>
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Discussed
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Educated
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Referred
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Monitored
+                                        </label>
+                                    </div>      
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span-2">
+                            <div class="grid-item border-x-none">
+                                <div class="fs-md color-black-60 me-2">Education Summary</div>
+                                <textarea class="form-control form-textarea h-70"></textarea>
+                            </div> 
+                        </div>
+                        <div class="span-1">
+                            <div class="grid-item border-x-none h-100">
+                                <div class="fs-md color-black-60 mb-1">Medical Services</div>
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Discussed
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Educated
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Referred
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Monitored
+                                        </label>
+                                    </div>      
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span-2">
+                            <div class="grid-item border-x-none">
+                                <div class="fs-md color-black-60 me-2">Medical Services Summary</div>
+                                <textarea class="form-control form-textarea h-70"></textarea>
+                            </div> 
+                        </div>
+                        <div class="span-1">
+                            <div class="grid-item border-x-none h-100">
+                                <div class="fs-md color-black-60 mb-1">Individual Mental Health Services</div>
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Discussed
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Educated
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Referred
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Monitored
+                                        </label>
+                                    </div>      
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span-2">
+                            <div class="grid-item border-x-none">
+                                <div class="fs-md color-black-60 me-2">Individual Mental Health Services Summary</div>
+                                <textarea class="form-control form-textarea h-70"></textarea>
+                            </div> 
+                        </div>
+                        <div class="span-1">
+                            <div class="grid-item border-x-none h-100">
+                                <div class="fs-md color-black-60 mb-1">Family Stabilization/Counseling</div>
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Discussed
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Educated
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Referred
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Monitored
+                                        </label>
+                                    </div>      
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span-2">
+                            <div class="grid-item border-x-none">
+                                <div class="fs-md color-black-60 me-2">Family Stabilization/Counseling Summary</div>
+                                <textarea class="form-control form-textarea h-70"></textarea>
+                            </div> 
+                        </div>
+                        <div class="span-1">
+                            <div class="grid-item border-x-none h-100">
+                                <div class="fs-md color-black-60 mb-1">Substance Abuse</div>
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Discussed
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Educated
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Referred
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Monitored
+                                        </label>
+                                    </div>      
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span-2">
+                            <div class="grid-item border-x-none">
+                                <div class="fs-md color-black-60 me-2">Substance Abuse Summary</div>
+                                <textarea class="form-control form-textarea h-70"></textarea>
+                            </div> 
+                        </div>
+                        <div class="span-1">
+                            <div class="grid-item border-x-none h-100">
+                                <div class="fs-md color-black-60 mb-1">TVAP</div>
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Discussed
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Educated
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Referred
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Monitored
+                                        </label>
+                                    </div>      
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span-2">
+                            <div class="grid-item border-x-none">
+                                <div class="fs-md color-black-60 me-2">Other Services</div>
+                                <textarea class="form-control form-textarea h-70"></textarea>
+                            </div> 
+                        </div>
+                        <div class="span-1">
+                            <div class="grid-item border-x-none h-100">
+                                <div class="fs-md color-black-60 mb-1">Other Services</div>
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Discussed
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Educated
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Referred
+                                        </label>
+                                    </div>      
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Monitored
+                                        </label>
+                                    </div>      
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span-2">
+                            <div class="grid-item border-x-none">
+                                <div class="fs-md color-black-60 me-2">Other Services Summary</div>
+                                <textarea class="form-control form-textarea h-70"></textarea>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="fs-16 fw-bold color-dark-blue">Signatures</div>
                 </div>
+                <div class="grey-strip p-4 mb-4">
+                    <div class="row align-items-center mb-2">
+                        <div class="col-md-9">
+                            <div class="row align-items-center">
+                                <div class="col-md-5">
+                                    <div class="fs-md color-black-60 me-3">Signature of Receiving PRS/Clinical Supervisor</div>
+                                </div>
+                                <div class="col-md-7">
+                                    <textarea class="form-control form-textarea h-70"></textarea>   
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="col-md-3 d-flex align-items-center">
+                            <div class="fs-md color-black-60 me-2">Date</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-2">
+                        <div class="col-md-9">
+                            <div class="row align-items-center">
+                                <div class="col-md-5">
+                                    <div class="fs-md color-black-60 me-3">Name of Receiving PRS Case Manager/Clinician </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <textarea class="form-control form-textarea h-70"></textarea>   
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-2">
+                        <div class="col-md-9">
+                            <div class="row align-items-center">
+                                <div class="col-md-5">
+                                    <div class="fs-md color-black-60 me-3">Signature of Receiving PRS Case Manager/Clinician</div>
+                                </div>
+                                <div class="col-md-7">
+                                    <textarea class="form-control form-textarea h-70"></textarea>   
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="col-md-3 d-flex align-items-center">
+                            <div class="fs-md color-black-60 me-2">Date</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="date">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-footer d-flex justify-content-between">
+                <button class="btn btn-md btn-grey btn-radius-none w-200">Cancel</button>
+                <button class="btn btn-md btn-darkblue btn-radius-none w-200">SAVE</button>
             </div>
         </div>
     </div>
