@@ -210,6 +210,10 @@
         color: $light-blue;
         background-color: $light-blue-10;
     }
+    &.badge-in-progress{
+        color: $orange;
+        background-color: $orange-10;
+    }
 }
 .card-case-table{
     border:$border-light-gray-2;

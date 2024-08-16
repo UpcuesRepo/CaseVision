@@ -158,6 +158,9 @@
             font-size: $font-size-md;
             font-weight: $font-600;
             color: $dark-blue;
+            &.color-transp{
+                color: transparent;
+            }
         }
     }
     .grid-head {
@@ -198,6 +201,15 @@
     &.grid-safety-plan{
         grid-template-columns: 40% 30% 30%;    
     }
+    &.grid-agency{
+        grid-template-columns: 20% 20% 15% 17% 17% 13%;    
+    }
+    &.grid-add{
+        grid-template-columns: 20% 67% 13%;    
+    }
+    &.grid-released-child{
+        grid-template-columns: 33.33% 33.33% 33.33%;    
+    }
     &.four-grid{
         grid-template-columns: 25% 25% 25% 25%;    
     }
@@ -215,6 +227,14 @@
             grid-template-columns: 30% 70%;    
             display: grid;
         }  
+        .grid-event{
+            grid-template-columns: 66.66% 33.33%;    
+            display: grid;
+        }  
+        .spons-info{
+            grid-template-columns: 25% 25% 25% 25%;    
+            display: grid;
+        }
     }
 }
   
