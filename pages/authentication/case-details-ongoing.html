@@ -2230,6 +2230,12 @@
                                         </div>
                                     </div> 
                                     <div class="row mb-3">
+                                        <div class="col-md-12">
+                                            <div class="fs-md color-black-60 mb-1">Referral Notes</div>
+                                            <textarea class="form-control form-textarea h-70"></textarea>
+                                        </div>   
+                                    </div>
+                                    <div class="row mb-3">
                                         <div class="col-md-6">
                                             <div class="fs-md color-black-60 mb-1">Follow Up </div>
                                             <div class="form-group">
@@ -5260,13 +5266,7 @@
                                                                     <div class="form-group">
                                                                         <input class="form-control style-2" type="email" placeholder="">
                                                                     </div>
-                                                                </div>   
-                                                                <div class="grid-item border-x-none">
-                                                                    <div class="fs-md color-black-60 mb-1">Age</div>
-                                                                    <div class="form-group">
-                                                                        <input class="form-control style-2" type="email" placeholder="">
-                                                                    </div>
-                                                                </div>   
+                                                                </div>     
                                                                 <div class="grid-item border-x-none">
                                                                     <div class="fs-md color-black-60 mb-1">Date of Birth</div>
                                                                     <div class="form-group">
@@ -5311,6 +5311,7 @@
                                                                         <input class="form-control style-2" type="date">
                                                                     </div>
                                                                 </div> 
+                                                                <div class="grid-item border-x-none"></div> 
                                                             </div>
                                                             <div class="grid-container grid-released-child mb-3">
                                                                 <div class="grid-head d-flex justify-content-between align-items-center border-x-none p-3">
@@ -5325,7 +5326,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="grid-item border-x-none">
-                                                                            <div class="fs-md color-black-60 mb-1">Date of Birth</div>
+                                                                            <div class="fs-md color-black-60 mb-1">Date of Event</div>
                                                                             <div class="form-group">
                                                                                 <input class="form-control style-2" type="date">
                                                                             </div>
@@ -5909,7 +5910,7 @@
                                                                 <div class="grid-item border-x-none">
                                                                     <div class="fs-md color-black-60 mb-1">Notify  Prevention Of Sexual Abuse Team?</div>
                                                                     <div class="form-group">
-                                                                        <input class="form-control style-2" type="date" placeholder="">
+                                                                        <input class="form-control style-2" type="text" placeholder="">
                                                                     </div>
                                                                 </div>
                                                                 <div class="grid-item border-x-none">
@@ -5919,20 +5920,20 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="grid-item border-x-none">
-                                                                    <div class="fs-md color-black-60 mb-1">Alleged Perpetrator.</div>
+                                                                    <div class="fs-md color-black-60 mb-1">Alleged Perpetrator</div>
                                                                     <div class="form-group">
-                                                                        <input class="form-control style-2" type="date" placeholder="">
+                                                                        <input class="form-control style-2" type="text" placeholder="">
                                                                     </div>
                                                                 </div>
                                                                 <div class="grid-item-span-3">
                                                                     <div class="grid-item border-x-none">
-                                                                        <div class="fs-md color-black-60 me-2">Summary of Incident.</div>
+                                                                        <div class="fs-md color-black-60 me-2">Summary of Incident</div>
                                                                         <textarea class="form-control form-textarea h-70"></textarea>   
                                                                     </div>
                                                                 </div>
                                                                 <div class="grid-item-span-3">
                                                                     <div class="grid-item border-x-none">
-                                                                        <div class="fs-md color-black-60 me-2">Case Worker Response and Intervention.</div>
+                                                                        <div class="fs-md color-black-60 me-2">Case Worker Response and Intervention</div>
                                                                         <textarea class="form-control form-textarea h-70"></textarea>   
                                                                     </div>
                                                                 </div>
@@ -7452,879 +7453,845 @@
                                              </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-6 md-margin-b-2">
-                                            <div class="report-strip grey-strip d-flex justify-content-between">
-                                                <div class="title-txt">Transfer Request</div>
-                                                <div class="date-part">
-                                                    <div class="date-title">Last Date</div>
-                                                    <div class="date">4/23/2024</div>
-                                                </div>
-                                                <div class="date-part">
-                                                    <div class="date-title">Date Completed</div>
-                                                    <div class="date">4/23/2024</div>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <a href="#" class="me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#transReq" aria-controls="transReq">
-                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M10 6.66667V13.3333M6.66667 10H13.3333M6.5 17.5H13.5C14.9001 17.5 15.6002 17.5 16.135 17.2275C16.6054 16.9878 16.9878 16.6054 17.2275 16.135C17.5 15.6002 17.5 14.9001 17.5 13.5V6.5C17.5 5.09987 17.5 4.3998 17.2275 3.86502C16.9878 3.39462 16.6054 3.01217 16.135 2.77248C15.6002 2.5 14.9001 2.5 13.5 2.5H6.5C5.09987 2.5 4.3998 2.5 3.86502 2.77248C3.39462 3.01217 3.01217 3.39462 2.77248 3.86502C2.5 4.3998 2.5 5.09987 2.5 6.5V13.5C2.5 14.9001 2.5 15.6002 2.77248 16.135C3.01217 16.6054 3.39462 16.9878 3.86502 17.2275C4.3998 17.5 5.09987 17.5 6.5 17.5Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    </a>
-                                                    <!-- TRANSFER REQUEST FILTER -->
-                                                        <div class="offcanvas my-case-offcanvas w-70p offcanvas-end" tabindex="-1" id="transReq" aria-labelledby="transReqLabel">
-                                                            <div class="offcanvas-header">
-                                                            <h5 class="offcanvas-title font-xl" id="transReqLabel">Transfer Request</h5>
-                                                            <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#transReqLabel" role="button" aria-controls="EditCaseDetailFilterLabel"><img src="../../images/icons/x-square.svg" alt=""></a>
-                                                            </div>
-                                                            <div class="offcanvas-body p-0">
-                                                                <div class="p-4">
-                                                                    <div class="d-flex mb-4">
-                                                                        <div class="fs-md fw-semibold me-5">Transfer Request Type</div>
-                                                                        <div class="form-check form-inline me-3">
-                                                                            <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
-                                                                            <label class="form-check-label font-400 mb-0" for="">Service Level</label>
-                                                                        </div>
-                                                                        <div class="form-check form-inline me-3">
-                                                                            <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
-                                                                            <label class="form-check-label font-400 mb-0" for="">Location</label>
-                                                                        </div>
-                                                                        <div class="form-check form-inline me-3">
-                                                                            <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
-                                                                            <label class="form-check-label font-400 mb-0" for="">Service Provider</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="fs-sm color-orange mb-4">For Location transfer No Need To Include This in HTML</div>
-                                                                    <div class="grid-container grid-safety-plan mb-4">
-                                                                        <div class="grid-head d-flex justify-content-between align-items-center border-x-none p-3">
-                                                                            <div class="grid-title">Case Information</div>    
-                                                                        </div>
-                                                                        <div class="grid-item border-x-none">
-                                                                            <div class="fs-md color-black-60 mb-1">Case Manager</div>
-                                                                            <div class="form-group">
-                                                                                <input class="form-control style-2" type="email" placeholder="">
-                                                                            </div> 
-                                                                        </div>
-                                                                        <div class="grid-item border-x-none">
-                                                                            <div class="fs-md color-black-60 mb-1">From</div>
-                                                                            <div class="rows-select grey-toggle style-2">
-                                                                                <select class="form-select">
-                                                                                <option data-tokens="1">Region 1</option>
-                                                                                <option data-tokens="2">2</option>
-                                                                                <option data-tokens="3">3</option>
-                                                                                </select>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="grid-item border-x-none">
-                                                                            <div class="fs-md color-black-60 mb-1">Transfer to</div>
-                                                                            <div class="rows-select grey-toggle style-2">
-                                                                                <select class="form-select">
-                                                                                <option data-tokens="1">Region 2</option>
-                                                                                <option data-tokens="2">2</option>
-                                                                                <option data-tokens="3">3</option>
-                                                                                </select>
-                                                                            </div>
-                                                                        </div>  
-                                                                        <div class="grid-item border-x-none">
-                                                                            <div class="fs-md color-black-60 mb-1">Minor’s full name:</div>
-                                                                            <div class="form-group">
-                                                                                <input class="form-control style-2" type="email" placeholder="">
-                                                                            </div> 
-                                                                        </div>
-                                                                        <div class="grid-item border-x-none">
-                                                                            <div class="fs-md color-black-60 mb-1">Minor’s DOB:</div>
-                                                                            <input class="form-control style-2" type="date">
-                                                                        </div>
-                                                                        <div class="grid-item border-x-none">
-                                                                            <div class="fs-md color-black-60 mb-1">Minor’s A#:</div>
-                                                                            <div class="form-group">
-                                                                                <input class="form-control style-2" type="email" placeholder="">
-                                                                            </div> 
-                                                                        </div>  
-                                                                        <div class="grid-item-span-3">
-                                                                            <div class="border-x-none grid-item">
-                                                                                <div class="fs-md color-black-60 me-2">Current address</div>
-                                                                                <div class="form-group">
-                                                                                    <input class="form-control style-2" type="email" placeholder="">
-                                                                                </div>
-                                                                            </div>    
-                                                                        </div>
-                                                                        <div class="grid-item-span-3">
-                                                                            <div class="border-x-none grid-item">
-                                                                                <div class="fs-md color-black-60 me-2">Future address</div>
-                                                                                <div class="form-group">
-                                                                                    <input class="form-control style-2" type="email" placeholder="">
-                                                                                </div>
-                                                                            </div>    
-                                                                        </div>
-                                                                        <div class="grid-item-span-3">
-                                                                            <div class="border-x-none grid-item">
-                                                                                <div class="d-flex mb-3">
-                                                                                    <div class="fs-md fw-semibold me-2">Was there a change in sponsor?</div>
-                                                                                    <div class="form-check form-inline me-3">
-                                                                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
-                                                                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
-                                                                                    </div>
-                                                                                    <div class="form-check form-inline me-3">
-                                                                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
-                                                                                        <label class="form-check-label font-400 mb-0" for="">No</label>
-                                                                                    </div>
-                                                                                </div>    
-                                                                                <div class="d-flex">
-                                                                                    <div class="fs-md fw-semibold me-2">If yes, please explain:</div>
-                                                                                    <textarea class="form-control form-textarea h-95 w-83"></textarea>
-                                                                                </div>    
-                                                                            </div>    
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="fs-sm color-orange mb-4">for Service Provider transfer (see note above for dropdown difference)  No Need To Include This in HTML</div>
-                                                                    <div class="grid-container grid-safety-plan mb-4">
-                                                                        <div class="grid-head d-flex justify-content-between align-items-center border-x-none p-3">
-                                                                            <div class="grid-title">Case Information</div>    
-                                                                        </div>
-                                                                        <div class="grid-item border-x-none">
-                                                                            <div class="fs-md color-black-60 mb-1">Case Manager</div>
-                                                                            <div class="form-group">
-                                                                                <input class="form-control style-2" type="email" placeholder="">
-                                                                            </div> 
-                                                                        </div>
-                                                                        <div class="grid-item border-x-none">
-                                                                            <div class="fs-md color-black-60 mb-1">From</div>
-                                                                            <div class="rows-select grey-toggle style-2">
-                                                                                <select class="form-select">
-                                                                                <option data-tokens="1">Region 1</option>
-                                                                                <option data-tokens="2">2</option>
-                                                                                <option data-tokens="3">3</option>
-                                                                                </select>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="grid-item border-x-none">
-                                                                            <div class="fs-md color-black-60 mb-1">Transfer to</div>
-                                                                            <div class="rows-select grey-toggle style-2">
-                                                                                <select class="form-select">
-                                                                                <option data-tokens="1">Region 2</option>
-                                                                                <option data-tokens="2">2</option>
-                                                                                <option data-tokens="3">3</option>
-                                                                                </select>
-                                                                            </div>
-                                                                        </div>  
-                                                                        <div class="grid-item border-x-none">
-                                                                            <div class="fs-md color-black-60 mb-1">Minor’s full name:</div>
-                                                                            <div class="form-group">
-                                                                                <input class="form-control style-2" type="email" placeholder="">
-                                                                            </div> 
-                                                                        </div>
-                                                                        <div class="grid-item border-x-none">
-                                                                            <div class="fs-md color-black-60 mb-1">Minor’s DOB:</div>
-                                                                            <input class="form-control style-2" type="date">
-                                                                        </div>
-                                                                        <div class="grid-item border-x-none">
-                                                                            <div class="fs-md color-black-60 mb-1">Minor’s A#:</div>
-                                                                            <div class="form-group">
-                                                                                <input class="form-control style-2" type="email" placeholder="">
-                                                                            </div> 
-                                                                        </div>
-                                                                        <div class="grid-item-span-3">
-                                                                            <div class="border-x-none grid-item">
-                                                                                <div class="fs-md color-black-60 me-2">Prior address</div>
-                                                                                <div class="form-group">
-                                                                                    <input class="form-control style-2" type="email" placeholder="">
-                                                                                </div>
-                                                                            </div>    
-                                                                        </div>  
-                                                                        <div class="grid-item-span-3">
-                                                                            <div class="border-x-none grid-item">
-                                                                                <div class="fs-md color-black-60 me-2">Current address</div>
-                                                                                <div class="form-group">
-                                                                                    <input class="form-control style-2" type="email" placeholder="">
-                                                                                </div>
-                                                                            </div>    
-                                                                        </div>
-                                                                        <div class="grid-item-span-3">
-                                                                            <div class="border-x-none grid-item">
-                                                                                <div class="d-flex mb-3">
-                                                                                    <div class="fs-md fw-semibold me-2">Was there a change in sponsor?</div>
-                                                                                    <div class="form-check form-inline me-3">
-                                                                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
-                                                                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
-                                                                                    </div>
-                                                                                    <div class="form-check form-inline me-3">
-                                                                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
-                                                                                        <label class="form-check-label font-400 mb-0" for="">No</label>
-                                                                                    </div>
-                                                                                </div>    
-                                                                                <div class="d-flex">
-                                                                                    <div class="fs-md fw-semibold me-2">If yes, please explain:</div>
-                                                                                    <textarea class="form-control form-textarea h-95 w-83"></textarea>
-                                                                                </div>    
-                                                                            </div>    
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="fs-sm color-orange mb-4">For Service Level transfer No Need To Include This in HTML</div>
-                                                                    <div class="grid-container grid-safety-plan mb-4">
-                                                                        <div class="grid-head d-flex justify-content-between align-items-center border-x-none p-3">
-                                                                            <div class="grid-title">Case Information</div>    
-                                                                        </div>
-                                                                        <div class="grid-item border-x-none">
-                                                                            <div class="fs-md color-black-60 mb-1">Case Manager</div>
-                                                                            <div class="form-group">
-                                                                                <input class="form-control style-2" type="email" placeholder="">
-                                                                            </div> 
-                                                                        </div>
-                                                                        <div class="grid-item border-x-none">
-                                                                            <div class="fs-md color-black-60 mb-1">From</div>
-                                                                            <div class="rows-select grey-toggle style-2">
-                                                                                <select class="form-select">
-                                                                                <option data-tokens="1">Region 1</option>
-                                                                                <option data-tokens="2">2</option>
-                                                                                <option data-tokens="3">3</option>
-                                                                                </select>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="grid-item border-x-none">
-                                                                            <div class="fs-md color-black-60 mb-1">Transfer to</div>
-                                                                            <div class="rows-select grey-toggle style-2">
-                                                                                <select class="form-select">
-                                                                                <option data-tokens="1">Region 2</option>
-                                                                                <option data-tokens="2">2</option>
-                                                                                <option data-tokens="3">3</option>
-                                                                                </select>
-                                                                            </div>
-                                                                        </div>  
-                                                                        <div class="grid-item border-x-none">
-                                                                            <div class="fs-md color-black-60 mb-1">Minor’s full name:</div>
-                                                                            <div class="form-group">
-                                                                                <input class="form-control style-2" type="email" placeholder="">
-                                                                            </div> 
-                                                                        </div>
-                                                                        <div class="grid-item border-x-none">
-                                                                            <div class="fs-md color-black-60 mb-1">Minor’s DOB:</div>
-                                                                            <input class="form-control style-2" type="date">
-                                                                        </div>
-                                                                        <div class="grid-item border-x-none">
-                                                                            <div class="fs-md color-black-60 mb-1">Minor’s A#:</div>
-                                                                            <div class="form-group">
-                                                                                <input class="form-control style-2" type="email" placeholder="">
-                                                                            </div> 
-                                                                        </div>
-                                                                        <div class="grid-item border-x-none">
-                                                                            <div class="fs-md color-black-60 mb-1">Sponsor’s full name</div>
-                                                                            <div class="form-group">
-                                                                                <input class="form-control style-2" type="email" placeholder="">
-                                                                            </div> 
-                                                                        </div>
-                                                                        <div class="grid-item border-x-none">
-                                                                            <div class="fs-md color-black-60 mb-1">Sponsor Category</div>
-                                                                            <div class="rows-select grey-toggle style-2">
-                                                                                <select class="form-select">
-                                                                                <option data-tokens="1"></option>
-                                                                                <option data-tokens="2">2</option>
-                                                                                <option data-tokens="3">3</option>
-                                                                                </select>
-                                                                            </div>
-                                                                        </div> 
-                                                                        <div class="grid-item border-x-none"></div>
-                                                                    </div>
-                                                                    <div class="grid-container grid-summary mb-4">
-                                                                        <div class="grid-head d-flex justify-content-between align-items-center border-x-none p-3">
-                                                                            <div class="grid-title">Case Summary</div>    
-                                                                        </div>
-                                                                        <div class="grid-item">
-                                                                            <div class="fs-md fw-semibold">Required Visits Completed- Level 1</div>
-                                                                        </div>
-                                                                        <div class="grid-item">
-                                                                            <div class="d-flex align-items-center mb-3">
-                                                                                <div class="color-dark-blue fs-md me-3">Date of last contact</div>
-                                                                                <div class="form-group w-100p">
-                                                                                    <input class="form-control style-2" type="email" placeholder="" fdprocessedid="yxrubf">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="d-flex">
-                                                                                <div class="form-check form-inline me-3">
-                                                                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                                                                                    <label class="form-check-label style-1" for="check1">
-                                                                                        Initial Call
-                                                                                    </label>
-                                                                                </div>
-                                                                                <div class="form-check form-inline me-3">
-                                                                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                                                                                    <label class="form-check-label style-1" for="check1">
-                                                                                         7 Day HV
-                                                                                    </label>
-                                                                                </div>
-                                                                                <div class="form-check form-inline me-3">
-                                                                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                                                                                    <label class="form-check-label style-1" for="check1">
-                                                                                        14 Day HV
-                                                                                    </label>
-                                                                                </div>
-                                                                                <div class="form-check form-inline me-3">
-                                                                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                                                                                    <label class="form-check-label style-1" for="check1">
-                                                                                        30 Day HV
-                                                                                    </label>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="grid-item">
-                                                                            <div class="fs-md fw-semibold">Required Visits Completed- Level 2</div>
-                                                                        </div>
-                                                                        <div class="grid-item">
-                                                                            <div class="d-flex align-items-center mb-3">
-                                                                                <div class="color-dark-blue fs-md me-3">Date of last contact</div>
-                                                                                <div class="form-group w-100p">
-                                                                                    <input class="form-control style-2" type="email" placeholder="" fdprocessedid="yxrubf">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="d-flex mb-3">
-                                                                                <div class="form-check form-inline me-3">
-                                                                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                                                                                    <label class="form-check-label style-1" for="check1">
-                                                                                        Initial Call
-                                                                                    </label>
-                                                                                </div>
-                                                                                <div class="form-check form-inline me-3">
-                                                                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                                                                                    <label class="form-check-label style-1" for="check1">
-                                                                                        14 Day HV
-                                                                                    </label>
-                                                                                </div>
-                                                                                <div class="form-check form-inline me-3">
-                                                                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                                                                                    <label class="form-check-label style-1" for="check1">
-                                                                                        Ongoing HV
-                                                                                    </label>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="d-flex align-items-center mb-3">
-                                                                                <div class="color-dark-blue fs-md me-3"># of monthly visits completed</div>
-                                                                                <div class="form-group w-100p">
-                                                                                    <input class="form-control style-2" type="email" placeholder="" fdprocessedid="yxrubf">
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="grid-item">
-                                                                            <div class="fs-md fw-semibold">Required Visits Completed- Level 3</div>
-                                                                        </div>
-                                                                        <div class="grid-item">
-                                                                            <div class="d-flex align-items-center mb-3">
-                                                                                <div class="color-dark-blue fs-md me-3">Date of last contact</div>
-                                                                                <div class="form-group w-100p">
-                                                                                    <input class="form-control style-2" type="email" placeholder="" fdprocessedid="yxrubf">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="d-flex mb-3">
-                                                                                <div class="form-check form-inline me-3">
-                                                                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                                                                                    <label class="form-check-label style-1" for="check1">
-                                                                                        Initial Call
-                                                                                    </label>
-                                                                                </div>
-                                                                                <div class="form-check form-inline me-3">
-                                                                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                                                                                    <label class="form-check-label style-1" for="check1">
-                                                                                        7 Day Assessment HV
-                                                                                    </label>
-                                                                                </div>
-                                                                                <div class="form-check form-inline me-3">
-                                                                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                                                                                    <label class="form-check-label style-1" for="check1">
-                                                                                        Weekly in-person contacts
-                                                                                    </label>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="d-flex align-items-center mb-3">
-                                                                                <div class="color-dark-blue fs-md me-3"># of visits completed</div>
-                                                                                <div class="form-group w-100p">
-                                                                                    <input class="form-control style-2" type="email" placeholder="" fdprocessedid="yxrubf">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="d-flex align-items-center mb-3">
-                                                                                <div class="form-check form-inline me-3">
-                                                                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                                                                                    <label class="form-check-label style-1" for="check1">
-                                                                                        Reassessment HV
-                                                                                    </label>
-                                                                                </div>
-                                                                                <div class="form-check form-inline me-3">
-                                                                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                                                                                    <label class="form-check-label style-1" for="check1">
-                                                                                        Monthly HV
-                                                                                    </label>
-                                                                                </div>
-                                                                                <div class="d-flex align-items-center">
-                                                                                    <div class="color-dark-blue fs-md me-3"># of monthly visits completed</div>
-                                                                                    <div class="form-group w-100p">
-                                                                                        <input class="form-control style-2" type="email" placeholder="" fdprocessedid="yxrubf">
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="grid-item">
-                                                                            <div class="fs-md fw-semibold">NOC(s) Submitted</div>
-                                                                        </div>
-                                                                        <div class="grid-item">
-                                                                            <div class="d-flex mb-3">
-                                                                                <div class="form-check form-inline me-3">
-                                                                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                                                                                    <label class="form-check-label style-1" for="check1">
-                                                                                        Yes
-                                                                                    </label>
-                                                                                </div>
-                                                                                <div class="form-check form-inline me-3">
-                                                                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                                                                                    <label class="form-check-label style-1" for="check1">
-                                                                                        No
-                                                                                    </label>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="d-flex align-items-center mb-3">
-                                                                                <div class="color-dark-blue fs-md me-3">If yes, how many?</div>
-                                                                                <div class="form-group w-100p">
-                                                                                    <input class="form-control style-2" type="email" placeholder="" fdprocessedid="yxrubf">
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="grid-item">
-                                                                            <div class="fs-md fw-semibold">Concerns</div>
-                                                                        </div>
-                                                                        <div class="grid-item">
-                                                                            <textarea class="form-control form-textarea h-70"></textarea>
-                                                                        </div>
-                                                                        <div class="grid-item">
-                                                                            <div class="fs-md fw-semibold">Notes</div>
-                                                                        </div>
-                                                                        <div class="grid-item">
-                                                                            <textarea class="form-control form-textarea h-70"></textarea>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="fs-sm color-orange mb-4">-------------   Signatures for Location transfers  AND   Service Level transfers  -------------------------</div>
-                                                                    <div class="fs-16 fw-bold color-dark-blue">Signatures</div>
-                                                                </div>
-                                                                <div class="grey-strip p-4">
-                                                                    <div class="grid-container border-none">
-                                                                        <div class="grid-item d-flex align-items-center p-2">
-                                                                            <div class="color-black-60 fs-md">Signature of Current Case Manager</div> 
-                                                                        </div>
-                                                                        <div class="grid-item p-2">
-                                                                            <textarea class="form-control form-textarea h-70"></textarea> 
-                                                                        </div>
-                                                                        <div class="grid-item d-flex align-items-center p-2">
-                                                                            <div class="color-black-60 fs-md me-2">Date</div> 
-                                                                            <div class="form-group w-100">
-                                                                                <input class="form-control style-2" type="date">
-                                                                            </div>        
-                                                                        </div>      
-                                                                        <div class="grid-item d-flex align-items-center p-2">
-                                                                            <div class="color-black-60 fs-md">Signature of Current Supervisor</div> 
-                                                                        </div>
-                                                                        <div class="grid-item p-2">
-                                                                            <textarea class="form-control form-textarea h-70"></textarea> 
-                                                                        </div>
-                                                                        <div class="grid-item d-flex align-items-center p-2">
-                                                                            <div class="color-black-60 fs-md me-2">Date</div> 
-                                                                            <div class="form-group w-100">
-                                                                                <input class="form-control style-2" type="date">
-                                                                            </div>        
-                                                                        </div>      
-                                                                        <div class="grid-item d-flex align-items-center p-2">
-                                                                            <div class="color-black-60 fs-md">Signature of Receiving Supervisor</div> 
-                                                                        </div>
-                                                                        <div class="grid-item p-2">
-                                                                            <textarea class="form-control form-textarea h-70"></textarea> 
-                                                                        </div>
-                                                                        <div class="grid-item d-flex align-items-center p-2">
-                                                                            <div class="color-black-60 fs-md me-2">Date</div> 
-                                                                            <div class="form-group w-100">
-                                                                                <input class="form-control style-2" type="date">
-                                                                            </div>        
-                                                                        </div>      
-                                                                        <div class="grid-item d-flex align-items-center p-2">
-                                                                            <div class="color-black-60 fs-md">Name of Receiving Case Manager</div> 
-                                                                        </div>
-                                                                        <div class="grid-item p-2">
-                                                                            <textarea class="form-control form-textarea h-70"></textarea> 
-                                                                        </div>
-                                                                        <div class="grid-item d-flex align-items-center p-2"></div>     
-                                                                        <div class="grid-item d-flex align-items-center p-2">
-                                                                            <div class="color-black-60 fs-md">Signature of Receiving Case Manager</div> 
-                                                                        </div>
-                                                                        <div class="grid-item p-2">
-                                                                            <textarea class="form-control form-textarea h-70"></textarea> 
-                                                                        </div>
-                                                                        <div class="grid-item d-flex align-items-center p-2">
-                                                                            <div class="color-black-60 fs-md me-2">Date</div> 
-                                                                            <div class="form-group w-100">
-                                                                                <input class="form-control style-2" type="date">
-                                                                            </div>        
-                                                                        </div> 
-                                                                    </div>
-                                                                </div>
-                                                                <div class="p-4">
-                                                                    <div class="fs-sm color-orange mb-4">-------   Signatures for Service Provider transfers (need these 2 fields before these signatures) ----------</div>
-                                                                    <div class="row mb-4">
-                                                                        <div class="col-md-5">
-                                                                            <div class="fs-md color-black-60 mb-1">Name of accepting provider</div>
-                                                                            <div class="form-group">
-                                                                                <input class="form-control style-2" type="email" placeholder="">
-                                                                            </div> 
-                                                                        </div>
-                                                                        <div class="col-md-3">
-                                                                            <div class="color-black-60 fs-md me-2">Date case transfer completed</div> 
-                                                                            <div class="form-group w-100">
-                                                                                <input class="form-control style-2" type="date">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="fs-16 fw-bold color-dark-blue">Signatures</div>    
-                                                                </div>
-                                                                <div class="grey-strip p-4 mb-4">
-                                                                    <div class="grid-container border-none">
-                                                                        <div class="grid-item d-flex align-items-center p-2">
-                                                                            <div class="color-black-60 fs-md">Signature of Current Case Manager</div> 
-                                                                        </div>
-                                                                        <div class="grid-item p-2">
-                                                                            <textarea class="form-control form-textarea h-70"></textarea> 
-                                                                        </div>
-                                                                        <div class="grid-item d-flex align-items-center p-2">
-                                                                            <div class="color-black-60 fs-md me-2">Date</div> 
-                                                                            <div class="form-group w-100">
-                                                                                <input class="form-control style-2" type="date">
-                                                                            </div>        
-                                                                        </div>      
-                                                                        <div class="grid-item d-flex align-items-center p-2">
-                                                                            <div class="color-black-60 fs-md">Signature of Current Supervisor</div> 
-                                                                        </div>
-                                                                        <div class="grid-item p-2">
-                                                                            <textarea class="form-control form-textarea h-70"></textarea> 
-                                                                        </div>
-                                                                        <div class="grid-item d-flex align-items-center p-2">
-                                                                            <div class="color-black-60 fs-md me-2">Date</div> 
-                                                                            <div class="form-group w-100">
-                                                                                <input class="form-control style-2" type="date">
-                                                                            </div>        
-                                                                        </div>      
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="offcanvas-footer d-flex justify-content-between">
-                                                                <button class="btn btn-md btn-grey btn-radius-none w-200">Cancel</button>
-                                                                <button class="btn btn-md btn-darkblue btn-radius-none w-200">SAVE</button>
-                                                            </div>
-                                                        </div>
-                                                    <!-- END TRANSFER REQUEST FILTER -->
-                                                    <button class="btn btn-skyblue btn-sm h-x-34 with-icon" type="button">
-                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-0">
-                                                            <g clip-path="url(#clip0_3085_2940)">
-                                                            <path d="M15.0003 5.83317V4.33317C15.0003 3.39975 15.0003 2.93304 14.8187 2.57652C14.6589 2.26292 14.4039 2.00795 14.0903 1.84816C13.7338 1.6665 13.2671 1.6665 12.3337 1.6665H7.66699C6.73357 1.6665 6.26686 1.6665 5.91034 1.84816C5.59674 2.00795 5.34177 2.26292 5.18198 2.57652C5.00033 2.93304 5.00033 3.39975 5.00033 4.33317V5.83317M5.00033 14.9998C4.22535 14.9998 3.83786 14.9998 3.51994 14.9147C2.65721 14.6835 1.98335 14.0096 1.75218 13.1469C1.66699 12.829 1.66699 12.4415 1.66699 11.6665V9.83317C1.66699 8.43304 1.66699 7.73297 1.93948 7.19819C2.17916 6.72779 2.56161 6.34534 3.03202 6.10565C3.5668 5.83317 4.26686 5.83317 5.66699 5.83317H14.3337C15.7338 5.83317 16.4339 5.83317 16.9686 6.10565C17.439 6.34534 17.8215 6.72779 18.0612 7.19819C18.3337 7.73297 18.3337 8.43304 18.3337 9.83317V11.6665C18.3337 12.4415 18.3337 12.829 18.2485 13.1469C18.0173 14.0096 17.3434 14.6835 16.4807 14.9147C16.1628 14.9998 15.7753 14.9998 15.0003 14.9998M12.5003 8.74984H15.0003M7.66699 18.3332H12.3337C13.2671 18.3332 13.7338 18.3332 14.0903 18.1515C14.4039 17.9917 14.6589 17.7368 14.8187 17.4232C15.0003 17.0666 15.0003 16.5999 15.0003 15.6665V14.3332C15.0003 13.3997 15.0003 12.933 14.8187 12.5765C14.6589 12.2629 14.4039 12.0079 14.0903 11.8482C13.7338 11.6665 13.2671 11.6665 12.3337 11.6665H7.66699C6.73357 11.6665 6.26686 11.6665 5.91034 11.8482C5.59674 12.0079 5.34177 12.2629 5.18198 12.5765C5.00033 12.933 5.00033 13.3997 5.00033 14.3332V15.6665C5.00033 16.5999 5.00033 17.0666 5.18198 17.4232C5.34177 17.7368 5.59674 17.9917 5.91034 18.1515C6.26686 18.3332 6.73357 18.3332 7.66699 18.3332Z" stroke="#5BAAF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            </g>
-                                                            <defs>
-                                                            <clipPath id="clip0_3085_2940">
-                                                            <rect width="20" height="20" fill="white"/>
-                                                            </clipPath>
-                                                            </defs>
-                                                        </svg>
-                                                    </button>
-                                                </div>
-                                             </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-                            <div class="resource-title mb-4">Case Actions</div>
-                            <div class="case-details-card mb-4 p-3">
-                                <div class="report-strip border-black10-strip d-flex justify-content-between align-items-center mb-3">
-                                    <div class="title-txt w-20">Case Closure</div>
-                                    <div class="w-20p">
-                                        <button class="btn btn-skyblue btn-sm h-34 with-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#caseClosure" aria-controls="caseClosure">Begin Closure</button>
-                                        <!-- CASE CLOSURE FILTER -->
-                                        <div class="offcanvas my-case-offcanvas w-60p offcanvas-end" tabindex="-1" id="caseClosure" aria-labelledby="caseClosureLabel">
-                                            <div class="offcanvas-header">
-                                            <h5 class="offcanvas-title font-xl" id="caseClosureLabel">Case Closure </h5>
-                                            <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#caseClosureLabel" role="button" aria-controls="EditCaseDetailFilterLabel"><img src="../../images/icons/x-square.svg" alt=""></a>
-                                            </div>
-                                            <div class="offcanvas-body p-0">
-                                                <div class="p-4">
-                                                    <div class="fs-md mb-3">
-                                                        This form must be completed as part of the PRS closure documentation. Please review <a href="#" class="color-dark-blue text-underline ">ORR Unaccompanied Children Program Policy Guide: Section 6</a>
-                                                        for guidance on case closure requirements.
-                                                    </div>
-                                                    <div class="grid-container grid-safety-plan mb-3">
-                                                        <div class="grid-head d-flex justify-content-between align-items-center border-x-none p-3">
-                                                            <div class="grid-title">Case Information</div>    
-                                                        </div>
-                                                        <div class="grid-item border-x-none">
-                                                            <div class="fs-md color-black-60 mb-1">Case Manager</div>
-                                                            <div class="form-group">
-                                                                <input class="form-control style-2" type="email" placeholder="">
-                                                            </div> 
-                                                        </div>
-                                                        <div class="grid-item border-x-none">
-                                                            <div class="fs-md color-black-60 mb-1">Region</div>
-                                                            <div class="rows-select grey-toggle style-2">
-                                                                <select class="form-select">
-                                                                <option data-tokens="1">Medium</option>
-                                                                <option data-tokens="2">2</option>
-                                                                <option data-tokens="3">3</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="grid-item border-x-none">
-                                                            <div class="fs-md color-black-60 mb-1">Case type</div>
-                                                            <div class="rows-select grey-toggle style-2">
-                                                                <select class="form-select">
-                                                                <option data-tokens="1">Medium</option>
-                                                                <option data-tokens="2">2</option>
-                                                                <option data-tokens="3">3</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>  
-                                                        <div class="grid-item border-x-none">
-                                                            <div class="fs-md color-black-60 mb-1">Minor’s full name:</div>
-                                                            <div class="form-group">
-                                                                <input class="form-control style-2" type="email" placeholder="">
-                                                            </div> 
-                                                        </div>
-                                                        <div class="grid-item border-x-none">
-                                                            <div class="fs-md color-black-60 mb-1">Minor’s DOB:</div>
-                                                            <input class="form-control style-2" type="date">
-                                                        </div>
-                                                        <div class="grid-item border-x-none">
-                                                            <div class="fs-md color-black-60 mb-1">Minor’s A#:</div>
-                                                            <div class="form-group">
-                                                                <input class="form-control style-2" type="email" placeholder="">
-                                                            </div> 
-                                                        </div>  
-                                                        <div class="grid-item border-x-none">
-                                                            <div class="fs-md color-black-60 mb-1">Sponsor’s full name:</div>
-                                                            <div class="form-group">
-                                                                <input class="form-control style-2" type="email" placeholder="">
-                                                            </div> 
-                                                        </div>
-                                                        <div class="grid-item border-x-none">
-                                                            <div class="fs-md color-black-60 mb-1">Case Closure Date:</div>
-                                                            <input class="form-control style-2" type="date">
-                                                        </div>
-                                                        <div class="grid-item border-x-none"></div> 
-                                                        <div class="grid-item-span-3">
-                                                            <div class="inner-grid-container">
-                                                                <div class="grid-item d-flex align-items-center">
-                                                                    <div class="grid-title">Reason for Closure (If Other, please list)</div>
-                                                                </div>
-                                                                <div class="grid-item border-x-none d-flex align-items-center">
-                                                                    <div class="rows-select grey-toggle style-2 me-3">
-                                                                        <select class="form-select">
-                                                                        <option data-tokens="1">Medium</option>
-                                                                        <option data-tokens="2">2</option>
-                                                                        <option data-tokens="3">3</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <textarea class="form-control form-textarea h-60"></textarea> 
-                                                                </div>
-                                                                <div class="grid-item d-flex align-items-center">
-                                                                    <div class="grid-title">NOC(s) Submitted:</div>
-                                                                </div>
-                                                                <div class="grid-item border-x-none d-flex align-items-center">
-                                                                    <div class="form-check form-inline me-3">
-                                                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
-                                                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
-                                                                    </div>
-                                                                    <div class="form-check form-inline me-3">
-                                                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
-                                                                        <label class="form-check-label font-400 mb-0" for="">No</label>
-                                                                    </div>
-                                                                    <div class="fs-md color-dark-blue me-3">If yes, how many?</div>   
-                                                                    <div class="form-group">
-                                                                        <input class="form-control style-2" type="email" placeholder="">
-                                                                    </div>  
-                                                                </div>
-                                                            </div>
-                                                        </div>  
-                                                    </div>
+                        <div class="resource-title mb-4">Case Actions</div>
+                        <div class="case-details-card mb-4 p-3">
+                            <div class="report-strip border-black10-strip d-flex justify-content-between align-items-center mb-3">
+                                <div class="title-txt w-20">Case Closure</div>
+                                <div class="w-20p">
+                                    <button class="btn btn-skyblue btn-sm h-34 with-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#caseClosure" aria-controls="caseClosure">Begin Closure</button>
+                                    <!-- CASE CLOSURE FILTER -->
+                                    <div class="offcanvas my-case-offcanvas w-60p offcanvas-end" tabindex="-1" id="caseClosure" aria-labelledby="caseClosureLabel">
+                                        <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title font-xl" id="caseClosureLabel">Case Closure </h5>
+                                        <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#caseClosureLabel" role="button" aria-controls="EditCaseDetailFilterLabel"><img src="../../images/icons/x-square.svg" alt=""></a>
+                                        </div>
+                                        <div class="offcanvas-body p-0">
+                                            <div class="p-4">
+                                                <div class="fs-md mb-3">
+                                                    This form must be completed as part of the PRS closure documentation. Please review <a href="#" class="color-dark-blue text-underline ">ORR Unaccompanied Children Program Policy Guide: Section 6</a>
+                                                    for guidance on case closure requirements.
                                                 </div>
-                                                <div class="px-4">
-                                                    <div class="fs-16 fw-bold color-dark-blue mb-2">Signatures</div> 
-                                                </div>
-                                                <div class="grey-strip p-4 mb-4">
-                                                    <div class="grid-container border-none">
-                                                        <div class="grid-item d-flex align-items-center p-2">
-                                                            <div class="color-black-60 fs-md">Printed Name of PRS Case Manager/Clinician</div> 
-                                                        </div>
-                                                        <div class="grid-item p-2">
-                                                            <textarea class="form-control form-textarea h-70"></textarea> 
-                                                        </div>
-                                                        <div class="grid-item d-flex align-items-center p-2"></div>      
-                                                        <div class="grid-item d-flex align-items-center p-2">
-                                                            <div class="color-black-60 fs-md">Signature of PRS Case Manager/Clinician</div> 
-                                                        </div>
-                                                        <div class="grid-item p-2">
-                                                            <textarea class="form-control form-textarea h-70"></textarea> 
-                                                        </div>
-                                                        <div class="grid-item d-flex align-items-center p-2">
-                                                            <div class="color-black-60 fs-md me-2">Date</div> 
-                                                            <div class="form-group w-100">
-                                                                <input class="form-control style-2" type="date">
-                                                            </div>        
-                                                        </div>      
-                                                        <div class="grid-item d-flex align-items-center p-2">
-                                                            <div class="color-black-60 fs-md">Signature of PRS Supervisor</div> 
-                                                        </div>
-                                                        <div class="grid-item p-2">
-                                                            <textarea class="form-control form-textarea h-70"></textarea> 
-                                                        </div>
-                                                        <div class="grid-item d-flex align-items-center p-2">
-                                                            <div class="color-black-60 fs-md me-2">Date</div> 
-                                                            <div class="form-group w-100">
-                                                                <input class="form-control style-2" type="date">
-                                                            </div>        
-                                                        </div>      
+                                                <div class="grid-container grid-safety-plan mb-3">
+                                                    <div class="grid-head d-flex justify-content-between align-items-center border-x-none p-3">
+                                                        <div class="grid-title">Case Information</div>    
                                                     </div>
+                                                    <div class="grid-item border-x-none">
+                                                        <div class="fs-md color-black-60 mb-1">Case Manager</div>
+                                                        <div class="form-group">
+                                                            <input class="form-control style-2" type="email" placeholder="">
+                                                        </div> 
+                                                    </div>
+                                                    <div class="grid-item border-x-none">
+                                                        <div class="fs-md color-black-60 mb-1">Region</div>
+                                                        <div class="rows-select grey-toggle style-2">
+                                                            <select class="form-select">
+                                                            <option data-tokens="1">Medium</option>
+                                                            <option data-tokens="2">2</option>
+                                                            <option data-tokens="3">3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grid-item border-x-none">
+                                                        <div class="fs-md color-black-60 mb-1">Case type</div>
+                                                        <div class="rows-select grey-toggle style-2">
+                                                            <select class="form-select">
+                                                            <option data-tokens="1">Medium</option>
+                                                            <option data-tokens="2">2</option>
+                                                            <option data-tokens="3">3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>  
+                                                    <div class="grid-item border-x-none">
+                                                        <div class="fs-md color-black-60 mb-1">Minor’s full name:</div>
+                                                        <div class="form-group">
+                                                            <input class="form-control style-2" type="email" placeholder="">
+                                                        </div> 
+                                                    </div>
+                                                    <div class="grid-item border-x-none">
+                                                        <div class="fs-md color-black-60 mb-1">Minor’s DOB:</div>
+                                                        <input class="form-control style-2" type="date">
+                                                    </div>
+                                                    <div class="grid-item border-x-none">
+                                                        <div class="fs-md color-black-60 mb-1">Minor’s A#:</div>
+                                                        <div class="form-group">
+                                                            <input class="form-control style-2" type="email" placeholder="">
+                                                        </div> 
+                                                    </div>  
+                                                    <div class="grid-item border-x-none">
+                                                        <div class="fs-md color-black-60 mb-1">Sponsor’s full name:</div>
+                                                        <div class="form-group">
+                                                            <input class="form-control style-2" type="email" placeholder="">
+                                                        </div> 
+                                                    </div>
+                                                    <div class="grid-item border-x-none">
+                                                        <div class="fs-md color-black-60 mb-1">Case Closure Date:</div>
+                                                        <input class="form-control style-2" type="date">
+                                                    </div>
+                                                    <div class="grid-item border-x-none"></div> 
+                                                    <div class="grid-item-span-3">
+                                                        <div class="inner-grid-container">
+                                                            <div class="grid-item d-flex align-items-center">
+                                                                <div class="grid-title">Reason for Closure (If Other, please list)</div>
+                                                            </div>
+                                                            <div class="grid-item border-x-none d-flex align-items-center">
+                                                                <div class="rows-select grey-toggle style-2 me-3">
+                                                                    <select class="form-select">
+                                                                    <option data-tokens="1">Medium</option>
+                                                                    <option data-tokens="2">2</option>
+                                                                    <option data-tokens="3">3</option>
+                                                                    </select>
+                                                                </div>
+                                                                <textarea class="form-control form-textarea h-60"></textarea> 
+                                                            </div>
+                                                            <div class="grid-item d-flex align-items-center">
+                                                                <div class="grid-title">NOC(s) Submitted:</div>
+                                                            </div>
+                                                            <div class="grid-item border-x-none d-flex align-items-center">
+                                                                <div class="form-check form-inline me-3">
+                                                                    <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                                                    <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                                                </div>
+                                                                <div class="form-check form-inline me-3">
+                                                                    <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                                                    <label class="form-check-label font-400 mb-0" for="">No</label>
+                                                                </div>
+                                                                <div class="fs-md color-dark-blue me-3">If yes, how many?</div>   
+                                                                <div class="form-group">
+                                                                    <input class="form-control style-2" type="email" placeholder="">
+                                                                </div>  
+                                                            </div>
+                                                        </div>
+                                                    </div>  
                                                 </div>
                                             </div>
-                                            <div class="offcanvas-footer d-flex justify-content-between">
-                                                <button class="btn btn-md btn-grey btn-radius-none w-200">Cancel</button>
-                                                <div class="d-flex">
-                                                    <button class="btn btn-md btn-dark btn-radius-none w-200">SAVE</button>
-                                                    <button class="btn btn-md btn-darkblue btn-radius-none w-200">SUBMIT</button>
+                                            <div class="px-4">
+                                                <div class="fs-16 fw-bold color-dark-blue mb-2">Signatures</div> 
+                                            </div>
+                                            <div class="grey-strip p-4 mb-4">
+                                                <div class="grid-container border-none">
+                                                    <div class="grid-item d-flex align-items-center p-2">
+                                                        <div class="color-black-60 fs-md">Printed Name of PRS Case Manager/Clinician</div> 
+                                                    </div>
+                                                    <div class="grid-item p-2">
+                                                        <textarea class="form-control form-textarea h-70"></textarea> 
+                                                    </div>
+                                                    <div class="grid-item d-flex align-items-center p-2"></div>      
+                                                    <div class="grid-item d-flex align-items-center p-2">
+                                                        <div class="color-black-60 fs-md">Signature of PRS Case Manager/Clinician</div> 
+                                                    </div>
+                                                    <div class="grid-item p-2">
+                                                        <textarea class="form-control form-textarea h-70"></textarea> 
+                                                    </div>
+                                                    <div class="grid-item d-flex align-items-center p-2">
+                                                        <div class="color-black-60 fs-md me-2">Date</div> 
+                                                        <div class="form-group w-100">
+                                                            <input class="form-control style-2" type="date">
+                                                        </div>        
+                                                    </div>      
+                                                    <div class="grid-item d-flex align-items-center p-2">
+                                                        <div class="color-black-60 fs-md">Signature of PRS Supervisor</div> 
+                                                    </div>
+                                                    <div class="grid-item p-2">
+                                                        <textarea class="form-control form-textarea h-70"></textarea> 
+                                                    </div>
+                                                    <div class="grid-item d-flex align-items-center p-2">
+                                                        <div class="color-black-60 fs-md me-2">Date</div> 
+                                                        <div class="form-group w-100">
+                                                            <input class="form-control style-2" type="date">
+                                                        </div>        
+                                                    </div>      
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- END CASE CLOSURE FILTER -->
+                                        <div class="offcanvas-footer d-flex justify-content-between">
+                                            <button class="btn btn-md btn-grey btn-radius-none w-200">Cancel</button>
+                                            <div class="d-flex">
+                                                <button class="btn btn-md btn-dark btn-radius-none w-200">SAVE</button>
+                                                <button class="btn btn-md btn-darkblue btn-radius-none w-200">SUBMIT</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="date-part d-flex align-items-center w-20p">
-                                        <div class="date-title me-2">Status</div>
-                                        <span class="badge badge-in-progress">In Progress</span>
-                                    </div>
-                                    <div class="date-part d-flex align-items-center w-20p">
-                                        <div class="date-title me-2">Status Date</div>
-                                        <div class="date">4/23/2024</div>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-end w-20p">
-                                        <a href="#" class="me-3">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_1186_820)">
-                                                <path d="M9.16699 3.33344H5.66699C4.26686 3.33344 3.5668 3.33344 3.03202 3.60593C2.56161 3.84561 2.17916 4.22806 1.93948 4.69847C1.66699 5.23324 1.66699 5.93331 1.66699 7.33344V14.3334C1.66699 15.7336 1.66699 16.4336 1.93948 16.9684C2.17916 17.4388 2.56161 17.8213 3.03202 18.061C3.5668 18.3334 4.26686 18.3334 5.66699 18.3334H12.667C14.0671 18.3334 14.7672 18.3334 15.302 18.061C15.7724 17.8213 16.1548 17.4388 16.3945 16.9684C16.667 16.4336 16.667 15.7336 16.667 14.3334V10.8334M6.66697 13.3334H8.06242C8.47007 13.3334 8.6739 13.3334 8.86571 13.2874C9.03577 13.2466 9.19835 13.1792 9.34747 13.0878C9.51566 12.9848 9.65979 12.8406 9.94804 12.5524L17.917 4.58344C18.6073 3.89309 18.6073 2.7738 17.917 2.08344C17.2266 1.39309 16.1073 1.39308 15.417 2.08344L7.44802 10.0524C7.15977 10.3406 7.01564 10.4848 6.91257 10.653C6.82119 10.8021 6.75385 10.9647 6.71302 11.1347C6.66697 11.3265 6.66697 11.5304 6.66697 11.938V13.3334Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_1186_820">
-                                                <rect width="20" height="20" fill="white"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </a>
-                                        <a href="#" class="me-3">
-                                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M2.42012 12.9132C2.28394 12.6976 2.21584 12.5897 2.17772 12.4234C2.14909 12.2985 2.14909 12.1015 2.17772 11.9766C2.21584 11.8103 2.28394 11.7025 2.42012 11.4868C3.54553 9.70485 6.8954 5.20001 12.0004 5.20001C17.1054 5.20001 20.4553 9.70485 21.5807 11.4868C21.7169 11.7025 21.785 11.8103 21.8231 11.9766C21.8517 12.1015 21.8517 12.2985 21.8231 12.4234C21.785 12.5897 21.7169 12.6976 21.5807 12.9132C20.4553 14.6952 17.1054 19.2 12.0004 19.2C6.8954 19.2 3.54553 14.6952 2.42012 12.9132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M12.0004 15.2C13.6573 15.2 15.0004 13.8569 15.0004 12.2C15.0004 10.5432 13.6573 9.20001 12.0004 9.20001C10.3435 9.20001 9.0004 10.5432 9.0004 12.2C9.0004 13.8569 10.3435 15.2 12.0004 15.2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        </a>
-                                        <button class="btn btn-skyblue btn-sm h-x-34 with-icon" type="button">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-0">
-                                                <g clip-path="url(#clip0_3085_2940)">
-                                                <path d="M15.0003 5.83317V4.33317C15.0003 3.39975 15.0003 2.93304 14.8187 2.57652C14.6589 2.26292 14.4039 2.00795 14.0903 1.84816C13.7338 1.6665 13.2671 1.6665 12.3337 1.6665H7.66699C6.73357 1.6665 6.26686 1.6665 5.91034 1.84816C5.59674 2.00795 5.34177 2.26292 5.18198 2.57652C5.00033 2.93304 5.00033 3.39975 5.00033 4.33317V5.83317M5.00033 14.9998C4.22535 14.9998 3.83786 14.9998 3.51994 14.9147C2.65721 14.6835 1.98335 14.0096 1.75218 13.1469C1.66699 12.829 1.66699 12.4415 1.66699 11.6665V9.83317C1.66699 8.43304 1.66699 7.73297 1.93948 7.19819C2.17916 6.72779 2.56161 6.34534 3.03202 6.10565C3.5668 5.83317 4.26686 5.83317 5.66699 5.83317H14.3337C15.7338 5.83317 16.4339 5.83317 16.9686 6.10565C17.439 6.34534 17.8215 6.72779 18.0612 7.19819C18.3337 7.73297 18.3337 8.43304 18.3337 9.83317V11.6665C18.3337 12.4415 18.3337 12.829 18.2485 13.1469C18.0173 14.0096 17.3434 14.6835 16.4807 14.9147C16.1628 14.9998 15.7753 14.9998 15.0003 14.9998M12.5003 8.74984H15.0003M7.66699 18.3332H12.3337C13.2671 18.3332 13.7338 18.3332 14.0903 18.1515C14.4039 17.9917 14.6589 17.7368 14.8187 17.4232C15.0003 17.0666 15.0003 16.5999 15.0003 15.6665V14.3332C15.0003 13.3997 15.0003 12.933 14.8187 12.5765C14.6589 12.2629 14.4039 12.0079 14.0903 11.8482C13.7338 11.6665 13.2671 11.6665 12.3337 11.6665H7.66699C6.73357 11.6665 6.26686 11.6665 5.91034 11.8482C5.59674 12.0079 5.34177 12.2629 5.18198 12.5765C5.00033 12.933 5.00033 13.3997 5.00033 14.3332V15.6665C5.00033 16.5999 5.00033 17.0666 5.18198 17.4232C5.34177 17.7368 5.59674 17.9917 5.91034 18.1515C6.26686 18.3332 6.73357 18.3332 7.66699 18.3332Z" stroke="#5BAAF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_3085_2940">
-                                                <rect width="20" height="20" fill="white"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </button>
-                                    </div>
+                                    <!-- END CASE CLOSURE FILTER -->
                                 </div>
-                                <div class="report-strip border-black10-strip d-flex justify-content-between align-items-center mb-3">
-                                    <div class="title-txt w-20">Transfer Request</div>
-                                    <div class="w-20p">
-                                        <button class="btn btn-skyblue btn-sm h-34 with-icon" type="button">Begin Request</button>
-                                    </div>
-                                    <div class="date-part d-flex align-items-center w-20p">
-                                        <div class="date-title me-2">Status</div>
-                                        <span class="badge badge-approve">Submitted for Approval</span>
-                                    </div>
-                                    <div class="date-part d-flex align-items-center w-20p">
-                                        <div class="date-title me-2">Status Date</div>
-                                        <div class="date">4/23/2024</div>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-end w-20p">
-                                        <a href="#" class="me-3">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_1186_820)">
-                                                <path d="M9.16699 3.33344H5.66699C4.26686 3.33344 3.5668 3.33344 3.03202 3.60593C2.56161 3.84561 2.17916 4.22806 1.93948 4.69847C1.66699 5.23324 1.66699 5.93331 1.66699 7.33344V14.3334C1.66699 15.7336 1.66699 16.4336 1.93948 16.9684C2.17916 17.4388 2.56161 17.8213 3.03202 18.061C3.5668 18.3334 4.26686 18.3334 5.66699 18.3334H12.667C14.0671 18.3334 14.7672 18.3334 15.302 18.061C15.7724 17.8213 16.1548 17.4388 16.3945 16.9684C16.667 16.4336 16.667 15.7336 16.667 14.3334V10.8334M6.66697 13.3334H8.06242C8.47007 13.3334 8.6739 13.3334 8.86571 13.2874C9.03577 13.2466 9.19835 13.1792 9.34747 13.0878C9.51566 12.9848 9.65979 12.8406 9.94804 12.5524L17.917 4.58344C18.6073 3.89309 18.6073 2.7738 17.917 2.08344C17.2266 1.39309 16.1073 1.39308 15.417 2.08344L7.44802 10.0524C7.15977 10.3406 7.01564 10.4848 6.91257 10.653C6.82119 10.8021 6.75385 10.9647 6.71302 11.1347C6.66697 11.3265 6.66697 11.5304 6.66697 11.938V13.3334Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_1186_820">
-                                                <rect width="20" height="20" fill="white"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </a>
-                                        <a href="#" class="me-3">
-                                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M2.42012 12.9132C2.28394 12.6976 2.21584 12.5897 2.17772 12.4234C2.14909 12.2985 2.14909 12.1015 2.17772 11.9766C2.21584 11.8103 2.28394 11.7025 2.42012 11.4868C3.54553 9.70485 6.8954 5.20001 12.0004 5.20001C17.1054 5.20001 20.4553 9.70485 21.5807 11.4868C21.7169 11.7025 21.785 11.8103 21.8231 11.9766C21.8517 12.1015 21.8517 12.2985 21.8231 12.4234C21.785 12.5897 21.7169 12.6976 21.5807 12.9132C20.4553 14.6952 17.1054 19.2 12.0004 19.2C6.8954 19.2 3.54553 14.6952 2.42012 12.9132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M12.0004 15.2C13.6573 15.2 15.0004 13.8569 15.0004 12.2C15.0004 10.5432 13.6573 9.20001 12.0004 9.20001C10.3435 9.20001 9.0004 10.5432 9.0004 12.2C9.0004 13.8569 10.3435 15.2 12.0004 15.2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        </a>
-                                        <button class="btn btn-skyblue btn-sm h-x-34 with-icon" type="button">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-0">
-                                                <g clip-path="url(#clip0_3085_2940)">
-                                                <path d="M15.0003 5.83317V4.33317C15.0003 3.39975 15.0003 2.93304 14.8187 2.57652C14.6589 2.26292 14.4039 2.00795 14.0903 1.84816C13.7338 1.6665 13.2671 1.6665 12.3337 1.6665H7.66699C6.73357 1.6665 6.26686 1.6665 5.91034 1.84816C5.59674 2.00795 5.34177 2.26292 5.18198 2.57652C5.00033 2.93304 5.00033 3.39975 5.00033 4.33317V5.83317M5.00033 14.9998C4.22535 14.9998 3.83786 14.9998 3.51994 14.9147C2.65721 14.6835 1.98335 14.0096 1.75218 13.1469C1.66699 12.829 1.66699 12.4415 1.66699 11.6665V9.83317C1.66699 8.43304 1.66699 7.73297 1.93948 7.19819C2.17916 6.72779 2.56161 6.34534 3.03202 6.10565C3.5668 5.83317 4.26686 5.83317 5.66699 5.83317H14.3337C15.7338 5.83317 16.4339 5.83317 16.9686 6.10565C17.439 6.34534 17.8215 6.72779 18.0612 7.19819C18.3337 7.73297 18.3337 8.43304 18.3337 9.83317V11.6665C18.3337 12.4415 18.3337 12.829 18.2485 13.1469C18.0173 14.0096 17.3434 14.6835 16.4807 14.9147C16.1628 14.9998 15.7753 14.9998 15.0003 14.9998M12.5003 8.74984H15.0003M7.66699 18.3332H12.3337C13.2671 18.3332 13.7338 18.3332 14.0903 18.1515C14.4039 17.9917 14.6589 17.7368 14.8187 17.4232C15.0003 17.0666 15.0003 16.5999 15.0003 15.6665V14.3332C15.0003 13.3997 15.0003 12.933 14.8187 12.5765C14.6589 12.2629 14.4039 12.0079 14.0903 11.8482C13.7338 11.6665 13.2671 11.6665 12.3337 11.6665H7.66699C6.73357 11.6665 6.26686 11.6665 5.91034 11.8482C5.59674 12.0079 5.34177 12.2629 5.18198 12.5765C5.00033 12.933 5.00033 13.3997 5.00033 14.3332V15.6665C5.00033 16.5999 5.00033 17.0666 5.18198 17.4232C5.34177 17.7368 5.59674 17.9917 5.91034 18.1515C6.26686 18.3332 6.73357 18.3332 7.66699 18.3332Z" stroke="#5BAAF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_3085_2940">
-                                                <rect width="20" height="20" fill="white"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </button>
-                                    </div>
+                                <div class="date-part d-flex align-items-center w-20p">
+                                    <div class="date-title me-2">Status</div>
+                                    <span class="badge badge-in-progress">In Progress</span>
                                 </div>
-                                <div class="report-strip border-black10-strip d-flex justify-content-between align-items-center mb-3">
-                                    <div class="title-txt w-20">Extension Request</div>
-                                    <div class="w-20p">
-                                        <button class="btn btn-skyblue btn-sm h-34 with-icon" type="button">Begin Closure</button>
-                                    </div>
-                                    <div class="date-part d-flex align-items-center w-20p">
-                                        <div class="date-title me-2">Status</div>
-                                        <span class="badge badge-active">Approved</span>
-                                    </div>
-                                    <div class="date-part d-flex align-items-center w-20p">
-                                        <div class="date-title me-2">Status Date</div>
-                                        <div class="date">4/23/2024</div>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-end w-20p">
-                                        <a href="#" class="me-3">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_1186_820)">
-                                                <path d="M9.16699 3.33344H5.66699C4.26686 3.33344 3.5668 3.33344 3.03202 3.60593C2.56161 3.84561 2.17916 4.22806 1.93948 4.69847C1.66699 5.23324 1.66699 5.93331 1.66699 7.33344V14.3334C1.66699 15.7336 1.66699 16.4336 1.93948 16.9684C2.17916 17.4388 2.56161 17.8213 3.03202 18.061C3.5668 18.3334 4.26686 18.3334 5.66699 18.3334H12.667C14.0671 18.3334 14.7672 18.3334 15.302 18.061C15.7724 17.8213 16.1548 17.4388 16.3945 16.9684C16.667 16.4336 16.667 15.7336 16.667 14.3334V10.8334M6.66697 13.3334H8.06242C8.47007 13.3334 8.6739 13.3334 8.86571 13.2874C9.03577 13.2466 9.19835 13.1792 9.34747 13.0878C9.51566 12.9848 9.65979 12.8406 9.94804 12.5524L17.917 4.58344C18.6073 3.89309 18.6073 2.7738 17.917 2.08344C17.2266 1.39309 16.1073 1.39308 15.417 2.08344L7.44802 10.0524C7.15977 10.3406 7.01564 10.4848 6.91257 10.653C6.82119 10.8021 6.75385 10.9647 6.71302 11.1347C6.66697 11.3265 6.66697 11.5304 6.66697 11.938V13.3334Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_1186_820">
-                                                <rect width="20" height="20" fill="white"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </a>
-                                        <a href="#" class="me-3">
-                                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M2.42012 12.9132C2.28394 12.6976 2.21584 12.5897 2.17772 12.4234C2.14909 12.2985 2.14909 12.1015 2.17772 11.9766C2.21584 11.8103 2.28394 11.7025 2.42012 11.4868C3.54553 9.70485 6.8954 5.20001 12.0004 5.20001C17.1054 5.20001 20.4553 9.70485 21.5807 11.4868C21.7169 11.7025 21.785 11.8103 21.8231 11.9766C21.8517 12.1015 21.8517 12.2985 21.8231 12.4234C21.785 12.5897 21.7169 12.6976 21.5807 12.9132C20.4553 14.6952 17.1054 19.2 12.0004 19.2C6.8954 19.2 3.54553 14.6952 2.42012 12.9132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M12.0004 15.2C13.6573 15.2 15.0004 13.8569 15.0004 12.2C15.0004 10.5432 13.6573 9.20001 12.0004 9.20001C10.3435 9.20001 9.0004 10.5432 9.0004 12.2C9.0004 13.8569 10.3435 15.2 12.0004 15.2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        </a>
-                                        <button class="btn btn-skyblue btn-sm h-x-34 with-icon" type="button">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-0">
-                                                <g clip-path="url(#clip0_3085_2940)">
-                                                <path d="M15.0003 5.83317V4.33317C15.0003 3.39975 15.0003 2.93304 14.8187 2.57652C14.6589 2.26292 14.4039 2.00795 14.0903 1.84816C13.7338 1.6665 13.2671 1.6665 12.3337 1.6665H7.66699C6.73357 1.6665 6.26686 1.6665 5.91034 1.84816C5.59674 2.00795 5.34177 2.26292 5.18198 2.57652C5.00033 2.93304 5.00033 3.39975 5.00033 4.33317V5.83317M5.00033 14.9998C4.22535 14.9998 3.83786 14.9998 3.51994 14.9147C2.65721 14.6835 1.98335 14.0096 1.75218 13.1469C1.66699 12.829 1.66699 12.4415 1.66699 11.6665V9.83317C1.66699 8.43304 1.66699 7.73297 1.93948 7.19819C2.17916 6.72779 2.56161 6.34534 3.03202 6.10565C3.5668 5.83317 4.26686 5.83317 5.66699 5.83317H14.3337C15.7338 5.83317 16.4339 5.83317 16.9686 6.10565C17.439 6.34534 17.8215 6.72779 18.0612 7.19819C18.3337 7.73297 18.3337 8.43304 18.3337 9.83317V11.6665C18.3337 12.4415 18.3337 12.829 18.2485 13.1469C18.0173 14.0096 17.3434 14.6835 16.4807 14.9147C16.1628 14.9998 15.7753 14.9998 15.0003 14.9998M12.5003 8.74984H15.0003M7.66699 18.3332H12.3337C13.2671 18.3332 13.7338 18.3332 14.0903 18.1515C14.4039 17.9917 14.6589 17.7368 14.8187 17.4232C15.0003 17.0666 15.0003 16.5999 15.0003 15.6665V14.3332C15.0003 13.3997 15.0003 12.933 14.8187 12.5765C14.6589 12.2629 14.4039 12.0079 14.0903 11.8482C13.7338 11.6665 13.2671 11.6665 12.3337 11.6665H7.66699C6.73357 11.6665 6.26686 11.6665 5.91034 11.8482C5.59674 12.0079 5.34177 12.2629 5.18198 12.5765C5.00033 12.933 5.00033 13.3997 5.00033 14.3332V15.6665C5.00033 16.5999 5.00033 17.0666 5.18198 17.4232C5.34177 17.7368 5.59674 17.9917 5.91034 18.1515C6.26686 18.3332 6.73357 18.3332 7.66699 18.3332Z" stroke="#5BAAF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_3085_2940">
-                                                <rect width="20" height="20" fill="white"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </button>
-                                    </div>
+                                <div class="date-part d-flex align-items-center w-20p">
+                                    <div class="date-title me-2">Status Date</div>
+                                    <div class="date">4/23/2024</div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-end w-20p">
+                                    <a href="#" class="me-3">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1186_820)">
+                                            <path d="M9.16699 3.33344H5.66699C4.26686 3.33344 3.5668 3.33344 3.03202 3.60593C2.56161 3.84561 2.17916 4.22806 1.93948 4.69847C1.66699 5.23324 1.66699 5.93331 1.66699 7.33344V14.3334C1.66699 15.7336 1.66699 16.4336 1.93948 16.9684C2.17916 17.4388 2.56161 17.8213 3.03202 18.061C3.5668 18.3334 4.26686 18.3334 5.66699 18.3334H12.667C14.0671 18.3334 14.7672 18.3334 15.302 18.061C15.7724 17.8213 16.1548 17.4388 16.3945 16.9684C16.667 16.4336 16.667 15.7336 16.667 14.3334V10.8334M6.66697 13.3334H8.06242C8.47007 13.3334 8.6739 13.3334 8.86571 13.2874C9.03577 13.2466 9.19835 13.1792 9.34747 13.0878C9.51566 12.9848 9.65979 12.8406 9.94804 12.5524L17.917 4.58344C18.6073 3.89309 18.6073 2.7738 17.917 2.08344C17.2266 1.39309 16.1073 1.39308 15.417 2.08344L7.44802 10.0524C7.15977 10.3406 7.01564 10.4848 6.91257 10.653C6.82119 10.8021 6.75385 10.9647 6.71302 11.1347C6.66697 11.3265 6.66697 11.5304 6.66697 11.938V13.3334Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_1186_820">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="me-3">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.42012 12.9132C2.28394 12.6976 2.21584 12.5897 2.17772 12.4234C2.14909 12.2985 2.14909 12.1015 2.17772 11.9766C2.21584 11.8103 2.28394 11.7025 2.42012 11.4868C3.54553 9.70485 6.8954 5.20001 12.0004 5.20001C17.1054 5.20001 20.4553 9.70485 21.5807 11.4868C21.7169 11.7025 21.785 11.8103 21.8231 11.9766C21.8517 12.1015 21.8517 12.2985 21.8231 12.4234C21.785 12.5897 21.7169 12.6976 21.5807 12.9132C20.4553 14.6952 17.1054 19.2 12.0004 19.2C6.8954 19.2 3.54553 14.6952 2.42012 12.9132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12.0004 15.2C13.6573 15.2 15.0004 13.8569 15.0004 12.2C15.0004 10.5432 13.6573 9.20001 12.0004 9.20001C10.3435 9.20001 9.0004 10.5432 9.0004 12.2C9.0004 13.8569 10.3435 15.2 12.0004 15.2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                    <button class="btn btn-skyblue btn-sm h-x-34 with-icon" type="button">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-0">
+                                            <g clip-path="url(#clip0_3085_2940)">
+                                            <path d="M15.0003 5.83317V4.33317C15.0003 3.39975 15.0003 2.93304 14.8187 2.57652C14.6589 2.26292 14.4039 2.00795 14.0903 1.84816C13.7338 1.6665 13.2671 1.6665 12.3337 1.6665H7.66699C6.73357 1.6665 6.26686 1.6665 5.91034 1.84816C5.59674 2.00795 5.34177 2.26292 5.18198 2.57652C5.00033 2.93304 5.00033 3.39975 5.00033 4.33317V5.83317M5.00033 14.9998C4.22535 14.9998 3.83786 14.9998 3.51994 14.9147C2.65721 14.6835 1.98335 14.0096 1.75218 13.1469C1.66699 12.829 1.66699 12.4415 1.66699 11.6665V9.83317C1.66699 8.43304 1.66699 7.73297 1.93948 7.19819C2.17916 6.72779 2.56161 6.34534 3.03202 6.10565C3.5668 5.83317 4.26686 5.83317 5.66699 5.83317H14.3337C15.7338 5.83317 16.4339 5.83317 16.9686 6.10565C17.439 6.34534 17.8215 6.72779 18.0612 7.19819C18.3337 7.73297 18.3337 8.43304 18.3337 9.83317V11.6665C18.3337 12.4415 18.3337 12.829 18.2485 13.1469C18.0173 14.0096 17.3434 14.6835 16.4807 14.9147C16.1628 14.9998 15.7753 14.9998 15.0003 14.9998M12.5003 8.74984H15.0003M7.66699 18.3332H12.3337C13.2671 18.3332 13.7338 18.3332 14.0903 18.1515C14.4039 17.9917 14.6589 17.7368 14.8187 17.4232C15.0003 17.0666 15.0003 16.5999 15.0003 15.6665V14.3332C15.0003 13.3997 15.0003 12.933 14.8187 12.5765C14.6589 12.2629 14.4039 12.0079 14.0903 11.8482C13.7338 11.6665 13.2671 11.6665 12.3337 11.6665H7.66699C6.73357 11.6665 6.26686 11.6665 5.91034 11.8482C5.59674 12.0079 5.34177 12.2629 5.18198 12.5765C5.00033 12.933 5.00033 13.3997 5.00033 14.3332V15.6665C5.00033 16.5999 5.00033 17.0666 5.18198 17.4232C5.34177 17.7368 5.59674 17.9917 5.91034 18.1515C6.26686 18.3332 6.73357 18.3332 7.66699 18.3332Z" stroke="#5BAAF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_3085_2940">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
+                            <div class="report-strip border-black10-strip d-flex justify-content-between align-items-center mb-3">
+                                <div class="title-txt w-20">Transfer Request</div>
+                                <div class="w-20p">
+                                    <button class="btn btn-skyblue btn-sm h-34 with-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#transReq" aria-controls="transReq">Begin Request</button>
+                                </div>
+                                <!-- TRANSFER REQUEST FILTER -->
+                                <div class="offcanvas my-case-offcanvas w-70p offcanvas-end" tabindex="-1" id="transReq" aria-labelledby="transReqLabel">
+                                    <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title font-xl" id="transReqLabel">Transfer Request</h5>
+                                    <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#transReqLabel" role="button" aria-controls="EditCaseDetailFilterLabel"><img src="../../images/icons/x-square.svg" alt=""></a>
+                                    </div>
+                                    <div class="offcanvas-body p-0">
+                                        <div class="p-4">
+                                            <div class="d-flex mb-4">
+                                                <div class="fs-md fw-semibold me-5">Transfer Request Type</div>
+                                                <div class="form-check form-inline me-3">
+                                                    <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                                    <label class="form-check-label font-400 mb-0" for="">Service Level</label>
+                                                </div>
+                                                <div class="form-check form-inline me-3">
+                                                    <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                                    <label class="form-check-label font-400 mb-0" for="">Location</label>
+                                                </div>
+                                                <div class="form-check form-inline me-3">
+                                                    <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                                    <label class="form-check-label font-400 mb-0" for="">Service Provider</label>
+                                                </div>
+                                            </div>
+                                            <div class="fs-sm color-orange mb-4">For Location transfer No Need To Include This in HTML</div>
+                                            <div class="grid-container grid-safety-plan mb-4">
+                                                <div class="grid-head d-flex justify-content-between align-items-center border-x-none p-3">
+                                                    <div class="grid-title">Case Information</div>    
+                                                </div>
+                                                <div class="grid-item border-x-none">
+                                                    <div class="fs-md color-black-60 mb-1">Case Manager</div>
+                                                    <div class="form-group">
+                                                        <input class="form-control style-2" type="email" placeholder="">
+                                                    </div> 
+                                                </div>
+                                                <div class="grid-item border-x-none">
+                                                    <div class="fs-md color-black-60 mb-1">From</div>
+                                                    <div class="rows-select grey-toggle style-2">
+                                                        <select class="form-select">
+                                                        <option data-tokens="1">Region 1</option>
+                                                        <option data-tokens="2">2</option>
+                                                        <option data-tokens="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-item border-x-none">
+                                                    <div class="fs-md color-black-60 mb-1">Transfer to</div>
+                                                    <div class="rows-select grey-toggle style-2">
+                                                        <select class="form-select">
+                                                        <option data-tokens="1">Region 2</option>
+                                                        <option data-tokens="2">2</option>
+                                                        <option data-tokens="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>  
+                                                <div class="grid-item border-x-none">
+                                                    <div class="fs-md color-black-60 mb-1">Minor’s full name:</div>
+                                                    <div class="form-group">
+                                                        <input class="form-control style-2" type="email" placeholder="">
+                                                    </div> 
+                                                </div>
+                                                <div class="grid-item border-x-none">
+                                                    <div class="fs-md color-black-60 mb-1">Minor’s DOB:</div>
+                                                    <input class="form-control style-2" type="date">
+                                                </div>
+                                                <div class="grid-item border-x-none">
+                                                    <div class="fs-md color-black-60 mb-1">Minor’s A#:</div>
+                                                    <div class="form-group">
+                                                        <input class="form-control style-2" type="email" placeholder="">
+                                                    </div> 
+                                                </div>  
+                                                <div class="grid-item-span-3">
+                                                    <div class="border-x-none grid-item">
+                                                        <div class="fs-md color-black-60 me-2">Current address</div>
+                                                        <div class="form-group">
+                                                            <input class="form-control style-2" type="email" placeholder="">
+                                                        </div>
+                                                    </div>    
+                                                </div>
+                                                <div class="grid-item-span-3">
+                                                    <div class="border-x-none grid-item">
+                                                        <div class="fs-md color-black-60 me-2">Future address</div>
+                                                        <div class="form-group">
+                                                            <input class="form-control style-2" type="email" placeholder="">
+                                                        </div>
+                                                    </div>    
+                                                </div>
+                                                <div class="grid-item-span-3">
+                                                    <div class="border-x-none grid-item">
+                                                        <div class="d-flex mb-3">
+                                                            <div class="fs-md fw-semibold me-2">Was there a change in sponsor?</div>
+                                                            <div class="form-check form-inline me-3">
+                                                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                                            </div>
+                                                            <div class="form-check form-inline me-3">
+                                                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                                                            </div>
+                                                        </div>    
+                                                        <div class="d-flex">
+                                                            <div class="fs-md fw-semibold me-2">If yes, please explain:</div>
+                                                            <textarea class="form-control form-textarea h-95 w-83"></textarea>
+                                                        </div>    
+                                                    </div>    
+                                                </div>
+                                            </div>
+                                            <div class="fs-sm color-orange mb-4">for Service Provider transfer (see note above for dropdown difference)  No Need To Include This in HTML</div>
+                                            <div class="grid-container grid-safety-plan mb-4">
+                                                <div class="grid-head d-flex justify-content-between align-items-center border-x-none p-3">
+                                                    <div class="grid-title">Case Information</div>    
+                                                </div>
+                                                <div class="grid-item border-x-none">
+                                                    <div class="fs-md color-black-60 mb-1">Case Manager</div>
+                                                    <div class="form-group">
+                                                        <input class="form-control style-2" type="email" placeholder="">
+                                                    </div> 
+                                                </div>
+                                                <div class="grid-item border-x-none">
+                                                    <div class="fs-md color-black-60 mb-1">From</div>
+                                                    <div class="rows-select grey-toggle style-2">
+                                                        <select class="form-select">
+                                                        <option data-tokens="1">Region 1</option>
+                                                        <option data-tokens="2">2</option>
+                                                        <option data-tokens="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-item border-x-none">
+                                                    <div class="fs-md color-black-60 mb-1">Transfer to</div>
+                                                    <div class="rows-select grey-toggle style-2">
+                                                        <select class="form-select">
+                                                        <option data-tokens="1">Region 2</option>
+                                                        <option data-tokens="2">2</option>
+                                                        <option data-tokens="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>  
+                                                <div class="grid-item border-x-none">
+                                                    <div class="fs-md color-black-60 mb-1">Minor’s full name:</div>
+                                                    <div class="form-group">
+                                                        <input class="form-control style-2" type="email" placeholder="">
+                                                    </div> 
+                                                </div>
+                                                <div class="grid-item border-x-none">
+                                                    <div class="fs-md color-black-60 mb-1">Minor’s DOB:</div>
+                                                    <input class="form-control style-2" type="date">
+                                                </div>
+                                                <div class="grid-item border-x-none">
+                                                    <div class="fs-md color-black-60 mb-1">Minor’s A#:</div>
+                                                    <div class="form-group">
+                                                        <input class="form-control style-2" type="email" placeholder="">
+                                                    </div> 
+                                                </div>
+                                                <div class="grid-item-span-3">
+                                                    <div class="border-x-none grid-item">
+                                                        <div class="fs-md color-black-60 me-2">Prior address</div>
+                                                        <div class="form-group">
+                                                            <input class="form-control style-2" type="email" placeholder="">
+                                                        </div>
+                                                    </div>    
+                                                </div>  
+                                                <div class="grid-item-span-3">
+                                                    <div class="border-x-none grid-item">
+                                                        <div class="fs-md color-black-60 me-2">Current address</div>
+                                                        <div class="form-group">
+                                                            <input class="form-control style-2" type="email" placeholder="">
+                                                        </div>
+                                                    </div>    
+                                                </div>
+                                                <div class="grid-item-span-3">
+                                                    <div class="border-x-none grid-item">
+                                                        <div class="d-flex mb-3">
+                                                            <div class="fs-md fw-semibold me-2">Was there a change in sponsor?</div>
+                                                            <div class="form-check form-inline me-3">
+                                                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                                            </div>
+                                                            <div class="form-check form-inline me-3">
+                                                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                                                            </div>
+                                                        </div>    
+                                                        <div class="d-flex">
+                                                            <div class="fs-md fw-semibold me-2">If yes, please explain:</div>
+                                                            <textarea class="form-control form-textarea h-95 w-83"></textarea>
+                                                        </div>    
+                                                    </div>    
+                                                </div>
+                                            </div>
+                                            <div class="fs-sm color-orange mb-4">For Service Level transfer No Need To Include This in HTML</div>
+                                            <div class="grid-container grid-safety-plan mb-4">
+                                                <div class="grid-head d-flex justify-content-between align-items-center border-x-none p-3">
+                                                    <div class="grid-title">Case Information</div>    
+                                                </div>
+                                                <div class="grid-item border-x-none">
+                                                    <div class="fs-md color-black-60 mb-1">Case Manager</div>
+                                                    <div class="form-group">
+                                                        <input class="form-control style-2" type="email" placeholder="">
+                                                    </div> 
+                                                </div>
+                                                <div class="grid-item border-x-none">
+                                                    <div class="fs-md color-black-60 mb-1">From</div>
+                                                    <div class="rows-select grey-toggle style-2">
+                                                        <select class="form-select">
+                                                        <option data-tokens="1">Region 1</option>
+                                                        <option data-tokens="2">2</option>
+                                                        <option data-tokens="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-item border-x-none">
+                                                    <div class="fs-md color-black-60 mb-1">Transfer to</div>
+                                                    <div class="rows-select grey-toggle style-2">
+                                                        <select class="form-select">
+                                                        <option data-tokens="1">Region 2</option>
+                                                        <option data-tokens="2">2</option>
+                                                        <option data-tokens="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>  
+                                                <div class="grid-item border-x-none">
+                                                    <div class="fs-md color-black-60 mb-1">Minor’s full name:</div>
+                                                    <div class="form-group">
+                                                        <input class="form-control style-2" type="email" placeholder="">
+                                                    </div> 
+                                                </div>
+                                                <div class="grid-item border-x-none">
+                                                    <div class="fs-md color-black-60 mb-1">Minor’s DOB:</div>
+                                                    <input class="form-control style-2" type="date">
+                                                </div>
+                                                <div class="grid-item border-x-none">
+                                                    <div class="fs-md color-black-60 mb-1">Minor’s A#:</div>
+                                                    <div class="form-group">
+                                                        <input class="form-control style-2" type="email" placeholder="">
+                                                    </div> 
+                                                </div>
+                                                <div class="grid-item border-x-none">
+                                                    <div class="fs-md color-black-60 mb-1">Sponsor’s full name</div>
+                                                    <div class="form-group">
+                                                        <input class="form-control style-2" type="email" placeholder="">
+                                                    </div> 
+                                                </div>
+                                                <div class="grid-item border-x-none">
+                                                    <div class="fs-md color-black-60 mb-1">Sponsor Category</div>
+                                                    <div class="rows-select grey-toggle style-2">
+                                                        <select class="form-select">
+                                                        <option data-tokens="1"></option>
+                                                        <option data-tokens="2">2</option>
+                                                        <option data-tokens="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div> 
+                                                <div class="grid-item border-x-none"></div>
+                                            </div>
+                                            <div class="grid-container grid-summary mb-4">
+                                                <div class="grid-head d-flex justify-content-between align-items-center border-x-none p-3">
+                                                    <div class="grid-title">Case Summary</div>    
+                                                </div>
+                                                <div class="grid-item">
+                                                    <div class="fs-md fw-semibold">Required Visits Completed- Level 1</div>
+                                                </div>
+                                                <div class="grid-item">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <div class="color-dark-blue fs-md me-3">Date of last contact</div>
+                                                        <div class="form-group w-100p">
+                                                            <input class="form-control style-2" type="email" placeholder="" fdprocessedid="yxrubf">
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="form-check form-inline me-3">
+                                                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                                            <label class="form-check-label style-1" for="check1">
+                                                                Initial Call
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-inline me-3">
+                                                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                                            <label class="form-check-label style-1" for="check1">
+                                                                 7 Day HV
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-inline me-3">
+                                                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                                            <label class="form-check-label style-1" for="check1">
+                                                                14 Day HV
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-inline me-3">
+                                                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                                            <label class="form-check-label style-1" for="check1">
+                                                                30 Day HV
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-item">
+                                                    <div class="fs-md fw-semibold">Required Visits Completed- Level 2</div>
+                                                </div>
+                                                <div class="grid-item">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <div class="color-dark-blue fs-md me-3">Date of last contact</div>
+                                                        <div class="form-group w-100p">
+                                                            <input class="form-control style-2" type="email" placeholder="" fdprocessedid="yxrubf">
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex mb-3">
+                                                        <div class="form-check form-inline me-3">
+                                                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                                            <label class="form-check-label style-1" for="check1">
+                                                                Initial Call
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-inline me-3">
+                                                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                                            <label class="form-check-label style-1" for="check1">
+                                                                14 Day HV
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-inline me-3">
+                                                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                                            <label class="form-check-label style-1" for="check1">
+                                                                Ongoing HV
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <div class="color-dark-blue fs-md me-3"># of monthly visits completed</div>
+                                                        <div class="form-group w-100p">
+                                                            <input class="form-control style-2" type="email" placeholder="" fdprocessedid="yxrubf">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-item">
+                                                    <div class="fs-md fw-semibold">Required Visits Completed- Level 3</div>
+                                                </div>
+                                                <div class="grid-item">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <div class="color-dark-blue fs-md me-3">Date of last contact</div>
+                                                        <div class="form-group w-100p">
+                                                            <input class="form-control style-2" type="email" placeholder="" fdprocessedid="yxrubf">
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex mb-3">
+                                                        <div class="form-check form-inline me-3">
+                                                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                                            <label class="form-check-label style-1" for="check1">
+                                                                Initial Call
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-inline me-3">
+                                                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                                            <label class="form-check-label style-1" for="check1">
+                                                                7 Day Assessment HV
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-inline me-3">
+                                                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                                            <label class="form-check-label style-1" for="check1">
+                                                                Weekly in-person contacts
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <div class="color-dark-blue fs-md me-3"># of visits completed</div>
+                                                        <div class="form-group w-100p">
+                                                            <input class="form-control style-2" type="email" placeholder="" fdprocessedid="yxrubf">
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <div class="form-check form-inline me-3">
+                                                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                                            <label class="form-check-label style-1" for="check1">
+                                                                Reassessment HV
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-inline me-3">
+                                                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                                            <label class="form-check-label style-1" for="check1">
+                                                                Monthly HV
+                                                            </label>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="color-dark-blue fs-md me-3"># of monthly visits completed</div>
+                                                            <div class="form-group w-100p">
+                                                                <input class="form-control style-2" type="email" placeholder="" fdprocessedid="yxrubf">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-item">
+                                                    <div class="fs-md fw-semibold">NOC(s) Submitted</div>
+                                                </div>
+                                                <div class="grid-item">
+                                                    <div class="d-flex mb-3">
+                                                        <div class="form-check form-inline me-3">
+                                                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                                            <label class="form-check-label style-1" for="check1">
+                                                                Yes
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-inline me-3">
+                                                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                                            <label class="form-check-label style-1" for="check1">
+                                                                No
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <div class="color-dark-blue fs-md me-3">If yes, how many?</div>
+                                                        <div class="form-group w-100p">
+                                                            <input class="form-control style-2" type="email" placeholder="" fdprocessedid="yxrubf">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-item">
+                                                    <div class="fs-md fw-semibold">Concerns</div>
+                                                </div>
+                                                <div class="grid-item">
+                                                    <textarea class="form-control form-textarea h-70"></textarea>
+                                                </div>
+                                                <div class="grid-item">
+                                                    <div class="fs-md fw-semibold">Notes</div>
+                                                </div>
+                                                <div class="grid-item">
+                                                    <textarea class="form-control form-textarea h-70"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="fs-sm color-orange mb-4">-------------   Signatures for Location transfers  AND   Service Level transfers  -------------------------</div>
+                                            <div class="fs-16 fw-bold color-dark-blue">Signatures</div>
+                                        </div>
+                                        <div class="grey-strip p-4">
+                                            <div class="grid-container border-none">
+                                                <div class="grid-item d-flex align-items-center p-2">
+                                                    <div class="color-black-60 fs-md">Signature of Current Case Manager</div> 
+                                                </div>
+                                                <div class="grid-item p-2">
+                                                    <textarea class="form-control form-textarea h-70"></textarea> 
+                                                </div>
+                                                <div class="grid-item d-flex align-items-center p-2">
+                                                    <div class="color-black-60 fs-md me-2">Date</div> 
+                                                    <div class="form-group w-100">
+                                                        <input class="form-control style-2" type="date">
+                                                    </div>        
+                                                </div>      
+                                                <div class="grid-item d-flex align-items-center p-2">
+                                                    <div class="color-black-60 fs-md">Signature of Current Supervisor</div> 
+                                                </div>
+                                                <div class="grid-item p-2">
+                                                    <textarea class="form-control form-textarea h-70"></textarea> 
+                                                </div>
+                                                <div class="grid-item d-flex align-items-center p-2">
+                                                    <div class="color-black-60 fs-md me-2">Date</div> 
+                                                    <div class="form-group w-100">
+                                                        <input class="form-control style-2" type="date">
+                                                    </div>        
+                                                </div>      
+                                                <div class="grid-item d-flex align-items-center p-2">
+                                                    <div class="color-black-60 fs-md">Signature of Receiving Supervisor</div> 
+                                                </div>
+                                                <div class="grid-item p-2">
+                                                    <textarea class="form-control form-textarea h-70"></textarea> 
+                                                </div>
+                                                <div class="grid-item d-flex align-items-center p-2">
+                                                    <div class="color-black-60 fs-md me-2">Date</div> 
+                                                    <div class="form-group w-100">
+                                                        <input class="form-control style-2" type="date">
+                                                    </div>        
+                                                </div>      
+                                                <div class="grid-item d-flex align-items-center p-2">
+                                                    <div class="color-black-60 fs-md">Name of Receiving Case Manager</div> 
+                                                </div>
+                                                <div class="grid-item p-2">
+                                                    <textarea class="form-control form-textarea h-70"></textarea> 
+                                                </div>
+                                                <div class="grid-item d-flex align-items-center p-2"></div>     
+                                                <div class="grid-item d-flex align-items-center p-2">
+                                                    <div class="color-black-60 fs-md">Signature of Receiving Case Manager</div> 
+                                                </div>
+                                                <div class="grid-item p-2">
+                                                    <textarea class="form-control form-textarea h-70"></textarea> 
+                                                </div>
+                                                <div class="grid-item d-flex align-items-center p-2">
+                                                    <div class="color-black-60 fs-md me-2">Date</div> 
+                                                    <div class="form-group w-100">
+                                                        <input class="form-control style-2" type="date">
+                                                    </div>        
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="p-4">
+                                            <div class="fs-sm color-orange mb-4">-------   Signatures for Service Provider transfers (need these 2 fields before these signatures) ----------</div>
+                                            <div class="row mb-4">
+                                                <div class="col-md-5">
+                                                    <div class="fs-md color-black-60 mb-1">Name of accepting provider</div>
+                                                    <div class="form-group">
+                                                        <input class="form-control style-2" type="email" placeholder="">
+                                                    </div> 
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="color-black-60 fs-md me-2">Date case transfer completed</div> 
+                                                    <div class="form-group w-100">
+                                                        <input class="form-control style-2" type="date">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fs-16 fw-bold color-dark-blue">Signatures</div>    
+                                        </div>
+                                        <div class="grey-strip p-4 mb-4">
+                                            <div class="grid-container border-none">
+                                                <div class="grid-item d-flex align-items-center p-2">
+                                                    <div class="color-black-60 fs-md">Signature of Current Case Manager</div> 
+                                                </div>
+                                                <div class="grid-item p-2">
+                                                    <textarea class="form-control form-textarea h-70"></textarea> 
+                                                </div>
+                                                <div class="grid-item d-flex align-items-center p-2">
+                                                    <div class="color-black-60 fs-md me-2">Date</div> 
+                                                    <div class="form-group w-100">
+                                                        <input class="form-control style-2" type="date">
+                                                    </div>        
+                                                </div>      
+                                                <div class="grid-item d-flex align-items-center p-2">
+                                                    <div class="color-black-60 fs-md">Signature of Current Supervisor</div> 
+                                                </div>
+                                                <div class="grid-item p-2">
+                                                    <textarea class="form-control form-textarea h-70"></textarea> 
+                                                </div>
+                                                <div class="grid-item d-flex align-items-center p-2">
+                                                    <div class="color-black-60 fs-md me-2">Date</div> 
+                                                    <div class="form-group w-100">
+                                                        <input class="form-control style-2" type="date">
+                                                    </div>        
+                                                </div>      
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="offcanvas-footer d-flex justify-content-between">
+                                        <button class="btn btn-md btn-grey btn-radius-none w-200">Cancel</button>
+                                        <button class="btn btn-md btn-darkblue btn-radius-none w-200">SAVE</button>
+                                    </div>
+                                </div>
+                                <!-- END TRANSFER REQUEST FILTER -->
+                                <div class="date-part d-flex align-items-center w-20p">
+                                    <div class="date-title me-2">Status</div>
+                                    <span class="badge badge-approve">Submitted for Approval</span>
+                                </div>
+                                <div class="date-part d-flex align-items-center w-20p">
+                                    <div class="date-title me-2">Status Date</div>
+                                    <div class="date">4/23/2024</div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-end w-20p">
+                                    <a href="#" class="me-3">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1186_820)">
+                                            <path d="M9.16699 3.33344H5.66699C4.26686 3.33344 3.5668 3.33344 3.03202 3.60593C2.56161 3.84561 2.17916 4.22806 1.93948 4.69847C1.66699 5.23324 1.66699 5.93331 1.66699 7.33344V14.3334C1.66699 15.7336 1.66699 16.4336 1.93948 16.9684C2.17916 17.4388 2.56161 17.8213 3.03202 18.061C3.5668 18.3334 4.26686 18.3334 5.66699 18.3334H12.667C14.0671 18.3334 14.7672 18.3334 15.302 18.061C15.7724 17.8213 16.1548 17.4388 16.3945 16.9684C16.667 16.4336 16.667 15.7336 16.667 14.3334V10.8334M6.66697 13.3334H8.06242C8.47007 13.3334 8.6739 13.3334 8.86571 13.2874C9.03577 13.2466 9.19835 13.1792 9.34747 13.0878C9.51566 12.9848 9.65979 12.8406 9.94804 12.5524L17.917 4.58344C18.6073 3.89309 18.6073 2.7738 17.917 2.08344C17.2266 1.39309 16.1073 1.39308 15.417 2.08344L7.44802 10.0524C7.15977 10.3406 7.01564 10.4848 6.91257 10.653C6.82119 10.8021 6.75385 10.9647 6.71302 11.1347C6.66697 11.3265 6.66697 11.5304 6.66697 11.938V13.3334Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_1186_820">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="me-3">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.42012 12.9132C2.28394 12.6976 2.21584 12.5897 2.17772 12.4234C2.14909 12.2985 2.14909 12.1015 2.17772 11.9766C2.21584 11.8103 2.28394 11.7025 2.42012 11.4868C3.54553 9.70485 6.8954 5.20001 12.0004 5.20001C17.1054 5.20001 20.4553 9.70485 21.5807 11.4868C21.7169 11.7025 21.785 11.8103 21.8231 11.9766C21.8517 12.1015 21.8517 12.2985 21.8231 12.4234C21.785 12.5897 21.7169 12.6976 21.5807 12.9132C20.4553 14.6952 17.1054 19.2 12.0004 19.2C6.8954 19.2 3.54553 14.6952 2.42012 12.9132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12.0004 15.2C13.6573 15.2 15.0004 13.8569 15.0004 12.2C15.0004 10.5432 13.6573 9.20001 12.0004 9.20001C10.3435 9.20001 9.0004 10.5432 9.0004 12.2C9.0004 13.8569 10.3435 15.2 12.0004 15.2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                    <button class="btn btn-skyblue btn-sm h-x-34 with-icon" type="button">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-0">
+                                            <g clip-path="url(#clip0_3085_2940)">
+                                            <path d="M15.0003 5.83317V4.33317C15.0003 3.39975 15.0003 2.93304 14.8187 2.57652C14.6589 2.26292 14.4039 2.00795 14.0903 1.84816C13.7338 1.6665 13.2671 1.6665 12.3337 1.6665H7.66699C6.73357 1.6665 6.26686 1.6665 5.91034 1.84816C5.59674 2.00795 5.34177 2.26292 5.18198 2.57652C5.00033 2.93304 5.00033 3.39975 5.00033 4.33317V5.83317M5.00033 14.9998C4.22535 14.9998 3.83786 14.9998 3.51994 14.9147C2.65721 14.6835 1.98335 14.0096 1.75218 13.1469C1.66699 12.829 1.66699 12.4415 1.66699 11.6665V9.83317C1.66699 8.43304 1.66699 7.73297 1.93948 7.19819C2.17916 6.72779 2.56161 6.34534 3.03202 6.10565C3.5668 5.83317 4.26686 5.83317 5.66699 5.83317H14.3337C15.7338 5.83317 16.4339 5.83317 16.9686 6.10565C17.439 6.34534 17.8215 6.72779 18.0612 7.19819C18.3337 7.73297 18.3337 8.43304 18.3337 9.83317V11.6665C18.3337 12.4415 18.3337 12.829 18.2485 13.1469C18.0173 14.0096 17.3434 14.6835 16.4807 14.9147C16.1628 14.9998 15.7753 14.9998 15.0003 14.9998M12.5003 8.74984H15.0003M7.66699 18.3332H12.3337C13.2671 18.3332 13.7338 18.3332 14.0903 18.1515C14.4039 17.9917 14.6589 17.7368 14.8187 17.4232C15.0003 17.0666 15.0003 16.5999 15.0003 15.6665V14.3332C15.0003 13.3997 15.0003 12.933 14.8187 12.5765C14.6589 12.2629 14.4039 12.0079 14.0903 11.8482C13.7338 11.6665 13.2671 11.6665 12.3337 11.6665H7.66699C6.73357 11.6665 6.26686 11.6665 5.91034 11.8482C5.59674 12.0079 5.34177 12.2629 5.18198 12.5765C5.00033 12.933 5.00033 13.3997 5.00033 14.3332V15.6665C5.00033 16.5999 5.00033 17.0666 5.18198 17.4232C5.34177 17.7368 5.59674 17.9917 5.91034 18.1515C6.26686 18.3332 6.73357 18.3332 7.66699 18.3332Z" stroke="#5BAAF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_3085_2940">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="report-strip border-black10-strip d-flex justify-content-between align-items-center mb-3">
+                                <div class="title-txt w-20">Extension Request</div>
+                                <div class="w-20p">
+                                    <button class="btn btn-skyblue btn-sm h-34 with-icon" type="button">Begin Closure</button>
+                                </div>
+                                <div class="date-part d-flex align-items-center w-20p">
+                                    <div class="date-title me-2">Status</div>
+                                    <span class="badge badge-active">Approved</span>
+                                </div>
+                                <div class="date-part d-flex align-items-center w-20p">
+                                    <div class="date-title me-2">Status Date</div>
+                                    <div class="date">4/23/2024</div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-end w-20p">
+                                    <a href="#" class="me-3">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1186_820)">
+                                            <path d="M9.16699 3.33344H5.66699C4.26686 3.33344 3.5668 3.33344 3.03202 3.60593C2.56161 3.84561 2.17916 4.22806 1.93948 4.69847C1.66699 5.23324 1.66699 5.93331 1.66699 7.33344V14.3334C1.66699 15.7336 1.66699 16.4336 1.93948 16.9684C2.17916 17.4388 2.56161 17.8213 3.03202 18.061C3.5668 18.3334 4.26686 18.3334 5.66699 18.3334H12.667C14.0671 18.3334 14.7672 18.3334 15.302 18.061C15.7724 17.8213 16.1548 17.4388 16.3945 16.9684C16.667 16.4336 16.667 15.7336 16.667 14.3334V10.8334M6.66697 13.3334H8.06242C8.47007 13.3334 8.6739 13.3334 8.86571 13.2874C9.03577 13.2466 9.19835 13.1792 9.34747 13.0878C9.51566 12.9848 9.65979 12.8406 9.94804 12.5524L17.917 4.58344C18.6073 3.89309 18.6073 2.7738 17.917 2.08344C17.2266 1.39309 16.1073 1.39308 15.417 2.08344L7.44802 10.0524C7.15977 10.3406 7.01564 10.4848 6.91257 10.653C6.82119 10.8021 6.75385 10.9647 6.71302 11.1347C6.66697 11.3265 6.66697 11.5304 6.66697 11.938V13.3334Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_1186_820">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="me-3">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.42012 12.9132C2.28394 12.6976 2.21584 12.5897 2.17772 12.4234C2.14909 12.2985 2.14909 12.1015 2.17772 11.9766C2.21584 11.8103 2.28394 11.7025 2.42012 11.4868C3.54553 9.70485 6.8954 5.20001 12.0004 5.20001C17.1054 5.20001 20.4553 9.70485 21.5807 11.4868C21.7169 11.7025 21.785 11.8103 21.8231 11.9766C21.8517 12.1015 21.8517 12.2985 21.8231 12.4234C21.785 12.5897 21.7169 12.6976 21.5807 12.9132C20.4553 14.6952 17.1054 19.2 12.0004 19.2C6.8954 19.2 3.54553 14.6952 2.42012 12.9132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12.0004 15.2C13.6573 15.2 15.0004 13.8569 15.0004 12.2C15.0004 10.5432 13.6573 9.20001 12.0004 9.20001C10.3435 9.20001 9.0004 10.5432 9.0004 12.2C9.0004 13.8569 10.3435 15.2 12.0004 15.2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                    <button class="btn btn-skyblue btn-sm h-x-34 with-icon" type="button">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-0">
+                                            <g clip-path="url(#clip0_3085_2940)">
+                                            <path d="M15.0003 5.83317V4.33317C15.0003 3.39975 15.0003 2.93304 14.8187 2.57652C14.6589 2.26292 14.4039 2.00795 14.0903 1.84816C13.7338 1.6665 13.2671 1.6665 12.3337 1.6665H7.66699C6.73357 1.6665 6.26686 1.6665 5.91034 1.84816C5.59674 2.00795 5.34177 2.26292 5.18198 2.57652C5.00033 2.93304 5.00033 3.39975 5.00033 4.33317V5.83317M5.00033 14.9998C4.22535 14.9998 3.83786 14.9998 3.51994 14.9147C2.65721 14.6835 1.98335 14.0096 1.75218 13.1469C1.66699 12.829 1.66699 12.4415 1.66699 11.6665V9.83317C1.66699 8.43304 1.66699 7.73297 1.93948 7.19819C2.17916 6.72779 2.56161 6.34534 3.03202 6.10565C3.5668 5.83317 4.26686 5.83317 5.66699 5.83317H14.3337C15.7338 5.83317 16.4339 5.83317 16.9686 6.10565C17.439 6.34534 17.8215 6.72779 18.0612 7.19819C18.3337 7.73297 18.3337 8.43304 18.3337 9.83317V11.6665C18.3337 12.4415 18.3337 12.829 18.2485 13.1469C18.0173 14.0096 17.3434 14.6835 16.4807 14.9147C16.1628 14.9998 15.7753 14.9998 15.0003 14.9998M12.5003 8.74984H15.0003M7.66699 18.3332H12.3337C13.2671 18.3332 13.7338 18.3332 14.0903 18.1515C14.4039 17.9917 14.6589 17.7368 14.8187 17.4232C15.0003 17.0666 15.0003 16.5999 15.0003 15.6665V14.3332C15.0003 13.3997 15.0003 12.933 14.8187 12.5765C14.6589 12.2629 14.4039 12.0079 14.0903 11.8482C13.7338 11.6665 13.2671 11.6665 12.3337 11.6665H7.66699C6.73357 11.6665 6.26686 11.6665 5.91034 11.8482C5.59674 12.0079 5.34177 12.2629 5.18198 12.5765C5.00033 12.933 5.00033 13.3997 5.00033 14.3332V15.6665C5.00033 16.5999 5.00033 17.0666 5.18198 17.4232C5.34177 17.7368 5.59674 17.9917 5.91034 18.1515C6.26686 18.3332 6.73357 18.3332 7.66699 18.3332Z" stroke="#5BAAF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_3085_2940">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                         <div class="d-flex justify-content-between align-items-center mb-4">
                             <div class="resource-title">Case Documents</div>
                             <button class="btn btn-skyblue btn-sm h-34 with-icon" type="button">
