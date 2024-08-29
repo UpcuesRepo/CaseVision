@@ -168,6 +168,10 @@
                 <h6>Individualized service plan</h6>
                 <button class="btn btn-primary with-icon btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#indServicePlan" aria-controls="indServicePlan">Individualized service plan</button>
             </div>
+            <div class="col-md-2">
+                <h6>PRS Initial Home Visit Check List</h6>
+                <button class="btn btn-primary with-icon btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#prsIntHome" aria-controls="prsIntHome">PRS Initial Home Visit Check List</button>
+            </div>
             <div class="col-md-4">
                 <!-- <h6>992PX AND BELOW SCREEN FILTER</h6> -->
                 <h6>992PX AND BELOW SCREEN FILTER</h6>
@@ -6821,6 +6825,919 @@
             <div class="offcanvas-footer d-flex justify-content-between">
                 <button class="btn btn-md btn-grey btn-radius-none w-200">Cancel</button>
                 <button class="btn btn-md btn-darkblue btn-radius-none w-200">SAVE</button>
+            </div>
+        </div>
+        <div class="offcanvas my-case-offcanvas w-60p offcanvas-end" tabindex="-1" id="prsIntHome" aria-labelledby="prsIntHomeLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title font-xl" id="prsIntHomeLabel">PRS Initial Home Visit Check List</h5>
+              <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#prsIntHomeLabel" role="button" aria-controls="EditCaseDetailFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
+            </div>
+            <div class="offcanvas-body p-0">
+                <div class="p-3">
+                    <div class="row mb-3">
+                        <div class="col-md-3">
+                            <div class="fs-md color-black-60 mb-1">Case Manager</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="email" placeholder="">
+                            </div>   
+                        </div>
+                        <div class="col-md-3">
+                            <div class="fs-md color-black-60 mb-1">Date of Visit</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="date">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="fs-md color-black-60 mb-1">Minor Name</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="email" placeholder="">
+                            </div>   
+                        </div>
+                        <div class="col-md-3">
+                            <div class="fs-md color-black-60 mb-1">Date of Case Acceptance</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-3">
+                            <div class="fs-md color-black-60 mb-1">Sponsor Name</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="email" placeholder="">
+                            </div>   
+                        </div>
+                        <div class="col-md-3">
+                            <div class="fs-md color-black-60 mb-1">Minor DOB</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-container mb-3">
+                        <div class="grid-head d-flex justify-content-between align-items-center p-3">
+                            <div class="grid-title">Pre-Visit Preparation</div>    
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Initial Call conducted within 48 hrs.
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Sponsor and minor both consent to PRS services
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                CW has spoken with both sponsor and minor in initial call to assess wellness
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                If applicable, has the minor been linked to any required support for special needs? (medical, mental health, etc.)
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Primary language of sponsor and minor has been assessed
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                If the above language requires an interpreter, an interpreter has been coordinated
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Minor is residing with original sponsor at address listed on UC Portal (if not, provide comment)
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                    </div>
+                    <div class="grid-container mb-3">
+                        <div class="grid-head d-flex justify-content-between align-items-center p-3">
+                            <div class="grid-title">Home Visit</div>    
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Minor present for home visit
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Sponsor present for home visit
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Minor is aware of EOIR Hotline/Website
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Explained confidentiality and mandated reporting
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Consent Form signed
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Confidentiality Form signed
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Grievance Form Acknowledgement signed
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                    </div>
+                    <div class="grid-container mb-3">
+                        <div class="grid-head d-flex justify-content-between align-items-center p-3">
+                            <div class="grid-title">ORR Packet</div>    
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                COA/COV
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Verification of Release Form/Card
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Immunization Records
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Power of Attorney/Carta de Poder
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Birth Certificate
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Court Documents
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Discussed court case and types of VISA
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                    </div>
+                    <div class="grid-container mb-3">
+                        <div class="grid-head d-flex justify-content-between align-items-center p-3">
+                            <div class="grid-title">Home Tour</div>    
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Observed every room
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Opened fridge, turned on water and checked for working electricity
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Privacy assessed (minor has private area to change/use restroom without being seen, no cameras)
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Checked for smoke detectors
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Identified dangerous items that could be easily accessed by the minor (e.g. prescription medication, guns, etc.)
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Looked for signs of additional household members not reported in FRP
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                If there are signs of additional household members, addressed these concerns with sponsor
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Identified where the minor will sleep and store personal belongings
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Checked outside area (i.e.: backyard, garage, shed, etc.)
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                    </div>
+                    <div class="grid-container mb-3">
+                        <div class="grid-head d-flex justify-content-between align-items-center p-3">
+                            <div class="grid-title">Discussion with Sponsor and Minor</div>    
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Needs Assessment Completed
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Case Plan Goals Set
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Provided appropriate community resources to sponsor and minor based on identified needs
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Reviewed Safety Plan
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Individual Interview with Sponsor
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Individual Interview with Minor
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>  
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="grid-title">
+                                Reviewed goals with both sponsor and minor and explained next steps
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center justify-content-between">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">NA</label>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <textarea class="form-control form-textarea h-60"></textarea>
+                        </div>   
+                    </div>
+                </div>
+                <div class="grey-strip p-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row align-items-center">
+                                <div class="col-md-5">
+                                    <div class="fs-md color-black-60 me-3">Employee’s Signature</div>
+                                </div>
+                                <div class="col-md-7">
+                                    <textarea class="form-control form-textarea h-70"></textarea>   
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="col-md-3">
+                            <div class="fs-md color-black-60 mb-1">Date</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="date">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-footer d-flex justify-content-between">
+                <button class="btn btn-md btn-grey btn-radius-none w-200">Cancel</button>
+                <button class="btn btn-md btn-darkblue btn-radius-none w-200">Save</button>
             </div>
         </div>
     </div>
