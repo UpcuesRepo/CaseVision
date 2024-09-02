@@ -239,6 +239,12 @@
             border: none;
         }
     }
+    &.grid-goals{
+        grid-template-columns: 30% 15% 20% 35%;    
+        .grid-head{
+            grid-column: 1 / 5;
+        }
+    }
     .grid-item-span-3{
         grid-column: 1 / 4;  
         .inner-grid-container{
