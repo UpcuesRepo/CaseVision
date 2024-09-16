@@ -18,6 +18,19 @@
             margin-top: -12.5px;
         }
     } 
+
+    .value-type{
+        background: #E1E1E1;
+        border-radius: 10px;
+        position:absolute;
+        right: 0px;
+        top:0px;
+        height: 100%;
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+        font-weight: $font-700;
+    }
 }
 
 // FORM INPUT STYLES //

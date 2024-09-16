@@ -106,7 +106,7 @@ $(document).ready(function () {
  
 
 // COLLAPSIBLE SIDEBAR
-const menuBtn = document.getElementById("menu-btn");
+/*const menuBtn = document.getElementById("menu-btn");
 const sidebar = document.getElementById("sidebar");
 
 menuBtn.addEventListener("click", function () {
@@ -127,8 +127,11 @@ menuBtn.addEventListener("click", function () {
       element.classList.remove("rotate");
     });
   }
-});
+});*/
 // END COLLAPSIBLE SIDEBAR
+
+
+
   
  
   // MULTI SELECT 1

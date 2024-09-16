@@ -1166,7 +1166,7 @@
                             <div class="col-md-6 md-margin-b-3">
                                     <div class="d-flex justify-content-between align-items-center mb-3">
                                         <div class="resource-title">Case Touchpoints</div>
-                                        <button class="btn btn-skyblue btn-sm h-34 with-icon" type="button">Add Touchpoints</button>
+                                        <button class="btn btn-skyblue btn-sm h-34 with-icon" type="button" data-bs-toggle="modal" data-bs-target="#addTouchpoints">Add Touchpoints</button>
                                     </div>
                                     <div class="case-details-card">
                                         <table class="case-details-heading-table border-right-none table-shadow w-90p">
@@ -8996,6 +8996,53 @@
             </div>
         </div>
     </div>
+
+
+    <!-- ADD TOUCHPOINTS -->
+    <div class="modal fade" id="addTouchpoints" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-add-notes">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="assignManagerModalLabel">ADD TOUCHPOINTS</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Touchpoint Type</div>
+                        <div class="rows-select grey-toggle style-2">
+                            <select class="form-select">
+                              <option data-tokens="1">Virtual Check-in</option>
+                              <option data-tokens="2">Virtual Check-in</option>
+                              <option data-tokens="3">Virtual Check-in</option>
+                            </select>
+                        </div>    
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Touchpoint Day</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="text">
+                            <span class="value-type">Day</span>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                 
+                
+                
+              
+              
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-md btn-grey btn-radius-none w-50">Cancel</button>
+                <button type="button" class="btn btn-darkblue btn-md btn-radius-none w-50">Add</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- END ADD TOUCHPOINTS -->
     <script src="../../assets/dist/js/all.min.js"></script>
   </body>
   
