@@ -176,6 +176,14 @@
                 <h6>Level 1 Service Plan</h6>
                 <button class="btn btn-primary with-icon btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#levelServicePlan" aria-controls="levelServicePlan">Level 1 Service Plan</button>
             </div>
+            <div class="col-md-2">
+                <h6>need assessment</h6>
+                <button class="btn btn-primary with-icon btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#needAsset" aria-controls="needAsset">need assetment</button>
+            </div>
+            <div class="col-md-2">
+                <h6>extension request</h6>
+                <button class="btn btn-primary with-icon btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#extensionReq" aria-controls="extensionReq">extension request</button>
+            </div>
             <div class="col-md-4">
                 <!-- <h6>992PX AND BELOW SCREEN FILTER</h6> -->
                 <h6>992PX AND BELOW SCREEN FILTER</h6>
@@ -8090,6 +8098,418 @@
             <div class="offcanvas-footer d-flex justify-content-between">
                 <button class="btn btn-md btn-grey btn-radius-none w-200">Cancel</button>
                 <button class="btn btn-md btn-darkblue btn-radius-none w-200">SAVE</button>
+            </div>
+        </div>
+        <div class="offcanvas my-case-offcanvas w-70p offcanvas-end" tabindex="-1" id="needAsset" aria-labelledby="needAssetLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title font-xl" id="transReqLabel">Needs Assessment</h5>
+              <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#transReqLabel" role="button" aria-controls="EditCaseDetailFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
+            </div>
+            <div class="offcanvas-body p-0">
+                <div class="p-4">
+                    <div class="grid-container grid-released-child mb-4">
+                        <div class="grid-head d-flex justify-content-between align-items-center border-x-none p-3">
+                            <div class="grid-title">Case Information</div>    
+                        </div>
+                        <div class="grid-item">
+                            <div class="color-black-60 fs-md">Case Manager</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="email" placeholder="">
+                            </div> 
+                        </div>
+                        <div class="grid-item">
+                            <div class="color-black-60 fs-md">Minor’s Full Name</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="email" placeholder="">
+                            </div> 
+                        </div>
+                        <div class="grid-item">
+                            <div class="color-black-60 fs-md">Sponsor’s Full Name</div>
+                            <div class="form-group">
+                                <input class="form-control style-2" type="email" placeholder="">
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="fs-16 fw-bold color-dark-blue mb-4">Scoring</div>
+                    <div class="grid-container four-grid mb-4">
+                        <div class="grid-item d-flex align-items-center flex-column">
+                            <div class="count-box green d-flex align-items-center justify-content-center mb-2">0</div>
+                            <div class="grid-title text-center">No current need; no need for action or intervention</div>
+                        </div>    
+                        <div class="grid-item d-flex align-items-center flex-column">
+                            <div class="count-box light-blue d-flex align-items-center justify-content-center mb-2">1</div>
+                            <div class="grid-title text-center">Identified need that requires monitoring, watchful waiting, or preventative action based on history, suspicion, or disagreement</div>
+                        </div>    
+                        <div class="grid-item d-flex align-items-center flex-column">
+                            <div class="count-box orange d-flex align-items-center justify-content-center mb-2">2</div>
+                            <div class="grid-title text-center">Action is required to ensure that the identified need is addressed; need is interfering with basic functioning</div>
+                        </div>    
+                        <div class="grid-item d-flex align-items-center flex-column">
+                            <div class="count-box red d-flex align-items-center justify-content-center mb-2">3</div>
+                            <div class="grid-title text-center">Need is dangerous or disabling; requires more immediate and/or intensive action</div>
+                        </div>    
+                    </div>
+                    <div class="grid-container grid-released-child mb-4">
+                        <div class="grid-head d-flex justify-content-between align-items-center border-x-none p-3">
+                            <div class="grid-title">Documentation Review</div>    
+                        </div>
+                        <div class="grid-item grid-item-span-3">
+                            <div class="fs-md">The score ranges below are recommendations for Level of Care. Please consult with your supervisor to determine whether a case should be transferred to a higher or lower level. A case may be transferred to at least Level 2 PRS if any needs domain receives a score of 3. A case should be transferred to Level 3 if the Mental and Behavior Health domain indicates any areas of concern.</div> 
+                        </div>
+                        <div class="grid-item grid-item-span-3 p-0">
+                            <div class="grid-33">
+                                <div class="grid-item border-y-none">
+                                    <div class="grid-title text-center">Level 1 PRS	8 or less</div>
+                                </div>    
+                                <div class="grid-item border-y-none">
+                                    <div class="grid-title text-center">Level 2 PRS 9 to 16</div>
+                                </div>    
+                                <div class="grid-item border-y-none">
+                                    <div class="grid-title text-center">Level 3 PRS 17 to 24</div>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="grid-item grid-item-span-3 p-0">
+                            <div class="spons-info">
+                                <div class="grid-item border-x-none border-y-none">
+                                    <div class="color-black-60 fs-md">Initial Score</div>
+                                    <div class="form-group">
+                                        <input class="form-control style-2" type="email" placeholder="">
+                                    </div> 
+                                </div>    
+                                <div class="grid-item border-x-none border-y-none">
+                                    <div class="color-black-60 fs-md">[Level 3] 60-Day Score</div>
+                                    <div class="form-group">
+                                        <input class="form-control style-2" type="email" placeholder="">
+                                    </div> 
+                                </div>    
+                                <div class="grid-item border-x-none border-y-none">
+                                    <div class="color-black-60 fs-md">[Level 2] 90-Day Score</div>
+                                    <div class="form-group">
+                                        <input class="form-control style-2" type="email" placeholder="">
+                                    </div> 
+                                </div>    
+                                <div class="grid-item border-x-none border-y-none">
+                                    <div class="color-black-60 fs-md">Closing Score</div>
+                                    <div class="form-group">
+                                        <input class="form-control style-2" type="email" placeholder="">
+                                    </div> 
+                                </div>    
+                                <div class="grid-item border-x-none border-y-none">
+                                    <div class="color-black-60 fs-md mb-2">Was professional interpretation used?</div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">No</label>
+                                    </div>
+                                </div>    
+                                <div class="grid-item border-x-none border-y-none">
+                                    <div class="color-black-60 fs-md">Language</div>
+                                    <div class="form-group">
+                                        <input class="form-control style-2" type="email" placeholder="">
+                                    </div> 
+                                </div>    
+                                <div class="grid-item border-x-none border-y-none">
+                                    <div class="color-black-60 fs-md">Interpreter Information</div>
+                                    <div class="form-group">
+                                        <input class="form-control style-2" type="email" placeholder="">
+                                    </div> 
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="grid-item grid-item-span-3">
+                            <div class="fs-16 fw-bold color-dark-blue mb-3">Signature</div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-4">
+                                            <div class="fs-md color-black-60 me-3">Signature of Case Manager</div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <textarea class="form-control form-textarea h-70"></textarea>   
+                                        </div>
+                                    </div>   
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="fs-md color-black-60 mb-1">Date</div>
+                                    <div class="form-group">
+                                        <input class="form-control style-2" type="date">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-container grid-20-80 mb-4">
+                        <div class="grid-head d-flex justify-content-between align-items-center border-x-none p-3">
+                            <div class="grid-title">Documentation Review</div>    
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-title">Program</div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="form-check">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Confidentiality Agreement *
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Grievance Policy Acknowledgement *
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="form-check">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Consent for Services and Sponsor Rights *
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Grievance Form(s) (as applicable)
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-title">Service Provision</div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="form-check">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Needs Assessment(s) *
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Case Notes *
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                                        <label class="form-check-label style-1" for="check1">
+                                            PRS Level 1 Check-in Form (as applicable) *
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Release(s) of Information (as applicable) *
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Level 3 Safety Plan (as applicable) *
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="form-check">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Individualized Service Plan *
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Grievance Form(s) (as applicable)
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                                        <label class="form-check-label style-1" for="check1">
+                                            PRS Level 2 and Level 3 Initial Home Visit Checklist (as applicable) *
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Situational Safety Plan (as applicable) *
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                                        <label class="form-check-label style-1" for="check1">
+                                            No Contact Letter(s) (as applicable) *
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-title">Reports</div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="form-check">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                                        <label class="form-check-label style-1" for="check1">
+                                            PRS Report(s) *
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="form-check">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                                        <label class="form-check-label style-1" for="check1">
+                                            Notification(s) of Concern (as applicable) *
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fs-16 fw-bold color-dark-blue">Signatures</div>
+                </div>
+                <div class="grey-strip p-4 mb-4">
+                    <div class="grid-container border-none">
+                        <div class="grid-item d-flex align-items-center p-0">
+                            <div class="color-black-60 fs-md">Printed Name of PRS Case Manager/Clinician</div> 
+                        </div>
+                        <div class="grid-item p-2">
+                            <textarea class="form-control form-textarea h-70"></textarea> 
+                        </div>
+                        <div class="grid-item d-flex align-items-center"></div>      
+                        <div class="grid-item d-flex align-items-center p-0">
+                            <div class="color-black-60 fs-md">Signature of PRS Case Manager/Clinician</div> 
+                        </div>
+                        <div class="grid-item p-2">
+                            <textarea class="form-control form-textarea h-70"></textarea> 
+                        </div>
+                        <div class="grid-item d-flex align-items-center p-2">
+                            <div class="color-black-60 fs-md me-2">Date</div> 
+                            <div class="form-group w-100">
+                                <input class="form-control style-2" type="date">
+                            </div> 
+                        </div> 
+                        <div class="grid-item d-flex align-items-center p-0">
+                            <div class="color-black-60 fs-md">Signature of PRS Supervisor</div> 
+                        </div>
+                        <div class="grid-item p-2">
+                            <textarea class="form-control form-textarea h-70"></textarea> 
+                        </div>
+                        <div class="grid-item d-flex align-items-center">
+                            <div class="color-black-60 fs-md me-2">Date</div> 
+                            <div class="form-group w-100">
+                                <input class="form-control style-2" type="date">
+                            </div>        
+                        </div>      
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-footer d-flex justify-content-between">
+                <button class="btn btn-md btn-grey btn-radius-none w-200">Cancel</button>
+                <button class="btn btn-md btn-darkblue btn-radius-none w-200">SAVE</button>
+            </div>
+        </div>
+        <div class="offcanvas my-case-offcanvas w-70p offcanvas-end" tabindex="-1" id="extensionReq" aria-labelledby="extensionReqLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title font-xl" id="transReqLabel">Extension Request Details</h5>
+              <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#transReqLabel" role="button" aria-controls="EditCaseDetailFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
+            </div>
+            <div class="offcanvas-body p-0">
+                <div class="p-4">
+                    <div class="grid-container grid-released-child mb-4">
+                        <div class="grid-item grid-item-span-3 p-0">
+                            <div class="p-10">
+                                <div class="fs-md color-black-60 mb-1">Reason for Extension</div>
+                                <textarea class="form-control form-textarea h-70"></textarea> 
+                            </div>
+                            <div class="spons-info p-0">
+                                <div class="grid-item border-x-none border-y-none">
+                                    <div class="color-black-60 fs-md">Date Extension Requested</div>
+                                    <div class="form-group">
+                                        <input class="form-control style-2" type="date" placeholder="">
+                                    </div> 
+                                </div>        
+                                <div class="grid-item border-x-none border-y-none">
+                                    <div class="color-black-60 fs-md mb-2">Extension Approved?</div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label font-400 mb-0" for="">No</label>
+                                    </div>
+                                </div>        
+                                <div class="grid-item border-x-none border-y-none">
+                                    <div class="color-black-60 fs-md">Date Extension Approved</div>
+                                    <div class="form-group">
+                                        <input class="form-control style-2" type="date" placeholder="">
+                                    </div> 
+                                </div>        
+                                <div class="grid-item border-x-none border-y-none">
+                                    <div class="color-black-60 fs-md">New Case Closure Date</div>
+                                    <div class="form-group">
+                                        <input class="form-control style-2" type="date" placeholder="">
+                                    </div> 
+                                </div>        
+                            </div>
+                        </div>
+                        <div class="grid-item grid-item-span-3">
+                            <div class="fs-md color-black-60 mb-1">if denied, reason for denial</div>
+                            <textarea class="form-control form-textarea h-70 mb-2"></textarea> 
+                        </div>
+                        <div class="grid-item grid-item-span-3 p-0">
+                            <div class="grid-item border-x-none border-y-none">
+                                <div class="color-black-60 fs-md mb-2">Documentation added to case file?</div>
+                                <div class="form-check form-inline me-3">
+                                    <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                    <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                                </div>
+                                <div class="form-check form-inline me-3">
+                                    <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                    <label class="form-check-label font-400 mb-0" for="">No</label>
+                                </div>
+                            </div>  
+                            <div class="spons-info">  
+                                <div class="grid-item border-x-none border-y-none">
+                                    <div class="color-black-60 fs-md">Name of Case Manager</div>
+                                    <div class="form-group">
+                                        <input class="form-control style-2" type="email" placeholder="">
+                                    </div> 
+                                </div>    
+                                <div class="grid-item border-x-none border-y-none">
+                                    <div class="color-black-60 fs-md">Name of Supervisor</div>
+                                    <div class="form-group">
+                                        <input class="form-control style-2" type="email" placeholder="">
+                                    </div> 
+                                </div>    
+                                <div class="grid-item border-x-none border-y-none">
+                                    <div class="color-black-60 fs-md">Name of ORR FFS</div>
+                                    <div class="form-group">
+                                        <input class="form-control style-2" type="email" placeholder="">
+                                    </div> 
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-footer d-flex justify-content-between">
+                <button class="btn btn-md btn-grey btn-radius-none w-200">Cancel</button>
+                <div class="d-flex">
+                    <button class="btn btn-md btn-dark btn-radius-none w-200">SAVE</button>
+                    <button class="btn btn-md btn-darkblue btn-radius-none w-200">SUBMIT</button>
+                </div>
             </div>
         </div>
     </div>

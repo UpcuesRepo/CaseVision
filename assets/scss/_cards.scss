@@ -39,6 +39,16 @@
     border-radius: $radius-lg;
     padding: 12px 15px;
     position: relative;
+    .title-strip{
+        border-bottom: 2px solid $light-gray-2;
+        padding: 10px 15px;
+    }
+    .content-strip{
+        padding: 15px;
+        &:not(:last-child){
+            border-bottom: 1px solid $light-gray-2;
+        }
+    }
     .btn-top{
         position: absolute;
         top: -20px;
@@ -88,4 +98,29 @@
     border: 1px solid $light-gray-2;
     border-radius: $radius-lg;
     background-color: $white;
+}
+
+.count-box{
+    height: 48px;
+    width: 48px;
+    border-radius: $radius-lg;
+    font-size: $font-size-xl;
+    font-weight: $font-700;
+    color: $white;
+    &.green{
+        border: 1px solid $green;
+        background-color: $green-60;
+    }
+    &.light-blue{
+        border: 1px solid $light-blue;
+        background-color: $light-blue-60;
+    }
+    &.orange{
+        border: 1px solid $orange;
+        background-color: $orange-60;
+    }
+    &.red{
+        border: 1px solid $red;
+        background-color: $red-60;
+    }
 }
