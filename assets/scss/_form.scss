@@ -476,6 +476,11 @@ ul.error-mesg{
            font-size: $font-size-md;
            color: $black;
         }
+        &.style-2{
+            font-size: $font-size-md;
+            color: $black;
+            font-weight: $font-600;
+        }
     }
 
     .form-check-input[type="checkbox"] {

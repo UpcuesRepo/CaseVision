@@ -1,3 +1,7 @@
+  //STEP WIZARD OF HOME ASSESSMENT FILTER
+
+  //END STEP WIZARD OF HOME ASSESSMENT FILTER
+  
 $(document).ready(function () {
   ("use strict");
   //CHECKBOX
@@ -102,6 +106,7 @@ $(document).ready(function () {
     }
   }
   // FILE UPLOAD END
+
  
  
 
@@ -193,3 +198,6 @@ menuBtn.addEventListener("click", function () {
 // };
  
 // END COLLAPSIBLE SIDEBAR
+
+
+
