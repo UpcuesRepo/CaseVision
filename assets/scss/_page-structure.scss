@@ -366,6 +366,9 @@
                         bottom: 250px;
                     }
                 }
+                .border-bottom-lightblue{
+                    border-bottom: 1px solid $light-blue-10;
+                }
             }
             .md-flex-column{
                 @include media-breakpoint-down(md){

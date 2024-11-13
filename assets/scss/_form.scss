@@ -349,6 +349,7 @@ input[type="time"] {
 // UPLOAD FILES
 // FILE UPLOAD
 .drop-zone {
+    position: relative;
     border: none;
     border-radius: $radius-lg;
     padding: 25px;
@@ -359,6 +360,13 @@ input[type="time"] {
     font-size: $font-size-md;
     cursor: pointer;
     background-color: $light-blue-10;
+    .btn{
+        &.btn-skyblue{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    }
     .drop-zone__prompt{
         color: $black;
         a{
