@@ -1,3 +1,8 @@
 .quickgrid[theme=default] {
-    --col-gap: auto;
+    --col-gap: auto !important;
+}
+
+
+.card-case-table table.case-table {
+    --col-gap: auto !important;
 }
