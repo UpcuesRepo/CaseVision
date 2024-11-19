@@ -29,6 +29,9 @@
                         @include media-breakpoint-down(md){
                             font-size: $font-size-md;
                         }
+                        @include media-breakpoint-down(lg){
+                            text-align: end;
+                        }
                     }
                     &[colspan="4"]{
                         background-color: $light-blue-10;
@@ -61,7 +64,7 @@
         }
         &.w-90p{
             width: 90%;
-            @include media-breakpoint-down(md){
+            @include media-breakpoint-down(lg){
                 width: 100%;
             }
         }
@@ -75,7 +78,7 @@
     }
     .w-10p{
         width: 10%;
-        @include media-breakpoint-down(md){
+        @include media-breakpoint-down(lg){
             width: 100%;
             padding: 15px;
         }
@@ -217,6 +220,16 @@
                     }
                     &:not(:last-child){
                         border-right: 1px solid $light-gray-3;
+                    }
+                    .part-1{
+                        &.me-3{
+                            @include media-breakpoint-down(lg){
+                                margin-right: 0!important;
+                            } 
+                        }
+                        @include media-breakpoint-down(lg){
+                            margin-bottom: 10px;
+                        }
                     }
                 }
                 &:nth-child(2n){

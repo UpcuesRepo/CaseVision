@@ -49,6 +49,15 @@
                     border-bottom: 1px solid $black-10;
                 }
             }
+            .search-box{
+                border-radius: $radius-lg;
+                border: 1px solid $light-gray-2;
+                padding: 10px;
+                .checkbox-area{
+                    height: 100px;
+                    overflow-y: scroll;
+                }
+            }
         }
         &.home-study{
             #msform {

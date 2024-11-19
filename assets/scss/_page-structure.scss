@@ -376,7 +376,7 @@
                 }
             }
             .md-margin-b-3{
-                @include media-breakpoint-down(md){
+                @include media-breakpoint-down(lg){
                     margin-bottom: 15px;
                 }
             }
@@ -386,6 +386,10 @@
                 }
             }
         }
-
+        .md-flex-column{
+            @include media-breakpoint-down(lg){
+                flex-direction: column;
+            }
+        }
     }
 }
