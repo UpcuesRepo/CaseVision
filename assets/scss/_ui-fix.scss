@@ -15,3 +15,25 @@
 .collapsible-navbar{
     background-color: #f9f9f9;
 }
+
+
+.case-details-card .quickgrid[theme=default] .col-header-content {
+    padding-right: 0px; 
+}
+
+
+.case-details-card .quickgrid[theme=default] .col-title {
+    gap: 0px;
+    font-weight: bold;
+}
+.case-details-card .quickgrid[theme=default] .col-title {
+    padding: 0px;
+}
+
+.case-details-card .quickgrid[theme=default] > tbody > tr > td {
+    padding: 10px 20px;
+}
+
+.case-details-card .quickgrid[theme=default] .col-title {
+    display: inline-block;
+}
