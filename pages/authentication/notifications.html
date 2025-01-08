@@ -148,12 +148,81 @@
                                 <input class="form-control form-control-lg search-icon" type="search" placeholder="Search Date / Name / Type">
                             </div>
                             <div class="d-flex add-buttons">
-                                <button class="btn btn-skyblue btn-sm with-icon me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#MyCaseFilter" aria-controls="MyCaseFilter">
+                                <button class="btn btn-skyblue btn-sm with-icon me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#NotificationFilter" aria-controls="NotificationFilter">
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M2.75 7.33337L13.75 7.33337M13.75 7.33337C13.75 8.85216 14.9812 10.0834 16.5 10.0834C18.0188 10.0834 19.25 8.85216 19.25 7.33337C19.25 5.81459 18.0188 4.58337 16.5 4.58337C14.9812 4.58337 13.75 5.81459 13.75 7.33337ZM8.25 14.6667L19.25 14.6667M8.25 14.6667C8.25 16.1855 7.01878 17.4167 5.5 17.4167C3.98122 17.4167 2.75 16.1855 2.75 14.6667C2.75 13.1479 3.98122 11.9167 5.5 11.9167C7.01878 11.9167 8.25 13.1479 8.25 14.6667Z" stroke="#5BAAF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                     Filter
                                 </button>
+                                <!-- Filter -->
+                                <div class="offcanvas my-case-offcanvas w-450 offcanvas-end" tabindex="-1" id="NotificationFilter" aria-labelledby="NotificationFilterLabel">
+                                    <div class="offcanvas-header">
+                                      <h5 class="offcanvas-title" id="NotificationFilterLabel">Filter By</h5>
+                                      <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#NotificationFilterLabel" role="button" aria-controls="NotificationFilterLabel"><img src="../../images/icons/x-square.svg" alt=""></a>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                      <div class="border-bottom-lightblue">
+                                        <div class="d-flex  mb-3">
+                                          <div class="form-check form-inline me-3">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                                              <label class="form-check-label style-1" for="check1">
+                                                All Notification
+                                              </label>
+                                          </div>
+                                          <div class="form-check form-inline me-3">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check7">
+                                              <label class="form-check-label style-1" for="check1">
+                                                Read 
+                                              </label>
+                                          </div>
+                                          <div class="form-check form-inline">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check8">
+                                              <label class="form-check-label style-1" for="check1">
+                                                Unread
+                                              </label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="border-bottom-lightblue">
+                                        <div class="fs-16 fw-semibold color-black-60 text-uppercase my-3">Notification type</div>
+                                        <div class="d-flex mb-3">
+                                            <div class="d-flex align-items-center me-4">
+                                                <div class="form-check form-inline">
+                                                    <input class="form-check-input add-after" type="checkbox" value="" id="check11">
+                                                </div>
+                                                <div class="badge badge-active">System Notification</div>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="form-check form-inline">
+                                                  <input class="form-check-input add-after" type="checkbox" value="" id="check12">
+                                                </div>
+                                                <div class="badge badge-approve">Request Notifications</div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="border-bottom-lightblue">
+                                        <div class="fs-16 fw-semibold color-black-60 text-uppercase my-3">Date RANGE</div>
+                                        <div class="d-flex">
+                                            <div class="color-black fs-md fw-semibold mb-1 w-50 me-2">From</div>
+                                            <div class="color-black fs-md fw-semibold mb-1 w-50 ms-2">To</div>
+                                        </div>
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="form-group w-50 me-2">
+                                                <input class="form-control form-control-md" type="date">
+                                            </div>
+                                            <div>-</div>
+                                            <div class="form-group w-50 ms-2">
+                                                <input class="form-control form-control-md" type="date">
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="offcanvas-footer d-flex">
+                                        <button class="btn btn-md btn-grey btn-radius-none w-50">Reset</button>
+                                        <button class="btn btn-md btn-darkblue btn-radius-none w-50">Apply</button>
+                                    </div>
+                                </div>
+                                <!-- END Filter -->
                             </div>
                         </div>
                    </div>
@@ -178,12 +247,6 @@
                                         </div>
                                     </div>
                                     <div class="d-flex md-end">
-                                        <button class="btn btn-primary btn-sm h-36 btn-radius-4 with-icon me-2">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                              <path d="M17.5 5H14.8333C13.4332 5 12.7331 5 12.1984 5.27248C11.728 5.51217 11.3455 5.89462 11.1058 6.36502C10.8333 6.8998 10.8333 7.59987 10.8333 9V10M17.5 5L15 2.5M17.5 5L15 7.5M8.33333 2.5H6.5C5.09987 2.5 4.3998 2.5 3.86502 2.77248C3.39462 3.01217 3.01217 3.39462 2.77248 3.86502C2.5 4.3998 2.5 5.09987 2.5 6.5V13.5C2.5 14.9001 2.5 15.6002 2.77248 16.135C3.01217 16.6054 3.39462 16.9878 3.86502 17.2275C4.3998 17.5 5.09987 17.5 6.5 17.5H13.5C14.9001 17.5 15.6002 17.5 16.135 17.2275C16.6054 16.9878 16.9878 16.6054 17.2275 16.135C17.5 15.6002 17.5 14.9001 17.5 13.5V11.6667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                            Share
-                                          </button>
                                         <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6323 11.8159C12.4026 12.0547 12.0228 12.0622 11.7839 11.8325L8.18394 8.4325C8.06629 8.31938 7.9998 8.16321 7.9998 8C7.9998 7.83679 8.06629 7.68062 8.18394 7.5675L11.7839 4.1675C12.0228 3.93782 12.4026 3.94527 12.6323 4.18413C12.862 4.423 12.8545 4.80282 12.6157 5.0325L9.46547 8L12.6157 10.9675C12.8545 11.1972 12.862 11.577 12.6323 11.8159ZM7.8323 11.8159C7.60263 12.0547 7.2228 12.0622 6.98394 11.8325L3.38394 8.4325C3.26629 8.31938 3.1998 8.16321 3.1998 8C3.1998 7.83679 3.26629 7.68062 3.38394 7.5675L6.98394 4.1675C7.2228 3.93782 7.60263 3.94527 7.8323 4.18413C8.06198 4.423 8.05453 4.80282 7.81567 5.0325L4.66547 8L7.81567 10.9675C8.05453 11.1972 8.06198 11.577 7.8323 11.8159Z" fill="#626262"/>
