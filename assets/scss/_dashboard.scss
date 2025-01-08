@@ -236,7 +236,7 @@
                         color: $black;
                         font-size: $font-size-15;
                         font-weight: $font-600;
-                        padding: 10px 10px;
+                        padding: 10px 15px;
                         @include media-breakpoint-down (xl){
                             font-size: $font-size-md;  
                             padding: 10px;  
@@ -280,6 +280,9 @@
                         }
                         &.bg-red10{
                             background-color: $red-10;
+                        }
+                        &.opacity-40{
+                            color: $black-40;
                         }
                         // &.d-flex{
                         //     @include media-breakpoint-down(md){
