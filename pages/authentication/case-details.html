@@ -1372,8 +1372,8 @@
                                             <thead>
                                                 <tr>
                                                     <th>Case Note Type</th>
-                                                    <th>Created On</th>
-                                                    <th>Last Updated On</th>
+                                                    <th>Date Created</th>
+                                                    <th>Last Updated</th>
                                                     <th>Author</th>
                                                     <th>Actions</th>
                                                 </tr>
@@ -2250,8 +2250,8 @@
                                         <th>Referral Type</th>
                                         <th>Provider Information (Agency)</th>
                                         <th>Referral Date</th>
-                                        <th>Last Updated On</th>
-                                        <th>Referral Succesful</th>
+                                        <th>Last Updated</th>
+                                        <th>Referral Succesful?</th>
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
@@ -2395,7 +2395,7 @@
                                                                 <div class="light-blue-title fs-md fw-semibold p-2">Status</div>
                                                             </div>
                                                             <div class="grid-item">
-                                                                <div class="grid-title d-flex align-items-center h-100">Minor present for virtual check-in</div>
+                                                                <div class="grid-title d-flex align-items-center h-100">Placement/Family Stability and Safety (not minor present for virtual check-in)</div>
                                                             </div>
                                                             <div class="grid-item">
                                                                 <div class="d-flex align-items-center h-100">
@@ -5193,7 +5193,7 @@
                                                     <div class="offcanvas my-case-offcanvas w-60p offcanvas-end" tabindex="-1" id="noticeConcern" aria-labelledby="noticeConcern">
                                                         <div class="offcanvas-header">
                                                           <h5 class="offcanvas-title font-xl" id="noticeConcern">Notification of concern</h5>
-                                                          <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#noticeConcern" role="button" aria-controls="EditCaseDetailFilterLabel"><img src="../../images/icons/x-square.svg" alt=""></a>
+                                                          <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#noticeConcern" role="button" aria-controls="EditCaseDetailFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
                                                         </div>
                                                         <div class="offcanvas-body p-4">
                                                             <div class="grid-container grid-released-child mb-3">
@@ -5212,6 +5212,7 @@
                                                                         <input class="form-control style-2" type="email" placeholder="">
                                                                     </div>
                                                                 </div>     
+                                                                <div class="grid-item border-x-none"></div>     
                                                                 <div class="grid-item border-x-none">
                                                                     <div class="fs-md color-black-60 mb-1">Date of Birth</div>
                                                                     <div class="form-group">
@@ -5256,7 +5257,6 @@
                                                                         <input class="form-control style-2" type="date">
                                                                     </div>
                                                                 </div> 
-                                                                <div class="grid-item border-x-none"></div> 
                                                             </div>
                                                             <div class="grid-container grid-released-child mb-3">
                                                                 <div class="grid-head d-flex justify-content-between align-items-center border-x-none p-3">
@@ -5295,7 +5295,7 @@
                                                                 </div>  
                                                                 <div class="grid-item-span-3">
                                                                     <div class="grid-item border-x-none">
-                                                                        <div class="fs-md color-black-60 mb-1">Referral Description</div>
+                                                                        <div class="fs-md color-black-60 mb-1">Synopsis of Event</div>
                                                                         <textarea class="form-control form-textarea h-70"></textarea>
                                                                     </div>
                                                                 </div>  
@@ -5364,7 +5364,7 @@
                                                                     <div class="grid-title">Caregiver Information (if different from sponsor)</div>    
                                                                 </div>
                                                                 <div class="grid-item border-x-none">
-                                                                    <div class="fs-md color-black-60 mb-1">Caregiver Name</div>
+                                                                    <div class="fs-md color-black-60 mb-1">Name</div>
                                                                     <div class="rows-select grey-toggle style-2">
                                                                         <select class="form-select">
                                                                             <option data-tokens="1"></option>
@@ -5374,19 +5374,19 @@
                                                                     </div>
                                                                 </div> 
                                                                 <div class="grid-item border-x-none">
-                                                                    <div class="fs-md color-black-60 mb-1">Caregiver Address</div>
+                                                                    <div class="fs-md color-black-60 mb-1">Address</div>
                                                                     <div class="form-group">
                                                                         <input class="form-control style-2" type="email" placeholder="">
                                                                     </div>
                                                                 </div>   
                                                                 <div class="grid-item border-x-none">
-                                                                    <div class="fs-md color-black-60 mb-1">Caregiver State</div>
+                                                                    <div class="fs-md color-black-60 mb-1">State</div>
                                                                     <div class="form-group">
                                                                         <input class="form-control style-2" type="email" placeholder="">
                                                                     </div>
                                                                 </div>  
                                                                 <div class="grid-item border-x-none">
-                                                                    <div class="fs-md color-black-60 mb-1">Caregiver City</div>
+                                                                    <div class="fs-md color-black-60 mb-1">City</div>
                                                                     <div class="rows-select grey-toggle style-2">
                                                                         <select class="form-select">
                                                                             <option data-tokens="1"></option>
@@ -5396,7 +5396,7 @@
                                                                     </div>
                                                                 </div>  
                                                                 <div class="grid-item border-x-none">
-                                                                    <div class="fs-md color-black-60 mb-1">Caregiver Zip Code</div>
+                                                                    <div class="fs-md color-black-60 mb-1">Zip Code</div>
                                                                     <div class="form-group">
                                                                         <input class="form-control style-2" type="email" placeholder="">
                                                                     </div>
@@ -9006,6 +9006,7 @@
                                     <tr>
                                         <th>File Name</th>
                                         <th>Date Uploaded</th>
+                                        <th>Uploaded By</th>
                                         <th>Signature</th>
                                         <th>Actions</th>
                                     </tr>
@@ -9014,6 +9015,7 @@
                                     <tr>
                                         <td>Consent for Services and Sponsor Right Form</td>
                                         <td>4/23/2024</td>
+                                        <td>Evelyn Hernandez</td>
                                         <td>
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <g clip-path="url(#clip0_1373_945)">
@@ -9058,6 +9060,7 @@
                                     <tr>
                                         <td>Check-in Type #2</td>
                                         <td>4/23/2024</td>
+                                        <td>Evelyn Hernandez</td>
                                         <td>
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <g clip-path="url(#clip0_1373_946)">
@@ -9102,6 +9105,7 @@
                                     <tr>
                                         <td>Check-in Type #2</td>
                                         <td>4/23/2024</td>
+                                        <td>Evelyn Hernandez</td>
                                         <td>
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <g clip-path="url(#clip0_1373_946)">
