@@ -69,6 +69,9 @@
             height: 34px;
             width: 34px;
         }
+        &.btn-sm{
+            padding: 9px 13px;
+        }
     }
     &.btn-grey{
         background-color: $black-10;

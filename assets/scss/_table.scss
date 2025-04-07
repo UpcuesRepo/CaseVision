@@ -145,8 +145,7 @@
     overflow: hidden;
     background-color: $white;
     position: relative;
-    border: 1px solid $light-blue;
-    background-color: $light-blue-10;
+    border: 1px solid $light-gray-3;
     .title-strip{
         padding: 15px 10px;
         .title{
@@ -179,6 +178,9 @@
                     &:not(:last-child){
                         border-right: 1px solid $light-gray-3;
                     }
+                    &.border-x-none{
+                        border-right: none;    
+                    }
                     &.inner-heading{
                         background-color: $light-gray-1;
                         font-size: $font-size-sm;
@@ -191,8 +193,8 @@
                         &.purple{
                             color: $purple;
                         }
-                        &.red{
-                            color: $red;
+                        &.black-30{
+                            color: $black-30;
                         }
                     }
                 }
@@ -214,8 +216,8 @@
                         color: $purple;
                         text-align: center;
                     }
-                    &.red{
-                        color: $red;
+                    &.black-30{
+                        color: $black-30;
                         text-align: center;
                     }
                     &:not(:last-child){
@@ -240,9 +242,12 @@
                 &:not(:last-child){
                     td{
                         border-bottom: 1px solid $light-gray-3;
+                        &.border-bottom-purple{
+                            border-bottom: 1px solid $purple;
+                        }
                         &.border-none{
                             border-bottom: none;
-                            vertical-align:sub;
+                            vertical-align:sub; 
                         }
                         .title-blue{
                             font-size: $font-size-15;
@@ -267,6 +272,15 @@
                         }
                     }
                 }
+            }
+            &:not(:last-child){
+                tr{
+                    &:last-child{
+                        td{
+                            border-bottom: 1px solid $purple;
+                        }
+                    } 
+                }   
             }
         }
     }
