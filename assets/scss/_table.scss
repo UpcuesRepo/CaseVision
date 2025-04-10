@@ -249,6 +249,9 @@
                             border-bottom: none;
                             vertical-align:sub; 
                         }
+                        &.vertical-align-sub{
+                            vertical-align:sub; 
+                        }
                         .title-blue{
                             font-size: $font-size-15;
                             font-weight: $font-600;
