@@ -147,12 +147,164 @@
                                 <input class="form-control form-control-lg search-icon" type="search" placeholder="Search Agency Name / Domain / Zip Code">
                             </div>
                             <div class="d-flex add-buttons">
-                                <button class="btn btn-primary with-icon btn-sm me-2">
+                                <button class="btn btn-primary with-icon btn-sm me-2" data-bs-toggle="offcanvas" data-bs-target="#addResourceFilter" aria-controls="addResourceFilter">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12 15.5H7.5C6.10444 15.5 5.40665 15.5 4.83886 15.6722C3.56045 16.06 2.56004 17.0605 2.17224 18.3389C2 18.9067 2 19.6044 2 21M19 21V15M16 18H22M14.5 7.5C14.5 9.98528 12.4853 12 10 12C7.51472 12 5.5 9.98528 5.5 7.5C5.5 5.01472 7.51472 3 10 3C12.4853 3 14.5 5.01472 14.5 7.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                     Add New Resource
                                 </button>
+                                <!-- filter add new resource -->
+                                <div class="offcanvas my-case-offcanvas w-450 offcanvas-end" tabindex="-1" id="addResourceFilter" aria-labelledby="addResourceFilterLabel">
+                                    <div class="offcanvas-header">
+                                      <h5 class="offcanvas-title font-xl" id="addReferralFilterLabel">ADD NEW RESOURCE</h5>
+                                      <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#addReferralFilterLabel" role="button" aria-controls="EditCaseDetailFilterLabel"><img src="../../images/icons/x-square.svg" alt=""></a>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="row mb-3">
+                                            <div class="col-md-12">
+                                                <div class="fs-md color-black-60 mb-1">Agency Name</div>
+                                                <div class="form-group">
+                                                    <input class="form-control style-2" type="email" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="row mb-3">
+                                            <div class="col-md-12">
+                                                <div class="fs-md color-black-60 mb-1">Domain</div>
+                                                <div class="rows-select grey-toggle style-2">
+                                                    <select class="form-select">
+                                                      <option data-tokens="1"></option>
+                                                      <option data-tokens="2">Male</option>
+                                                      <option data-tokens="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="row mb-3">
+                                            <div class="col-md-12">
+                                                <div class="fs-md color-black-60 mb-1">Category</div>
+                                                <div class="rows-select grey-toggle style-2">
+                                                    <select class="form-select">
+                                                      <option data-tokens="1"></option>
+                                                      <option data-tokens="2">Male</option>
+                                                      <option data-tokens="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <div class="fs-md color-black-60 mb-1">Phone Number</div>
+                                                <div class="form-group">
+                                                    <input class="form-control style-2" type="email" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="fs-md color-black-60 mb-1">Website</div>
+                                                <div class="form-group">
+                                                    <input class="form-control style-2" type="email" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <div class="fs-md color-black-60 mb-1">Regions</div>
+                                                <div class="rows-select grey-toggle style-2">
+                                                    <select class="form-select">
+                                                      <option data-tokens="1">Region 1</option>
+                                                      <option data-tokens="2">Male</option>
+                                                      <option data-tokens="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="fs-md color-black-60 mb-1">Languages</div>
+                                                <div class="rows-select grey-toggle style-2">
+                                                    <select class="form-select">
+                                                      <option data-tokens="1"></option>
+                                                      <option data-tokens="2">Male</option>
+                                                      <option data-tokens="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="row mb-3">
+                                            <div class="col-md-12">
+                                                <div class="fs-md color-black-60 mb-1">Discription</div>
+                                                <textarea class="form-control form-textarea h-70"></textarea>
+                                            </div>   
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <div class="fs-md color-black-60 mb-1">Cost</div>
+                                                <div class="rows-select grey-toggle style-2">
+                                                    <select class="form-select">
+                                                      <option data-tokens="1"></option>
+                                                      <option data-tokens="2">Male</option>
+                                                      <option data-tokens="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="fs-md color-black-60 mb-1">Hours</div>
+                                                <div class="rows-select grey-toggle style-2">
+                                                    <select class="form-select">
+                                                      <option data-tokens="1"></option>
+                                                      <option data-tokens="2">Male</option>
+                                                      <option data-tokens="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="row mb-3">
+                                            <div class="col-md-12">
+                                                <div class="fs-16 fw-semibold color-black-60 text-uppercase mb-3">Address information </div>                        
+                                                <div class="rows-select grey-toggle style-2">
+                                                    <select class="form-select">
+                                                      <option data-tokens="1">Select Address</option>
+                                                      <option data-tokens="2">Male</option>
+                                                      <option data-tokens="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <div class="fs-md color-black-60 mb-1">State</div>
+                                                <div class="rows-select grey-toggle style-2">
+                                                    <select class="form-select">
+                                                      <option data-tokens="1">Select State</option>
+                                                      <option data-tokens="2">Male</option>
+                                                      <option data-tokens="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="fs-md color-black-60 mb-1">City</div>
+                                                <div class="rows-select grey-toggle style-2">
+                                                    <select class="form-select">
+                                                      <option data-tokens="1">Select City</option>
+                                                      <option data-tokens="2">Male</option>
+                                                      <option data-tokens="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <div class="fs-md color-black-60 mb-1">Zip Code</div>
+                                                <div class="form-group">
+                                                    <input class="form-control style-2" type="email" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="offcanvas-footer d-flex">
+                                        <button class="btn btn-md btn-grey btn-radius-none w-50">Cancel</button>
+                                        <button class="btn btn-md btn-darkblue btn-radius-none w-50">Save</button>
+                                    </div>
+                                </div>
+                                <!-- end filter add new resource -->
                                 <button class="btn btn-skyblue btn-sm with-icon me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#MyCaseFilter" aria-controls="MyCaseFilter">
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M2.75 7.33337L13.75 7.33337M13.75 7.33337C13.75 8.85216 14.9812 10.0834 16.5 10.0834C18.0188 10.0834 19.25 8.85216 19.25 7.33337C19.25 5.81459 18.0188 4.58337 16.5 4.58337C14.9812 4.58337 13.75 5.81459 13.75 7.33337ZM8.25 14.6667L19.25 14.6667M8.25 14.6667C8.25 16.1855 7.01878 17.4167 5.5 17.4167C3.98122 17.4167 2.75 16.1855 2.75 14.6667C2.75 13.1479 3.98122 11.9167 5.5 11.9167C7.01878 11.9167 8.25 13.1479 8.25 14.6667Z" stroke="#5BAAF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
