@@ -49,6 +49,12 @@
     <button type="button" class="btn btn-primary w-auto m-5" data-bs-toggle="modal" data-bs-target="#addTouchpoints">
         Add Touchpoints
     </button>
+    <button type="button" class="btn btn-primary w-auto m-5" data-bs-toggle="modal" data-bs-target="#rejectReq">
+        reject request
+    </button>
+    <button type="button" class="btn btn-primary w-auto m-5" data-bs-toggle="modal" data-bs-target="#rejectNote">
+        reject note
+    </button>
 
 
   
@@ -602,6 +608,52 @@
         </div>
     </div>
     <!-- END ADD TOUCHPOINTS -->
+
+    <!-- reject request -->
+    <div class="modal fade" id="rejectReq" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-add-notes">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="assignManagerModalLabel">Reject Request</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="text-center fs-lg fw-semibold py-3 border-bottom-grey">
+                    Are you sure you want to reject this request?
+                </div>
+                <div class="p-3">
+                    <div class="fs-md color-black-60">
+                        Please provide reason for rejection
+                    </div>
+                    <textarea class="form-control form-textarea h-90"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-md btn-grey btn-radius-none w-50">No</button>
+                <button type="button" class="btn btn-darkblue btn-md btn-radius-none w-50">Yes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- END reject request -->
+
+    <!-- reject request -->
+    <div class="modal fade" id="rejectNote" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-add-notes">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="assignManagerModalLabel">Reject Note</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center fs-lg fw-semibold">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non tortor ac nibh laoreet commodo. Maecenas a elementum metus. Quisque euismod ac massa a mollis.
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- END reject request -->
 
     <!-- DELETE DOCUMENT -->
     <div class="modal fade" id="deleteDocModal" tabindex="-1" aria-labelledby="deleteDocModalLabel" aria-hidden="true">

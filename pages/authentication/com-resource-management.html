@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../../images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../../images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../../images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+   
+    <!-- CSS -->
+    <link href="../../assets/dist/css/default.css" rel="stylesheet" />
+    <title>CASE VISION</title>
+  </head>
+  <body>
+    <div class="" id="wrapper">
+        <div class="collapsible-navbar h-100">
+            <nav class="main-navbar navbar-expand-xl w-100 d-flex justify-content-between align-items-center">
+                <div class="left-part d-flex align-items-center h-100">
+                    <button type="button" class="btn btn-toggle h-100" id="menu-btn">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 18H22.5M4.5 9H31.5M4.5 27H31.5" stroke="#CE0E2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="arrow" d="M31 21L28 18L31 15" stroke="#CE0E2D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="navbar-logo w-185 d-flex align-items-center justify-content-center">
+                        <a href="#"><img src="../../images/logo/logo-black.svg" alt=""></a>
+                    </div>
+                    <div class="fs-26 fw-bold color-dark-blue ms-3">Community Resources Management</div>
+                </div>
+                <div class="right-part d-flex align-items-center h-100">
+                    <div class="dropdown dropdown-notification d-flex align-items-center">
+                        <a class="btn btn-notification dropdown-toggle me-3" href="#" role="button" id="dropdownMenuNotifc" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../../images/icons/bell-03.svg" alt="">
+                            <span class="red-dot"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-account" aria-labelledby="dropdownMenuNotific" data-bs-popper="static">
+                            <li class="dropdown-item"><a href="#" class="active">Account Settings</a></li>
+                            <li class="dropdown-item"><a href="#"> Live Dashboard</a></li>
+                            <li class="dropdown-item"><a href="#"> Reports</a></li>
+                            <li class="dropdown-item"><a href="#">Logout</a></li>
+                          </ul>
+                    </div>
+                    <div class="dropdown dropdown-profile d-flex align-items-center me-3">
+                        <a class="dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="fs-lg fw-semibold ms-3 me-2 name-icon bg-lightblue-30">CM</div>
+                            <div class="name me-3">
+                                <div class="fs-lg fw-semibold">Chelsea Maxfield</div>
+                                <div class="fs-13 color-black-30">Admin</div>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-account" aria-labelledby="dropdownMenuLink" data-bs-popper="static">
+                          <li class="ms-3">
+                            <div class="name">
+                                <div class="fs-lg fw-semibold">Chelsea Maxfield</div>
+                                <div class="fs-13 color-black-30">Admin</div>
+                            </div>
+                          </li>
+                          <li class="dropdown-item"><a href="#" class="active">Account Settings</a></li>
+                          <li class="dropdown-item"><a href="#"> Live Dashboard</a></li>
+                          <li class="dropdown-item"><a href="#"> Reports</a></li>
+                          <li class="dropdown-item"><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="d-flex">
+                <div id="sidebar" class="sidebar collapsed">
+                    <div class="sidebar-section">
+                      <ul class="side-menu">
+                        <li>
+                            <div class="fs-26 fw-bold color-white ms-2">My Cases</div>
+                        </li>
+                        <li>
+                          <a href="#" class="menu-links">Dashboard</a>
+                        </li>
+                        <li>
+                            <!-- <a class="menu-links" data-bs-toggle="collapse" href="#collapse-inner" role="button" aria-expanded="false" aria-controls="collapse-inner">
+                                Case Management
+                            </a>
+                            <div class="collapse collapse-inner" id="collapse-inner">
+                                <div class="card card-body">
+                                  <a href="#" class="collapse-opt">
+                                    <span class="red-dot"></span>
+                                    My Cases
+                                  </a>
+                                </div>
+                            </div> -->
+                            <a href="#" class="menu-links">Case Management</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links submenu">
+                                <span class="red-dot"></span>
+                                    My Cases 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links active">Community Resources</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links submenu">
+                                <span class="red-dot"></span>
+                                    CR Management
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links">Reporting & Analytics</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links">Staff Directory</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links">User Management</a>
+                        </li>
+                      </ul>
+                      <a href="https://ap-in.com/" target="_blank" title="Applied Intellect" class="powered-by-logo">
+                        <img src="../../images/logo/powered-by-logo.svg"  title="Applied Intellect"  alt="">
+                        <p class="version mt-2">Version:&nbsp;1.0.16.1</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="my-case content-part h-100 w-100">
+                   <div class="top-part d-flex justify-content-between align-items-center w-100">
+                        <ul class="nav nav-pills my-case-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="notification" data-bs-toggle="tab" data-bs-target="#notification-pane" type="button" role="tab" aria-controls="notification-pane" aria-selected="true">Notifications</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="req" data-bs-toggle="tab" data-bs-target="#req-pane" type="button" role="tab" aria-controls="req-pane" aria-selected="false">New Resource Submissions</button>
+                            <span class="red-dot"></span>
+                            </li>
+                        </ul>
+                        <div class="d-flex w-50 justify-content-end align-items-center sm-flex-column">
+                            <div class="form-group w-60 me-2">
+                                <input class="form-control form-control-lg search-icon" type="search" placeholder="Search Agency Name / Domain / Zip Code">
+                            </div>
+                            <div class="d-flex add-buttons">
+                                <button class="btn btn-primary with-icon btn-sm me-2" data-bs-toggle="offcanvas" data-bs-target="#addResourceFilter" aria-controls="addResourceFilter">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 15.5H7.5C6.10444 15.5 5.40665 15.5 4.83886 15.6722C3.56045 16.06 2.56004 17.0605 2.17224 18.3389C2 18.9067 2 19.6044 2 21M19 21V15M16 18H22M14.5 7.5C14.5 9.98528 12.4853 12 10 12C7.51472 12 5.5 9.98528 5.5 7.5C5.5 5.01472 7.51472 3 10 3C12.4853 3 14.5 5.01472 14.5 7.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Add New Resource
+                                </button>
+                                <!-- filter add new resource -->
+                                <div class="offcanvas my-case-offcanvas w-450 offcanvas-end" tabindex="-1" id="addResourceFilter" aria-labelledby="addResourceFilterLabel">
+                                    <div class="offcanvas-header">
+                                      <h5 class="offcanvas-title font-xl" id="addReferralFilterLabel">ADD NEW RESOURCE</h5>
+                                      <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#addReferralFilterLabel" role="button" aria-controls="EditCaseDetailFilterLabel"><img src="../../images/icons/x-square.svg" alt=""></a>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="row mb-3">
+                                            <div class="col-md-12">
+                                                <div class="fs-md color-black-60 mb-1">Agency Name</div>
+                                                <div class="form-group">
+                                                    <input class="form-control style-2" type="email" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="row mb-3">
+                                            <div class="col-md-12">
+                                                <div class="fs-md color-black-60 mb-1">Domain</div>
+                                                <div class="rows-select grey-toggle style-2">
+                                                    <select class="form-select">
+                                                      <option data-tokens="1"></option>
+                                                      <option data-tokens="2">Male</option>
+                                                      <option data-tokens="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="row mb-3">
+                                            <div class="col-md-12">
+                                                <div class="fs-md color-black-60 mb-1">Category</div>
+                                                <div class="rows-select grey-toggle style-2">
+                                                    <select class="form-select">
+                                                      <option data-tokens="1"></option>
+                                                      <option data-tokens="2">Male</option>
+                                                      <option data-tokens="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <div class="fs-md color-black-60 mb-1">Phone Number</div>
+                                                <div class="form-group">
+                                                    <input class="form-control style-2" type="email" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="fs-md color-black-60 mb-1">Website</div>
+                                                <div class="form-group">
+                                                    <input class="form-control style-2" type="email" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <div class="fs-md color-black-60 mb-1">Regions</div>
+                                                <div class="rows-select grey-toggle style-2">
+                                                    <select class="form-select">
+                                                      <option data-tokens="1">Region 1</option>
+                                                      <option data-tokens="2">Male</option>
+                                                      <option data-tokens="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="fs-md color-black-60 mb-1">Languages</div>
+                                                <div class="rows-select grey-toggle style-2">
+                                                    <select class="form-select">
+                                                      <option data-tokens="1"></option>
+                                                      <option data-tokens="2">Male</option>
+                                                      <option data-tokens="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="row mb-3">
+                                            <div class="col-md-12">
+                                                <div class="fs-md color-black-60 mb-1">Discription</div>
+                                                <textarea class="form-control form-textarea h-70"></textarea>
+                                            </div>   
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <div class="fs-md color-black-60 mb-1">Cost</div>
+                                                <div class="rows-select grey-toggle style-2">
+                                                    <select class="form-select">
+                                                      <option data-tokens="1"></option>
+                                                      <option data-tokens="2">Male</option>
+                                                      <option data-tokens="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="fs-md color-black-60 mb-1">Hours</div>
+                                                <div class="rows-select grey-toggle style-2">
+                                                    <select class="form-select">
+                                                      <option data-tokens="1"></option>
+                                                      <option data-tokens="2">Male</option>
+                                                      <option data-tokens="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="row mb-3">
+                                            <div class="col-md-12">
+                                                <div class="fs-16 fw-semibold color-black-60 text-uppercase mb-3">Address information </div>                        
+                                                <div class="rows-select grey-toggle style-2">
+                                                    <select class="form-select">
+                                                      <option data-tokens="1">Select Address</option>
+                                                      <option data-tokens="2">Male</option>
+                                                      <option data-tokens="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <div class="fs-md color-black-60 mb-1">State</div>
+                                                <div class="rows-select grey-toggle style-2">
+                                                    <select class="form-select">
+                                                      <option data-tokens="1">Select State</option>
+                                                      <option data-tokens="2">Male</option>
+                                                      <option data-tokens="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="fs-md color-black-60 mb-1">City</div>
+                                                <div class="rows-select grey-toggle style-2">
+                                                    <select class="form-select">
+                                                      <option data-tokens="1">Select City</option>
+                                                      <option data-tokens="2">Male</option>
+                                                      <option data-tokens="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <div class="fs-md color-black-60 mb-1">Zip Code</div>
+                                                <div class="form-group">
+                                                    <input class="form-control style-2" type="email" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="offcanvas-footer d-flex">
+                                        <button class="btn btn-md btn-grey btn-radius-none w-50">Cancel</button>
+                                        <button class="btn btn-md btn-darkblue btn-radius-none w-50">Save</button>
+                                    </div>
+                                </div>
+                                <!-- end filter add new resource -->
+                                <button class="btn btn-skyblue btn-sm with-icon me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#MyCaseFilter" aria-controls="MyCaseFilter">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.75 7.33337L13.75 7.33337M13.75 7.33337C13.75 8.85216 14.9812 10.0834 16.5 10.0834C18.0188 10.0834 19.25 8.85216 19.25 7.33337C19.25 5.81459 18.0188 4.58337 16.5 4.58337C14.9812 4.58337 13.75 5.81459 13.75 7.33337ZM8.25 14.6667L19.25 14.6667M8.25 14.6667C8.25 16.1855 7.01878 17.4167 5.5 17.4167C3.98122 17.4167 2.75 16.1855 2.75 14.6667C2.75 13.1479 3.98122 11.9167 5.5 11.9167C7.01878 11.9167 8.25 13.1479 8.25 14.6667Z" stroke="#5BAAF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Filter
+                                </button>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="notification-pane" role="tabpanel" aria-labelledby="notification" tabindex="0">
+                            <div class="table-part">
+                                notification
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="map-view-pane" role="tabpanel" aria-labelledby="map-view" tabindex="0">
+                            <div class="table-part">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-9">
+                                            <div class="blank-card">
+                                                <img src="../../images/backgrounds/map.png" class="w-100" alt="">
+                                                <button class="map-pin" type="button" data-bs-toggle="offcanvas" data-bs-target="#StaffInfoFilter" aria-controls="StaffInfoFilter">
+                                                    <svg width="24" height="30" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g filter="url(#filter0_f_1618_1122)">
+                                                        <ellipse cx="8.1926" cy="17.1344" rx="2.42307" ry="0.865382" fill="black" fill-opacity="0.2"/>
+                                                        </g>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.19206 0C12.2067 0 15.4613 3.25453 15.4613 7.26921C15.4613 10.3474 13.548 12.9787 10.8458 14.0388L8.60609 17.1002C8.5594 17.1643 8.4974 17.2166 8.42534 17.2527C8.35328 17.2888 8.27326 17.3076 8.19206 17.3076C8.11085 17.3076 8.03084 17.2888 7.95877 17.2527C7.88671 17.2166 7.82472 17.1643 7.77803 17.1002L5.53833 14.0388C2.83613 12.9787 0.922852 10.3474 0.922852 7.26921C0.922852 3.25453 4.17739 0 8.19206 0Z" fill="#F75751"/>
+                                                        <path d="M11.3069 7.26869C11.3069 5.54812 9.91212 4.15332 8.19155 4.15332C6.47097 4.15332 5.07617 5.54812 5.07617 7.26869C5.07617 8.98927 6.47097 10.3841 8.19155 10.3841C9.91212 10.3841 11.3069 8.98927 11.3069 7.26869Z" fill="#BE2E28"/>
+                                                        <defs>
+                                                        <filter id="filter0_f_1618_1122" x="3.76953" y="14.269" width="8.84619" height="5.73096" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                                        <feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur_1618_1122"/>
+                                                        </filter>
+                                                        </defs>
+                                                    </svg>    
+                                                </button>
+                                                <!-- FILTER FOR STAFF INFO -->
+                                                <div class="offcanvas my-case-offcanvas staff-info w-450 offcanvas-end" tabindex="-1" id="StaffInfoFilter" aria-labelledby="StaffInfoFilterLabel">
+                                                    <div class="offcanvas-header">
+                                                      <h5 class="offcanvas-title" id="MyCaseFilterLabel">Mirian Martinez</h5>
+                                                      <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#MyCaseFilterLabel" role="button" aria-controls="MyCaseFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
+                                                    </div>
+                                                    <div class="offcanvas-body">
+                                                        <table class="w-80p">
+                                                            <tr>
+                                                                <td class="fs-md color-black-60 p-2">Position</td>
+                                                                <td class="fs-md fw-bold color-black p-2">Case Manager</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="fs-md color-black-60 p-2">Sub Position</td>
+                                                                <td class="fs-md fw-bold color-black p-2">Level 2</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="fs-md color-black-60 p-2">Phone</td>
+                                                                <td class="fs-md fw-bold color-black p-2">882-880-2779</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="fs-md color-black-60 p-2">Email address</td>
+                                                                <td class="fs-md fw-bold color-black p-2">maria.garcia@gmail.com</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="fs-md color-black-60 p-2">State</td>
+                                                                <td class="fs-md fw-bold color-black p-2">New Jersey</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="fs-md color-black-60 p-2">City</td>
+                                                                <td class="fs-md fw-bold color-black p-2">Edison</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="fs-md color-black-60 p-2">Zip Code</td>
+                                                                <td class="fs-md fw-bold color-black p-2">800051</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <!-- END FILTER FOR STAFF INFO -->
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-6">
+                                            <div class="position-card">
+                                                <div class="title mb-3">Domains</div>
+                                                <div class="d-flex mb-2">
+                                                    <img src="../../images/icons/pin-red.svg" alt="">
+                                                    <div class="ms-2 description">1. Placement Stability</div>
+                                                </div>
+                                                <div class="d-flex mb-2">
+                                                    <img src="../../images/icons/pin-orange.svg" alt="">
+                                                    <div class="ms-2 description">2. Medical Services</div>
+                                                </div>
+                                                <div class="d-flex mb-2">
+                                                    <img src="../../images/icons/pin-yellow.svg" alt="">
+                                                    <div class="ms-2 description">3. Mental-Behavioral Health</div>
+                                                </div>
+                                                <div class="d-flex mb-2">
+                                                    <img src="../../images/icons/pin-light-green.svg" alt="">
+                                                    <div class="ms-2 description">4. Legal Services</div>
+                                                </div>
+                                                <div class="d-flex mb-2">
+                                                    <img src="../../images/icons/pin-green.svg" alt="">
+                                                    <div class="ms-2 description">5. Education</div>
+                                                </div>
+                                                <div class="d-flex mb-2">
+                                                    <img src="../../images/icons/pin-sky-blue.svg" alt="">
+                                                    <div class="ms-2 description">6. Integration-Independence</div>
+                                                </div>
+                                                <div class="d-flex mb-2">
+                                                    <img src="../../images/icons/pin-blue.svg" alt="">
+                                                    <div class="ms-2 description">7. Social Well-Being</div>
+                                                </div>
+                                                <div class="d-flex mb-2">
+                                                    <img src="../../images/icons/pin-light-purple.svg" alt="">
+                                                    <div class="ms-2 description">8. Special Considerations</div>
+                                                </div>
+                                                <div class="d-flex mb-2">
+                                                    <img src="../../images/icons/pin-pink.svg" alt="">
+                                                    <div class="ms-2 description">9. State Services</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="req-pane" role="tabpanel" aria-labelledby="req" tabindex="0">
+                            <div class="table-part">
+                                <div class="d-flex justify-content-between align-items-center mb-2 md-row-seperate">
+                                    <div class="d-flex align-items-center md-start">
+                                        <div class="fs-md me-2">Result per page</div>
+                                        <div class="rows-select w-62">
+                                        <select class="selectpicker">
+                                            <option data-tokens="1">1</option>
+                                            <option data-tokens="2">2</option>
+                                            <option data-tokens="3">3</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex md-end">
+                                        <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6323 11.8159C12.4026 12.0547 12.0228 12.0622 11.7839 11.8325L8.18394 8.4325C8.06629 8.31938 7.9998 8.16321 7.9998 8C7.9998 7.83679 8.06629 7.68062 8.18394 7.5675L11.7839 4.1675C12.0228 3.93782 12.4026 3.94527 12.6323 4.18413C12.862 4.423 12.8545 4.80282 12.6157 5.0325L9.46547 8L12.6157 10.9675C12.8545 11.1972 12.862 11.577 12.6323 11.8159ZM7.8323 11.8159C7.60263 12.0547 7.2228 12.0622 6.98394 11.8325L3.38394 8.4325C3.26629 8.31938 3.1998 8.16321 3.1998 8C3.1998 7.83679 3.26629 7.68062 3.38394 7.5675L6.98394 4.1675C7.2228 3.93782 7.60263 3.94527 7.8323 4.18413C8.06198 4.423 8.05453 4.80282 7.81567 5.0325L4.66547 8L7.81567 10.9675C8.05453 11.1972 8.06198 11.577 7.8323 11.8159Z" fill="#626262"/>
+                                        </svg>
+                                        First
+                                        </button>
+                                        <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2329 4.18414C10.4626 4.423 10.4551 4.80282 10.2163 5.0325L7.06605 8L10.2163 10.9675C10.4551 11.1972 10.4626 11.577 10.2329 11.8159C10.0032 12.0547 9.62339 12.0622 9.38452 11.8325L5.78452 8.4325C5.66688 8.31938 5.60039 8.16321 5.60039 8C5.60039 7.83679 5.66688 7.68062 5.78452 7.5675L9.38452 4.1675C9.62339 3.93782 10.0032 3.94527 10.2329 4.18414Z" fill="#626262"/>
+                                        </svg>
+                                        Back
+                                        </button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">1</button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">2</button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">3</button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">4</button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">...</button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">25</button>
+                                        <button class="btn btn-pagination btn-xs h-36 with-icon icon-after me-2">
+                                        Next
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.76711 11.8159C5.53743 11.577 5.54488 11.1972 5.78374 10.9675L8.93395 8L5.78374 5.0325C5.54488 4.80282 5.53743 4.423 5.76711 4.18413C5.99679 3.94527 6.37661 3.93782 6.61548 4.1675L10.2155 7.5675C10.3331 7.68062 10.3996 7.83679 10.3996 8C10.3996 8.16321 10.3331 8.31938 10.2155 8.4325L6.61548 11.8325C6.37661 12.0622 5.99679 12.0547 5.76711 11.8159Z" fill="#626262"/>
+                                        </svg>
+                                        </button>
+                                        <button class="btn btn-pagination btn-xs h-36 with-icon icon-after me-2">
+                                        Last
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.38433 10.9675C3.14547 11.1972 3.13802 11.577 3.3677 11.8159C3.59737 12.0547 3.9772 12.0622 4.21606 11.8325L7.81606 8.4325C7.93371 8.31938 8.0002 8.16321 8.0002 8C8.0002 7.83679 7.93371 7.68062 7.81606 7.5675L4.21606 4.1675C3.9772 3.93782 3.59737 3.94527 3.3677 4.18414C3.13802 4.423 3.14547 4.80282 3.38433 5.0325L6.53453 8L3.38433 10.9675Z" fill="#626262"/>
+                                            <path d="M8.18433 10.9675C7.94547 11.1972 7.93802 11.577 8.1677 11.8159C8.39737 12.0547 8.7772 12.0622 9.01606 11.8325L12.6161 8.4325C12.7337 8.31938 12.8002 8.16321 12.8002 8C12.8002 7.83679 12.7337 7.68062 12.6161 7.5675L9.01606 4.1675C8.7772 3.93782 8.39737 3.94527 8.1677 4.18414C7.93802 4.423 7.94547 4.80282 8.18433 5.0325L11.3345 8L8.18433 10.9675Z" fill="#626262"/>
+                                        </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card-case-table mb-2">
+                                                <table class="table case-table td-p-10">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Agency Name</th>
+                                                            <th scope="col">Domain</th>
+                                                            <th scope="col">Phone Number</th>
+                                                            <th scope="col">Website</th>
+                                                            <th scope="col">Regions</th>
+                                                            <th scope="col">City</th>
+                                                            <th scope="col">State</th>
+                                                            <th scope="col">Zip Code</th>
+                                                            <th scope="col">Requested By</th>
+                                                            <th scope="col"></th>
+                                                            <th scope="col"></th>
+                                                            <th scope="col"></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>24/7 Domestic Violence Hotline (GCADV)</td>
+                                                            <td>9. State Services</td>
+                                                            <td>892-880-7799</td>
+                                                            <td>www.hotline.rainn.org/online</td>
+                                                            <td>Region 1</td>
+                                                            <td>New York</td>
+                                                            <td>New York</td>
+                                                            <td>809978</td>
+                                                            <td>Franklin Smith</td>
+                                                            <td>
+                                                                <a href="com-resource-details.html" class="fw-semibold color-dark-blue">
+                                                                    <img src="../../images/icons/eye-black.svg" alt="">
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-bold color-black">
+                                                                    Approved
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <img src="../../images/icons/Check_All.svg" alt="">
+                                                            </td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <td>Georgia Network for Sexual Assault</td>
+                                                            <td>7. Social Well-Being</td>
+                                                            <td>234-880-7799</td>
+                                                            <td>northgeorgiacottage.org</td>
+                                                            <td>Region 1</td>
+                                                            <td>New York</td>
+                                                            <td>New York</td>
+                                                            <td>809978</td>
+                                                            <td>Franklin Smith</td>
+                                                            <td>
+                                                                <a href="com-resource-details.html" class="fw-semibold color-dark-blue">
+                                                                    <img src="../../images/icons/eye-black.svg" alt="">
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-black-60">
+                                                                    Rejected
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" data-bs-toggle="modal" data-bs-target="#rejectNote">
+                                                                    <img src="../../images/icons/Info-circle-black.svg" alt="">    
+                                                                </a>
+                                                                <!-- reject request -->
+                                                                <div class="modal fade" id="rejectNote" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+                                                                    <div class="modal-dialog modal-dialog-centered modal-add-notes">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                        <h1 class="modal-title" id="assignManagerModalLabel">Reject Note</h1>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body p-5">
+                                                                            <div class="text-center fs-lg fw-semibold">
+                                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non tortor ac nibh laoreet commodo. Maecenas a elementum metus. Quisque euismod ac massa a mollis.
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- END reject request -->
+                                                            </td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <td>Planned Parenthood-Gwinnett Center</td>
+                                                            <td>1. Placement Stability</td>
+                                                            <td>892-880-7799</td>
+                                                            <td>plannedparenthood.org</td>
+                                                            <td>Region 2</td>
+                                                            <td>New York</td>
+                                                            <td>New York</td>
+                                                            <td>788679</td>
+                                                            <td>Franklin Smith</td>
+                                                            <td>
+                                                                <a href="com-resource-details.html" class="fw-semibold color-dark-blue">
+                                                                    <img src="../../images/icons/eye-black.svg" alt="">
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-dark-blue">
+                                                                    Approve
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-red-60" data-bs-toggle="modal" data-bs-target="#rejectReq">
+                                                                    Reject
+                                                                </a>
+                                                                <!-- reject request -->
+                                                                    <div class="modal fade" id="rejectReq" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+                                                                        <div class="modal-dialog modal-dialog-centered modal-add-notes">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                            <h1 class="modal-title" id="assignManagerModalLabel">Reject Request</h1>
+                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                            </div>
+                                                                            <div class="modal-body p-0">
+                                                                                <div class="text-center fs-lg fw-semibold py-3 border-bottom-grey">
+                                                                                    Are you sure you want to reject this request?
+                                                                                </div>
+                                                                                <div class="p-3">
+                                                                                    <div class="fs-md color-black-60">
+                                                                                        Please provide reason for rejection
+                                                                                    </div>
+                                                                                    <textarea class="form-control form-textarea h-90"></textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <button class="btn btn-md btn-grey btn-radius-none w-50">No</button>
+                                                                                <button type="button" class="btn btn-darkblue btn-md btn-radius-none w-50">Yes</button>
+                                                                            </div>
+                                                                        </div>
+                                                                        </div>
+                                                                    </div>
+                                                                <!-- END reject request -->
+                                                            </td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <td>St. Vincent de Paul Society</td>
+                                                            <td>1. Placement Stability</td>
+                                                            <td>800-766-2668</td>
+                                                            <td>svdpgeorgia.org</td>
+                                                            <td>Region 3</td>
+                                                            <td>New York</td>
+                                                            <td>New York</td>
+                                                            <td>788679</td>
+                                                            <td>Franklin Smith</td>
+                                                            <td>
+                                                                <a href="com-resource-details.html" class="fw-semibold color-dark-blue">
+                                                                    <img src="../../images/icons/eye-black.svg" alt="">
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-dark-blue">
+                                                                    Approve
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-red-60" data-bs-toggle="modal" data-bs-target="#rejectReq">
+                                                                    Reject
+                                                                </a>
+                                                                <!-- reject request -->
+                                                                    <div class="modal fade" id="rejectReq" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+                                                                        <div class="modal-dialog modal-dialog-centered modal-add-notes">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                            <h1 class="modal-title" id="assignManagerModalLabel">Reject Request</h1>
+                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                            </div>
+                                                                            <div class="modal-body p-0">
+                                                                                <div class="text-center fs-lg fw-semibold py-3 border-bottom-grey">
+                                                                                    Are you sure you want to reject this request?
+                                                                                </div>
+                                                                                <div class="p-3">
+                                                                                    <div class="fs-md color-black-60">
+                                                                                        Please provide reason for rejection
+                                                                                    </div>
+                                                                                    <textarea class="form-control form-textarea h-90"></textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <button class="btn btn-md btn-grey btn-radius-none w-50">No</button>
+                                                                                <button type="button" class="btn btn-darkblue btn-md btn-radius-none w-50">Yes</button>
+                                                                            </div>
+                                                                        </div>
+                                                                        </div>
+                                                                    </div>
+                                                                <!-- END reject request -->
+                                                            </td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <td>Hazard Housing Authority</td>
+                                                            <td>1. Placement Stability</td>
+                                                            <td>892-880-7799</td>
+                                                            <td>survivors.org</td>
+                                                            <td>Region 4</td>
+                                                            <td>New York</td>
+                                                            <td>New York</td>
+                                                            <td>457588</td>
+                                                            <td>Franklin Smith</td>
+                                                            <td>
+                                                                <a href="com-resource-details.html" class="fw-semibold color-dark-blue">
+                                                                    <img src="../../images/icons/eye-black.svg" alt="">
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-dark-blue">
+                                                                    Approve
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-red-60" data-bs-toggle="modal" data-bs-target="#rejectReq">
+                                                                    Reject
+                                                                </a>
+                                                                <!-- reject request -->
+                                                                    <div class="modal fade" id="rejectReq" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+                                                                        <div class="modal-dialog modal-dialog-centered modal-add-notes">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                            <h1 class="modal-title" id="assignManagerModalLabel">Reject Request</h1>
+                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                            </div>
+                                                                            <div class="modal-body p-0">
+                                                                                <div class="text-center fs-lg fw-semibold py-3 border-bottom-grey">
+                                                                                    Are you sure you want to reject this request?
+                                                                                </div>
+                                                                                <div class="p-3">
+                                                                                    <div class="fs-md color-black-60">
+                                                                                        Please provide reason for rejection
+                                                                                    </div>
+                                                                                    <textarea class="form-control form-textarea h-90"></textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <button class="btn btn-md btn-grey btn-radius-none w-50">No</button>
+                                                                                <button type="button" class="btn btn-darkblue btn-md btn-radius-none w-50">Yes</button>
+                                                                            </div>
+                                                                        </div>
+                                                                        </div>
+                                                                    </div>
+                                                                <!-- END reject request -->
+                                                            </td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <td>Hopkinsville Housing Authority</td>
+                                                            <td>5. Education</td>
+                                                            <td>892-880-7799</td>
+                                                            <td>kyhousing.org</td>
+                                                            <td>Region 5</td>
+                                                            <td>New York</td>
+                                                            <td>New York</td>
+                                                            <td>457588</td>
+                                                            <td>Franklin Smith</td>
+                                                            <td>
+                                                                <a href="com-resource-details.html" class="fw-semibold color-dark-blue">
+                                                                    <img src="../../images/icons/eye-black.svg" alt="">
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-dark-blue">
+                                                                    Approve
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-red-60" data-bs-toggle="modal" data-bs-target="#rejectReq">
+                                                                    Reject
+                                                                </a>
+                                                                <!-- reject request -->
+                                                                    <div class="modal fade" id="rejectReq" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+                                                                        <div class="modal-dialog modal-dialog-centered modal-add-notes">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                            <h1 class="modal-title" id="assignManagerModalLabel">Reject Request</h1>
+                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                            </div>
+                                                                            <div class="modal-body p-0">
+                                                                                <div class="text-center fs-lg fw-semibold py-3 border-bottom-grey">
+                                                                                    Are you sure you want to reject this request?
+                                                                                </div>
+                                                                                <div class="p-3">
+                                                                                    <div class="fs-md color-black-60">
+                                                                                        Please provide reason for rejection
+                                                                                    </div>
+                                                                                    <textarea class="form-control form-textarea h-90"></textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <button class="btn btn-md btn-grey btn-radius-none w-50">No</button>
+                                                                                <button type="button" class="btn btn-darkblue btn-md btn-radius-none w-50">Yes</button>
+                                                                            </div>
+                                                                        </div>
+                                                                        </div>
+                                                                    </div>
+                                                                <!-- END reject request -->
+                                                            </td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <td>Housing Authority-Eminence</td>
+                                                            <td>5. Education</td>
+                                                            <td>892-880-7799</td>
+                                                            <td>versailleshousingauthority.org</td>
+                                                            <td>Region 6</td>
+                                                            <td>New York</td>
+                                                            <td>New York</td>
+                                                            <td>450088</td>
+                                                            <td>Franklin Smith</td>
+                                                            <td>
+                                                                <a href="com-resource-details.html" class="fw-semibold color-dark-blue">
+                                                                    <img src="../../images/icons/eye-black.svg" alt="">
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-dark-blue">
+                                                                    Approve
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-red-60" data-bs-toggle="modal" data-bs-target="#rejectReq">
+                                                                    Reject
+                                                                </a>
+                                                                <!-- reject request -->
+                                                                    <div class="modal fade" id="rejectReq" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+                                                                        <div class="modal-dialog modal-dialog-centered modal-add-notes">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                            <h1 class="modal-title" id="assignManagerModalLabel">Reject Request</h1>
+                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                            </div>
+                                                                            <div class="modal-body p-0">
+                                                                                <div class="text-center fs-lg fw-semibold py-3 border-bottom-grey">
+                                                                                    Are you sure you want to reject this request?
+                                                                                </div>
+                                                                                <div class="p-3">
+                                                                                    <div class="fs-md color-black-60">
+                                                                                        Please provide reason for rejection
+                                                                                    </div>
+                                                                                    <textarea class="form-control form-textarea h-90"></textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <button class="btn btn-md btn-grey btn-radius-none w-50">No</button>
+                                                                                <button type="button" class="btn btn-darkblue btn-md btn-radius-none w-50">Yes</button>
+                                                                            </div>
+                                                                        </div>
+                                                                        </div>
+                                                                    </div>
+                                                                <!-- END reject request -->
+                                                            </td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <td>Burkesville Housing Authority</td>
+                                                            <td>7. Social Well-Being</td>
+                                                            <td>234-880-7799</td>
+                                                            <td>homelessnessinamerica.com</td>
+                                                            <td>Region 7</td>
+                                                            <td>New York</td>
+                                                            <td>New York</td>
+                                                            <td>769290</td>
+                                                            <td>Franklin Smith</td>
+                                                            <td>
+                                                                <a href="com-resource-details.html" class="fw-semibold color-dark-blue">
+                                                                    <img src="../../images/icons/eye-black.svg" alt="">
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-dark-blue">
+                                                                    Approve
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-red-60" data-bs-toggle="modal" data-bs-target="#rejectReq">
+                                                                    Reject
+                                                                </a>
+                                                                <!-- reject request -->
+                                                                    <div class="modal fade" id="rejectReq" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+                                                                        <div class="modal-dialog modal-dialog-centered modal-add-notes">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                            <h1 class="modal-title" id="assignManagerModalLabel">Reject Request</h1>
+                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                            </div>
+                                                                            <div class="modal-body p-0">
+                                                                                <div class="text-center fs-lg fw-semibold py-3 border-bottom-grey">
+                                                                                    Are you sure you want to reject this request?
+                                                                                </div>
+                                                                                <div class="p-3">
+                                                                                    <div class="fs-md color-black-60">
+                                                                                        Please provide reason for rejection
+                                                                                    </div>
+                                                                                    <textarea class="form-control form-textarea h-90"></textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <button class="btn btn-md btn-grey btn-radius-none w-50">No</button>
+                                                                                <button type="button" class="btn btn-darkblue btn-md btn-radius-none w-50">Yes</button>
+                                                                            </div>
+                                                                        </div>
+                                                                        </div>
+                                                                    </div>
+                                                                <!-- END reject request -->
+                                                            </td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <td>Central City Housing Authority </td>
+                                                            <td>7. Social Well-Being</td>
+                                                            <td>234-880-7799</td>
+                                                            <td>gtownha.org</td>
+                                                            <td>Region 6</td>
+                                                            <td>Wyne</td>
+                                                            <td>Wyne</td>
+                                                            <td>334322</td>
+                                                            <td>Franklin Smith</td>
+                                                            <td>
+                                                                <a href="com-resource-details.html" class="fw-semibold color-dark-blue">
+                                                                    <img src="../../images/icons/eye-black.svg" alt="">
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-dark-blue">
+                                                                    Approve
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-red-60" data-bs-toggle="modal" data-bs-target="#rejectReq">
+                                                                    Reject
+                                                                </a>
+                                                                <!-- reject request -->
+                                                                    <div class="modal fade" id="rejectReq" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+                                                                        <div class="modal-dialog modal-dialog-centered modal-add-notes">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                            <h1 class="modal-title" id="assignManagerModalLabel">Reject Request</h1>
+                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                            </div>
+                                                                            <div class="modal-body p-0">
+                                                                                <div class="text-center fs-lg fw-semibold py-3 border-bottom-grey">
+                                                                                    Are you sure you want to reject this request?
+                                                                                </div>
+                                                                                <div class="p-3">
+                                                                                    <div class="fs-md color-black-60">
+                                                                                        Please provide reason for rejection
+                                                                                    </div>
+                                                                                    <textarea class="form-control form-textarea h-90"></textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <button class="btn btn-md btn-grey btn-radius-none w-50">No</button>
+                                                                                <button type="button" class="btn btn-darkblue btn-md btn-radius-none w-50">Yes</button>
+                                                                            </div>
+                                                                        </div>
+                                                                        </div>
+                                                                    </div>
+                                                                <!-- END reject request -->
+                                                            </td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <td>Welfare & Food Stamp Office</td>
+                                                            <td>9. State Services</td>
+                                                            <td>800-766-2668</td>
+                                                            <td>housingah.org</td>
+                                                            <td>Region 6</td>
+                                                            <td>Wyne</td>
+                                                            <td>Wyne</td>
+                                                            <td>334322</td>
+                                                            <td>Franklin Smith</td>
+                                                            <td>
+                                                                <a href="com-resource-details.html" class="fw-semibold color-dark-blue">
+                                                                    <img src="../../images/icons/eye-black.svg" alt="">
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-dark-blue">
+                                                                    Approve
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-red-60" data-bs-toggle="modal" data-bs-target="#rejectReq">
+                                                                    Reject
+                                                                </a>
+                                                                <!-- reject request -->
+                                                                    <div class="modal fade" id="rejectReq" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+                                                                        <div class="modal-dialog modal-dialog-centered modal-add-notes">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                            <h1 class="modal-title" id="assignManagerModalLabel">Reject Request</h1>
+                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                            </div>
+                                                                            <div class="modal-body p-0">
+                                                                                <div class="text-center fs-lg fw-semibold py-3 border-bottom-grey">
+                                                                                    Are you sure you want to reject this request?
+                                                                                </div>
+                                                                                <div class="p-3">
+                                                                                    <div class="fs-md color-black-60">
+                                                                                        Please provide reason for rejection
+                                                                                    </div>
+                                                                                    <textarea class="form-control form-textarea h-90"></textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <button class="btn btn-md btn-grey btn-radius-none w-50">No</button>
+                                                                                <button type="button" class="btn btn-darkblue btn-md btn-radius-none w-50">Yes</button>
+                                                                            </div>
+                                                                        </div>
+                                                                        </div>
+                                                                    </div>
+                                                                <!-- END reject request -->
+                                                            </td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <td>RB Stall High</td>
+                                                            <td>9. State Services</td>
+                                                            <td>800-766-2668</td>
+                                                            <td>haglasgow.com</td>
+                                                            <td>Region 6</td>
+                                                            <td>Wyne</td>
+                                                            <td>Wyne</td>
+                                                            <td>334322</td>
+                                                            <td>Franklin Smith</td>
+                                                            <td>
+                                                                <a href="com-resource-details.html" class="fw-semibold color-dark-blue">
+                                                                    <img src="../../images/icons/eye-black.svg" alt="">
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-dark-blue">
+                                                                    Approve
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-red-60" data-bs-toggle="modal" data-bs-target="#rejectReq">
+                                                                    Reject
+                                                                </a>
+                                                                <!-- reject request -->
+                                                                    <div class="modal fade" id="rejectReq" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+                                                                        <div class="modal-dialog modal-dialog-centered modal-add-notes">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                            <h1 class="modal-title" id="assignManagerModalLabel">Reject Request</h1>
+                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                            </div>
+                                                                            <div class="modal-body p-0">
+                                                                                <div class="text-center fs-lg fw-semibold py-3 border-bottom-grey">
+                                                                                    Are you sure you want to reject this request?
+                                                                                </div>
+                                                                                <div class="p-3">
+                                                                                    <div class="fs-md color-black-60">
+                                                                                        Please provide reason for rejection
+                                                                                    </div>
+                                                                                    <textarea class="form-control form-textarea h-90"></textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <button class="btn btn-md btn-grey btn-radius-none w-50">No</button>
+                                                                                <button type="button" class="btn btn-darkblue btn-md btn-radius-none w-50">Yes</button>
+                                                                            </div>
+                                                                        </div>
+                                                                        </div>
+                                                                    </div>
+                                                                <!-- END reject request -->
+                                                            </td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <td>Richland Northeast High</td>
+                                                            <td>9. State Services</td>
+                                                            <td>892-880-7799</td>
+                                                            <td>officialhousingauthority.com</td>
+                                                            <td>Region 5</td>
+                                                            <td>Wyne</td>
+                                                            <td>Wyne</td>
+                                                            <td>334322</td>
+                                                            <td>Franklin Smith</td>
+                                                            <td>
+                                                                <a href="com-resource-details.html" class="fw-semibold color-dark-blue">
+                                                                    <img src="../../images/icons/eye-black.svg" alt="">
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-dark-blue">
+                                                                    Approve
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-red-60" data-bs-toggle="modal" data-bs-target="#rejectReq">
+                                                                    Reject
+                                                                </a>
+                                                                <!-- reject request -->
+                                                                    <div class="modal fade" id="rejectReq" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+                                                                        <div class="modal-dialog modal-dialog-centered modal-add-notes">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                            <h1 class="modal-title" id="assignManagerModalLabel">Reject Request</h1>
+                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                            </div>
+                                                                            <div class="modal-body p-0">
+                                                                                <div class="text-center fs-lg fw-semibold py-3 border-bottom-grey">
+                                                                                    Are you sure you want to reject this request?
+                                                                                </div>
+                                                                                <div class="p-3">
+                                                                                    <div class="fs-md color-black-60">
+                                                                                        Please provide reason for rejection
+                                                                                    </div>
+                                                                                    <textarea class="form-control form-textarea h-90"></textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <button class="btn btn-md btn-grey btn-radius-none w-50">No</button>
+                                                                                <button type="button" class="btn btn-darkblue btn-md btn-radius-none w-50">Yes</button>
+                                                                            </div>
+                                                                        </div>
+                                                                        </div>
+                                                                    </div>
+                                                                <!-- END reject request -->
+                                                            </td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <td>St. Luke United Methodist Church</td>
+                                                            <td>2. Medical Services</td>
+                                                            <td>892-880-7799</td>
+                                                            <td>officialhousingauthority.com</td>
+                                                            <td>Region 4</td>
+                                                            <td>Wyne</td>
+                                                            <td>Wyne</td>
+                                                            <td>334322</td>
+                                                            <td>Franklin Smith</td>
+                                                            <td>
+                                                                <a href="com-resource-details.html" class="fw-semibold color-dark-blue">
+                                                                    <img src="../../images/icons/eye-black.svg" alt="">
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-dark-blue">
+                                                                    Approve
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-red-60" data-bs-toggle="modal" data-bs-target="#rejectReq">
+                                                                    Reject
+                                                                </a>
+                                                                <!-- reject request -->
+                                                                    <div class="modal fade" id="rejectReq" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+                                                                        <div class="modal-dialog modal-dialog-centered modal-add-notes">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                            <h1 class="modal-title" id="assignManagerModalLabel">Reject Request</h1>
+                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                            </div>
+                                                                            <div class="modal-body p-0">
+                                                                                <div class="text-center fs-lg fw-semibold py-3 border-bottom-grey">
+                                                                                    Are you sure you want to reject this request?
+                                                                                </div>
+                                                                                <div class="p-3">
+                                                                                    <div class="fs-md color-black-60">
+                                                                                        Please provide reason for rejection
+                                                                                    </div>
+                                                                                    <textarea class="form-control form-textarea h-90"></textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <button class="btn btn-md btn-grey btn-radius-none w-50">No</button>
+                                                                                <button type="button" class="btn btn-darkblue btn-md btn-radius-none w-50">Yes</button>
+                                                                            </div>
+                                                                        </div>
+                                                                        </div>
+                                                                    </div>
+                                                                <!-- END reject request -->
+                                                            </td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <td>SALIDA Emergency Food Pantry</td>
+                                                            <td>2. Medical Services</td>
+                                                            <td>234-880-7799</td>
+                                                            <td>phada.org</td>
+                                                            <td>Region 2</td>
+                                                            <td>Wyne</td>
+                                                            <td>Wyne</td>
+                                                            <td>334322</td>
+                                                            <td>Franklin Smith</td>
+                                                            <td>
+                                                                <a href="com-resource-details.html" class="fw-semibold color-dark-blue">
+                                                                    <img src="../../images/icons/eye-black.svg" alt="">
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-dark-blue">
+                                                                    Approve
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-red-60" data-bs-toggle="modal" data-bs-target="#rejectReq">
+                                                                    Reject
+                                                                </a>
+                                                                <!-- reject request -->
+                                                                    <div class="modal fade" id="rejectReq" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+                                                                        <div class="modal-dialog modal-dialog-centered modal-add-notes">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                            <h1 class="modal-title" id="assignManagerModalLabel">Reject Request</h1>
+                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                            </div>
+                                                                            <div class="modal-body p-0">
+                                                                                <div class="text-center fs-lg fw-semibold py-3 border-bottom-grey">
+                                                                                    Are you sure you want to reject this request?
+                                                                                </div>
+                                                                                <div class="p-3">
+                                                                                    <div class="fs-md color-black-60">
+                                                                                        Please provide reason for rejection
+                                                                                    </div>
+                                                                                    <textarea class="form-control form-textarea h-90"></textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <button class="btn btn-md btn-grey btn-radius-none w-50">No</button>
+                                                                                <button type="button" class="btn btn-darkblue btn-md btn-radius-none w-50">Yes</button>
+                                                                            </div>
+                                                                        </div>
+                                                                        </div>
+                                                                    </div>
+                                                                <!-- END reject request -->
+                                                            </td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <td>Cathedral of Praise Ministries</td>
+                                                            <td>2. Medical Services</td>
+                                                            <td>800-766-2668</td>
+                                                            <td>refugees.org</td>
+                                                            <td>Region 1</td>
+                                                            <td>Wyne</td>
+                                                            <td>Wyne</td>
+                                                            <td>334322</td>
+                                                            <td>Franklin Smith</td>
+                                                            <td>
+                                                                <a href="com-resource-details.html" class="fw-semibold color-dark-blue">
+                                                                    <img src="../../images/icons/eye-black.svg" alt="">
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-dark-blue">
+                                                                    Approve
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="fw-semibold color-red-60" data-bs-toggle="modal" data-bs-target="#rejectReq">
+                                                                    Reject
+                                                                </a>
+                                                                <!-- reject request -->
+                                                                    <div class="modal fade" id="rejectReq" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+                                                                        <div class="modal-dialog modal-dialog-centered modal-add-notes">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                            <h1 class="modal-title" id="assignManagerModalLabel">Reject Request</h1>
+                                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                            </div>
+                                                                            <div class="modal-body p-0">
+                                                                                <div class="text-center fs-lg fw-semibold py-3 border-bottom-grey">
+                                                                                    Are you sure you want to reject this request?
+                                                                                </div>
+                                                                                <div class="p-3">
+                                                                                    <div class="fs-md color-black-60">
+                                                                                        Please provide reason for rejection
+                                                                                    </div>
+                                                                                    <textarea class="form-control form-textarea h-90"></textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <button class="btn btn-md btn-grey btn-radius-none w-50">No</button>
+                                                                                <button type="button" class="btn btn-darkblue btn-md btn-radius-none w-50">Yes</button>
+                                                                            </div>
+                                                                        </div>
+                                                                        </div>
+                                                                    </div>
+                                                                <!-- END reject request -->
+                                                            </td>
+                                                        </tr> 
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center md-row-seperate">
+                                    <div class="d-flex align-items-center md-start">
+                                        <div class="fs-md me-2">Result per page</div>
+                                        <div class="rows-select w-62">
+                                        <select class="selectpicker">
+                                            <option data-tokens="1">1</option>
+                                            <option data-tokens="2">2</option>
+                                            <option data-tokens="3">3</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex md-end">
+                                        <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6323 11.8159C12.4026 12.0547 12.0228 12.0622 11.7839 11.8325L8.18394 8.4325C8.06629 8.31938 7.9998 8.16321 7.9998 8C7.9998 7.83679 8.06629 7.68062 8.18394 7.5675L11.7839 4.1675C12.0228 3.93782 12.4026 3.94527 12.6323 4.18413C12.862 4.423 12.8545 4.80282 12.6157 5.0325L9.46547 8L12.6157 10.9675C12.8545 11.1972 12.862 11.577 12.6323 11.8159ZM7.8323 11.8159C7.60263 12.0547 7.2228 12.0622 6.98394 11.8325L3.38394 8.4325C3.26629 8.31938 3.1998 8.16321 3.1998 8C3.1998 7.83679 3.26629 7.68062 3.38394 7.5675L6.98394 4.1675C7.2228 3.93782 7.60263 3.94527 7.8323 4.18413C8.06198 4.423 8.05453 4.80282 7.81567 5.0325L4.66547 8L7.81567 10.9675C8.05453 11.1972 8.06198 11.577 7.8323 11.8159Z" fill="#626262"/>
+                                        </svg>
+                                        First
+                                        </button>
+                                        <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2329 4.18414C10.4626 4.423 10.4551 4.80282 10.2163 5.0325L7.06605 8L10.2163 10.9675C10.4551 11.1972 10.4626 11.577 10.2329 11.8159C10.0032 12.0547 9.62339 12.0622 9.38452 11.8325L5.78452 8.4325C5.66688 8.31938 5.60039 8.16321 5.60039 8C5.60039 7.83679 5.66688 7.68062 5.78452 7.5675L9.38452 4.1675C9.62339 3.93782 10.0032 3.94527 10.2329 4.18414Z" fill="#626262"/>
+                                        </svg>
+                                        Back
+                                        </button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">1</button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">2</button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">3</button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">4</button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">...</button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">25</button>
+                                        <button class="btn btn-pagination btn-xs h-36 with-icon icon-after me-2">
+                                        Next
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.76711 11.8159C5.53743 11.577 5.54488 11.1972 5.78374 10.9675L8.93395 8L5.78374 5.0325C5.54488 4.80282 5.53743 4.423 5.76711 4.18413C5.99679 3.94527 6.37661 3.93782 6.61548 4.1675L10.2155 7.5675C10.3331 7.68062 10.3996 7.83679 10.3996 8C10.3996 8.16321 10.3331 8.31938 10.2155 8.4325L6.61548 11.8325C6.37661 12.0622 5.99679 12.0547 5.76711 11.8159Z" fill="#626262"/>
+                                        </svg>
+                                        </button>
+                                        <button class="btn btn-pagination btn-xs h-36 with-icon icon-after me-2">
+                                        Last
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.38433 10.9675C3.14547 11.1972 3.13802 11.577 3.3677 11.8159C3.59737 12.0547 3.9772 12.0622 4.21606 11.8325L7.81606 8.4325C7.93371 8.31938 8.0002 8.16321 8.0002 8C8.0002 7.83679 7.93371 7.68062 7.81606 7.5675L4.21606 4.1675C3.9772 3.93782 3.59737 3.94527 3.3677 4.18414C3.13802 4.423 3.14547 4.80282 3.38433 5.0325L6.53453 8L3.38433 10.9675Z" fill="#626262"/>
+                                            <path d="M8.18433 10.9675C7.94547 11.1972 7.93802 11.577 8.1677 11.8159C8.39737 12.0547 8.7772 12.0622 9.01606 11.8325L12.6161 8.4325C12.7337 8.31938 12.8002 8.16321 12.8002 8C12.8002 7.83679 12.7337 7.68062 12.6161 7.5675L9.01606 4.1675C8.7772 3.93782 8.39737 3.94527 8.1677 4.18414C7.93802 4.423 7.94547 4.80282 8.18433 5.0325L11.3345 8L8.18433 10.9675Z" fill="#626262"/>
+                                        </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="../../assets/dist/js/all.min.js"></script>
+  </body>
+  
+</html>
