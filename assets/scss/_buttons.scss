@@ -56,6 +56,10 @@
                 }
             }
         }
+        &.active{
+            color: $white;
+            background-color: $light-blue-2;
+        }
         &:focus, &:active{
             outline: 1px solid $light-blue-2;
         }
