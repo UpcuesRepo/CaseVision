@@ -187,7 +187,7 @@
  
 
 // COLLAPSIBLE SIDEBAR
-const menuBtn = document.getElementById("menu-btn");
+/*const menuBtn = document.getElementById("menu-btn");
 const sidebar = document.getElementById("sidebar");
 
 menuBtn.addEventListener("click", function () {
@@ -211,7 +211,7 @@ menuBtn.addEventListener("click", function () {
 });
 // END COLLAPSIBLE SIDEBAR
 
-
+*/
 
   
  

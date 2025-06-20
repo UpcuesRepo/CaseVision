@@ -264,7 +264,7 @@
         flex-direction: column;
         .top-part{
             background-color: $white;
-            height: 67px;
+            //height: 67px;
             @include media-breakpoint-down(md){
                 height: auto;
                 padding: 10px 0;
