@@ -134,320 +134,755 @@
                         </a>
                     </div>
                 </div>
-                <div class="my-case content-part h-100 w-100 p-4">
-                    <div class="row mb-4">
-                        <div class="col-md-3">
-                            <div class="rows-select grey-toggle">
-                                <select class="form-select">
-                                  <option data-tokens="1">All Regions</option>
-                                  <option data-tokens="2">2</option>
-                                  <option data-tokens="3">3</option>
-                                </select>
+                <div class="my-case content-part h-100 w-100">
+                   <div class="top-part d-flex justify-content-between align-items-center w-100">
+                        <ul class="nav nav-pills my-case-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="tab-1" data-bs-toggle="tab" data-bs-target="#tab-1-pane" type="button" role="tab" aria-controls="tab-1-pane" aria-selected="true">Regional Supervisors</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab-2" data-bs-toggle="tab" data-bs-target="#tab-2-pane" type="button" role="tab" aria-controls="tab-2-pane" aria-selected="false">Clinical Supervisors </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab-3" data-bs-toggle="tab" data-bs-target="#tab-3-pane" type="button" role="tab" aria-controls="tab-3-pane" aria-selected="false">PRS Supervisors</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab-4" data-bs-toggle="tab" data-bs-target="#tab-4-pane" type="button" role="tab" aria-controls="tab-4-pane" aria-selected="false">Case Managers</button>
+                            </li>
+                        </ul>
+                        <div class="d-flex w-50 justify-content-end align-items-center sm-flex-column">
+                            <div class="form-group w-60 me-2">
+                                <input class="form-control form-control-lg search-icon" type="search" placeholder="Search Name">
                             </div>
+                            <button class="btn btn-skyblue btn-sm with-icon me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#MyCaseFilter" aria-controls="MyCaseFilter">
+                                View Pinned
+                            </button>
                         </div>
-                        <div class="col-md-3">
-                            <div class="rows-select grey-toggle">
-                                <select class="form-select">
-                                  <option data-tokens="1">All Levels</option>
-                                  <option data-tokens="2">2</option>
-                                  <option data-tokens="3">3</option>
-                                </select>
-                            </div>
+                   </div>
+                   <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="tab-1-pane" role="tabpanel" aria-labelledby="list-view" tabindex="0">
+                            regional supervisors
                         </div>
-                        <div class="col-xl-2 col-md-4 d-flex justify-content-between">
-                            <div class="col-md-5">
-                                <button class="btn btn-skyblue btn-sm with-icon w-100">Filter</button>
-                            </div>
-                            <div class="col-md-5">
-                                <button class="btn btn-dark btn-sm with-icon w-100">Reset</button>
-                            </div>
+                        <div class="tab-pane fade" id="tab-2-pane" role="tabpanel" aria-labelledby="map-view" tabindex="0">
+                            clinical supervisors
                         </div>
-                    </div>
-                    <div class="skyblue-collapse-card mb-3">
-                        <a class="btn btn-darkblue-collapse d-flex justify-content-between" data-bs-toggle="collapse" href="#caseload1" role="button" aria-expanded="false" aria-controls="caseload1">
-                            LEVEL 1
-                        </a>
-                        <div class="collapse" id="caseload1">
-                            <div class="case-load-card m-3">
-                                <div class="title-strip d-flex justify-content-between align-items-center">
-                                    <div class="left-part d-flex">
-                                        <div class="title me-3">Assigned Supervisor 1 </div>    
-                                        <div class="detail">Oscar Mattus</div>    
-                                    </div>
-                                    <div class="right-part d-flex">
-                                        <div class="title me-2">Total Case</div>    
-                                        <div class="detail me-4">100</div>
-                                        <div class="title me-2">Avg. Caseload</div>    
-                                        <div class="detail">2.4</div>
-                                    </div>
+                        <div class="tab-pane fade" id="tab-3-pane" role="tabpanel" aria-labelledby="req" tabindex="0">
+                            <div class="table-part">
+                                <div class="case-load-card">
+                                    <table class="table case-load-table" >
+                                        <thead>
+                                            <tr>
+                                                <th class="border-x-none"></th>
+                                                <th class="border-x-none"></th>
+                                                <th rowspan="2" class="align-middle text-center">ACTIVE CASELOAD</th>
+                                                <th colspan="3" class="text-center">1 Apr - 7 Apr 2025</th>
+                                                <th></th>
+                                                <th colspan="3" class="text-center">8 Apr - 14 Apr 2025</th>
+                                                <th></th>
+                                                <th colspan="3" class="text-center">15 Apr - 21 Apr 2025</th>
+                                                <th></th>
+                                                <th colspan="3" class="text-center">22 Apr - 28 Apr 2025</th>
+                                            </tr>
+                                            <tr>
+                                                <th class="border-x-none"></th>
+                                                <th class="border-x-none"></th>
+                                                <th class="inner-heading purple">New</th>
+                                                <th class="inner-heading green">Active</th>
+                                                <th class="inner-heading black-30">Closed</th>
+                                                <th></th>
+                                                <th class="inner-heading purple">New</th>
+                                                <th class="inner-heading green">Active</th>
+                                                <th class="inner-heading black-30">Closed</th>
+                                                <th></th>
+                                                <th class="inner-heading purple">New</th>
+                                                <th class="inner-heading green">Active</th>
+                                                <th class="inner-heading black-30">Closed</th>
+                                                <th></th>
+                                                <th class="inner-heading purple">New</th>
+                                                <th class="inner-heading green">Active</th>
+                                                <th class="inner-heading black-30">Closed</th>
+                                            </tr>
+                                         </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="4" class="border-bottom-purple vertical-align-sub">
+                                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                                        <div class="title-blue">Narda Mendoza</div>
+                                                        <a href="#">
+                                                            <img src="../../images/icons/location_pin.svg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="part-1 d-flex align-items-center me-3">
+                                                            <div class="subtitle-blue me-2">Total Active Cases</div>  
+                                                            <div class="counter-box d-flex align-items-center justify-content-center">56</div>  
+                                                        </div>
+                                                        <!-- <div class="part-1 d-flex align-items-center">
+                                                            <div class="subtitle-blue me-2">Avg. caseloads</div>    
+                                                            <div class="counter-box d-flex align-items-center justify-content-center">3.3</div> 
+                                                        </div> -->
+                                                    </div>
+                                                </td>
+                                                <td>Level 1</td>
+                                                <td class="text-center">03</td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Level 2</td>
+                                                <td class="text-center">08</td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Level 3</td>
+                                                <td class="text-center">02</td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Home Study</td>
+                                                <td class="text-center">0</td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody class="border-top-purple">
+                                            <tr>
+                                                <td rowspan="4" class="border-none">
+                                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                                        <div class="title-blue">Narda Mendoza</div>
+                                                        <a href="#">
+                                                            <img src="../../images/icons/location_pin.svg" class="opacity-20" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="part-1 d-flex align-items-center me-3">
+                                                            <div class="subtitle-blue me-2">Total Active Cases</div>  
+                                                            <div class="counter-box d-flex align-items-center justify-content-center">56</div>  
+                                                        </div>
+                                                        <!-- <div class="part-1 d-flex align-items-center">
+                                                            <div class="subtitle-blue me-2">Avg. caseloads</div>    
+                                                            <div class="counter-box d-flex align-items-center justify-content-center">3.3</div> 
+                                                        </div> -->
+                                                    </div>
+                                                </td>
+                                                <td>Level 1</td>
+                                                <td class="text-center">03</td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Level 2</td>
+                                                <td class="text-center">08</td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Level 3</td>
+                                                <td class="text-center">02</td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td class="text-center"></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody class="border-top-purple">
+                                            <tr>
+                                                <td rowspan="4" class="border-none">
+                                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                                        <div class="title-blue">Narda Mendoza</div>
+                                                        <a href="#">
+                                                            <img src="../../images/icons/location_pin.svg" class="opacity-20" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="part-1 d-flex align-items-center me-3">
+                                                            <div class="subtitle-blue me-2">Total Active Cases</div>  
+                                                            <div class="counter-box d-flex align-items-center justify-content-center">56</div>  
+                                                        </div>
+                                                        <!-- <div class="part-1 d-flex align-items-center">
+                                                            <div class="subtitle-blue me-2">Avg. caseloads</div>    
+                                                            <div class="counter-box d-flex align-items-center justify-content-center">3.3</div> 
+                                                        </div> -->
+                                                    </div>
+                                                </td>
+                                                <td>Level 1</td>
+                                                <td class="text-center">03</td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Level 2</td>
+                                                <td class="text-center">08</td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Level 3</td>
+                                                <td class="text-center">02</td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td class="text-center"></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody class="border-top-purple">
+                                            <tr>
+                                                <td rowspan="4" class="border-none">
+                                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                                        <div class="title-blue">Narda Mendoza</div>
+                                                        <a href="#">
+                                                            <img src="../../images/icons/location_pin.svg" class="opacity-20" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="part-1 d-flex align-items-center me-3">
+                                                            <div class="subtitle-blue me-2">Total Active Cases</div>  
+                                                            <div class="counter-box d-flex align-items-center justify-content-center">56</div>  
+                                                        </div>
+                                                        <!-- <div class="part-1 d-flex align-items-center">
+                                                            <div class="subtitle-blue me-2">Avg. caseloads</div>    
+                                                            <div class="counter-box d-flex align-items-center justify-content-center">3.3</div> 
+                                                        </div> -->
+                                                    </div>
+                                                </td>
+                                                <td>Level 1</td>
+                                                <td class="text-center">03</td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Level 2</td>
+                                                <td class="text-center">08</td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Level 3</td>
+                                                <td class="text-center">02</td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td class="text-center"></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody class="border-top-purple">
+                                            <tr>
+                                                <td rowspan="4" class="border-none">
+                                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                                        <div class="title-blue">Narda Mendoza</div>
+                                                        <a href="#">
+                                                            <img src="../../images/icons/location_pin.svg" class="opacity-20" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="part-1 d-flex align-items-center me-3">
+                                                            <div class="subtitle-blue me-2">Total Active Cases</div>  
+                                                            <div class="counter-box d-flex align-items-center justify-content-center">56</div>  
+                                                        </div>
+                                                        <!-- <div class="part-1 d-flex align-items-center">
+                                                            <div class="subtitle-blue me-2">Avg. caseloads</div>    
+                                                            <div class="counter-box d-flex align-items-center justify-content-center">3.3</div> 
+                                                        </div> -->
+                                                    </div>
+                                                </td>
+                                                <td>Level 1</td>
+                                                <td class="text-center">03</td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Level 2</td>
+                                                <td class="text-center">08</td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Level 3</td>
+                                                <td class="text-center">02</td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td class="text-center"></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody class="border-top-purple">
+                                            <tr>
+                                                <td rowspan="4" class="border-none">
+                                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                                        <div class="title-blue">Narda Mendoza</div>
+                                                        <a href="#">
+                                                            <img src="../../images/icons/location_pin.svg" class="opacity-20" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="part-1 d-flex align-items-center me-3">
+                                                            <div class="subtitle-blue me-2">Total Active Cases</div>  
+                                                            <div class="counter-box d-flex align-items-center justify-content-center">56</div>  
+                                                        </div>
+                                                        <!-- <div class="part-1 d-flex align-items-center">
+                                                            <div class="subtitle-blue me-2">Avg. caseloads</div>    
+                                                            <div class="counter-box d-flex align-items-center justify-content-center">3.3</div> 
+                                                        </div> -->
+                                                    </div>
+                                                </td>
+                                                <td>Level 1</td>
+                                                <td class="text-center">03</td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Level 2</td>
+                                                <td class="text-center">08</td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Level 3</td>
+                                                <td class="text-center">02</td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td class="text-center"></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody class="border-top-purple">
+                                            <tr>
+                                                <td rowspan="4" class="border-none">
+                                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                                        <div class="title-blue">Narda Mendoza</div>
+                                                        <a href="#">
+                                                            <img src="../../images/icons/location_pin.svg" class="opacity-20" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="part-1 d-flex align-items-center me-3">
+                                                            <div class="subtitle-blue me-2">Total Active Cases</div>  
+                                                            <div class="counter-box d-flex align-items-center justify-content-center">56</div>  
+                                                        </div>
+                                                        <!-- <div class="part-1 d-flex align-items-center">
+                                                            <div class="subtitle-blue me-2">Avg. caseloads</div>    
+                                                            <div class="counter-box d-flex align-items-center justify-content-center">3.3</div> 
+                                                        </div> -->
+                                                    </div>
+                                                </td>
+                                                <td>Level 1</td>
+                                                <td class="text-center">03</td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Level 2</td>
+                                                <td class="text-center">08</td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Level 3</td>
+                                                <td class="text-center">02</td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td class="text-center"></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                                <td></td>
+                                                <td class="purple">02</td>
+                                                <td class="green">02</td>
+                                                <td class="black-30">01</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <table class="table case-load-table">
-                                    <thead>
-                                        <tr>
-                                            <th class="text-uppercase">Assigned Supervisor 2 </th>
-                                            <th class="text-uppercase">Case Manager </th>
-                                            <th colspan="3" class="text-center">10/7/24</th>
-                                            <th></th>
-                                            <th colspan="3" class="text-center">10/7/24</th>
-                                            <th></th>
-                                            <th colspan="3" class="text-center">10/7/24</th>
-                                            <th></th>
-                                            <th colspan="3" class="text-center">10/7/24</th>
-                                        </tr>
-                                        <tr>
-                                            <th></th>
-                                            <th></th>
-                                            <th class="inner-heading green">New</th>
-                                            <th class="inner-heading purple">Active</th>
-                                            <th class="inner-heading red">Closed</th>
-                                            <th></th>
-                                            <th class="inner-heading green">New</th>
-                                            <th class="inner-heading purple">Active</th>
-                                            <th class="inner-heading red">Closed</th>
-                                            <th></th>
-                                            <th class="inner-heading green">New</th>
-                                            <th class="inner-heading purple">Active</th>
-                                            <th class="inner-heading red">Closed</th>
-                                            <th></th>
-                                            <th class="inner-heading green">New</th>
-                                            <th class="inner-heading purple">Active</th>
-                                            <th class="inner-heading red">Closed</th>
-                                        </tr>
-                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td rowspan="4" class="border-none">
-                                                <div class="title-blue mb-3">Narda Mendoza</div>
-                                                <div class="d-flex md-flex-column">
-                                                    <div class="part-1 d-flex align-items-center me-3">
-                                                        <div class="subtitle-blue me-2">Total Case</div>  
-                                                        <div class="counter-box d-flex align-items-center justify-content-center">56</div>  
-                                                    </div>
-                                                    <div class="part-1 d-flex align-items-center">
-                                                        <div class="subtitle-blue me-2">Avg. caseloads</div>    
-                                                        <div class="counter-box d-flex align-items-center justify-content-center">3.3</div> 
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>Elizabeth Guillen (11)</td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Elva Herrera </td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Yessica Castillo</td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Guadalupe A. Rojas</td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
                             </div>
                         </div>
-                    </div>
-                    <div class="skyblue-collapse-card mb-3">
-                        <a class="btn btn-darkblue-collapse d-flex justify-content-between" data-bs-toggle="collapse" href="#homestudy" role="button" aria-expanded="false" aria-controls="homestudy">
-                            HOME STUDY
-                        </a>
-                        <div class="collapse" id="homestudy">
-                            <div class="case-load-card m-3">
-                                <table class="table case-load-table">
-                                    <thead>
-                                        <tr>
-                                            <th class="text-uppercase">Assigned Supervisor 1 </th>
-                                            <th class="text-uppercase">Case Manager </th>
-                                            <th colspan="3" class="text-center">10/7/24</th>
-                                            <th></th>
-                                            <th colspan="3" class="text-center">10/7/24</th>
-                                            <th></th>
-                                            <th colspan="3" class="text-center">10/7/24</th>
-                                            <th></th>
-                                            <th colspan="3" class="text-center">10/7/24</th>
-                                        </tr>
-                                        <tr>
-                                            <th></th>
-                                            <th></th>
-                                            <th class="inner-heading green">New</th>
-                                            <th class="inner-heading purple">Active</th>
-                                            <th class="inner-heading red">Closed</th>
-                                            <th></th>
-                                            <th class="inner-heading green">New</th>
-                                            <th class="inner-heading purple">Active</th>
-                                            <th class="inner-heading red">Closed</th>
-                                            <th></th>
-                                            <th class="inner-heading green">New</th>
-                                            <th class="inner-heading purple">Active</th>
-                                            <th class="inner-heading red">Closed</th>
-                                            <th></th>
-                                            <th class="inner-heading green">New</th>
-                                            <th class="inner-heading purple">Active</th>
-                                            <th class="inner-heading red">Closed</th>
-                                        </tr>
-                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td rowspan="2">
-                                                <div class="title-blue mb-3">Narda Mendoza</div>
-                                                <div class="d-flex md-flex-column">
-                                                    <div class="part-1 d-flex align-items-center me-3">
-                                                        <div class="subtitle-blue me-2">Total Case</div>  
-                                                        <div class="counter-box d-flex align-items-center justify-content-center">56</div>  
-                                                    </div>
-                                                    <div class="part-1 d-flex align-items-center">
-                                                        <div class="subtitle-blue me-2">Avg. caseloads</div>    
-                                                        <div class="counter-box d-flex align-items-center justify-content-center">3.3</div> 
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>Elizabeth Guillen (11)</td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Elva Herrera </td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="2" class="border-none">
-                                                <div class="title-blue mb-3">Narda Mendoza</div>
-                                                <div class="d-flex md-flex-column">
-                                                    <div class="part-1 d-flex align-items-center me-3">
-                                                        <div class="subtitle-blue me-2">Total Case</div>  
-                                                        <div class="counter-box d-flex align-items-center justify-content-center">56</div>  
-                                                    </div>
-                                                    <div class="part-1 d-flex align-items-center">
-                                                        <div class="subtitle-blue me-2">Avg. caseloads</div>    
-                                                        <div class="counter-box d-flex align-items-center justify-content-center">3.3</div> 
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>Yessica Castillo</td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Guadalupe A. Rojas</td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                            <td></td>
-                                            <td class="green">02</td>
-                                            <td class="purple">02</td>
-                                            <td class="red">01</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="tab-pane fade" id="tab-4-pane" role="tabpanel" aria-labelledby="req" tabindex="0">
+                            case managers
                         </div>
-                    </div>
+                   </div>
                 </div>
             </div>
         </div>
