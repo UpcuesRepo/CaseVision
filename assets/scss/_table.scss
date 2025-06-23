@@ -243,8 +243,11 @@
                     td{
                         border-bottom: 1px solid $light-gray-3;
                         &.border-bottom-purple{
-                            border-bottom: 1px solid $purple;
+                            border-bottom: 1px solid $dark-blue;
                         }
+                        /*&.border-bottom-purple{
+                            border-bottom: 1px solid $purple;
+                        }*/
                         &.border-none{
                             border-bottom: none;
                             vertical-align:sub; 
@@ -280,7 +283,8 @@
                 tr{
                     &:last-child{
                         td{
-                            border-bottom: 1px solid $purple;
+                           // border-bottom: 1px solid $purple;
+                           border-bottom: 1px solid $dark-blue;
                         }
                     } 
                 }   
