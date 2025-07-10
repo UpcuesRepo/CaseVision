@@ -144,13 +144,20 @@ a{
             border-radius: $radius-lg;
             padding: 0 15px;
             .dropdown-item{
-                padding: 15px 0;
+                padding: 10px 0;
                 font-size: $font-size-sm;
+                &.view-link{
+                    color: $dark-blue;
+                    text-decoration: underline;
+                    font-size: $font-size-md;
+                    font-weight: $font-700;
+                }
                 &:not(:last-child){
                     border-bottom: 1px solid $black-10;
                 }
                 &:hover, &:active{
                     background-color: transparent;
+                    color: $black;
                 }
             }
         }

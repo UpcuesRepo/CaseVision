@@ -41,7 +41,7 @@
                     <div class="navbar-logo w-185 d-flex align-items-center justify-content-center">
                         <a href="#"><img src="../../images/logo/logo-black.svg" alt=""></a>
                     </div>
-                    <div class="fs-26 fw-bold color-dark-blue ms-3">Notifications</div>
+                    <div class="fs-26 fw-bold color-dark-blue ms-3">Notification New</div>
                 </div>
                 <div class="right-part d-flex align-items-center h-100">
                     <div class="dropdown dropdown-notification d-flex align-items-center">
@@ -50,10 +50,19 @@
                             <span class="red-dot"></span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-account" aria-labelledby="dropdownMenuNotific" data-bs-popper="static">
-                            <li class="dropdown-item"><a href="#" class="active">Account Settings</a></li>
-                            <li class="dropdown-item"><a href="#"> Live Dashboard</a></li>
-                            <li class="dropdown-item"><a href="#"> Reports</a></li>
-                            <li class="dropdown-item"><a href="#">Logout</a></li>
+                            <li class="dropdown-item">
+                                <div class="date color-black-60">13/11/2024  14:02</div>
+                                <div class="description">Upcoming Age Out in 90 Days</div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="date color-black-60">13/11/2024  14:02</div>
+                                <div class="description">Home Study Report Due</div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="date color-black-60">13/11/2024  14:02</div>
+                                <div class="description">Home Study Report Due</div>
+                            </li>
+                            <li class="dropdown-item view-link">View All</li>
                           </ul>
                     </div>
                     <div class="dropdown dropdown-profile d-flex align-items-center me-3">
@@ -135,20 +144,7 @@
                     </div>
                 </div>
                 <div class="my-case content-part h-100 w-100">
-                   <div class="top-part d-flex justify-content-between align-items-center w-100">
-                        <ul class="nav nav-pills my-case-tabs" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="all-view" data-bs-toggle="tab" data-bs-target="#all-view-pane" type="button" role="tab" aria-controls="all-view-pane" aria-selected="true">All Notifications</button>
-                                <span class="red-dot"></span>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="system-view" data-bs-toggle="tab" data-bs-target="#system-view-pane" type="button" role="tab" aria-controls="system-view-pane" aria-selected="false">System Notification</button>
-                                <span class="red-dot"></span>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="request" data-bs-toggle="tab" data-bs-target="#request-pane" type="button" role="tab" aria-controls="request-pane" aria-selected="false">Request Notification</button>
-                            </li>
-                        </ul>
+                   <div class="top-part d-flex justify-content-end align-items-center p-2 w-100">
                         <div class="d-flex w-50 justify-content-end align-items-center sm-flex-column">
                             <div class="form-group w-60 me-2">
                                 <input class="form-control form-control-lg search-icon" type="search" placeholder="Search Date / Name / Type">
@@ -232,15 +228,7 @@
                             </div>
                         </div>
                    </div>
-                   <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="all-view-pane" role="tabpanel" aria-labelledby="all-view" tabindex="0">
-                            All Notification    
-                        </div>
-                        <div class="tab-pane fade" id="system-view-pane" role="tabpanel" aria-labelledby="system-view" tabindex="0">
-                            System Notification    
-                        </div>
-                        <div class="tab-pane fade" id="request-pane" role="tabpanel" aria-labelledby="request" tabindex="0">
-                            <div class="table-part">
+                   <div class="table-part">
                                 <div class="d-flex justify-content-between align-items-center mb-2 md-row-seperate">
                                     <div class="d-flex align-items-center md-start">
                                         <div class="fs-md me-2">Result per page</div>
@@ -296,7 +284,6 @@
                                                             <th scope="col">Date</th>
                                                             <th scope="col">Time</th>
                                                             <th scope="col">Details</th>
-                                                            <th scope="col">Sent By</th>
                                                             <th scope="col">Notification Type</th>
                                                             <th scope="col"></th>
                                                         </tr>
@@ -305,35 +292,9 @@
                                                         <tr>
                                                             <td>13/11/2024</td>
                                                             <td>14:02</td>
-                                                            <td>New note added for <span class="fw-bold">24/7 Domestic Violence Hotline (GCADV) </span> </td>
-                                                            <td>Maria Omar </td>
-                                                            <td><span class="badge badge-active">System Notification</span></td>
-                                                            <td class="d-flex align-items-center">
-                                                                <a href="#" class="me-2">
-                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M2.42012 12.9132C2.28394 12.6976 2.21584 12.5897 2.17772 12.4234C2.14909 12.2985 2.14909 12.1015 2.17772 11.9766C2.21584 11.8103 2.28394 11.7025 2.42012 11.4868C3.54553 9.70485 6.8954 5.20001 12.0004 5.20001C17.1054 5.20001 20.4553 9.70485 21.5807 11.4868C21.7169 11.7025 21.785 11.8103 21.8231 11.9766C21.8517 12.1015 21.8517 12.2985 21.8231 12.4234C21.785 12.5897 21.7169 12.6976 21.5807 12.9132C20.4553 14.6952 17.1054 19.2 12.0004 19.2C6.8954 19.2 3.54553 14.6952 2.42012 12.9132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                        <path d="M12.0004 15.2C13.6573 15.2 15.0004 13.8569 15.0004 12.2C15.0004 10.5432 13.6573 9.20001 12.0004 9.20001C10.3435 9.20001 9.0004 10.5432 9.0004 12.2C9.0004 13.8569 10.3435 15.2 12.0004 15.2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </a>
-                                                            </td>
-                                                        </tr>  
-                                                        <tr>
-                                                            <td>13/11/2024</td>
-                                                            <td>14:02</td>
+                                                            <td>Upcoming Age Out in 90 Days</td>
+                                                            <td><span class="badge badge-active">System</span></td>
                                                             <td>
-                                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M10 7.04183V10.3752M10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10C17.5 14.1421 14.1421 17.5 10 17.5ZM10.0415 12.8752V12.9585L9.9585 12.9582V12.8752H10.0415Z" stroke="#CE0E2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                </svg>
-                                                                <span class="fw-bold">Chelsea Maxfield </span>Rejected your request of added new resource. 
-                                                            </td>
-                                                            <td>Maria Omar </td>
-                                                            <td><span class="badge badge-approve">Request Notifications</span></td>
-                                                            <td class="d-flex align-items-center">
                                                                 <a href="#" class="me-2">
                                                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -350,10 +311,9 @@
                                                         <tr>
                                                             <td>13/11/2024</td>
                                                             <td>14:02</td>
-                                                            <td>New note added for <span class="fw-bold">24/7 Domestic Violence Hotline (GCADV) </span> </td>
-                                                            <td>Maria Omar </td>
-                                                            <td></td>
-                                                            <td class="d-flex align-items-center">
+                                                            <td>Home Study Report Due</td>
+                                                            <td><span class="badge badge-approve">Reminder</span></td>
+                                                            <td>
                                                                 <a href="#" class="me-2">
                                                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -370,10 +330,9 @@
                                                         <tr>
                                                             <td>13/11/2024</td>
                                                             <td>14:02</td>
-                                                            <td>New note added for <span class="fw-bold">24/7 Domestic Violence Hotline (GCADV) </span> </td>
-                                                            <td>Maria Omar </td>
-                                                            <td></td>
-                                                            <td class="d-flex align-items-center">
+                                                            <td>Upcoming Age Out in 90 Days</td>
+                                                            <td><span class="badge badge-not-started">Compliance</span></td>
+                                                            <td>
                                                                 <a href="#" class="me-2">
                                                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -390,10 +349,9 @@
                                                         <tr>
                                                             <td>13/11/2024</td>
                                                             <td>14:02</td>
-                                                            <td>New note added for <span class="fw-bold">24/7 Domestic Violence Hotline (GCADV) </span> </td>
-                                                            <td>Maria Omar </td>
-                                                            <td></td>
-                                                            <td class="d-flex align-items-center">
+                                                            <td>Home Study Report Due</td>
+                                                            <td><span class="badge badge-active">System</span></td>
+                                                            <td>
                                                                 <a href="#" class="me-2">
                                                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -408,12 +366,11 @@
                                                             </td>
                                                         </tr>  
                                                         <tr>
-                                                            <td class="opacity-40">13/11/2024</td>
-                                                            <td class="opacity-40">14:02</td>
-                                                            <td class="opacity-40">New note added for <span class="fw-bold">24/7 Domestic Violence Hotline (GCADV) </span> </td>
-                                                            <td class="opacity-40">Maria Omar </td>
-                                                            <td></td>
-                                                            <td class="d-flex align-items-center">
+                                                            <td>13/11/2024</td>
+                                                            <td>14:02</td>
+                                                            <td>I dont believe that CV currently has any data points relating to no contact. We would need to implement something relating to no ...</td>
+                                                            <td><span class="badge badge-approve">Reminder</span></td>
+                                                            <td>
                                                                 <a href="#" class="me-2">
                                                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -430,10 +387,28 @@
                                                         <tr>
                                                             <td class="opacity-40">13/11/2024</td>
                                                             <td class="opacity-40">14:02</td>
-                                                            <td class="opacity-40">New note added for <span class="fw-bold">24/7 Domestic Violence Hotline (GCADV) </span> </td>
-                                                            <td class="opacity-40">Maria Omar </td>
-                                                            <td></td>
-                                                            <td class="d-flex align-items-center">
+                                                            <td class="opacity-40">Home Study Report Due</td>
+                                                            <td><span class="badge badge-not-started">Compliance</span></td>
+                                                            <td>
+                                                                <a href="#" class="me-2">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M2.42012 12.9132C2.28394 12.6976 2.21584 12.5897 2.17772 12.4234C2.14909 12.2985 2.14909 12.1015 2.17772 11.9766C2.21584 11.8103 2.28394 11.7025 2.42012 11.4868C3.54553 9.70485 6.8954 5.20001 12.0004 5.20001C17.1054 5.20001 20.4553 9.70485 21.5807 11.4868C21.7169 11.7025 21.785 11.8103 21.8231 11.9766C21.8517 12.1015 21.8517 12.2985 21.8231 12.4234C21.785 12.5897 21.7169 12.6976 21.5807 12.9132C20.4553 14.6952 17.1054 19.2 12.0004 19.2C6.8954 19.2 3.54553 14.6952 2.42012 12.9132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M12.0004 15.2C13.6573 15.2 15.0004 13.8569 15.0004 12.2C15.0004 10.5432 13.6573 9.20001 12.0004 9.20001C10.3435 9.20001 9.0004 10.5432 9.0004 12.2C9.0004 13.8569 10.3435 15.2 12.0004 15.2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </td>
+                                                        </tr>  
+                                                        <tr>
+                                                            <td class="opacity-40">13/11/2024</td>
+                                                            <td class="opacity-40">14:02</td>
+                                                            <td class="opacity-40">Home Study Report Due</td>
+                                                            <td><span class="badge badge-active">System</span></td>
+                                                            <td>
                                                                 <a href="#" class="me-2">
                                                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -450,10 +425,9 @@
                                                         <tr>
                                                             <td>13/11/2024</td>
                                                             <td>14:02</td>
-                                                            <td>New note added for <span class="fw-bold">24/7 Domestic Violence Hotline (GCADV) </span> </td>
-                                                            <td>Maria Omar </td>
-                                                            <td></td>
-                                                            <td class="d-flex align-items-center">
+                                                            <td>Upcoming Age Out in 90 Days</td>
+                                                            <td><span class="badge badge-approve">Reminder</span></td>
+                                                            <td>
                                                                 <a href="#" class="me-2">
                                                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -470,10 +444,9 @@
                                                         <tr>
                                                             <td>13/11/2024</td>
                                                             <td>14:02</td>
-                                                            <td>New note added for <span class="fw-bold">24/7 Domestic Violence Hotline (GCADV) </span> </td>
-                                                            <td>Maria Omar </td>
-                                                            <td></td>
-                                                            <td class="d-flex align-items-center">
+                                                            <td>Upcoming Age Out in 90 Days</td>
+                                                            <td><span class="badge badge-not-started">Compliance</span></td>
+                                                            <td>
                                                                 <a href="#" class="me-2">
                                                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -490,10 +463,9 @@
                                                         <tr>
                                                             <td>13/11/2024</td>
                                                             <td>14:02</td>
-                                                            <td>New note added for <span class="fw-bold">24/7 Domestic Violence Hotline (GCADV) </span> </td>
-                                                            <td>Maria Omar </td>
-                                                            <td></td>
-                                                            <td class="d-flex align-items-center">
+                                                            <td>Upcoming Age Out in 90 Days</td>
+                                                            <td><span class="badge badge-active">System</span></td>
+                                                            <td>
                                                                 <a href="#" class="me-2">
                                                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -510,10 +482,9 @@
                                                         <tr>
                                                             <td>13/11/2024</td>
                                                             <td>14:02</td>
-                                                            <td>New note added for <span class="fw-bold">24/7 Domestic Violence Hotline (GCADV) </span> </td>
-                                                            <td>Maria Omar </td>
-                                                            <td></td>
-                                                            <td class="d-flex align-items-center">
+                                                            <td>Upcoming Age Out in 90 Days</td>
+                                                            <td><span class="badge badge-approve">Reminder</span></td>
+                                                            <td>
                                                                 <a href="#" class="me-2">
                                                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -530,10 +501,9 @@
                                                         <tr>
                                                             <td>13/11/2024</td>
                                                             <td>14:02</td>
-                                                            <td>New note added for <span class="fw-bold">24/7 Domestic Violence Hotline (GCADV) </span> </td>
-                                                            <td>Maria Omar </td>
-                                                            <td></td>
-                                                            <td class="d-flex align-items-center">
+                                                            <td>Upcoming Age Out in 90 Days</td>
+                                                            <td><span class="badge badge-not-started">Compliance</span></td>
+                                                            <td>
                                                                 <a href="#" class="me-2">
                                                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -550,10 +520,9 @@
                                                         <tr>
                                                             <td>13/11/2024</td>
                                                             <td>14:02</td>
-                                                            <td>New note added for <span class="fw-bold">24/7 Domestic Violence Hotline (GCADV) </span> </td>
-                                                            <td>Maria Omar </td>
-                                                            <td></td>
-                                                            <td class="d-flex align-items-center">
+                                                            <td>Upcoming Age Out in 90 Days</td>
+                                                            <td><span class="badge badge-active">Syestem</span></td>
+                                                            <td>
                                                                 <a href="#" class="me-2">
                                                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -570,10 +539,9 @@
                                                         <tr>
                                                             <td>13/11/2024</td>
                                                             <td>14:02</td>
-                                                            <td>New note added for <span class="fw-bold">24/7 Domestic Violence Hotline (GCADV) </span> </td>
-                                                            <td>Maria Omar </td>
-                                                            <td></td>
-                                                            <td class="d-flex align-items-center">
+                                                            <td>Upcoming Age Out in 90 Days</td>
+                                                            <td><span class="badge badge-approve">Reminder</span></td>
+                                                            <td>
                                                                 <a href="#" class="me-2">
                                                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -590,10 +558,9 @@
                                                         <tr>
                                                             <td>13/11/2024</td>
                                                             <td>14:02</td>
-                                                            <td><span class="fw-bold">Chelsea Maxfield </span>Rejected your request of added new resource. </td>
-                                                            <td>Maria Omar </td>
-                                                            <td></td>
-                                                            <td class="d-flex align-items-center">
+                                                            <td>Upcoming Age Out in 90 Days</td>
+                                                            <td><span class="badge badge-not-started">Compliance</span></td>
+                                                            <td>
                                                                 <a href="#" class="me-2">
                                                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -659,8 +626,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                   </div>
                 </div>
             </div>
         </div>
