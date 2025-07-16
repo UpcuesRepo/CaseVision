@@ -888,23 +888,23 @@
                 </div>
             </div>
         </div>
-        <div class="offcanvas my-case-offcanvas w-450 offcanvas-end" tabindex="-1" id="EditUcFilter" aria-labelledby="EditUcFilterLabel">
+        <div class="offcanvas my-case-offcanvas staff-info w-450 offcanvas-end" tabindex="-1" id="EditUcFilter" aria-labelledby="EditUcFilterLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title font-xl" id="EditUcFilterLabel">Edit UC Basic Information</h5>
-              <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#EditUcFilterLabel" role="button" aria-controls="EditUcFilterLabel"><img src="../images/icons/x-square.svg" alt=""></a>
+            <h5 class="offcanvas-title" id="EditUcFilterLabel">Edit UC Basic Information</h5>
+            <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#EditUcFilterLabel" role="button" aria-controls="EditUcFilterLabel"><img src="../../images/icons/x-square.svg" alt=""></a>
             </div>
             <div class="offcanvas-body">
                 <div class="row mb-3">
                     <div class="col-md-6">
                         <div class="fs-md color-black-60 mb-1">First Name</div>
                         <div class="form-group">
-                            <input class="form-control style-2" type="email" placeholder="Enter First Name">
+                            <input class="form-control style-2" type="email" placeholder="" disabled>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="fs-md color-black-60 mb-1">Last Name</div>
                         <div class="form-group">
-                            <input class="form-control style-2" type="email" placeholder="Enter Last Name">
+                            <input class="form-control style-2" type="email" placeholder="" disabled>
                         </div>
                     </div>
                 </div>    
@@ -918,7 +918,7 @@
                     <div class="col-md-6">
                         <div class="fs-md color-black-60 mb-1">Preferred Name</div>
                         <div class="form-group">
-                            <input class="form-control style-2" type="email" placeholder="Enter Preferred Name">
+                            <input class="form-control style-2" type="email" placeholder="">
                         </div>
                     </div>
                 </div>    
@@ -927,16 +927,16 @@
                         <div class="fs-md color-black-60 mb-1">Gender</div>
                         <div class="rows-select grey-toggle style-2">
                             <select class="form-select">
-                              <option data-tokens="1">Female</option>
-                              <option data-tokens="2">Male</option>
-                              <option data-tokens="3">3</option>
+                                <option data-tokens="1">Female</option>
+                                <option data-tokens="2">Male</option>
+                                <option data-tokens="3">3</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="fs-md color-black-60 mb-1">A Number</div>
                         <div class="form-group">
-                            <input class="form-control style-2" type="email" placeholder="Enter A Number">
+                            <input class="form-control style-2" type="email" placeholder="" disabled>
                         </div>
                     </div>
                 </div>    
@@ -944,16 +944,16 @@
                     <div class="col-md-6">
                         <div class="fs-md color-black-60 mb-1">Referral ID</div>
                         <div class="form-group">
-                            <input class="form-control style-2" type="email" placeholder="Enter Referral ID">
+                            <input class="form-control style-2" type="email" placeholder="" disabled>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="fs-md color-black-60 mb-1">Level of Service</div>
                         <div class="rows-select grey-toggle style-2">
-                            <select class="form-select">
-                              <option data-tokens="1">Level 1</option>
-                              <option data-tokens="2">Level 2</option>
-                              <option data-tokens="3">Level 3</option>
+                            <select class="form-select" disabled>
+                                <option data-tokens="1">Level 1</option>
+                                <option data-tokens="2">Level 2</option>
+                                <option data-tokens="3">Level 3</option>
                             </select>
                         </div>
                     </div>
@@ -962,7 +962,45 @@
                     <div class="col-md-6">
                         <div class="fs-md color-black-60 mb-1">Referring Program</div>
                         <div class="form-group">
-                            <input class="form-control style-2" type="email" placeholder="Enter Referring Program">
+                            <input class="form-control style-2" type="email" placeholder="" disabled>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Language</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="email" placeholder="">
+                        </div>
+                    </div>
+                </div> 
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Race</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="email" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">COO</div>
+                        <div class="rows-select grey-toggle style-2">
+                            <select class="form-select">
+                            <option data-tokens="1"></option>
+                            <option data-tokens="2">Level 2</option>
+                            <option data-tokens="3">Level 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div> 
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Email</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="email" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Phone Number</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="email" placeholder="">
                         </div>
                     </div>
                 </div>    
@@ -970,7 +1008,7 @@
                     <div class="col-md-12">
                         <div class="fs-md color-black-60 mb-1">Address</div>
                         <div class="form-group">
-                            <input class="form-control style-2" type="email" placeholder="Enter Address">
+                            <input class="form-control style-2" type="email" placeholder="" disabled>
                         </div>
                     </div>
                 </div>  
@@ -978,20 +1016,20 @@
                     <div class="col-md-6">
                         <div class="fs-md color-black-60 mb-1">City</div>
                         <div class="rows-select grey-toggle style-2">
-                            <select class="form-select">
-                              <option data-tokens="1">Edison</option>
-                              <option data-tokens="2">Level 2</option>
-                              <option data-tokens="3">Level 3</option>
+                            <select class="form-select" disabled>
+                            <option data-tokens="1">Edison</option>
+                            <option data-tokens="2">Level 2</option>
+                            <option data-tokens="3">Level 3</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="fs-md color-black-60 mb-1">State</div>
                         <div class="rows-select grey-toggle style-2">
-                            <select class="form-select">
-                              <option data-tokens="1">New Jersey</option>
-                              <option data-tokens="2">Level 2</option>
-                              <option data-tokens="3">Level 3</option>
+                            <select class="form-select" disabled>
+                            <option data-tokens="1">New Jersey</option>
+                            <option data-tokens="2">Level 2</option>
+                            <option data-tokens="3">Level 3</option>
                             </select>
                         </div>
                     </div>
@@ -1000,45 +1038,7 @@
                     <div class="col-md-6">
                         <div class="fs-md color-black-60 mb-1">Zip Code</div>
                         <div class="form-group">
-                            <input class="form-control style-2" type="email" placeholder="Enter Zip Code">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="fs-md color-black-60 mb-1">Phone Number</div>
-                        <div class="form-group">
-                            <input class="form-control style-2" type="email" placeholder="Enter Phone Number">
-                        </div>
-                    </div>
-                </div> 
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <div class="fs-md color-black-60 mb-1">Language</div>
-                        <div class="form-group">
-                            <input class="form-control style-2" type="email" placeholder="Enter Language">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="fs-md color-black-60 mb-1">Race</div>
-                        <div class="form-group">
-                            <input class="form-control style-2" type="email" placeholder="Enter Race">
-                        </div>
-                    </div>
-                </div> 
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <div class="fs-md color-black-60 mb-1">COO</div>
-                        <div class="rows-select grey-toggle style-2">
-                            <select class="form-select">
-                              <option data-tokens="1"></option>
-                              <option data-tokens="2">Level 2</option>
-                              <option data-tokens="3">Level 3</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="fs-md color-black-60 mb-1">Email</div>
-                        <div class="form-group">
-                            <input class="form-control style-2" type="email" placeholder="Enter Email">
+                            <input class="form-control style-2" type="email" placeholder="" disabled>
                         </div>
                     </div>
                 </div>

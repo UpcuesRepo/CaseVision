@@ -562,6 +562,9 @@ ul.error-mesg{
                 }
             }
         }
+        &.with-shadow{
+            box-shadow: 0 4px 10px 4px rgba(0,0,0,.051);
+        }
     }
     // &.round-check{
     //     .form-check-input[type="checkbox"] {
