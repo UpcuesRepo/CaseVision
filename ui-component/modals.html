@@ -55,6 +55,9 @@
     <button type="button" class="btn btn-primary w-auto m-5" data-bs-toggle="modal" data-bs-target="#rejectNote">
         reject note
     </button>
+    <button type="button" class="btn btn-primary w-auto m-5" data-bs-toggle="modal" data-bs-target="#notdetails">
+        Notification details
+    </button>
 
 
   
@@ -637,7 +640,7 @@
     </div>
     <!-- END reject request -->
 
-    <!-- reject request -->
+    <!-- reject note -->
     <div class="modal fade" id="rejectNote" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-add-notes">
         <div class="modal-content">
@@ -653,7 +656,33 @@
         </div>
         </div>
     </div>
-    <!-- END reject request -->
+    <!-- END reject note -->
+
+    <!-- NOTIFICATION DETAILS -->
+    <div class="modal fade" id="notdetails" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-add-notes">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="assignManagerModalLabel">Notification Details</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex mb-3">
+                    <div class="fs-16 me-4">Date:12/11/2024</div>
+                    <div class="fs-16">Time: 14:02</div>
+                </div>
+                <span class="badge badge-approve mb-3">Reminder</span>
+                <div class="fs-16 mb-3 line-height-28 ">
+                    I dont believe that CV currently has any data points relating to no contact. We would need to implement something relating to no ...I dont believe that CV currently has any data points relating to no contact. We would need to implement something relating to no ...I dont believe that CV currently has any data points relating to no contact. We would need to implement something relating to no ...
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-md btn-grey btn-radius-none w-100">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- END NOTIFICATION DETAILS -->
 
     <!-- DELETE DOCUMENT -->
     <div class="modal fade" id="deleteDocModal" tabindex="-1" aria-labelledby="deleteDocModalLabel" aria-hidden="true">
