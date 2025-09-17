@@ -1,0 +1,145 @@
+.position-card{
+    border: $border-light-gray-2;
+    background-color: $light-blue-4;
+    border-radius: $radius-lg;
+    padding: 20px;
+    @include media-breakpoint-down(md){
+        margin-top: 10px;
+    }
+    @include media-breakpoint-down(lg){
+        margin-top: 10px;
+    }
+    .title{
+        color: $black-60;
+        font-size: $font-size-16;
+        font-weight: $font-600;
+        line-height: $line-height-22;
+        text-transform: $text-uppercase;
+    }
+    .description{
+        font-size: $font-size-md;
+        line-height: $line-height-20;
+        text-transform: capitalize;
+    }
+}
+
+.blank-card{
+    background-color: $white;
+    border: $border-light-gray-2;
+    padding: 10px;
+    border-radius: $radius-lg;
+    img{
+        width: -webkit-fill-available;
+    }
+}
+
+.report-strip{
+    box-shadow: 0px 4px 10px 4px #0000000D;
+    border: 1px solid $light-blue;
+    border-radius: $radius-lg;
+    padding: 12px 15px;
+    position: relative;
+    .title-strip{
+        border-bottom: 2px solid $light-gray-2;
+        padding: 10px 15px;
+    }
+    .content-strip{
+        padding: 15px;
+        &:not(:last-child){
+            border-bottom: 1px solid $light-gray-2;
+        }
+        &.md-flex-column{
+            @include media-breakpoint-down(lg){
+                align-items: flex-start!important;
+            }
+        }
+        .lg-mb-5{
+            @include media-breakpoint-down(lg){
+                margin-bottom: 10px;
+            }
+        }
+        .justify-content-end{
+            @include media-breakpoint-down(lg){
+                justify-content: flex-start!important;
+            }
+        }
+    }
+    .btn-top{
+        position: absolute;
+        top: -20px;
+        left: 0;
+    }
+    .title-txt{
+        font-size: $font-size-16;
+        font-weight: $font-600;
+        line-height: $line-height-22;
+        color: $dark-blue;
+        width: 30%;
+        &.w-20{
+            width: 20%;
+        }
+    }
+    .date-part{
+        .date-title{
+            font-size: $font-size-md;
+            line-height: $line-height-20;
+            color: $black-60;
+        }
+        .date{
+            font-size: $font-size-16;
+            font-weight: $font-700;
+            line-height: $line-height-22;
+            color: $black;
+        }
+    }
+    &.grey-strip{
+        background-color: $grey-3;
+        box-shadow: 0px 4px 10px 4px #0000000D;
+        border: 1px solid $black-30;
+    }
+    &.border-black10-strip{
+        border: 1px solid $black-10;
+    }
+}
+
+.case-notes-card{
+    box-shadow: 0px 4px 10px 4px #0000000D;
+    border-radius: $radius-lg;
+    background-color: $white;
+    padding: 15px;
+    &.scroll{
+        height: 600px;
+        overflow-y: scroll;
+    }
+}
+
+.grey-border-card{
+    border: 1px solid $light-gray-2;
+    border-radius: $radius-lg;
+    background-color: $white;
+}
+
+.count-box{
+    height: 48px;
+    width: 48px;
+    border-radius: $radius-lg;
+    font-size: $font-size-xl;
+    font-weight: $font-700;
+    color: $white;
+    &.green{
+        border: 1px solid $green;
+        background-color: $green-60;
+    }
+    &.light-blue{
+        border: 1px solid $light-blue;
+        background-color: $light-blue-60;
+    }
+    &.orange{
+        border: 1px solid $orange;
+        background-color: $orange-60;
+    }
+    &.red{
+        border: 1px solid $red;
+        background-color: $red-60;
+    }
+}

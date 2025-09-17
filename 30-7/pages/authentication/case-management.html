@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../../images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../../images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../../images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+   
+    <!-- CSS -->
+    <link href="../../assets/dist/css/default.css" rel="stylesheet" />
+    <title>CASE VISION</title>
+  </head>
+  <body>
+    <div class="" id="wrapper">
+        <div class="collapsible-navbar h-100">
+            <nav class="main-navbar navbar-expand-xl w-100 d-flex justify-content-between align-items-center">
+                <div class="left-part d-flex align-items-center h-100">
+                    <button type="button" class="btn btn-toggle h-100" id="menu-btn">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 18H22.5M4.5 9H31.5M4.5 27H31.5" stroke="#CE0E2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="arrow" d="M31 21L28 18L31 15" stroke="#CE0E2D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="navbar-logo w-185 d-flex align-items-center justify-content-center">
+                        <a href="#"><img src="../../images/logo/logo-black.svg" alt=""></a>
+                    </div>
+                    <div class="fs-26 fw-bold color-dark-blue ms-3">Case Management</div>
+                </div>
+                <div class="right-part d-flex align-items-center h-100">
+                    <div class="dropdown dropdown-notification d-flex align-items-center">
+                        <a class="btn btn-notification dropdown-toggle me-3" href="#" role="button" id="dropdownMenuNotifc" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../../images/icons/bell-03.svg" alt="">
+                            <span class="red-dot"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-account" aria-labelledby="dropdownMenuNotific" data-bs-popper="static">
+                            <li class="dropdown-item"><a href="#" class="active">Account Settings</a></li>
+                            <li class="dropdown-item"><a href="#"> Live Dashboard</a></li>
+                            <li class="dropdown-item"><a href="#"> Reports</a></li>
+                            <li class="dropdown-item"><a href="#">Logout</a></li>
+                          </ul>
+                    </div>
+                    <div class="dropdown dropdown-profile d-flex align-items-center me-3">
+                        <a class="dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="fs-lg fw-semibold ms-3 me-2 name-icon bg-lightblue-30">CM</div>
+                            <div class="name me-3">
+                                <div class="fs-lg fw-semibold">Chelsea Maxfield</div>
+                                <div class="fs-13 color-black-30">Admin</div>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-account" aria-labelledby="dropdownMenuLink" data-bs-popper="static">
+                          <li class="ms-3">
+                            <div class="name">
+                                <div class="fs-lg fw-semibold">Chelsea Maxfield</div>
+                                <div class="fs-13 color-black-30">Admin</div>
+                            </div>
+                          </li>
+                          <li class="dropdown-item"><a href="#" class="active">Account Settings</a></li>
+                          <li class="dropdown-item"><a href="#"> Live Dashboard</a></li>
+                          <li class="dropdown-item"><a href="#"> Reports</a></li>
+                          <li class="dropdown-item"><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="d-flex">
+                <div id="sidebar" class="sidebar collapsed">
+                    <div class="sidebar-section">
+                      <ul class="side-menu">
+                        <li>
+                            <div class="fs-26 fw-bold color-white ms-2">My Cases</div>
+                        </li>
+                        <li>
+                          <a href="#" class="menu-links">Dashboard</a>
+                        </li>
+                        <li>
+                            <!-- <a class="menu-links" data-bs-toggle="collapse" href="#collapse-inner" role="button" aria-expanded="false" aria-controls="collapse-inner">
+                                Case Management
+                            </a>
+                            <div class="collapse collapse-inner" id="collapse-inner">
+                                <div class="card card-body">
+                                  <a href="#" class="collapse-opt">
+                                    <span class="red-dot"></span>
+                                    My Cases
+                                  </a>
+                                </div>
+                            </div> -->
+                            <a href="#" class="menu-links">Case Management</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links submenu">
+                                <span class="red-dot"></span>
+                                    My Cases 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links">Community Resources</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links submenu">
+                                <span class="red-dot"></span>
+                                    CR Management
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links">Reporting & Analytics</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links">Staff Directory</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links">User Management</a>
+                        </li>
+                      </ul>
+                      <a href="https://ap-in.com/" target="_blank" title="Applied Intellect" class="powered-by-logo">
+                        <img src="../../images/logo/powered-by-logo.svg"  title="Applied Intellect"  alt="">
+                        <p class="version mt-2">Version:&nbsp;1.0.16.1</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="case-management content-part w-100">
+                    <div class="container-fluid">
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row align-items-stretch h-100">
+                            <div class="col-xl-5 col-lg-12 d-inline-flex">
+                                <div class="case-compliance shadow-sm-card w-100 mb-20 me-3 d-flex justify-content-between">
+                                    <div class="left-part">
+                                        <div class="fs-xl fw-bold mb-2">Alerts</div>
+                                        <div class="fs-16 fw-semibold color-dark-blue mb-2">New Case Acceptance (within last 3 days)</div>
+                                        <div class="fs-16 fw-semibold color-dark-blue mb-2">Upcoming Visit or Check-In (within next 5 days)</div>
+                                        <div class="fs-16 fw-semibold color-dark-blue mb-2">Upcoming Case Closure (within next 5 days)</div>
+                                        <div class="fs-16 fw-semibold color-dark-blue mb-2">Upcoming Age-Out (within next 3 months)</div>
+                                        <div class="fs-16 fw-semibold color-dark-blue mb-2">Case Milestone Past Due</div>
+                                        <div class="fs-16 fw-semibold color-dark-blue mb-2">Case File Missing Notes</div>
+                                        <div class="fs-16 fw-semibold color-dark-blue mb-2">Case Form Missing Signature</div>
+                                        <div class="fs-16 fw-semibold color-dark-blue mb-2">Pending Case Transfer Request</div>
+                                        <div class="fs-xl fw-semibold color-red">Total Cases with Alerts</div>
+                                    </div>
+                                    <div class="right-part">
+                                        <div class="fs-xl fw-bold mb-2"># of Cases</div>
+                                        <div class="fs-16 fw-semibold mb-2">02</div>
+                                        <div class="fs-16 fw-semibold mb-2">03</div>
+                                        <div class="fs-16 fw-semibold mb-2">12</div>
+                                        <div class="fs-16 fw-semibold mb-2">11</div>
+                                        <div class="fs-16 fw-semibold mb-2">93</div>
+                                        <div class="fs-16 fw-semibold mb-2">02</div>
+                                        <div class="fs-16 fw-semibold mb-2">02</div>
+                                        <div class="fs-16 fw-semibold mb-2">02</div>
+                                        <div class="fs-xl fw-semibold color-red">123</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-7 col-lg-12 col-sm-12 mb-20">
+                                <div class="case-compliance shadow-sm-card w-100 me-3 h-100">
+                                    <div class="fs-xl fw-bold">Status of My Cases</div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                             <div class="d-flex align-items-center">
+                                 <div class="fs-xl fw-bold me-2">Cases with Alert (123)</div>
+                                 
+                             </div>
+                             <button class="btn btn-skyblue btn-sm h-34" type="button">View My Cases</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="card-case-table">
+                                    <table class="table case-table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">A No.</th>
+                                                <th scope="col">First Name</th>
+                                                <th scope="col">Last Name</th>
+                                                <th scope="col">Date of Birth</th>
+                                                <th scope="col">Service Level</th>
+                                                <th scope="col">Acceptance Date</th>
+                                                <th scope="col">Expected Closure  </th>
+                                                <th scope="col">Region</th>
+                                                <th scope="col">Supervisor</th>
+                                                <th scope="col" >Case Manager</th>
+                                                <th scope="col" class="text-center">Case Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>485486112</td>
+                                                <td>Maria</td>
+                                                <td>Garcia Lopez</td>
+                                                <td>2/19/2024</td>
+                                                <td>Level 2</td>
+                                                <td>2/19/2024</td>
+                                                <td>2/19/2024</td>
+                                                <td>1</td>
+                                                <td>Will Ramos</td>
+                                                <td>Karen Flores</td>
+                                                <td class="text-center"><span class="badge badge-active">Active</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>491257863</td>
+                                                <td>Samuel</td>
+                                                <td>Ortiz Tino</td>
+                                                <td>2/19/2024</td>
+                                                <td>Level 1</td>
+                                                <td>2/19/2024</td>
+                                                <td>2/19/2024</td>
+                                                <td>1</td>
+                                                <td>Will Ramos</td>
+                                                <td>Karen Flores</td>
+                                                <td class="text-center"><span class="badge badge-active">Active</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>571573224</td>
+                                                <td>Chloe Kay</td>
+                                                <td>Esmerelda</td>
+                                                <td>2/19/2024</td>
+                                                <td>Home Study</td>
+                                                <td>2/19/2024</td>
+                                                <td>2/19/2024</td>
+                                                <td>1</td>
+                                                <td>Franklin Smith</td>
+                                                <td>Evelyn Hernandez</td>
+                                                <td class="text-center"><span class="badge badge-approve">Extension Approved</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>483248651</td>
+                                                <td>Jude</td>
+                                                <td>Luis</td>
+                                                <td>2/19/2024</td>
+                                                <td>Level 3</td>
+                                                <td>2/19/2024</td>
+                                                <td>2/19/2024</td>
+                                                <td>1</td>
+                                                <td>Franklin Smith</td>
+                                                <td>Evelyn Hernandez</td>
+                                                <td class="text-center"><span class="badge badge-approve">Extension Approved</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>485486112</td>
+                                                <td>Maria</td>
+                                                <td>Garcia Lopez</td>
+                                                <td>2/19/2024</td>
+                                                <td>Level 2</td>
+                                                <td>2/19/2024</td>
+                                                <td>2/19/2024</td>
+                                                <td>1</td>
+                                                <td>Will Ramos</td>
+                                                <td>Karen Flores</td>
+                                                <td class="text-center"><span class="badge badge-not-started">Cases not started</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>491257863</td>
+                                                <td>Samuel</td>
+                                                <td>Ortiz Tino</td>
+                                                <td>2/19/2024</td>
+                                                <td>Level 1</td>
+                                                <td>2/19/2024</td>
+                                                <td>2/19/2024</td>
+                                                <td>1</td>
+                                                <td>Will Ramos</td>
+                                                <td>Karen Flores</td>
+                                                <td class="text-center"><span class="badge badge-approve">Extension Approved</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>571573224</td>
+                                                <td>Chloe Kay</td>
+                                                <td>Esmerelda</td>
+                                                <td>2/19/2024</td>
+                                                <td>Home Study</td>
+                                                <td>2/19/2024</td>
+                                                <td>2/19/2024</td>
+                                                <td>1</td>
+                                                <td>Franklin Smith</td>
+                                                <td>Evelyn Hernandez</td>
+                                                <td class="text-center"><span class="badge badge-not-started">Cases not started</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>483248651</td>
+                                                <td>Jude</td>
+                                                <td>Luis</td>
+                                                <td>2/19/2024</td>
+                                                <td>Level 3</td>
+                                                <td>2/19/2024</td>
+                                                <td>2/19/2024</td>
+                                                <td>1</td>
+                                                <td>Franklin Smith</td>
+                                                <td>Evelyn Hernandez</td>
+                                                <td class="text-center"><span class="badge badge-approve">Extension Approved</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>485486112</td>
+                                                <td>Maria</td>
+                                                <td>Garcia Lopez</td>
+                                                <td>2/19/2024</td>
+                                                <td>Level 2</td>
+                                                <td>2/19/2024</td>
+                                                <td>2/19/2024</td>
+                                                <td>1</td>
+                                                <td>Will Ramos</td>
+                                                <td>Karen Flores</td>
+                                                <td class="text-center"><span class="badge badge-active">Active</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>571573224</td>
+                                                <td>Chloe Kay</td>
+                                                <td>Esmerelda</td>
+                                                <td>2/19/2024</td>
+                                                <td>Home Study</td>
+                                                <td>2/19/2024</td>
+                                                <td>2/19/2024</td>
+                                                <td>1</td>
+                                                <td>Franklin Smith</td>
+                                                <td>Evelyn Hernandez</td>
+                                                <td class="text-center"><span class="badge badge-approve">Extension Approved</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>491257863</td>
+                                                <td>Samuel</td>
+                                                <td>Ortiz Tino</td>
+                                                <td>2/19/2024</td>
+                                                <td>Level 1</td>
+                                                <td>2/19/2024</td>
+                                                <td>2/19/2024</td>
+                                                <td>1</td>
+                                                <td>Will Ramos</td>
+                                                <td>Karen Flores</td>
+                                                <td class="text-center"><span class="badge badge-active">Active</span></td>
+                                            </tr> 
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-2 mt-3 md-row-seperate">
+                            <div class="d-flex align-items-center md-start">
+                                <div class="fs-md me-2">Result per page</div>
+                                <div class="rows-select w-62">
+                                <select class="selectpicker">
+                                    <option data-tokens="1">1</option>
+                                    <option data-tokens="2">2</option>
+                                    <option data-tokens="3">3</option>
+                                </select>
+                                </div>
+                            </div>
+                            <div class="d-flex md-end">
+                                <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6323 11.8159C12.4026 12.0547 12.0228 12.0622 11.7839 11.8325L8.18394 8.4325C8.06629 8.31938 7.9998 8.16321 7.9998 8C7.9998 7.83679 8.06629 7.68062 8.18394 7.5675L11.7839 4.1675C12.0228 3.93782 12.4026 3.94527 12.6323 4.18413C12.862 4.423 12.8545 4.80282 12.6157 5.0325L9.46547 8L12.6157 10.9675C12.8545 11.1972 12.862 11.577 12.6323 11.8159ZM7.8323 11.8159C7.60263 12.0547 7.2228 12.0622 6.98394 11.8325L3.38394 8.4325C3.26629 8.31938 3.1998 8.16321 3.1998 8C3.1998 7.83679 3.26629 7.68062 3.38394 7.5675L6.98394 4.1675C7.2228 3.93782 7.60263 3.94527 7.8323 4.18413C8.06198 4.423 8.05453 4.80282 7.81567 5.0325L4.66547 8L7.81567 10.9675C8.05453 11.1972 8.06198 11.577 7.8323 11.8159Z" fill="#626262"/>
+                                </svg>
+                                First
+                                </button>
+                                <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2329 4.18414C10.4626 4.423 10.4551 4.80282 10.2163 5.0325L7.06605 8L10.2163 10.9675C10.4551 11.1972 10.4626 11.577 10.2329 11.8159C10.0032 12.0547 9.62339 12.0622 9.38452 11.8325L5.78452 8.4325C5.66688 8.31938 5.60039 8.16321 5.60039 8C5.60039 7.83679 5.66688 7.68062 5.78452 7.5675L9.38452 4.1675C9.62339 3.93782 10.0032 3.94527 10.2329 4.18414Z" fill="#626262"/>
+                                </svg>
+                                Back
+                                </button>
+                                <button class="btn btn-pagination btn-xs h-36 me-2">1</button>
+                                <button class="btn btn-pagination btn-xs h-36 me-2">2</button>
+                                <button class="btn btn-pagination btn-xs h-36 me-2">3</button>
+                                <button class="btn btn-pagination btn-xs h-36 me-2">4</button>
+                                <button class="btn btn-pagination btn-xs h-36 me-2">...</button>
+                                <button class="btn btn-pagination btn-xs h-36 me-2">25</button>
+                                <button class="btn btn-pagination btn-xs h-36 with-icon icon-after me-2">
+                                Next
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.76711 11.8159C5.53743 11.577 5.54488 11.1972 5.78374 10.9675L8.93395 8L5.78374 5.0325C5.54488 4.80282 5.53743 4.423 5.76711 4.18413C5.99679 3.94527 6.37661 3.93782 6.61548 4.1675L10.2155 7.5675C10.3331 7.68062 10.3996 7.83679 10.3996 8C10.3996 8.16321 10.3331 8.31938 10.2155 8.4325L6.61548 11.8325C6.37661 12.0622 5.99679 12.0547 5.76711 11.8159Z" fill="#626262"/>
+                                </svg>
+                                </button>
+                                <button class="btn btn-pagination btn-xs h-36 with-icon icon-after me-2">
+                                Last
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.38433 10.9675C3.14547 11.1972 3.13802 11.577 3.3677 11.8159C3.59737 12.0547 3.9772 12.0622 4.21606 11.8325L7.81606 8.4325C7.93371 8.31938 8.0002 8.16321 8.0002 8C8.0002 7.83679 7.93371 7.68062 7.81606 7.5675L4.21606 4.1675C3.9772 3.93782 3.59737 3.94527 3.3677 4.18414C3.13802 4.423 3.14547 4.80282 3.38433 5.0325L6.53453 8L3.38433 10.9675Z" fill="#626262"/>
+                                    <path d="M8.18433 10.9675C7.94547 11.1972 7.93802 11.577 8.1677 11.8159C8.39737 12.0547 8.7772 12.0622 9.01606 11.8325L12.6161 8.4325C12.7337 8.31938 12.8002 8.16321 12.8002 8C12.8002 7.83679 12.7337 7.68062 12.6161 7.5675L9.01606 4.1675C8.7772 3.93782 8.39737 3.94527 8.1677 4.18414C7.93802 4.423 7.94547 4.80282 8.18433 5.0325L11.3345 8L8.18433 10.9675Z" fill="#626262"/>
+                                </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="../../assets/dist/js/all.min.js"></script>
+  </body>
+  
+</html>

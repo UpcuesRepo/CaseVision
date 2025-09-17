@@ -1,0 +1,342 @@
+body{
+   
+    height: 100%;
+    font-size: 16px;
+    color: $black;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+background-color: $dark-blue;
+border-radius: 25px;
+border: 7px solid $white;
+}
+
+html{
+    height: 100%;
+}
+
+#wrapper{
+    height: 100%;
+    @include media-breakpoint-down(md) {
+        background: $light-gray-1;
+    }
+    
+}
+a{
+    text-decoration: none;
+    &:visited{
+        color: transparent;
+        font-weight: inherit;
+    }
+}
+
+
+.blue-link{
+    font-size: $font-size-16;
+    font-weight: $font-500;
+    line-height: $line-height-22;
+    color: $secondary;
+    text-decoration: none;
+    svg{
+        margin-right: 2px;
+    }
+
+    &.disable{
+        color: $black-30;
+    }
+    &:hover{
+        color: $dark-blue;
+        text-decoration: underline;
+        svg{
+            path{
+                stroke: $dark-blue;
+            }
+        }
+    }
+}
+
+.dropdown{
+    height: 100%;
+    &.dropdown-profile{
+        .dropdown-toggle{
+            height: 100%;
+            .name-icon{
+                height: 45px;
+                width: 45px;
+                border-radius: 50%;
+                padding: 10px;
+                &.bg-grey{
+                    background-color: $black-10;
+                    color: $black;
+                }
+                &.bg-lightblue-30{
+                    background-color: $light-blue-30;
+                    color: $dark-blue;
+                }
+            }
+            .name{
+                display: block;
+                @include media-breakpoint-down(md){
+                    display: none;
+                }
+            }
+            &::after {
+                border-bottom: 0;
+                border-left: 0;
+                border-right: 0;
+                border-top: 0;
+                content: "";
+                background-image: url("../../../images/icons/chevron-down.svg");
+                height: 20px;
+                width: 20px;
+            }
+            &.show{
+                &::after {
+                    content: "";
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        .dropdown-menu{
+            .name{
+                display: none;
+                @include media-breakpoint-down(md){
+                    display: block;
+                }
+            }
+        }
+    }
+    &.dropdown-notification{
+        .dropdown-toggle{
+            .red-dot{
+                height: 6px;
+                width: 6px;
+                background-color: $red;
+                border-radius: 50%;
+                position: absolute;
+                top: 5px;
+                right: 5px;
+            }
+            &::after {
+                border-bottom: 0;
+                border-left: 0;
+                border-right: 0;
+                border-top: 0;
+                content: "";
+            }
+        }
+        .dropdown-menu{
+            margin-top: 15px!important;
+            width: 320px;
+            border: 1px solid $black-10;
+            box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.05);
+            border-radius: $radius-lg;
+            padding: 0 15px;
+            .dropdown-item{
+                padding: 10px 0;
+                font-size: $font-size-sm;
+                &.view-link{
+                    color: $dark-blue;
+                    text-decoration: underline;
+                    font-size: $font-size-md;
+                    font-weight: $font-700;
+                }
+                &:not(:last-child){
+                    border-bottom: 1px solid $black-10;
+                }
+                &:hover, &:active{
+                    background-color: transparent;
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+
+.custom-tooltip{
+    .tooltip-inner{
+        background-color: $primary;
+        opacity: 80%;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        border-radius: $radius-lg;
+        font-size: $font-size-13;
+    }
+}
+.bs-tooltip-auto{
+    &[data-popper-placement^=top]{
+        .tooltip-arrow{
+            &::before{
+                border-top-color: $primary;
+                opacity: 80%;
+            }
+        }
+    }
+} 
+
+.progressbar{
+    display: flex;
+    margin: 10px 0;
+    user-select: none;
+    .step{
+        text-align: center;
+        width: 30%;
+        position: relative;
+        p{
+            font-weight: $font-900;
+            font-size: $font-size-16;
+            line-height: $line-height-36;
+            text-transform: $text-uppercase;
+            &.completed{
+                color: $green;
+            }
+            &.active{
+                color: $orange;
+            }
+        }
+        .bullet{
+            height: 36px;
+            width: 36px;
+            display: inline-block;
+            border-radius: 50%;
+            position: relative;
+            font-weight: $font-700;
+            font-size: $font-size-xl;
+            line-height: $line-height-28;
+            background-color: $white;
+            color: $black;
+            border: 1px solid $light-gray-2;
+            span{
+                position: absolute;
+                left: 35%;
+                top: 10%;
+            }
+        }
+        &:last-child{
+            &::before{
+                width: 0;
+            }
+        }
+        &.completed{
+            .bullet{
+                color: $white;
+                background: $green;
+            }
+            &:before{
+                background: $green;
+            }
+        }
+        &.active{
+            .bullet{
+                color: $white;
+                background: $orange;
+            }
+            &:before{
+                background: $orange;
+            }
+        }
+        &::before{
+            background: $black-10;
+            content: "";
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            top: 22%;
+            width: 100%;
+            z-index: 0;
+        }
+    }
+    &.small-progressbar{
+        .step{
+            width: 100%;
+        }
+        .inner-step{
+            width: 10%;
+        }
+    }
+}
+.grey-progressbar{
+    margin: 40px 0;
+    user-select: none;
+    .step{
+        display: flex;
+        height: 100%;
+        position: relative;
+        .description{
+            margin-bottom: 25px;
+            .title{
+                font-size: $font-size-16;
+                font-weight: $font-700;
+                line-height: $line-height-22;
+                margin-bottom: 10px;
+            }
+            .details{
+                font-size: $font-size-md;
+                line-height: $line-height-26;
+                margin-bottom: 10px;
+            }
+            .note{
+                font-size: $font-size-md;
+                font-weight: $font-700;
+                line-height: $line-height-20;
+                color: $black-60;
+            }
+            .name{
+                font-size: $font-size-md;
+                font-weight: $font-700;
+                line-height: $line-height-20;
+                color: $black;
+            }
+        }
+        .bullet{
+            height: 16px;
+            max-width: 16px;
+            width: 100%;
+            border-radius: 50%;
+            position: relative;
+            background-color: $grey-4;
+            margin-right: 15px;
+        }
+        &:last-child{
+            &::before{
+                height: 0;
+            }
+        }
+        &::before{
+            background: $black-10;
+            content: "";
+            width: 4px;
+            left: 0.9%;
+            position: absolute;
+            top: 16px;
+            height: 100%;
+            z-index: 0;
+        }
+    }
+}
+
+// SUNIL CUSTOM CSS
+
+.bodyTagClass {
+    overflow: auto !important;
+    padding-right: 0px !important;
+}
+.table-part{background-color:#f9f9f9;padding:10px 15px}
+.pointer-link {    cursor: pointer;}
+
+
+
+
+
+
+

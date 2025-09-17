@@ -1,0 +1,142 @@
+//FONT
+.fs-xs          {@include font-size($font-size-xs)}
+.fs-sm          {@include font-size($font-size-sm)}
+.fs-md          {@include font-size($font-size-md)}
+.fs-lg          {@include font-size($font-size-lg);
+    @include media-breakpoint-down(xl) {
+        font-size:$font-size-16;
+    }
+}
+.fs-xl          {@include font-size($font-size-xl!important)}
+.fs-22          {@include font-size($font-size-22)}
+.fs-13          {@include font-size($font-size-13)}
+.fs-16          {@include font-size($font-size-16)}
+.fs-26          {@include font-size($font-size-26)}
+.fs-30          {@include font-size($font-size-30)}
+.fs-36          {@include font-size($font-size-36)}
+.fs-40          {@include font-size($font-size-40)}
+
+// FONT WEIGHT
+.fw-regular     {font-weight: $font-400;}
+.fw-medium      {font-weight: $font-500;}
+.fw-semibold    {font-weight: $font-600;}
+.fw-bold        {font-weight: $font-700;}
+.fw-extrabold   {font-weight: $font-800;}
+
+// LINE HEIGHT
+.line-height-56  {line-height: $line-height-56;}
+.line-height-28  {line-height: $line-height-28;}
+.line-height-22  {line-height: $line-height-22;}
+
+// COLOR WHITE
+.color-white            {color: $white;}
+
+// DARK BLUE COLOR //
+.color-dark-blue        {color:$dark-blue;}      
+.color-dark-blue-60     {color:$dark-blue-60;}           
+.color-dark-blue-30     {color:$dark-blue-30;}         
+.color-dark-blue-10     {color:$dark-blue-10;}
+
+// BLACK COLOR //
+.color-black        {color:$black;}      
+.color-black-60     {color:$black-60;}           
+.color-black-30     {color:$black-30;}         
+.color-black-10     {color:$black-10;}  
+
+// BLACK -2 //
+.color-black-2      {color:$black-2;}
+
+// LIGHT BLUE COLOR //
+.color-light-blue        {color:$light-blue;}      
+.color-light-blue-60     {color:$light-blue-60;}           
+.color-light-blue-30     {color:$light-blue-30;}         
+.color-light-blue-10     {color:$light-blue-10;}
+
+// RED COLOR //
+.color-red        {color:$red;}      
+.color-red-60     {color:$red-60;}           
+.color-red-30     {color:$red-30;}         
+.color-red-10     {color:$red-10;}
+
+// ORANGE COLOR //
+.color-orange        {color:$orange;}      
+.color-orange-60     {color:$orange-60;}           
+.color-orange-30     {color:$orange-30;}         
+.color-orange-10     {color:$orange-10;}
+
+// GREEN COLOR //
+.color-green        {color:$green;}      
+.color-green-60     {color:$green-60;}           
+.color-green-30     {color:$green-30;}         
+.color-green-10     {color:$green-10;}
+
+// PURPLE COLOR //
+.color-purple        {color:$purple;}      
+.color-purple-60     {color:$purple-60;}           
+.color-purple-30     {color:$purple-30;}         
+.color-purple-10     {color:$purple-10;}
+
+// BACKGROUND RED COLOR //
+.bg-red        {background-color:$red;}      
+.bg-red-60     {background-color:$red-60;}           
+.bg-red-30     {background-color:$red-30;}         
+.bg-red-10     {background-color:$red-10;}
+
+// BACKGROUND RED COLOR //
+.bg-purple        {background-color:$purple;}      
+.bg-purple-60     {background-color:$purple-60;}           
+.bg-purple-30     {background-color:$purple-30;}         
+.bg-purple-10     {background-color:$purple-10;}
+
+// BACKGROUND LIGHT BLUE COLOR //
+.bg-light-blue        {background-color:$light-blue;}      
+.bg-light-blue-60     {background-color:$light-blue-60;}           
+.bg-light-blue-30     {background-color:$light-blue-30;}         
+.bg-light-blue-10     {background-color:$light-blue-10;}
+
+// BACKGROUND LIGHT BLUE COLOR //
+.bg-dark-blue        {background-color:$dark-blue;}      
+.bg-dark-blue-60     {background-color:$dark-blue-60;}           
+.bg-dark-blue-30     {background-color:$dark-blue-30;}         
+.bg-dark-blue-10     {background-color:$dark-blue-10;}
+
+// MARGIN
+.margin-y-5            {margin:5px 0;}
+
+// PADDING  
+.p-10-15                {padding:10px 15px;}
+.p-10                   {padding:10px;}
+
+// RADIUS
+.radius-lg             {border-radius: $radius-lg;}
+
+// WIDTH
+.w-60                  {width: 60px;}
+.w-85p                 {width: 85px;}
+.w-20p                 {width: 20%;}
+.w-25p                 {width: 25%;}
+.w-30p                 {width: 30%;}
+.w-55p                 {width: 55%;}
+.w-80p                 {width: 80%;}
+.w-185                 {width: 185px;}
+.w-100p                {width: 100px;}
+.w-265                 {width: 265px;}
+
+// HEIGHT
+.h-100vh               {height: 100vh;}
+.h-60                  {height: 60px;}
+.h-70                  {height: 70px;}
+.h-90                  {height: 90px;}
+.h-150                 {height: 150px;}
+.h-300                 {height: 300px;}
+
+// MARGIN
+.mb-20                 { margin-bottom: 1.25rem;}
+
+// TEXT TRANSFORM
+.text-uppercase         {text-transform: uppercase;}
+.text-underline         {text-decoration: $text-underline;}
+.line-break             {line-break: anywhere;}
+
+// opacity
+.opacity-20             {opacity: 20%;}

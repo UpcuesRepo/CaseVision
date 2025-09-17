@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../../images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../../images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../../images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+   
+    <!-- CSS -->
+    <link href="../../assets/dist/css/default.css" rel="stylesheet" />
+    <title>CASE VISION</title>
+  </head>
+  <body>
+    <div class="" id="wrapper">
+        <div class="collapsible-navbar h-100">
+            <nav class="main-navbar navbar-expand-xl w-100 d-flex justify-content-between align-items-center">
+                <div class="left-part d-flex align-items-center h-100">
+                    <button type="button" class="btn btn-toggle h-100" id="menu-btn">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 18H22.5M4.5 9H31.5M4.5 27H31.5" stroke="#CE0E2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="arrow" d="M31 21L28 18L31 15" stroke="#CE0E2D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="navbar-logo w-185 d-flex align-items-center justify-content-center">
+                        <a href="#"><img src="../../images/logo/logo-black.svg" alt=""></a>
+                    </div>
+                    <div class="fs-26 fw-bold color-dark-blue ms-3">Notification New</div>
+                </div>
+                <div class="right-part d-flex align-items-center h-100">
+                    <div class="dropdown dropdown-notification d-flex align-items-center">
+                        <a class="btn btn-notification dropdown-toggle me-3" href="#" role="button" id="dropdownMenuNotifc" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../../images/icons/bell-03.svg" alt="">
+                            <span class="red-dot"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-account" aria-labelledby="dropdownMenuNotific" data-bs-popper="static">
+                            <li class="dropdown-item">
+                                <div class="date color-black-60">13/11/2024  14:02</div>
+                                <div class="description">Upcoming Age Out in 90 Days</div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="date color-black-60">13/11/2024  14:02</div>
+                                <div class="description">Home Study Report Due</div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="date color-black-60">13/11/2024  14:02</div>
+                                <div class="description">Home Study Report Due</div>
+                            </li>
+                            <li class="dropdown-item view-link">View All</li>
+                          </ul>
+                    </div>
+                    <div class="dropdown dropdown-profile d-flex align-items-center me-3">
+                        <a class="dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="fs-lg fw-semibold ms-3 me-2 name-icon bg-lightblue-30">CM</div>
+                            <div class="name me-3">
+                                <div class="fs-lg fw-semibold">Chelsea Maxfield</div>
+                                <div class="fs-13 color-black-30">Admin</div>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-account" aria-labelledby="dropdownMenuLink" data-bs-popper="static">
+                          <li class="ms-3">
+                            <div class="name">
+                                <div class="fs-lg fw-semibold">Chelsea Maxfield</div>
+                                <div class="fs-13 color-black-30">Admin</div>
+                            </div>
+                          </li>
+                          <li class="dropdown-item"><a href="#" class="active">Account Settings</a></li>
+                          <li class="dropdown-item"><a href="#"> Live Dashboard</a></li>
+                          <li class="dropdown-item"><a href="#"> Reports</a></li>
+                          <li class="dropdown-item"><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="d-flex">
+                <div id="sidebar" class="sidebar collapsed">
+                    <div class="sidebar-section">
+                      <ul class="side-menu">
+                        <li>
+                            <div class="fs-26 fw-bold color-white ms-2">My Cases</div>
+                        </li>
+                        <li>
+                          <a href="#" class="menu-links">Dashboard</a>
+                        </li>
+                        <li>
+                            <!-- <a class="menu-links" data-bs-toggle="collapse" href="#collapse-inner" role="button" aria-expanded="false" aria-controls="collapse-inner">
+                                Case Management
+                            </a>
+                            <div class="collapse collapse-inner" id="collapse-inner">
+                                <div class="card card-body">
+                                  <a href="#" class="collapse-opt">
+                                    <span class="red-dot"></span>
+                                    My Cases
+                                  </a>
+                                </div>
+                            </div> -->
+                            <a href="#" class="menu-links">Case Management</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links submenu">
+                                <span class="red-dot"></span>
+                                    My Cases 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links">Community Resources</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links submenu">
+                                <span class="red-dot"></span>
+                                    CR Management
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links">Reporting & Analytics</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links">Staff Directory</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-links">User Management</a>
+                        </li>
+                      </ul>
+                      <a href="https://ap-in.com/" target="_blank" title="Applied Intellect" class="powered-by-logo">
+                        <img src="../../images/logo/powered-by-logo.svg"  title="Applied Intellect"  alt="">
+                        <p class="version mt-2">Version:&nbsp;1.0.16.1</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="my-case content-part h-100 w-100">
+                   <div class="top-part d-flex justify-content-end align-items-center p-2 w-100">
+                        <div class="d-flex w-50 justify-content-end align-items-center sm-flex-column">
+                            <div class="form-group w-60 me-2">
+                                <input class="form-control form-control-lg search-icon" type="search" placeholder="Search Date / Name / Type">
+                            </div>
+                            <div class="d-flex add-buttons">
+                                <button class="btn btn-skyblue btn-sm with-icon me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#NotificationFilter" aria-controls="NotificationFilter">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.75 7.33337L13.75 7.33337M13.75 7.33337C13.75 8.85216 14.9812 10.0834 16.5 10.0834C18.0188 10.0834 19.25 8.85216 19.25 7.33337C19.25 5.81459 18.0188 4.58337 16.5 4.58337C14.9812 4.58337 13.75 5.81459 13.75 7.33337ZM8.25 14.6667L19.25 14.6667M8.25 14.6667C8.25 16.1855 7.01878 17.4167 5.5 17.4167C3.98122 17.4167 2.75 16.1855 2.75 14.6667C2.75 13.1479 3.98122 11.9167 5.5 11.9167C7.01878 11.9167 8.25 13.1479 8.25 14.6667Z" stroke="#5BAAF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Filter
+                                </button>
+                                <!-- Filter -->
+                                <div class="offcanvas my-case-offcanvas w-450 offcanvas-end" tabindex="-1" id="NotificationFilter" aria-labelledby="NotificationFilterLabel">
+                                    <div class="offcanvas-header">
+                                      <h5 class="offcanvas-title" id="NotificationFilterLabel">Filter By</h5>
+                                      <a href="#" class="btn-close-offcanvas" data-bs-toggle="offcanvas" href="#NotificationFilterLabel" role="button" aria-controls="NotificationFilterLabel"><img src="../../images/icons/x-square.svg" alt=""></a>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                      <div class="border-bottom-lightblue">
+                                        <div class="d-flex  mb-3">
+                                          <div class="form-check form-inline me-3">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check6">
+                                              <label class="form-check-label style-1" for="check1">
+                                                All Notification
+                                              </label>
+                                          </div>
+                                          <div class="form-check form-inline me-3">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check7">
+                                              <label class="form-check-label style-1" for="check1">
+                                                Read 
+                                              </label>
+                                          </div>
+                                          <div class="form-check form-inline">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check8">
+                                              <label class="form-check-label style-1" for="check1">
+                                                Unread
+                                              </label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="border-bottom-lightblue">
+                                        <div class="fs-16 fw-semibold color-black-60 text-uppercase my-3">Notification type</div>
+                                        <div class="d-flex mb-3">
+                                            <div class="d-flex align-items-center me-4">
+                                                <div class="form-check form-inline">
+                                                    <input class="form-check-input add-after" type="checkbox" value="" id="check11">
+                                                </div>
+                                                <div class="badge badge-active">System</div>
+                                            </div>
+                                            <div class="d-flex align-items-center me-4">
+                                                <div class="form-check form-inline">
+                                                  <input class="form-check-input add-after" type="checkbox" value="" id="check12">
+                                                </div>
+                                                <div class="badge badge-approve">Request</div>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="form-check form-inline">
+                                                  <input class="form-check-input add-after" type="checkbox" value="" id="check12">
+                                                </div>
+                                                <div class="badge badge-not-started">Compliance</div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="border-bottom-lightblue">
+                                        <div class="fs-16 fw-semibold color-black-60 text-uppercase my-3">Date RANGE</div>
+                                        <div class="d-flex">
+                                            <div class="color-black fs-md fw-semibold mb-1 w-50 me-2">From</div>
+                                            <div class="color-black fs-md fw-semibold mb-1 w-50 ms-2">To</div>
+                                        </div>
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="form-group w-50 me-2">
+                                                <input class="form-control form-control-md" type="date">
+                                            </div>
+                                            <div>-</div>
+                                            <div class="form-group w-50 ms-2">
+                                                <input class="form-control form-control-md" type="date">
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="offcanvas-footer d-flex">
+                                        <button class="btn btn-md btn-grey btn-radius-none w-50">Reset</button>
+                                        <button class="btn btn-md btn-darkblue btn-radius-none w-50">Apply</button>
+                                    </div>
+                                </div>
+                                <!-- END Filter -->
+                            </div>
+                        </div>
+                   </div>
+                   <div class="table-part">
+                                <div class="d-flex justify-content-between align-items-center mb-2 md-row-seperate">
+                                    <div class="d-flex align-items-center md-start">
+                                        <div class="fs-md me-2">Result per page</div>
+                                        <div class="rows-select w-62">
+                                        <select class="selectpicker">
+                                            <option data-tokens="1">1</option>
+                                            <option data-tokens="2">2</option>
+                                            <option data-tokens="3">3</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex md-end">
+                                        <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6323 11.8159C12.4026 12.0547 12.0228 12.0622 11.7839 11.8325L8.18394 8.4325C8.06629 8.31938 7.9998 8.16321 7.9998 8C7.9998 7.83679 8.06629 7.68062 8.18394 7.5675L11.7839 4.1675C12.0228 3.93782 12.4026 3.94527 12.6323 4.18413C12.862 4.423 12.8545 4.80282 12.6157 5.0325L9.46547 8L12.6157 10.9675C12.8545 11.1972 12.862 11.577 12.6323 11.8159ZM7.8323 11.8159C7.60263 12.0547 7.2228 12.0622 6.98394 11.8325L3.38394 8.4325C3.26629 8.31938 3.1998 8.16321 3.1998 8C3.1998 7.83679 3.26629 7.68062 3.38394 7.5675L6.98394 4.1675C7.2228 3.93782 7.60263 3.94527 7.8323 4.18413C8.06198 4.423 8.05453 4.80282 7.81567 5.0325L4.66547 8L7.81567 10.9675C8.05453 11.1972 8.06198 11.577 7.8323 11.8159Z" fill="#626262"/>
+                                        </svg>
+                                        First
+                                        </button>
+                                        <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2329 4.18414C10.4626 4.423 10.4551 4.80282 10.2163 5.0325L7.06605 8L10.2163 10.9675C10.4551 11.1972 10.4626 11.577 10.2329 11.8159C10.0032 12.0547 9.62339 12.0622 9.38452 11.8325L5.78452 8.4325C5.66688 8.31938 5.60039 8.16321 5.60039 8C5.60039 7.83679 5.66688 7.68062 5.78452 7.5675L9.38452 4.1675C9.62339 3.93782 10.0032 3.94527 10.2329 4.18414Z" fill="#626262"/>
+                                        </svg>
+                                        Back
+                                        </button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">1</button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">2</button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">3</button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">4</button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">...</button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">25</button>
+                                        <button class="btn btn-pagination btn-xs h-36 with-icon icon-after me-2">
+                                        Next
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.76711 11.8159C5.53743 11.577 5.54488 11.1972 5.78374 10.9675L8.93395 8L5.78374 5.0325C5.54488 4.80282 5.53743 4.423 5.76711 4.18413C5.99679 3.94527 6.37661 3.93782 6.61548 4.1675L10.2155 7.5675C10.3331 7.68062 10.3996 7.83679 10.3996 8C10.3996 8.16321 10.3331 8.31938 10.2155 8.4325L6.61548 11.8325C6.37661 12.0622 5.99679 12.0547 5.76711 11.8159Z" fill="#626262"/>
+                                        </svg>
+                                        </button>
+                                        <button class="btn btn-pagination btn-xs h-36 with-icon icon-after me-2">
+                                        Last
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.38433 10.9675C3.14547 11.1972 3.13802 11.577 3.3677 11.8159C3.59737 12.0547 3.9772 12.0622 4.21606 11.8325L7.81606 8.4325C7.93371 8.31938 8.0002 8.16321 8.0002 8C8.0002 7.83679 7.93371 7.68062 7.81606 7.5675L4.21606 4.1675C3.9772 3.93782 3.59737 3.94527 3.3677 4.18414C3.13802 4.423 3.14547 4.80282 3.38433 5.0325L6.53453 8L3.38433 10.9675Z" fill="#626262"/>
+                                            <path d="M8.18433 10.9675C7.94547 11.1972 7.93802 11.577 8.1677 11.8159C8.39737 12.0547 8.7772 12.0622 9.01606 11.8325L12.6161 8.4325C12.7337 8.31938 12.8002 8.16321 12.8002 8C12.8002 7.83679 12.7337 7.68062 12.6161 7.5675L9.01606 4.1675C8.7772 3.93782 8.39737 3.94527 8.1677 4.18414C7.93802 4.423 7.94547 4.80282 8.18433 5.0325L11.3345 8L8.18433 10.9675Z" fill="#626262"/>
+                                        </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="container-fluid px-0">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card-case-table mb-2">
+                                                <table class="table case-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Date</th>
+                                                            <th scope="col">Time</th>
+                                                            <th scope="col">Details</th>
+                                                            <th scope="col">Notification Type</th>
+                                                            <th scope="col"></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>13/11/2024</td>
+                                                            <td>14:02</td>
+                                                            <td>Upcoming Age Out in 90 Days</td>
+                                                            <td><span class="badge badge-active">System</span></td>
+                                                            <td>
+                                                                <a href="#" class="me-2">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="#" data-bs-toggle="modal" data-bs-target="#notdetails">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M2.42012 12.9132C2.28394 12.6976 2.21584 12.5897 2.17772 12.4234C2.14909 12.2985 2.14909 12.1015 2.17772 11.9766C2.21584 11.8103 2.28394 11.7025 2.42012 11.4868C3.54553 9.70485 6.8954 5.20001 12.0004 5.20001C17.1054 5.20001 20.4553 9.70485 21.5807 11.4868C21.7169 11.7025 21.785 11.8103 21.8231 11.9766C21.8517 12.1015 21.8517 12.2985 21.8231 12.4234C21.785 12.5897 21.7169 12.6976 21.5807 12.9132C20.4553 14.6952 17.1054 19.2 12.0004 19.2C6.8954 19.2 3.54553 14.6952 2.42012 12.9132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M12.0004 15.2C13.6573 15.2 15.0004 13.8569 15.0004 12.2C15.0004 10.5432 13.6573 9.20001 12.0004 9.20001C10.3435 9.20001 9.0004 10.5432 9.0004 12.2C9.0004 13.8569 10.3435 15.2 12.0004 15.2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <!-- NOTIFICATION DETAILS -->
+                                                                <div class="modal fade" id="notdetails" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+                                                                    <div class="modal-dialog modal-dialog-centered modal-add-notes">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                        <h1 class="modal-title" id="assignManagerModalLabel">Notification Details</h1>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            <div class="d-flex mb-3">
+                                                                                <div class="fs-16 me-4">Date:12/11/2024</div>
+                                                                                <div class="fs-16">Time: 14:02</div>
+                                                                            </div>
+                                                                            <span class="badge badge-approve mb-3">Reminder</span>
+                                                                            <div class="fs-16 mb-3 line-height-28 ">
+                                                                                I dont believe that CV currently has any data points relating to no contact. We would need to implement something relating to no ...I dont believe that CV currently has any data points relating to no contact. We would need to implement something relating to no ...I dont believe that CV currently has any data points relating to no contact. We would need to implement something relating to no ...
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button class="btn btn-md btn-grey btn-radius-none w-100">Close</button>
+                                                                        </div>
+                                                                    </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- END NOTIFICATION DETAILS -->
+                                                            </td>
+                                                        </tr>  
+                                                        <tr>
+                                                            <td>13/11/2024</td>
+                                                            <td>14:02</td>
+                                                            <td>Home Study Report Due</td>
+                                                            <td><span class="badge badge-approve">Reminder</span></td>
+                                                            <td>
+                                                                <a href="#" class="me-2">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M2.42012 12.9132C2.28394 12.6976 2.21584 12.5897 2.17772 12.4234C2.14909 12.2985 2.14909 12.1015 2.17772 11.9766C2.21584 11.8103 2.28394 11.7025 2.42012 11.4868C3.54553 9.70485 6.8954 5.20001 12.0004 5.20001C17.1054 5.20001 20.4553 9.70485 21.5807 11.4868C21.7169 11.7025 21.785 11.8103 21.8231 11.9766C21.8517 12.1015 21.8517 12.2985 21.8231 12.4234C21.785 12.5897 21.7169 12.6976 21.5807 12.9132C20.4553 14.6952 17.1054 19.2 12.0004 19.2C6.8954 19.2 3.54553 14.6952 2.42012 12.9132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M12.0004 15.2C13.6573 15.2 15.0004 13.8569 15.0004 12.2C15.0004 10.5432 13.6573 9.20001 12.0004 9.20001C10.3435 9.20001 9.0004 10.5432 9.0004 12.2C9.0004 13.8569 10.3435 15.2 12.0004 15.2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </td>
+                                                        </tr>  
+                                                        <tr>
+                                                            <td>13/11/2024</td>
+                                                            <td>14:02</td>
+                                                            <td>Upcoming Age Out in 90 Days</td>
+                                                            <td><span class="badge badge-not-started">Compliance</span></td>
+                                                            <td>
+                                                                <a href="#" class="me-2">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M2.42012 12.9132C2.28394 12.6976 2.21584 12.5897 2.17772 12.4234C2.14909 12.2985 2.14909 12.1015 2.17772 11.9766C2.21584 11.8103 2.28394 11.7025 2.42012 11.4868C3.54553 9.70485 6.8954 5.20001 12.0004 5.20001C17.1054 5.20001 20.4553 9.70485 21.5807 11.4868C21.7169 11.7025 21.785 11.8103 21.8231 11.9766C21.8517 12.1015 21.8517 12.2985 21.8231 12.4234C21.785 12.5897 21.7169 12.6976 21.5807 12.9132C20.4553 14.6952 17.1054 19.2 12.0004 19.2C6.8954 19.2 3.54553 14.6952 2.42012 12.9132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M12.0004 15.2C13.6573 15.2 15.0004 13.8569 15.0004 12.2C15.0004 10.5432 13.6573 9.20001 12.0004 9.20001C10.3435 9.20001 9.0004 10.5432 9.0004 12.2C9.0004 13.8569 10.3435 15.2 12.0004 15.2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </td>
+                                                        </tr>  
+                                                        <tr>
+                                                            <td>13/11/2024</td>
+                                                            <td>14:02</td>
+                                                            <td>Home Study Report Due</td>
+                                                            <td><span class="badge badge-active">System</span></td>
+                                                            <td>
+                                                                <a href="#" class="me-2">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M2.42012 12.9132C2.28394 12.6976 2.21584 12.5897 2.17772 12.4234C2.14909 12.2985 2.14909 12.1015 2.17772 11.9766C2.21584 11.8103 2.28394 11.7025 2.42012 11.4868C3.54553 9.70485 6.8954 5.20001 12.0004 5.20001C17.1054 5.20001 20.4553 9.70485 21.5807 11.4868C21.7169 11.7025 21.785 11.8103 21.8231 11.9766C21.8517 12.1015 21.8517 12.2985 21.8231 12.4234C21.785 12.5897 21.7169 12.6976 21.5807 12.9132C20.4553 14.6952 17.1054 19.2 12.0004 19.2C6.8954 19.2 3.54553 14.6952 2.42012 12.9132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M12.0004 15.2C13.6573 15.2 15.0004 13.8569 15.0004 12.2C15.0004 10.5432 13.6573 9.20001 12.0004 9.20001C10.3435 9.20001 9.0004 10.5432 9.0004 12.2C9.0004 13.8569 10.3435 15.2 12.0004 15.2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </td>
+                                                        </tr>  
+                                                        <tr>
+                                                            <td>13/11/2024</td>
+                                                            <td>14:02</td>
+                                                            <td>I dont believe that CV currently has any data points relating to no contact. We would need to implement something relating to no ...</td>
+                                                            <td><span class="badge badge-approve">Reminder</span></td>
+                                                            <td>
+                                                                <a href="#" class="me-2">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M2.42012 12.9132C2.28394 12.6976 2.21584 12.5897 2.17772 12.4234C2.14909 12.2985 2.14909 12.1015 2.17772 11.9766C2.21584 11.8103 2.28394 11.7025 2.42012 11.4868C3.54553 9.70485 6.8954 5.20001 12.0004 5.20001C17.1054 5.20001 20.4553 9.70485 21.5807 11.4868C21.7169 11.7025 21.785 11.8103 21.8231 11.9766C21.8517 12.1015 21.8517 12.2985 21.8231 12.4234C21.785 12.5897 21.7169 12.6976 21.5807 12.9132C20.4553 14.6952 17.1054 19.2 12.0004 19.2C6.8954 19.2 3.54553 14.6952 2.42012 12.9132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M12.0004 15.2C13.6573 15.2 15.0004 13.8569 15.0004 12.2C15.0004 10.5432 13.6573 9.20001 12.0004 9.20001C10.3435 9.20001 9.0004 10.5432 9.0004 12.2C9.0004 13.8569 10.3435 15.2 12.0004 15.2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </td>
+                                                        </tr>  
+                                                        <tr>
+                                                            <td class="opacity-40">13/11/2024</td>
+                                                            <td class="opacity-40">14:02</td>
+                                                            <td class="opacity-40">Home Study Report Due</td>
+                                                            <td><span class="badge badge-not-started">Compliance</span></td>
+                                                            <td>
+                                                                <a href="#" class="me-2">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M2.42012 12.9132C2.28394 12.6976 2.21584 12.5897 2.17772 12.4234C2.14909 12.2985 2.14909 12.1015 2.17772 11.9766C2.21584 11.8103 2.28394 11.7025 2.42012 11.4868C3.54553 9.70485 6.8954 5.20001 12.0004 5.20001C17.1054 5.20001 20.4553 9.70485 21.5807 11.4868C21.7169 11.7025 21.785 11.8103 21.8231 11.9766C21.8517 12.1015 21.8517 12.2985 21.8231 12.4234C21.785 12.5897 21.7169 12.6976 21.5807 12.9132C20.4553 14.6952 17.1054 19.2 12.0004 19.2C6.8954 19.2 3.54553 14.6952 2.42012 12.9132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M12.0004 15.2C13.6573 15.2 15.0004 13.8569 15.0004 12.2C15.0004 10.5432 13.6573 9.20001 12.0004 9.20001C10.3435 9.20001 9.0004 10.5432 9.0004 12.2C9.0004 13.8569 10.3435 15.2 12.0004 15.2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </td>
+                                                        </tr>  
+                                                        <tr>
+                                                            <td class="opacity-40">13/11/2024</td>
+                                                            <td class="opacity-40">14:02</td>
+                                                            <td class="opacity-40">Home Study Report Due</td>
+                                                            <td><span class="badge badge-active">System</span></td>
+                                                            <td>
+                                                                <a href="#" class="me-2">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M2.42012 12.9132C2.28394 12.6976 2.21584 12.5897 2.17772 12.4234C2.14909 12.2985 2.14909 12.1015 2.17772 11.9766C2.21584 11.8103 2.28394 11.7025 2.42012 11.4868C3.54553 9.70485 6.8954 5.20001 12.0004 5.20001C17.1054 5.20001 20.4553 9.70485 21.5807 11.4868C21.7169 11.7025 21.785 11.8103 21.8231 11.9766C21.8517 12.1015 21.8517 12.2985 21.8231 12.4234C21.785 12.5897 21.7169 12.6976 21.5807 12.9132C20.4553 14.6952 17.1054 19.2 12.0004 19.2C6.8954 19.2 3.54553 14.6952 2.42012 12.9132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M12.0004 15.2C13.6573 15.2 15.0004 13.8569 15.0004 12.2C15.0004 10.5432 13.6573 9.20001 12.0004 9.20001C10.3435 9.20001 9.0004 10.5432 9.0004 12.2C9.0004 13.8569 10.3435 15.2 12.0004 15.2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <td>13/11/2024</td>
+                                                            <td>14:02</td>
+                                                            <td>Upcoming Age Out in 90 Days</td>
+                                                            <td><span class="badge badge-approve">Reminder</span></td>
+                                                            <td>
+                                                                <a href="#" class="me-2">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M2.42012 12.9132C2.28394 12.6976 2.21584 12.5897 2.17772 12.4234C2.14909 12.2985 2.14909 12.1015 2.17772 11.9766C2.21584 11.8103 2.28394 11.7025 2.42012 11.4868C3.54553 9.70485 6.8954 5.20001 12.0004 5.20001C17.1054 5.20001 20.4553 9.70485 21.5807 11.4868C21.7169 11.7025 21.785 11.8103 21.8231 11.9766C21.8517 12.1015 21.8517 12.2985 21.8231 12.4234C21.785 12.5897 21.7169 12.6976 21.5807 12.9132C20.4553 14.6952 17.1054 19.2 12.0004 19.2C6.8954 19.2 3.54553 14.6952 2.42012 12.9132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M12.0004 15.2C13.6573 15.2 15.0004 13.8569 15.0004 12.2C15.0004 10.5432 13.6573 9.20001 12.0004 9.20001C10.3435 9.20001 9.0004 10.5432 9.0004 12.2C9.0004 13.8569 10.3435 15.2 12.0004 15.2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <td>13/11/2024</td>
+                                                            <td>14:02</td>
+                                                            <td>Upcoming Age Out in 90 Days</td>
+                                                            <td><span class="badge badge-not-started">Compliance</span></td>
+                                                            <td>
+                                                                <a href="#" class="me-2">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M2.42012 12.9132C2.28394 12.6976 2.21584 12.5897 2.17772 12.4234C2.14909 12.2985 2.14909 12.1015 2.17772 11.9766C2.21584 11.8103 2.28394 11.7025 2.42012 11.4868C3.54553 9.70485 6.8954 5.20001 12.0004 5.20001C17.1054 5.20001 20.4553 9.70485 21.5807 11.4868C21.7169 11.7025 21.785 11.8103 21.8231 11.9766C21.8517 12.1015 21.8517 12.2985 21.8231 12.4234C21.785 12.5897 21.7169 12.6976 21.5807 12.9132C20.4553 14.6952 17.1054 19.2 12.0004 19.2C6.8954 19.2 3.54553 14.6952 2.42012 12.9132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M12.0004 15.2C13.6573 15.2 15.0004 13.8569 15.0004 12.2C15.0004 10.5432 13.6573 9.20001 12.0004 9.20001C10.3435 9.20001 9.0004 10.5432 9.0004 12.2C9.0004 13.8569 10.3435 15.2 12.0004 15.2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <td>13/11/2024</td>
+                                                            <td>14:02</td>
+                                                            <td>Upcoming Age Out in 90 Days</td>
+                                                            <td><span class="badge badge-active">System</span></td>
+                                                            <td>
+                                                                <a href="#" class="me-2">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M2.42012 12.9132C2.28394 12.6976 2.21584 12.5897 2.17772 12.4234C2.14909 12.2985 2.14909 12.1015 2.17772 11.9766C2.21584 11.8103 2.28394 11.7025 2.42012 11.4868C3.54553 9.70485 6.8954 5.20001 12.0004 5.20001C17.1054 5.20001 20.4553 9.70485 21.5807 11.4868C21.7169 11.7025 21.785 11.8103 21.8231 11.9766C21.8517 12.1015 21.8517 12.2985 21.8231 12.4234C21.785 12.5897 21.7169 12.6976 21.5807 12.9132C20.4553 14.6952 17.1054 19.2 12.0004 19.2C6.8954 19.2 3.54553 14.6952 2.42012 12.9132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M12.0004 15.2C13.6573 15.2 15.0004 13.8569 15.0004 12.2C15.0004 10.5432 13.6573 9.20001 12.0004 9.20001C10.3435 9.20001 9.0004 10.5432 9.0004 12.2C9.0004 13.8569 10.3435 15.2 12.0004 15.2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <td>13/11/2024</td>
+                                                            <td>14:02</td>
+                                                            <td>Upcoming Age Out in 90 Days</td>
+                                                            <td><span class="badge badge-approve">Reminder</span></td>
+                                                            <td>
+                                                                <a href="#" class="me-2">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M2.42012 12.9132C2.28394 12.6976 2.21584 12.5897 2.17772 12.4234C2.14909 12.2985 2.14909 12.1015 2.17772 11.9766C2.21584 11.8103 2.28394 11.7025 2.42012 11.4868C3.54553 9.70485 6.8954 5.20001 12.0004 5.20001C17.1054 5.20001 20.4553 9.70485 21.5807 11.4868C21.7169 11.7025 21.785 11.8103 21.8231 11.9766C21.8517 12.1015 21.8517 12.2985 21.8231 12.4234C21.785 12.5897 21.7169 12.6976 21.5807 12.9132C20.4553 14.6952 17.1054 19.2 12.0004 19.2C6.8954 19.2 3.54553 14.6952 2.42012 12.9132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M12.0004 15.2C13.6573 15.2 15.0004 13.8569 15.0004 12.2C15.0004 10.5432 13.6573 9.20001 12.0004 9.20001C10.3435 9.20001 9.0004 10.5432 9.0004 12.2C9.0004 13.8569 10.3435 15.2 12.0004 15.2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <td>13/11/2024</td>
+                                                            <td>14:02</td>
+                                                            <td>Upcoming Age Out in 90 Days</td>
+                                                            <td><span class="badge badge-not-started">Compliance</span></td>
+                                                            <td>
+                                                                <a href="#" class="me-2">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M2.42012 12.9132C2.28394 12.6976 2.21584 12.5897 2.17772 12.4234C2.14909 12.2985 2.14909 12.1015 2.17772 11.9766C2.21584 11.8103 2.28394 11.7025 2.42012 11.4868C3.54553 9.70485 6.8954 5.20001 12.0004 5.20001C17.1054 5.20001 20.4553 9.70485 21.5807 11.4868C21.7169 11.7025 21.785 11.8103 21.8231 11.9766C21.8517 12.1015 21.8517 12.2985 21.8231 12.4234C21.785 12.5897 21.7169 12.6976 21.5807 12.9132C20.4553 14.6952 17.1054 19.2 12.0004 19.2C6.8954 19.2 3.54553 14.6952 2.42012 12.9132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M12.0004 15.2C13.6573 15.2 15.0004 13.8569 15.0004 12.2C15.0004 10.5432 13.6573 9.20001 12.0004 9.20001C10.3435 9.20001 9.0004 10.5432 9.0004 12.2C9.0004 13.8569 10.3435 15.2 12.0004 15.2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <td>13/11/2024</td>
+                                                            <td>14:02</td>
+                                                            <td>Upcoming Age Out in 90 Days</td>
+                                                            <td><span class="badge badge-active">Syestem</span></td>
+                                                            <td>
+                                                                <a href="#" class="me-2">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M2.42012 12.9132C2.28394 12.6976 2.21584 12.5897 2.17772 12.4234C2.14909 12.2985 2.14909 12.1015 2.17772 11.9766C2.21584 11.8103 2.28394 11.7025 2.42012 11.4868C3.54553 9.70485 6.8954 5.20001 12.0004 5.20001C17.1054 5.20001 20.4553 9.70485 21.5807 11.4868C21.7169 11.7025 21.785 11.8103 21.8231 11.9766C21.8517 12.1015 21.8517 12.2985 21.8231 12.4234C21.785 12.5897 21.7169 12.6976 21.5807 12.9132C20.4553 14.6952 17.1054 19.2 12.0004 19.2C6.8954 19.2 3.54553 14.6952 2.42012 12.9132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M12.0004 15.2C13.6573 15.2 15.0004 13.8569 15.0004 12.2C15.0004 10.5432 13.6573 9.20001 12.0004 9.20001C10.3435 9.20001 9.0004 10.5432 9.0004 12.2C9.0004 13.8569 10.3435 15.2 12.0004 15.2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <td>13/11/2024</td>
+                                                            <td>14:02</td>
+                                                            <td>Upcoming Age Out in 90 Days</td>
+                                                            <td><span class="badge badge-approve">Reminder</span></td>
+                                                            <td>
+                                                                <a href="#" class="me-2">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M2.42012 12.9132C2.28394 12.6976 2.21584 12.5897 2.17772 12.4234C2.14909 12.2985 2.14909 12.1015 2.17772 11.9766C2.21584 11.8103 2.28394 11.7025 2.42012 11.4868C3.54553 9.70485 6.8954 5.20001 12.0004 5.20001C17.1054 5.20001 20.4553 9.70485 21.5807 11.4868C21.7169 11.7025 21.785 11.8103 21.8231 11.9766C21.8517 12.1015 21.8517 12.2985 21.8231 12.4234C21.785 12.5897 21.7169 12.6976 21.5807 12.9132C20.4553 14.6952 17.1054 19.2 12.0004 19.2C6.8954 19.2 3.54553 14.6952 2.42012 12.9132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M12.0004 15.2C13.6573 15.2 15.0004 13.8569 15.0004 12.2C15.0004 10.5432 13.6573 9.20001 12.0004 9.20001C10.3435 9.20001 9.0004 10.5432 9.0004 12.2C9.0004 13.8569 10.3435 15.2 12.0004 15.2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </td>
+                                                        </tr> 
+                                                        <tr>
+                                                            <td>13/11/2024</td>
+                                                            <td>14:02</td>
+                                                            <td>Upcoming Age Out in 90 Days</td>
+                                                            <td><span class="badge badge-not-started">Compliance</span></td>
+                                                            <td>
+                                                                <a href="#" class="me-2">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M2.42012 12.9132C2.28394 12.6976 2.21584 12.5897 2.17772 12.4234C2.14909 12.2985 2.14909 12.1015 2.17772 11.9766C2.21584 11.8103 2.28394 11.7025 2.42012 11.4868C3.54553 9.70485 6.8954 5.20001 12.0004 5.20001C17.1054 5.20001 20.4553 9.70485 21.5807 11.4868C21.7169 11.7025 21.785 11.8103 21.8231 11.9766C21.8517 12.1015 21.8517 12.2985 21.8231 12.4234C21.785 12.5897 21.7169 12.6976 21.5807 12.9132C20.4553 14.6952 17.1054 19.2 12.0004 19.2C6.8954 19.2 3.54553 14.6952 2.42012 12.9132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M12.0004 15.2C13.6573 15.2 15.0004 13.8569 15.0004 12.2C15.0004 10.5432 13.6573 9.20001 12.0004 9.20001C10.3435 9.20001 9.0004 10.5432 9.0004 12.2C9.0004 13.8569 10.3435 15.2 12.0004 15.2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center md-row-seperate">
+                                    <div class="d-flex align-items-center md-start">
+                                        <div class="fs-md me-2">Result per page</div>
+                                        <div class="rows-select w-62">
+                                        <select class="selectpicker">
+                                            <option data-tokens="1">1</option>
+                                            <option data-tokens="2">2</option>
+                                            <option data-tokens="3">3</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex md-end">
+                                        <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6323 11.8159C12.4026 12.0547 12.0228 12.0622 11.7839 11.8325L8.18394 8.4325C8.06629 8.31938 7.9998 8.16321 7.9998 8C7.9998 7.83679 8.06629 7.68062 8.18394 7.5675L11.7839 4.1675C12.0228 3.93782 12.4026 3.94527 12.6323 4.18413C12.862 4.423 12.8545 4.80282 12.6157 5.0325L9.46547 8L12.6157 10.9675C12.8545 11.1972 12.862 11.577 12.6323 11.8159ZM7.8323 11.8159C7.60263 12.0547 7.2228 12.0622 6.98394 11.8325L3.38394 8.4325C3.26629 8.31938 3.1998 8.16321 3.1998 8C3.1998 7.83679 3.26629 7.68062 3.38394 7.5675L6.98394 4.1675C7.2228 3.93782 7.60263 3.94527 7.8323 4.18413C8.06198 4.423 8.05453 4.80282 7.81567 5.0325L4.66547 8L7.81567 10.9675C8.05453 11.1972 8.06198 11.577 7.8323 11.8159Z" fill="#626262"/>
+                                        </svg>
+                                        First
+                                        </button>
+                                        <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2329 4.18414C10.4626 4.423 10.4551 4.80282 10.2163 5.0325L7.06605 8L10.2163 10.9675C10.4551 11.1972 10.4626 11.577 10.2329 11.8159C10.0032 12.0547 9.62339 12.0622 9.38452 11.8325L5.78452 8.4325C5.66688 8.31938 5.60039 8.16321 5.60039 8C5.60039 7.83679 5.66688 7.68062 5.78452 7.5675L9.38452 4.1675C9.62339 3.93782 10.0032 3.94527 10.2329 4.18414Z" fill="#626262"/>
+                                        </svg>
+                                        Back
+                                        </button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">1</button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">2</button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">3</button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">4</button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">...</button>
+                                        <button class="btn btn-pagination btn-xs h-36 me-2">25</button>
+                                        <button class="btn btn-pagination btn-xs h-36 with-icon icon-after me-2">
+                                        Next
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.76711 11.8159C5.53743 11.577 5.54488 11.1972 5.78374 10.9675L8.93395 8L5.78374 5.0325C5.54488 4.80282 5.53743 4.423 5.76711 4.18413C5.99679 3.94527 6.37661 3.93782 6.61548 4.1675L10.2155 7.5675C10.3331 7.68062 10.3996 7.83679 10.3996 8C10.3996 8.16321 10.3331 8.31938 10.2155 8.4325L6.61548 11.8325C6.37661 12.0622 5.99679 12.0547 5.76711 11.8159Z" fill="#626262"/>
+                                        </svg>
+                                        </button>
+                                        <button class="btn btn-pagination btn-xs h-36 with-icon icon-after me-2">
+                                        Last
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.38433 10.9675C3.14547 11.1972 3.13802 11.577 3.3677 11.8159C3.59737 12.0547 3.9772 12.0622 4.21606 11.8325L7.81606 8.4325C7.93371 8.31938 8.0002 8.16321 8.0002 8C8.0002 7.83679 7.93371 7.68062 7.81606 7.5675L4.21606 4.1675C3.9772 3.93782 3.59737 3.94527 3.3677 4.18414C3.13802 4.423 3.14547 4.80282 3.38433 5.0325L6.53453 8L3.38433 10.9675Z" fill="#626262"/>
+                                            <path d="M8.18433 10.9675C7.94547 11.1972 7.93802 11.577 8.1677 11.8159C8.39737 12.0547 8.7772 12.0622 9.01606 11.8325L12.6161 8.4325C12.7337 8.31938 12.8002 8.16321 12.8002 8C12.8002 7.83679 12.7337 7.68062 12.6161 7.5675L9.01606 4.1675C8.7772 3.93782 8.39737 3.94527 8.1677 4.18414C7.93802 4.423 7.94547 4.80282 8.18433 5.0325L11.3345 8L8.18433 10.9675Z" fill="#626262"/>
+                                        </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="../../assets/dist/js/all.min.js"></script>
+  </body>
+  
+</html>

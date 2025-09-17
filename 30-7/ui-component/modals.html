@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+   
+    <!-- CSS -->
+    <link href="../../assets/dist/css/default.css" rel="stylesheet" />
+    <title>CASE VISION</title>
+  </head>
+  <body>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary w-auto m-5" data-bs-toggle="modal" data-bs-target="#editCaseModal">
+        edit case
+    </button>
+    <button type="button" class="btn btn-primary w-auto m-5" data-bs-toggle="modal" data-bs-target="#addNewCaseModal">
+        Add NEW CASE
+    </button>
+    <button type="button" class="btn btn-primary w-auto m-5" data-bs-toggle="modal" data-bs-target="#assignManagerModal">
+        assign manager
+    </button>
+    <button type="button" class="btn btn-primary w-auto m-5" data-bs-toggle="modal" data-bs-target="#addNotesModal">
+        add notes
+    </button>
+    <button type="button" class="btn btn-primary w-auto m-5" data-bs-toggle="modal" data-bs-target="#deleteDocModal">
+        delete document
+    </button>
+
+
+    <button type="button" class="btn btn-primary w-auto m-5" data-bs-toggle="modal" data-bs-target="#addTouchpoints">
+        Add Touchpoints
+    </button>
+    <button type="button" class="btn btn-primary w-auto m-5" data-bs-toggle="modal" data-bs-target="#rejectReq">
+        reject request
+    </button>
+    <button type="button" class="btn btn-primary w-auto m-5" data-bs-toggle="modal" data-bs-target="#rejectNote">
+        reject note
+    </button>
+    <button type="button" class="btn btn-primary w-auto m-5" data-bs-toggle="modal" data-bs-target="#notdetails">
+        Notification details
+    </button>
+
+
+  
+    <!-- Modal -->
+    <div class="modal fade" id="editCaseModal" tabindex="-1" aria-labelledby="editCaseModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-350">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="editCaseModalLabel">EDIT CASE</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex justify-content-between mb-3">
+                    <div class="fs-15 fw-semibold">A Number</div>
+                    <div class="fs-13">485486112</div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <div class="fs-15 fw-semibold">First Name</div>
+                    <div class="fs-13">Maria</div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <div class="fs-15 fw-semibold">Last Name</div>
+                    <div class="fs-13">Garcia Lopez</div>
+                </div>
+                <div class="rows-select grey-toggle mb-3">
+                    <select class="selectpicker">
+                      <option data-tokens="1">Will Ramos</option>
+                      <option data-tokens="2">2</option>
+                      <option data-tokens="3">3</option>
+                    </select>
+                </div>
+                <div class="rows-select grey-toggle">
+                    <select class="selectpicker">
+                      <option data-tokens="1">Karen Flores</option>
+                      <option data-tokens="2">2</option>
+                      <option data-tokens="3">3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-darkblue btn-md btn-radius-none">Save</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="addNewCaseModal" tabindex="-1" aria-labelledby="addNewCaseModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-600">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="editCaseModalLabel">Add NEW CASE</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex mb-3">
+                    <div class="form-check form-inline me-5">
+                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                        <label class="form-check-label style-1" for="check1">
+                            Home Study
+                        </label>
+                    </div>
+                    <div class="form-check form-inline">
+                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                        <label class="form-check-label style-1" for="check1">
+                            PRS
+                        </label>
+                    </div>
+                </div>
+                <div class="drop-zone border-dashed mb-3">
+                    <span class="drop-zone__prompt d-flex flex-column justify-content-center align-items-center">
+                        <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 36.545C6.28653 34.7287 4.5 31.6355 4.5 28.125C4.5 22.852 8.53089 18.5204 13.6794 18.0436C14.7326 11.6373 20.2955 6.75 27 6.75C33.7045 6.75 39.2674 11.6373 40.3206 18.0436C45.4691 18.5204 49.5 22.852 49.5 28.125C49.5 31.6355 47.7135 34.7287 45 36.545M18 36L27 27M27 27L36 36M27 27V47.25" stroke="#005EA2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div class="fs-lg color-dark-blue my-3">Please Drag or Drop file here </div>
+                        <div class="fs-lg color-dark-blue border-left-right mb-3">or</div>
+                        <button class="btn btn-skyblue btn-sm">
+                          Browse
+                        </button>
+                    </span>
+                    <input type="file" name="myFile" class="drop-zone__input">
+                  </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-darkblue btn-md btn-radius-none" data-bs-toggle="modal" data-bs-target="#assignManagerModal">Upload</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="assignManagerModal" tabindex="-1" aria-labelledby="assignManagerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-1200">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="assignManagerModalLabel">Assign Supervisor & Manager</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="card-case-table">
+                    <table class="table case-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">A No.</th>
+                                <th scope="col">First Name</th>
+                                <th scope="col">Last Name</th>
+                                <th scope="col">Service Level</th>
+                                <th scope="col">Region</th>
+                                <th scope="col">Supervisor</th>
+                                <th scope="col">Case Manager</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>485486112</td>
+                                <td>Maria</td>
+                                <td>Garcia Lopez</td>
+                                <td>Level 2</td>
+                                <td>1</td>
+                                <td>
+                                    <div class="rows-select grey-toggle h-34">
+                                        <select class="form-select">
+                                        <option data-tokens="1">Select Supervisor</option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="rows-select grey-toggle h-34">
+                                        <select class="form-select">
+                                        <option data-tokens="1">Select Case Manager</option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>491257863</td>
+                                <td>Samuel</td>
+                                <td>Ortiz Tino</td>
+                                <td>Level 1</td>
+                                <td>1</td>
+                                <td>
+                                    <div class="rows-select grey-toggle h-34">
+                                        <select class="form-select">
+                                        <option data-tokens="1">Select Supervisor</option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="rows-select grey-toggle h-34">
+                                        <select class="form-select">
+                                        <option data-tokens="1">Select Case Manager</option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>571573224</td>
+                                <td>Chloe Kay</td>
+                                <td>Esmerelda</td>
+                                <td>Home Study</td>
+                                <td>1</td>
+                                <td>
+                                    <div class="rows-select grey-toggle h-34">
+                                        <select class="form-select">
+                                        <option data-tokens="1">Select Supervisor</option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="rows-select grey-toggle h-34">
+                                        <select class="form-select">
+                                        <option data-tokens="1">Select Case Manager</option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>483248651</td>
+                                <td>Jude</td>
+                                <td>Luis</td>
+                                <td>Level 3</td>
+                                <td>1</td>
+                                <td>
+                                    <div class="rows-select grey-toggle h-34">
+                                        <select class="form-select">
+                                        <option data-tokens="1">Select Supervisor</option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="rows-select grey-toggle h-34">
+                                        <select class="form-select">
+                                        <option data-tokens="1">Select Case Manager</option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>485486112</td>
+                                <td>Maria</td>
+                                <td>Garcia Lopez</td>
+                                <td>Level 2</td>
+                                <td>1</td>
+                                <td>
+                                    <div class="rows-select grey-toggle h-34">
+                                        <select class="form-select">
+                                        <option data-tokens="1">Select Supervisor</option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="rows-select grey-toggle h-34">
+                                        <select class="form-select">
+                                        <option data-tokens="1">Select Case Manager</option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>491257863</td>
+                                <td>Samuel</td>
+                                <td>Ortiz Tino</td>
+                                <td>Level 1</td>
+                                <td>1</td>
+                                <td>
+                                    <div class="rows-select grey-toggle h-34">
+                                        <select class="form-select">
+                                        <option data-tokens="1">Select Supervisor</option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="rows-select grey-toggle h-34">
+                                        <select class="form-select">
+                                        <option data-tokens="1">Select Case Manager</option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>571573224</td>
+                                <td>Chloe Kay</td>
+                                <td>Esmerelda</td>
+                                <td>Home Study</td>
+                                <td>1</td>
+                                <td>
+                                    <div class="rows-select grey-toggle h-34">
+                                        <select class="form-select">
+                                        <option data-tokens="1">Select Supervisor</option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="rows-select grey-toggle h-34">
+                                        <select class="form-select">
+                                        <option data-tokens="1">Select Case Manager</option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>483248651</td>
+                                <td>Jude</td>
+                                <td>Luis</td>
+                                <td>Level 3</td>
+                                <td>1</td>
+                                <td>
+                                    <div class="rows-select grey-toggle h-34">
+                                        <select class="form-select">
+                                        <option data-tokens="1">Select Supervisor</option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="rows-select grey-toggle h-34">
+                                        <select class="form-select">
+                                        <option data-tokens="1">Select Case Manager</option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>485486112</td>
+                                <td>Maria</td>
+                                <td>Garcia Lopez</td>
+                                <td>Level 2</td>
+                                <td>1</td>
+                                <td>
+                                    <div class="rows-select grey-toggle h-34">
+                                        <select class="form-select">
+                                        <option data-tokens="1">Select Supervisor</option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="rows-select grey-toggle h-34">
+                                        <select class="form-select">
+                                        <option data-tokens="1">Select Case Manager</option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>491257863</td>
+                                <td>Samuel</td>
+                                <td>Ortiz Tino</td>
+                                <td>Level 1</td>
+                                <td>1</td>
+                                <td>
+                                    <div class="rows-select grey-toggle h-34">
+                                        <select class="form-select">
+                                        <option data-tokens="1">Select Supervisor</option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="rows-select grey-toggle h-34">
+                                        <select class="form-select">
+                                        <option data-tokens="1">Select Case Manager</option>
+                                        <option data-tokens="2">2</option>
+                                        <option data-tokens="3">3</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-md btn-grey btn-radius-none w-50">Cancel</button>
+                <button type="button" class="btn btn-darkblue btn-md btn-radius-none w-50">Save</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- ADD NOTES -->
+    <div class="modal fade" id="addNotesModal" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-add-notes modal-750">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="assignManagerModalLabel">ADD NOTE</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <div class="fs-md color-black-60 mb-1">Type of Contact</div>
+                        <div class="rows-select grey-toggle style-2">
+                            <select class="form-select">
+                              <option data-tokens="1">Evelyn</option>
+                              <option data-tokens="2">Level 2</option>
+                              <option data-tokens="3">Level 3</option>
+                            </select>
+                        </div>    
+                    </div>
+                    <div class="col-md-4">
+                        <div class="fs-md color-black-60 mb-1">Date of Associated Visit / Check-in</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="date">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="fs-md color-black-60 mb-1">Method of Contact</div>
+                        <div class="rows-select grey-toggle style-2">
+                            <select class="form-select">
+                              <option data-tokens="1">-</option>
+                              <option data-tokens="2">Level 2</option>
+                              <option data-tokens="3">Level 3</option>
+                            </select>
+                        </div>    
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <div class="fs-md color-black-60 mb-1">Location</div>
+                        <div class="rows-select grey-toggle style-2">
+                            <select class="form-select">
+                              <option data-tokens="1">-</option>
+                              <option data-tokens="2">Level 2</option>
+                              <option data-tokens="3">Level 3</option>
+                            </select>
+                        </div>    
+                    </div>   
+                </div> 
+                <div class="row align-items-center mb-3">
+                    <div class="col-md-4">
+                        <div class="grey-title">Individuals present</div>   
+                    </div>
+                    <div class="col-md-5 d-flex justify-content-between">
+                        <div class="form-check form-inline">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                            <label class="form-check-label style-1" for="check1">
+                                Sponsor
+                            </label>
+                        </div>
+                        <div class="form-check form-inline">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                            <label class="form-check-label style-1" for="check1">
+                                Minor
+                            </label>
+                        </div>
+                        <div class="form-check form-inline">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                            <label class="form-check-label style-1" for="check1">
+                                Other
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input class="form-control style-2" type="email" placeholder="">
+                        </div>
+                    </div>
+                </div> 
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <div class="fs-md color-black-60 mb-1">Start Time</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="time">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="fs-md color-black-60 mb-1">End Time</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="time">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="fs-md color-black-60 mb-1">Contact Successful</div>
+                        <div class="d-flex mt-2">
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">Yes</label>
+                            </div>
+                            <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label font-400 mb-0" for="">No</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Description</div>
+                        <textarea class="form-control form-textarea"></textarea>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Follow Up Actions</div>
+                        <textarea class="form-control form-textarea"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="fs-md color-black-60 mb-1">Case Worker Initials</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="email" placeholder="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-md btn-grey btn-radius-none w-50">Cancel</button>
+                <button type="button" class="btn btn-darkblue btn-md btn-radius-none w-50">Save</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- END ADD NOTES -->
+
+
+
+    <!-- ADD TOUCHPOINTS -->
+    <div class="modal fade" id="addTouchpoints" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-add-notes">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="assignManagerModalLabel">ADD TOUCHPOINTS</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Touchpoint Type</div>
+                        <div class="rows-select grey-toggle style-2">
+                            <select class="form-select">
+                              <option data-tokens="1">Virtual Check-in</option>
+                              <option data-tokens="2">Virtual Check-in</option>
+                              <option data-tokens="3">Virtual Check-in</option>
+                            </select>
+                        </div>    
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="fs-md color-black-60 mb-1">Touchpoint Day</div>
+                        <div class="form-group">
+                            <input class="form-control style-2" type="text">
+                            <span class="value-type">Day</span>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                 
+                
+                
+              
+              
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-md btn-grey btn-radius-none w-50">Cancel</button>
+                <button type="button" class="btn btn-darkblue btn-md btn-radius-none w-50">Add</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- END ADD TOUCHPOINTS -->
+
+    <!-- reject request -->
+    <div class="modal fade" id="rejectReq" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-add-notes">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="assignManagerModalLabel">Reject Request</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="text-center fs-lg fw-semibold py-3 border-bottom-grey">
+                    Are you sure you want to reject this request?
+                </div>
+                <div class="p-3">
+                    <div class="fs-md color-black-60">
+                        Please provide reason for rejection
+                    </div>
+                    <textarea class="form-control form-textarea h-90"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-md btn-grey btn-radius-none w-50">No</button>
+                <button type="button" class="btn btn-darkblue btn-md btn-radius-none w-50">Yes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- END reject request -->
+
+    <!-- reject note -->
+    <div class="modal fade" id="rejectNote" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-add-notes">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="assignManagerModalLabel">Reject Note</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center fs-lg fw-semibold">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non tortor ac nibh laoreet commodo. Maecenas a elementum metus. Quisque euismod ac massa a mollis.
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- END reject note -->
+
+    <!-- NOTIFICATION DETAILS -->
+    <div class="modal fade" id="notdetails" tabindex="-1" aria-labelledby="addNotesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-add-notes">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="assignManagerModalLabel">Notification Details</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex mb-3">
+                    <div class="fs-16 me-4">Date:12/11/2024</div>
+                    <div class="fs-16">Time: 14:02</div>
+                </div>
+                <span class="badge badge-approve mb-3">Reminder</span>
+                <div class="fs-16 mb-3 line-height-28 ">
+                    I dont believe that CV currently has any data points relating to no contact. We would need to implement something relating to no ...I dont believe that CV currently has any data points relating to no contact. We would need to implement something relating to no ...I dont believe that CV currently has any data points relating to no contact. We would need to implement something relating to no ...
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-md btn-grey btn-radius-none w-100">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- END NOTIFICATION DETAILS -->
+
+    <!-- DELETE DOCUMENT -->
+    <div class="modal fade" id="deleteDocModal" tabindex="-1" aria-labelledby="deleteDocModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-add-notes modal-300">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="assignManagerModalLabel">Confirmation</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center p-3">
+                    Are you sure you want to delete this document?
+                </div>   
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-md btn-grey btn-radius-none w-50">No</button>
+                <button type="button" class="btn btn-darkblue btn-md btn-radius-none w-50">Yes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- END DELETE DOCUMENT -->
+    
+    <script src="../../assets/dist/js/all.min.js"></script>
+  </body>
+  
+</html>

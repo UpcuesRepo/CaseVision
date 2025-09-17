@@ -1,0 +1,271 @@
+.offcanvas{
+    &.w-800{
+        width: 800px;
+    }
+    &.w-260{
+        width: 260px;
+        @include media-breakpoint-down(md){
+            width: 100%;
+        }
+    }
+    &.w-350{
+        width: 350px;
+        @include media-breakpoint-down(md){
+            width: 100%;
+        }
+    }
+    &.w-450{
+        width: 450px;
+        @include media-breakpoint-down(md){
+            width: 100%;
+        }
+    }
+    &.w-60p{
+        width: 60%;
+    }
+    &.w-70p{
+        width: 70%;
+    }
+    &.my-case-offcanvas{
+        .offcanvas-header{
+            justify-content: space-between;
+            background-color: $light-blue-10;
+            .offcanvas-title{
+                text-transform: uppercase;
+                font-size: $font-size-24;
+                font-weight: $font-600;
+                color: $black;
+                &.font-xl{
+                    font-size: $font-size-xl;
+                    font-weight: $font-700;   
+                }
+            }
+        }
+        .offcanvas-body{
+            .border-bottom-lightblue{
+                border-bottom: 1px solid $light-blue-10;
+            }
+            .border-bottom-grey{
+                border-bottom: 1px solid $light-gray-2;
+            }
+            .grey-strip{
+                background-color: $light-gray-1;
+                padding: 10px 15px;
+                .border-bottom-black10{
+                    border-bottom: 1px solid $black-10;
+                }
+            }
+            .search-box{
+                border-radius: $radius-lg;
+                border: 1px solid $light-gray-2;
+                padding: 10px;
+                .checkbox-area{
+                    height: 100px;
+                    overflow-y: scroll;
+                }
+            }
+        }
+        &.home-study{
+            #msform {
+                text-align: center;
+                position: relative;
+                #progressbar {
+                    margin-bottom: 30px;
+                    overflow: hidden;
+                    color: $light-gray-3;
+                    padding-left: 0;
+                    .active {
+                        color: $dark-blue;
+                    }
+                    li {
+                        list-style-type: none;
+                        width: 16.66%;
+                        float: left;
+                        position: relative;
+                        &:before {
+                            width: 80px;
+                            height: 60px;
+                            line-height: 50px;
+                            display: block;
+                            color: $black;
+                            background: $light-gray-3-1;
+                            border-radius: $radius-lg;
+                            border: 1px solid $black-10;
+                            margin: 0 auto;
+                            padding: 2px;
+                            position: relative;
+                            z-index: 1;
+                        }
+                        &:after {
+                            content: '';
+                            width: 100%;
+                            height: 2px;
+                            background: $light-gray-4;
+                            position: absolute;
+                            left: 0;
+                            top: 28px;
+                            z-index: 0;
+                        }
+                        &.active{
+                            &:before, &:after {
+                                background: $dark-blue;
+                                color: $white;
+                            }
+                        }
+                    }
+                    #step-1{
+                        &:before {
+                            content: "step-1";
+                            font-size: $font-size-16;
+                            font-weight: $font-700;
+                        }
+                        &::after{
+                            width: 50%;
+                            left: 50%;
+                        }
+                    }
+                    #step-2{
+                        &:before {
+                            content: "step-2";
+                            font-size: $font-size-16;
+                            font-weight: $font-700;
+                        }
+                    }
+                    #step-3{
+                        &:before {
+                            content: "step-3";
+                            font-size: $font-size-16;
+                            font-weight: $font-700;
+                        }
+                    }
+                    #step-4{
+                        &:before {
+                            content: "step-4";
+                            font-size: $font-size-16;
+                            font-weight: $font-700;
+                        }
+                    }
+                    #step-5{
+                        &:before {
+                            content: "step-5";
+                            font-size: $font-size-16;
+                            font-weight: $font-700;
+                        }
+                    }
+                    #step-6{
+                        &:before {
+                            content: "step-6";
+                            font-size: $font-size-16;
+                            font-weight: $font-700;
+                        }
+                        &::after{
+                            width: 50%;
+                        }
+                    }
+                }
+                fieldset {
+                    background: white;
+                    border: 0 none;
+                    box-sizing: border-box;
+                    width: 100%;
+                    margin: 0;
+                    padding-bottom: 20px;
+                    position: relative;
+                    &:not(:first-of-type) {
+                        display: none;
+                    }
+                    .btn{
+                        &.next{
+                            position: fixed;
+                            bottom: 0;
+                            right: 40px;
+                        }
+                        &.previous{
+                            position: fixed;
+                            bottom: 0;
+                            left: 31.7%;
+                        }
+                    }
+                }
+            }    
+        }
+    }
+    &.side-filter{
+        background-color: $black;
+        display: none;
+        .offcanvas-header{
+            justify-content: end;
+        }
+        .offcanvas-body{
+            .sidebar{
+                @include media-breakpoint-down(md){
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                }
+                .side-menu{
+                    li{
+                        a{
+                            @include media-breakpoint-down(md){
+                                text-align: center;
+                            }   
+                        }
+                    }
+                }
+            }
+            .nav-title{
+                display: none;
+                @include media-breakpoint-down(lg){
+                    display: block;
+                }
+            }
+        }
+        @include media-breakpoint-down(lg){
+            display: block;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

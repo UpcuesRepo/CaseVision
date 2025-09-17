@@ -1,0 +1,295 @@
+ //*************************************
+// THIS FILE INCLUDES GENERAL VARIABLES
+// PLEASE DON'T ADD SPECIFIC THEME VARIABLES
+//*************************************
+
+
+$grid-gutter-width:           1.25rem !default; //1.5rem !default;
+
+
+//  =======================
+//  FONT FAMILY
+//  =======================
+// Override any bootstrap varibales
+$font-family-sans-serif: "Source Sans 3", sans-serif;
+
+//  =======================
+//  GRID BREAKPOINT
+//  =======================
+$grid-breakpoints: (
+  xs: 0,
+  sm: 577px,
+  md: 769px,
+  lg: 993px,
+  xl: 1201px,
+  xxl: 1401px
+);
+
+//  =======================
+//  FONT SIZE
+//  =======================
+$font-size-xs:  0.625rem;  //10px
+$font-size-sm:  0.75rem;   //12px
+$font-size-13:  0.813rem;   //13px
+$font-size-md:  0.875rem;  //14px
+$font-size-15:  0.938rem;  //15px
+$font-size-16:  1rem;      //16px
+$font-size-lg:  1.125rem;  //18px
+$font-size-xl:  1.25rem;   //20px
+$font-size-22:  1.375rem;  //22px
+$font-size-24:  1.5rem;    //24px
+$font-size-26:  1.625rem;  //26px
+$font-size-28:  1.75rem;   //28px
+$font-size-30:  1.875rem;  //30px
+$font-size-32:  2rem;      //32px
+$font-size-34:  2.125rem;  //34px
+$font-size-36:  2.25rem;   //36px
+$font-size-40:  2.5rem;    //40px
+
+//  =======================
+//  TEXT STYLE
+//  =======================
+$text-uppercase:  uppercase; 
+$text-underline: underline;
+
+// FONT WEIGHT
+$font-200: 200;
+$font-300: 300;
+$font-400: 400;
+$font-500: 500;
+$font-600: 600;
+$font-700: 700;
+$font-800: 800;
+$font-900: 900;
+
+//  =======================
+//  LINE HEIGHT
+//  =======================
+$line-height-18:  18px;
+$line-height-20:  20px;
+$line-height-22:  22px;
+$line-height-24:  24px;
+$line-height-26:  26px;
+$line-height-28:  28px;
+$line-height-30:  30px;
+$line-height-36:  36px;
+$line-height-40:  40px;
+$line-height-50:  50px;
+$line-height-56:  56px;
+$line-height-60:  60px;
+
+
+// =====================
+// DEFAULT THEME COLORS //
+// =====================
+$primary:            #080808;
+
+$secondary:          #5BAAF2;
+$white:              #FFFFFF;
+$white-70:           rgba(255, 255, 255, 0.7);
+$white-10:           rgba(255, 255, 255, 0.1);
+$white-15:           rgba(255, 255, 255, 0.15);
+$light-gray-1:       #F9F9F9;
+$light-gray-2:       #E1E1E1;
+$light-gray-2-10:    rgba(225, 225, 225, 0.1);
+
+$light-gray-3:       #D9D9D9;
+$light-gray-3-1:     rgba(217, 217, 217, 0.1);
+$light-gray-4:       #E3E3E3;
+$light-gray-5:       #E6E6E6;
+
+
+// BLUE //
+$blue:               #07A0C3;
+$blue-10:            rgba(7, 160, 195, 0.1);
+
+// DARK BLUE COLOR //
+$dark-blue:          #005EA2;
+$dark-blue-60:       rgba(0,94,162,0.6);
+$dark-blue-40:       rgba(0,94,162,0.4);
+$dark-blue-30:       rgba(0,94,162,0.3);
+$dark-blue-10:       rgba(0,94,162,0.1);
+
+// DARK BLUE -2 COLOR //
+$dark-blue-2:        #0B57C1;
+$dark-blue-2-10:       rgba(11, 87, 193, 0.1);
+
+// DARK-BLUE-3 COLOR //
+$dark-blue-3:              #04234D;
+$dark-blue-3-10:           rgba(4, 35, 77, 0.1);
+
+// BLACK COLOR //
+$black:              #080808;
+$black-60:           rgba(8,8,8,0.6);
+$black-40:           rgba(8,8,8,0.4);
+$black-30:           rgba(8,8,8,0.3);
+$black-10:           rgba(8,8,8,0.1);
+
+// BLACK-2 //
+$black-2:            #111111;
+
+// BLACK-3 //
+$black-3:            #313131;
+
+// BLACK-4 //
+$black-4:            #000000;
+
+// LIGHT BLUE COLOR //
+$light-blue:         #5BAAF2;
+$light-blue-60:      rgba(91,170,242,0.6);
+$light-blue-30:      rgba(91,170,242,0.3);
+$light-blue-10:      rgba(91,170,242,0.1);
+
+// LIGHT BLUE -2 COLOR //
+$light-blue-2:         #71A9F7;
+$light-blue-2-10:      rgba(113, 169, 247, 0.15);
+
+// LIGHT BLUE -3 COLOR //
+$light-blue-3:         #0094FF;
+$light-blue-3-10:      rgba(0, 148, 255, 0.15);
+
+// LIGHT BLUE -4 COLOR
+$light-blue-4:         #F1F6FE;
+
+
+// RED COLOR //
+$red:                #CE0E2D;
+$red-60:             rgba(206,14,45,0.6);
+$red-30:             rgba(206,14,45,0.3);
+$red-10:             rgba(206,14,45,0.1);
+
+// DARK RED COLOR //
+$dark-red:            #9B2915;
+$dark-red-10:         rgba(155, 41, 21, 0.15);
+
+// ORANGE COLOR //
+$orange:            #EE9207;
+$orange-60:         rgba(238,146,7,0.6);
+$orange-30:         rgba(238,146,7,0.3);
+$orange-10:         rgba(238,146,7,0.1);
+
+// ORANGE-2 COLOR //
+$orange-2:            #FF7158;
+$orange-2-10:         rgba(255, 113, 88, 0.15);
+
+// YELLOW COLOR //
+$yellow:            #E9B44C;
+$yellow-10:         rgba(233, 180, 76, 0.15);
+
+// GREY COLOR //
+$grey:                #4D5858;
+$grey-10:             rgba(77, 88, 88, 0.15);
+
+// GREY COLOR //
+$grey-2:                #A8B3B3;
+$grey-2-10:             rgba(168, 179, 179, 0.25);
+
+// GREY-3 COLOR //
+$grey-3:                #F7F7F7;
+
+// GREY-4 COLOR //
+$grey-4:                #C6C6C6;
+
+
+
+// CREAM COLOR //
+$cream:               #E4D6A7;
+$cream-10:            rgba(228, 214, 167, 0.25);
+
+// GREEN COLOR //
+$green:             #5EAC2F;
+$green-60:          rgba(94, 172, 47, 0.6);
+$green-30:          rgba(238,146,7,0.3);
+$green-10:          rgba(94, 172, 47, 0.1);
+
+// PURPLE COLOR //
+$purple:            #2000A2;
+$purple-60:         rgba(32,0,162,0.6);
+$purple-30:         rgba(32,0,162,0.3);
+$purple-10:         rgba(32,0,162,0.1);
+
+
+
+// =====================
+// DEFAULT FORMS COLORS //
+// =====================
+
+$input-bg:                  #ffffff;
+$border-color:              #F9F9F9;
+$border-color-2:            #E9E9E9;
+$border-focus:              #5BAAF2;
+$primary-button:            #080808;
+$primary-button-hover:      #005EA2;
+
+
+// =====================
+// BORDER RADUIS //
+// =====================
+$radius-xs:       2px;
+$radius-sm:       5px; 
+$radius-md:       8px;
+$radius-lg:      10px;
+$radius-xl:      15px;
+$radius-xxl:     20px;
+$radius-half:     50%;
+$radius-full:    100%;
+
+// =====================
+// BORDER //
+// =====================
+$border-light-gray-2 : 1px solid $light-gray-2;
+$border-light-blue :   2px solid $light-blue;
+
+
+// =====================
+// PADDING //
+// =====================
+$padding5:              05px;
+$padding10:             10px;
+$padding15:             15px;
+$padding20:             20px;
+$padding25:             25px;
+$padding30:             30px;
+
+// PADDING LEFT AND RIGHT //
+$padding-x-5:           0px 5px;
+$padding-x-10:          0px 10px;
+$padding-x-15:          0px 15px;
+$padding-x-20:          0px 20px;
+$padding-x-25:          0px 25px;
+$padding-x-30:          0px 30px;
+
+// PADDING TOP AND BOTTOM //
+$padding-y-5:             5px 0px;
+$padding-y-10:           10px 0px;
+$padding-y-15:           15px 0px;
+$padding-y-20:           20px 0px;
+$padding-y-25:           25px 0px;
+$padding-y-30:           30px 0px;
+
+
+// MARGIN TOP AND BOTTOM //
+$margin-top-5:          5px;
+
+
+// ERROR MESG PADDING //
+$padding-error:          10px 20px;
+
+// SHADOW //
+$shadow-sm:              0px 4px 10px 4px rgba(0, 0, 0, 0.05);
+
+
+// Responsive Variables
+$extraBig-device : 'only screen and (min-width: 1600px)';
+$laptop-device : 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+$mini-laptop-device : 'only screen and (min-width: 1200px) and (max-width: 1300px)';
+$desktop-device : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$tablet-device:'only screen and (min-width: 768px) and (max-width: 991px)';
+$small-mobile3:'only screen and (min-width: 430px) and (max-width: 575px)';
+$large-mobile:'only screen and (max-width: 767px)';
+$small-mobile2: 'only screen and (max-width: 575px)';
+$small-mobile: 'only screen and (max-width: 479px)';
+$xsmall-mobile: 'only screen and (max-width: 360px)';
+
+// (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px)
+

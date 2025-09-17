@@ -1,0 +1,102 @@
+.quickgrid[theme=default] {
+    --col-gap: auto !important;
+}
+
+
+.card-case-table table.case-table {
+    --col-gap: auto !important;
+}
+
+.card-case-table{
+    overflow-x: auto;
+}
+
+
+.collapsible-navbar{
+    background-color: #f9f9f9;
+}
+
+
+.case-details-card .quickgrid[theme=default] .col-header-content {
+    padding-right: 0px; 
+}
+
+
+.case-details-card .quickgrid[theme=default] .col-title {
+    gap: 0px;
+    font-weight: bold;
+}
+.case-details-card .quickgrid[theme=default] .col-title {
+    padding: 0px;
+}
+
+.case-details-card .quickgrid[theme=default] > tbody > tr > td {
+    padding: 10px 20px;
+}
+
+.case-details-card .quickgrid[theme=default] .col-title {
+    display: inline-block;
+}
+
+.wrap-float{
+    display: flex;
+    align-items: center;
+}
+
+.responsive-case-note-column .col-title-text {
+
+    white-space: normal;
+
+    word-wrap: break-word;
+
+    font-size: 0.9rem;
+
+}
+ 
+.case-note-scroll {
+
+    overflow-x: auto;
+
+}
+ 
+    .case-note-scroll::-webkit-scrollbar-track {
+
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+
+        border-radius: 10px;
+
+        background-color: #F5F5F5;
+
+    }
+ 
+    .case-note-scroll::-webkit-scrollbar {
+
+        background-color: #F5F5F5;
+
+        height: 4px;
+
+    }
+ 
+    .case-note-scroll::-webkit-scrollbar-thumb {
+
+        border-radius: 10px;
+
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+
+        background-color: #555;
+
+        border: 7px solid #005ea2;
+
+    }
+ 
+    .application-parameter-grid th{
+        width: 20%;
+    }
+     
+    .application-parameter-grid td{
+        word-break: break-all;
+    }
+
+
+
+
